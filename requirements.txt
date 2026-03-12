@@ -1,0 +1,8 @@
+youtube-transcript-api>=0.6.3
+youtube-comment-downloader>=0.1.78
+openai>=1.63.0
+python-dotenv>=1.0.1
+rich>=13.9.4
+langdetect>=1.0.9
+google-genai>=1.0.0
+requests>=2.32.3
