@@ -7,6 +7,11 @@ venv/
 # Pipeline output (large, not for VCS)
 output/
 
+# Text files
+video.txt
+models.txt
+prompt.txt
+
 # Python cache
 __pycache__/
 *.pyc
