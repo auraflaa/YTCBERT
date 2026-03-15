@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "video_id": "lkB_4ZPLPl8",
+    "url": "http://www.youtube.com/watch?v=lkB_4ZPLPl8",
+    "extracted_at": "2026-03-15T09:45:20.402708+00:00",
+    "count": 5,
+    "total_words": 50,
+    "avg_words_per_comment": 10.0,
+    "max_words": 14,
+    "min_words": 3
+  },
+  "comments": [
+    {
+      "index": 1,
+      "text": "Checkout my video making The STEAK MONSTER: Jalapeño Popper Stuffed NY Strip Roast! https://www.youtube.com/watch?v=vfoYmBl2Ar0",
+      "author": "@MaxtheMeatGuy",
+      "votes": "4.6k",
+      "time": "3 years ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 2,
+      "text": "biblically accurate steak",
+      "author": "@tonight3k",
+      "votes": "47k",
+      "time": "2 years ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 3,
+      "text": "I feel like max just broke one of the fundamental laws of the universe.",
+      "author": "@N3c777",
+      "votes": "70k",
+      "time": "3 years ago",
+      "is_reply": false,
+      "is_favorited": true
+    },
+    {
+      "index": 4,
+      "text": "“Do you want steak fries or waffle fries?”\n“Waffle Steaks”",
+      "author": "@daveinacave",
+      "votes": "24k",
+      "time": "3 years ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 5,
+      "text": "Max got us all with that \"high and fast\"",
+      "author": "@andresmiguelez9998",
+      "votes": "7.4k",
+      "time": "2 years ago",
+      "is_reply": false,
+      "is_favorited": false
+    }
+  ]
+}

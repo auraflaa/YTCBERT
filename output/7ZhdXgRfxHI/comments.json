@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "video_id": "7ZhdXgRfxHI",
+    "url": "http://www.youtube.com/watch?v=7ZhdXgRfxHI",
+    "extracted_at": "2026-03-15T09:45:41.065159+00:00",
+    "count": 5,
+    "total_words": 79,
+    "avg_words_per_comment": 15.8,
+    "max_words": 31,
+    "min_words": 6
+  },
+  "comments": [
+    {
+      "index": 1,
+      "text": "What's your favourite David Attenborough show?",
+      "author": "@bbcearth",
+      "votes": "917",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 2,
+      "text": "One day, Sir David Attenborough will no longer be with us. But his legacy, along with his rare gift for educating us through storytelling, will live on for generations to come.",
+      "author": "@stevecase6168",
+      "votes": "3.9k",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": true
+    },
+    {
+      "index": 3,
+      "text": "David's voice used to put me to sleep as a kid watching these, and sometimes it still does",
+      "author": "@lonely_lamp",
+      "votes": "771",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 4,
+      "text": "Wow! 4 free hours of Sir David, the world's greatest naturalist. Thanks so much",
+      "author": "@gangster3591",
+      "votes": "529",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": true
+    },
+    {
+      "index": 5,
+      "text": "Who else woke up and this was on..? Only me??",
+      "author": "@Alastor1932",
+      "votes": "254",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    }
+  ]
+}

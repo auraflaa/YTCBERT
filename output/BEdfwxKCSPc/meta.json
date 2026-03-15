@@ -1,0 +1,36 @@
+{
+  "video_id": "BEdfwxKCSPc",
+  "url": "http://www.youtube.com/watch?v=BEdfwxKCSPc",
+  "extracted_at": "2026-03-15T09:45:03.778858+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 937,
+    "unique_word_count": 243,
+    "vocabulary_richness": 0.259,
+    "line_count": 178,
+    "char_count": 4801,
+    "avg_words_per_line": 5.3,
+    "estimated_duration_mins": 7.2,
+    "top_keywords": [
+      "airplanes",
+      "yeah",
+      "let",
+      "water",
+      "items",
+      "velocity",
+      "ready",
+      "right",
+      "bottle",
+      "okay"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

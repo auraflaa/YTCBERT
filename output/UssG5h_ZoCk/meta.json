@@ -1,0 +1,79 @@
+{
+  "video_id": "UssG5h_ZoCk",
+  "url": "http://www.youtube.com/watch?v=UssG5h_ZoCk",
+  "extracted_at": "2026-03-12T06:31:34.045892+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 678,
+    "unique_word_count": 266,
+    "vocabulary_richness": 0.392,
+    "line_count": 102,
+    "char_count": 3792,
+    "avg_words_per_line": 6.6,
+    "estimated_duration_mins": 5.2,
+    "top_keywords": [
+      "creative",
+      "brain",
+      "music",
+      "part",
+      "engineering",
+      "kit",
+      "build",
+      "town",
+      "building",
+      "activity"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 64,
+    "top_level_count": 57,
+    "reply_count": 7,
+    "unique_authors": 61,
+    "favorited_count": 0,
+    "total_votes": 382,
+    "avg_votes_per_comment": 6.0,
+    "total_words": 715,
+    "avg_words": 11.17,
+    "max_words": 51,
+    "min_words": 1,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@X0unz",
+        "votes": "66",
+        "text": "3:00 the only thing the missing here is a Creative Kit for Adult like the Engineering side."
+      },
+      {
+        "vote_rank": 2,
+        "author": "@barelyed1ble",
+        "votes": "65",
+        "text": "\"the secret to being creative is to buy my product!!\"\n\ncmon mark"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@CrunchLabs",
+        "votes": "41",
+        "text": "Supercharge your creativity while having tons of fun with Creative Kit. Get 2 FREE boxes at https://crunchlabs.com/Creat"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@hanslain9729",
+        "votes": "32",
+        "text": "Brain rot and dopamine apps hate this one trick!\n\nAwesome work, Mark!"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@hello_world_104",
+        "votes": "32",
+        "text": "Lego's worked for me fine 20 years ago"
+      }
+    ]
+  }
+}

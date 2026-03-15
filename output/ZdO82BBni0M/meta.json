@@ -1,0 +1,78 @@
+{
+  "video_id": "ZdO82BBni0M",
+  "url": "http://www.youtube.com/watch?v=ZdO82BBni0M",
+  "extracted_at": "2026-03-15T09:45:23.665751+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 2741,
+    "unique_word_count": 602,
+    "vocabulary_richness": 0.22,
+    "line_count": 386,
+    "char_count": 14316,
+    "avg_words_per_line": 7.1,
+    "estimated_duration_mins": 21.1,
+    "top_keywords": [
+      "supersaf",
+      "phone",
+      "guys",
+      "iphone",
+      "here",
+      "pro",
+      "love",
+      "favorite",
+      "samsung",
+      "fold"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 4759,
+    "avg_votes_per_comment": 951.8,
+    "total_words": 130,
+    "avg_words": 26.0,
+    "max_words": 77,
+    "min_words": 5,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@CliffR",
+        "votes": "2.5k",
+        "text": "For those that want the quick summary: iPhone 17 series and Z Fold 7 for almost every person."
+      },
+      {
+        "vote_rank": 2,
+        "author": "@dogdadmaestro",
+        "votes": "871",
+        "text": "Love this collab every year. BUT ... Can we PLEASE get Flossy Carter on here?!"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@bisharabdi6488",
+        "votes": "694",
+        "text": "Flossy and jerryrigeverything are missing."
+      },
+      {
+        "vote_rank": 4,
+        "author": "@MrAhmed42069",
+        "votes": "375",
+        "text": "Samsung Galaxy Z Fold 7 / X Fold 7 / Fold 7: 10 times\niPhone 17 Pro Max: 5 times\niPhone 17 Pro: 3 times\niPhone Air: 2 ti"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@SuperSaf",
+        "votes": "319",
+        "text": "Tech Avengers.... ASSEMBLE 😎#SuperSafStyle\n\nShoutout to all my friends for taking part as always ❤"
+      }
+    ]
+  }
+}

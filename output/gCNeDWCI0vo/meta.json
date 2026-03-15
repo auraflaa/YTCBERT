@@ -1,0 +1,18 @@
+{
+  "video_id": "gCNeDWCI0vo",
+  "url": "http://www.youtube.com/watch?v=gCNeDWCI0vo",
+  "extracted_at": "2026-03-12T06:29:07.732201+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "error: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=gCNeDWCI0vo! This is most likely cause...",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": false
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

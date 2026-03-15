@@ -1,0 +1,79 @@
+{
+  "video_id": "ppf9j8x0LA8",
+  "url": "http://www.youtube.com/watch?v=ppf9j8x0LA8",
+  "extracted_at": "2026-03-12T06:30:13.384840+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 1559,
+    "unique_word_count": 466,
+    "vocabulary_richness": 0.299,
+    "line_count": 234,
+    "char_count": 8132,
+    "avg_words_per_line": 6.7,
+    "estimated_duration_mins": 12.0,
+    "top_keywords": [
+      "interview",
+      "job",
+      "strengths",
+      "non",
+      "own",
+      "need",
+      "negotiables",
+      "find",
+      "important",
+      "asked"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 77,
+    "top_level_count": 56,
+    "reply_count": 21,
+    "unique_authors": 71,
+    "favorited_count": 0,
+    "total_votes": 772,
+    "avg_votes_per_comment": 10.0,
+    "total_words": 1782,
+    "avg_words": 23.14,
+    "max_words": 239,
+    "min_words": 2,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@nashubhiya5145",
+        "votes": "158",
+        "text": "Tomorrow is my interview may be this vedio will help me ameen ❤"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@Indeed",
+        "votes": "85",
+        "text": "Love your input on identifying your strengths in storytelling, Ashley. Great presentation!"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@Alexis-ey4kp",
+        "votes": "63",
+        "text": "This is not helpful for interviewing, this talk is for people that dont understand the type of role or job that they wan"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@KAC-snowyfox9",
+        "votes": "57",
+        "text": "I love this! Listening to this before my interview this afternoon. It makes me feel more confident in advocating for my "
+      },
+      {
+        "vote_rank": 5,
+        "author": "@names9769",
+        "votes": "41",
+        "text": "Interview in an hour, commenting this for good luck."
+      }
+    ]
+  }
+}

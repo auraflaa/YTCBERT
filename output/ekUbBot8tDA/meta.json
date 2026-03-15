@@ -1,0 +1,60 @@
+{
+  "video_id": "ekUbBot8tDA",
+  "url": "http://www.youtube.com/watch?v=ekUbBot8tDA",
+  "extracted_at": "2026-03-12T06:32:12.947130+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "error: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=ekUbBot8tDA! This is most likely cause...",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": false
+  },
+  "comments": {
+    "available": true,
+    "count": 200,
+    "top_level_count": 120,
+    "reply_count": 80,
+    "unique_authors": 193,
+    "favorited_count": 0,
+    "total_votes": 1752,
+    "avg_votes_per_comment": 8.8,
+    "total_words": 2635,
+    "avg_words": 13.18,
+    "max_words": 123,
+    "min_words": 1,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@CrunchLabs",
+        "votes": "299",
+        "text": "Does anyone know how to get food coloring off of your hands? Asking for a friend... Get your very own CrunchLabs Build B"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@RyanMercer",
+        "votes": "176",
+        "text": "I just want to go back in time and watch Mr. Wizard now."
+      },
+      {
+        "vote_rank": 3,
+        "author": "@AirinHokom",
+        "votes": "158",
+        "text": "Correction, @ 9:08, H20 is two Hydrogen atoms and one Oxygen, they point it out as one hydrogen and two oxygen atoms, wh"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@NeDrowl",
+        "votes": "123",
+        "text": "Mark, I love your videos and would like to visit crunchlabs at least once, but there is one small problem... I'm from Ru"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@enderpumpkin13",
+        "votes": "66",
+        "text": "Mark rober has only made my passion for engineering (mainly mechanical engineering) stronger. I'd just like to say thank"
+      }
+    ]
+  }
+}

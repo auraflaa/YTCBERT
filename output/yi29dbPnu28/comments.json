@@ -1,0 +1,1814 @@
+{
+  "meta": {
+    "video_id": "yi29dbPnu28",
+    "url": "http://www.youtube.com/watch?v=yi29dbPnu28",
+    "extracted_at": "2026-03-12T06:32:46.113066+00:00",
+    "count": 200,
+    "total_words": 4680,
+    "avg_words_per_comment": 23.4,
+    "max_words": 204,
+    "min_words": 2
+  },
+  "comments": [
+    {
+      "index": 1,
+      "text": "you definitely need to know how to code, people can copy/paste whatever they want, but if they don't understand what they're reading they can't really tweak the stuff.",
+      "author": "@pacsmile",
+      "votes": "755",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 2,
+      "text": "I just think of how different my life could have been if I had more teachers that could engage their audience like you do Mark.\nLove your work.",
+      "author": "@yobgow",
+      "votes": "1.9k",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 3,
+      "text": "I’m an electrical/computer engineer and I love using Arduino for projects. This is a great big picture explanation of how it all works together. Nicely done!",
+      "author": "@michaelbryson5870",
+      "votes": "854",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 4,
+      "text": "As an electronics engineer with 40 years experience I believe the Arduino project is one of the greatest enablers of technological advancement ever and its so easily available. Every test rig Ive built has arduinos on. Control, sensor interface, computation, display, logging, theres an arduino for everything. The Teensy 4, 600MHz, MB of ram, floating point math, its a dream come true. Bringing sorting algorithams to life with real world data is a beauty to behold. Could there be a project to spread arduinos to African schools ?",
+      "author": "@beautifulsmall",
+      "votes": "147",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 5,
+      "text": "You said electrons move from the positive terminal to the negative terminal of the battery, but in reality, the opposite happens.",
+      "author": "@Thatstruefact",
+      "votes": "57",
+      "time": "8 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 6,
+      "text": "Mark hit the nail on the head describing robotics: just inputs and outputs creatively mapped to each other through a computer. The only tricky bit is to figure out and lock down the interfaces between the components and the microcontroller's code. With robust interfaces, writing the actual code logic to do something useful becomes a walk in the park. Luckily, there's tons of code libraries that do this for you already--you just gotta find them and understand which one to use for which component type. Hoping for a follow up video like this one describing communication methods & protocols (analog, digital, pwm, i2c, serial, CAN, etc.) and for what types of components they're typically applicable to",
+      "author": "@NicholasRehm",
+      "votes": "188",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 7,
+      "text": "What i love about Marks videos are that they are for all ages. He explains it in a way that makes sence to all ❤",
+      "author": "@fakeluvhx",
+      "votes": "133",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 8,
+      "text": "Microcontrollers were able to do this for decades. Having any kind of sensor on input, and any kind of actuator on output. But the revolution came with the simplicity of plugging it directly to USB, and having relatively simple code processing all the stuff. And, of course, the huge community support behind it. Love Arduinos, made tons of complex projects with them even with no previous experience with microcontrollers or ways to program any. Super easy to learn, and extremely powerful. I often have a feeling that the limit is only my imagination",
+      "author": "@el737rs",
+      "votes": "54",
+      "time": "1 year ago (edited)",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 9,
+      "text": "Arduino programming is absolutely the best way to get people into coding.  It is very easy, uses the same logic that all programming uses, and  gives visual and cool feedback.  It is like a 'hello world' program on steroids.   And the cheapness of things like  45 piece sensor kit and a few LEDs and cheap motors means you can do amazing things.",
+      "author": "@PeterSedesse",
+      "votes": "75",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 10,
+      "text": "This breakdown was amazing, ive always been facinated with eletronics but stopped one step shy of code or circuit boards. i cant wait to learn more!",
+      "author": "@tbranscom1",
+      "votes": "60",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 11,
+      "text": "As a professional software developer for the US government, I absolutely love watching my code move!  Its not just creating files, or a GUI, it's totally turning on a light or a servo!! \nI feel like with every Mark Rober video he is training our replacements and getting folks to love the digital (or analog) world around us.",
+      "author": "@Ny_babs",
+      "votes": "5",
+      "time": "7 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 12,
+      "text": "You have an uncanny way of explaining things simultaneously in laymen's terms and appropriate vernacular. Honestly, from my perspective, you're the absolute best internet educator out there. Your ability to simplify topics that many would consider overly complicated and then explain their structure and function in relatable detail is second to none. Thank you very much for everything you've done, you currently do, and will potentially will do.",
+      "author": "@DumbfoundedMadman",
+      "votes": "22",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 13,
+      "text": "I am a software engineer, with a lot of different experiences, robotics and hardware is one of the few I don't have enough in. Thanks for the overview, you made this very approachable.",
+      "author": "@TheSirNiklas",
+      "votes": "9",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 14,
+      "text": "Having worked in the Oil and Gas industry for over 25 years, specifically in controls, I've always been incredibly excited about automation. It's truly amazing to see how popular home automation has become! Thaks to guys like you ! keep doing what you are doing !",
+      "author": "@RiadKhan801",
+      "votes": "11",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 15,
+      "text": "Built my turret last night. Spending the weekend working on learning how to program buttons on the IR remote to shoot specific points within my room. Thanks for the big boy legos, Mark.",
+      "author": "@Sidkain",
+      "votes": "7",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 16,
+      "text": "That was really interesting! As an animator I always imagine making something animated in real life. I am not a technical dude but watching this it makes me feel a little more like it could be possible! 🎉😊",
+      "author": "@EdwinSchaap",
+      "votes": "51",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 17,
+      "text": "The aha moment for me in this video is learning that devices like microwaves and cars are powered by custom pcbs 🤯",
+      "author": "@TheNinjaPanda45",
+      "votes": "7",
+      "time": "6 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 18,
+      "text": "6:03 electrons in a current move very slowly, actually. What moves at lightspeed is the wave between them (one elelctron is pushed from the electron behind him and then that electron pushes the epectron in front of him)",
+      "author": "@hinkosever-koren9911",
+      "votes": "4",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 19,
+      "text": "For as super intelligent as you are, you explain things kids can understand better than 90% of all teachers. I would say you should become a teacher but that would slow down the content on this channel. Slowing the content would make all my nephews sad. So keep it up Mark, I really enjoy your videos!!!",
+      "author": "@alfonsoPina",
+      "votes": "8",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 20,
+      "text": "To be honest I didn't expect much from this video but it BLEW me away! Well edited and describes the Arduino PERFECTLY. By far the best and most inspiring Arduino tutorial I have ever seen. Thanks Mark!",
+      "author": "@MrSquigglesYT",
+      "votes": "15",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 21,
+      "text": "100%, but, tweaking is another level, this is the bare basics how to get in and start having fun.\nEventually, with enough creative thinking, you realise “hey, I can’t copy and paste this idea, how do I do it myself?” and then you unlock the next level.",
+      "author": "@chilledburrito",
+      "votes": "82",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 22,
+      "text": " @chilledburrito  awesome stuff",
+      "author": "@vinayaklabade1559",
+      "votes": "4",
+      "time": "11 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 23,
+      "text": "I don't know how to code but I know how code works and copy/paste saved me.",
+      "author": "@rodrigocastillo110",
+      "votes": "10",
+      "time": "11 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 24,
+      "text": "I agree! I wish I was better!",
+      "author": "@excellenceinanimation960",
+      "votes": "6",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 25,
+      "text": "That’s sooo true though, facts",
+      "author": "@vinayaklabade1559",
+      "votes": "3",
+      "time": "11 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 26,
+      "text": "Couldn’t you tell AI what tweak you want to make and then it can do it for you? I know zero about coding and that has always been a barrier to me using stuff like this.",
+      "author": "@MONKeEeYboi",
+      "votes": "2",
+      "time": "9 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 27,
+      "text": "​@MONKeEeYboi bro ai is amazing it teaching code. I do it all the time you give it errors and it fixes it. You tell it to tweak something it does it and explains what it did...",
+      "author": "@easyefpv6609",
+      "votes": "4",
+      "time": "9 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 28,
+      "text": " @MONKeEeYboi  when i wrote this comment almost a year  ago, i thought this was the case, nowadays this stuff is really advanced, there's a reason we got the whole vibe code thing.",
+      "author": "@pacsmile",
+      "votes": "2",
+      "time": "9 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 29,
+      "text": "Thats not true at all lol. Yall just want to think that's true but we all have ai to read the errors and fix it accordingly....",
+      "author": "@easyefpv6609",
+      "votes": "1",
+      "time": "9 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 30,
+      "text": "Chat gpt fixes that.",
+      "author": "@user-jd6ld7od6m",
+      "votes": "1",
+      "time": "8 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 31,
+      "text": "I wish I had learned to play guitar and code.",
+      "author": "@BasedNormie",
+      "votes": "1",
+      "time": "3 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 32,
+      "text": "I use grok and Replit no need to learn to code 🧑‍💻 why ai is getting scary coming for our jobs",
+      "author": "@User-orudb91833",
+      "votes": "0",
+      "time": "7 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 33,
+      "text": "now with AI around you can be a complete fidget and be able to dominate arduino programming",
+      "author": "@AmirHassan-nw2hk",
+      "votes": "0",
+      "time": "4 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 34,
+      "text": "I agree!",
+      "author": "@naveenallekshmi1703",
+      "votes": "0",
+      "time": "4 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 35,
+      "text": "You do not need to know how to code as sometimes theres comments in the code or documentation or sometimes it’s so darn simple to understand or just give it to Ai and ask the Ai to explain it.",
+      "author": "@djlucaza",
+      "votes": "0",
+      "time": "4 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 36,
+      "text": "If you have experience coding in other softwares, I think you can use ai to assist you with the arduino code very well and modify it how you see fit",
+      "author": "@michaelmcdowell4937",
+      "votes": "0",
+      "time": "2 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 37,
+      "text": "I agree, but some people need to know how to do other portions too. Sometimes the task trumps the understanding. It’s better to get a head start, bc it can take time to learn the code",
+      "author": "@NaomiTheFutureEngineer",
+      "votes": "0",
+      "time": "1 month ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 38,
+      "text": "You can still go into arduino without any programming experience because learning it isn’t too complicated when doing it",
+      "author": "@aPerson354F",
+      "votes": "12",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 39,
+      "text": "I use Gemini for the Code and when something is wrong I tell him whats wrong and to redo the code",
+      "author": "@fend1ne",
+      "votes": "7",
+      "time": "11 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 40,
+      "text": "💯 Knowing code isn't about doing it yourself anymore, it's about knowing what's cutting, the more you know, the better",
+      "author": "@XxAKxX_786",
+      "votes": "0",
+      "time": "5 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 41,
+      "text": "your life can be different right now, there are tons of resources out there, just go out and learn",
+      "author": "@arson5304",
+      "votes": "51",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 42,
+      "text": "yeah mark sure does explain it spectacularly well for any age to understand",
+      "author": "@jbifle",
+      "votes": "10",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 43,
+      "text": "I can totally relate",
+      "author": "@AutoGear.v.1.0",
+      "votes": "1",
+      "time": "9 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 44,
+      "text": "I was thinking the same! Mark's my favourite!",
+      "author": "@ArshadAlam_0609",
+      "votes": "1",
+      "time": "7 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 45,
+      "text": "many teachers would if they didnt have so much else on their plate and the access to resources like mark has",
+      "author": "@JeffreyHudson-r5r",
+      "votes": "17",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 46,
+      "text": " @JeffreyHudson-r5r your teachers don’t care about their students education they care about their salaries",
+      "author": "@Thoughtbubble919",
+      "votes": "3",
+      "time": "9 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 47,
+      "text": "Could u advise me how to learn arduino and robotics as a self learner",
+      "author": "@illsendu2heavens",
+      "votes": "7",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 48,
+      "text": "​@mehdibmc9508 \nYes\nJust read some books and try every single thing by yourself\nStay away from copy and paste\n\nStay away from courses except in advanced stages to learn something specific\n\nI'm a robot developer ( create the physical body and the program )\nGood lock",
+      "author": "@mrbear4774",
+      "votes": "12",
+      "time": "1 year ago (edited)",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 49,
+      "text": "Videos like these are so awesome because they take you from the very basics to something complicated! Half the time tutorials start off at a level to complicated for beginners.",
+      "author": "@excellenceinanimation960",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 50,
+      "text": "Indeed. Teaching and inspiring engineering minds is thankfully something that Mark Rober excels at",
+      "author": "@PrazgreenStudios",
+      "votes": "4",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 51,
+      "text": "I’ll sure say we definitely don’t have em in American schools",
+      "author": "@chordscapepiano",
+      "votes": "8",
+      "time": "8 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 52,
+      "text": "Schools around the world would definitely benefit tho I agree",
+      "author": "@chordscapepiano",
+      "votes": "1",
+      "time": "6 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 53,
+      "text": "probably mixed up conventional current and electron flow...",
+      "author": "@mattfei2701",
+      "votes": "9",
+      "time": "2 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 54,
+      "text": "Agreed. A follow-up video like that would be fantastic.",
+      "author": "@matthewn3482",
+      "votes": "4",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 55,
+      "text": "That didn't age well",
+      "author": "@powerxcode5333",
+      "votes": "3",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 56,
+      "text": "Is there a way to code these in python or java rather than C++",
+      "author": "@mr.cabbage4428",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 57,
+      "text": " @mr.cabbage4428 I saw a guy doing it but to make that possible it’s a bit tedious I think",
+      "author": "@Sajinewtk",
+      "votes": "0",
+      "time": "8 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 58,
+      "text": "Figure you’re the guy to ask lol",
+      "author": "@mr.cabbage4428",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 59,
+      "text": "Actually I've seen many artists using arduino in their projects coming up with some beautiful things.\n\nShould you do something, please share the link to the video",
+      "author": "@unusuario5173",
+      "votes": "2",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 60,
+      "text": "@unusuario5173  interesting.  I'll check it out,  thank you",
+      "author": "@EdwinSchaap",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 61,
+      "text": "Dude I wish you could collab with Mark,  that would be awesome to make something come to live!!!",
+      "author": "@Chriscarpentrr",
+      "votes": "4",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 62,
+      "text": "​ @Chriscarpentrr I'd love that!!",
+      "author": "@EdwinSchaap",
+      "votes": "1",
+      "time": "1 year ago (edited)",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 63,
+      "text": "I don’t often comment but I just have to say I love what you’re doing here! I remember getting my first arduino in middle school and now I’m getting Unity, Java, and C# certified! Teaching something as accessible as arduino in such a fun way will surely provide the next step for countless people into so many extremely well paying jobs, as well as teach children how to follow their passions all by themselves! You’re a saint for doing this! Keep up the good work!",
+      "author": "@Ieatdirt952",
+      "votes": "9",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 64,
+      "text": "No book can be compared with this understandable and creative video from Mark, I just like so much these words about making stories with Arduino! Thank you!",
+      "author": "@mariakozevnikova",
+      "votes": "4",
+      "time": "6 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 65,
+      "text": "I have a fairly well-equipped hobbyist electronics lab, and I have a lot of fun with my projects. It all started with one of those Arduino kits. I can't recommend that enough",
+      "author": "@mlutteral",
+      "votes": "4",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 66,
+      "text": "Thankyou best information about coding from a legend my boy is almost 6 and has nearly finished the first year of your build boxes ( he just turned 5 when he started)and he loves it he also remembers each one, what was special about them and hasn't broken them yet.",
+      "author": "@benrichardson7293",
+      "votes": "5",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 67,
+      "text": "5:50 electrons dont flow from the positive terminal, they start at the negative (they also have negative charge).",
+      "author": "@asempere123",
+      "votes": "17",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 68,
+      "text": "just got into a project that involves these and wow, you covered all the components that we're using. Nicely done!",
+      "author": "@DivyanshSingh24344",
+      "votes": "3",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 69,
+      "text": "RIP TO THOSE WHO DON'T LIKE SUCH A GREAT VIDEO",
+      "author": "@satcrack-l7m",
+      "votes": "2",
+      "time": "7 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 70,
+      "text": "I'm an Electrician with lots of PLC experience.   This is electronics but I find it very interesting.   Mark explains things in a way that is easy to understand.   Imagination is the only limit.",
+      "author": "@NovaRoboticsJ6",
+      "votes": "19",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 71,
+      "text": "I'm only sad I couldn't have had an influence like this 20 years ago. Thank you for this video. It inspires me to explore hobby electronics with my son.",
+      "author": "@Syncopation24",
+      "votes": "2",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 72,
+      "text": "oh my gosh, this is such an amazing technology idea. My sons and I loved it. I just bout the starter kits of arduino and we spend our evenings together after a long day of work experimenting with new project ideas. My eldest earlier today told me that they want to grow up to be an engineer just like Mark Rober. I just hope his bone marrow transplant take.",
+      "author": "@bradenblanford4342",
+      "votes": "3",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 73,
+      "text": "Thank you so much for this sir, you are that one youtuber who has completely explained how this wonderful tech works in the simplest way possible and now kids won't have to learn it the hard way!! Way to goo!! Hats off!!!!",
+      "author": "@abhayveersingh9060",
+      "votes": "5",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 74,
+      "text": "If they are not already - the US GOV should subsidize your videos for helping academic heads learn about how to apply their knowledge practically in entertaining ways. You are more important to our long term national security than you realize. Thank you for what you do Mark.",
+      "author": "@Andertheil",
+      "votes": "8",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 75,
+      "text": "This is awesome. Thanks. My son is very interested in learning this and you’ve made it sound much more accessible.",
+      "author": "@ryleylamarsh",
+      "votes": "3",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 76,
+      "text": "When current flows through metal, it flows solely from negative to positive.  Through other conductors, and inside the battery itself, the current flow can be negative to positive, positive to negative, and even both directions at the same time.",
+      "author": "@KaelumYodi",
+      "votes": "7",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 77,
+      "text": "Real step up from Crunch Lab Build Box for kids. Good Initiative",
+      "author": "@arsalan-kazmi",
+      "votes": "4",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 78,
+      "text": "Thank you so much Mark as a person who is about go into engineering I have found your videos a great place to begin with...:)",
+      "author": "@kingdomheartlyrics",
+      "votes": "1",
+      "time": "4 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 79,
+      "text": "Arduinos are awesome and love that I was introduced to them in my Engineering 101 class. Still a college student, but will possibly be starting a business soon for a product I made using an arduino. These things are awesome!",
+      "author": "@14KaratJK",
+      "votes": "2",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 80,
+      "text": "I have an arduino starter kit that was laying on my desk and just started messing with it this past weekend, this video was great in breaking down the basics and getting ideas flowing 😅",
+      "author": "@ZiemzyOG",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 81,
+      "text": "Dude Mark has such a gift for teaching. Well done brother you are going to inspire a lot of people with just this video alone!",
+      "author": "@LooksFrosty",
+      "votes": "14",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 82,
+      "text": "Can you tell me why he's saying electrons flow from the positive side of the battery to the negative side?",
+      "author": "@Alex_Holzer",
+      "votes": "0",
+      "time": "4 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 83,
+      "text": "Conventional current versus electron current. For a beginners tutorial, stick with conventional current as there is no point in adding complexity when it adds nothing to the initial discussion. \n\nSymbols such as diodes shows that the current is permitted to flow from positive to negative.",
+      "author": "@gorillaau",
+      "votes": "3",
+      "time": "1 year ago (edited)",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 84,
+      "text": "I noticed this too.",
+      "author": "@AlanTuringWannabe",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 85,
+      "text": "We started our Arduino adventure several years ago when we built a pinewood derby car with individually addressable LED's embedded inside it.  We found the code online and copied it. The lighting sequence was essentially multiple cycles various 4x4 matrices. I remember the kid drawing out the patterns with his crayons and then plugging them into the code. Thanks to Mark's pinewood derby video it was also reasonably fast and despite the engineering \"handicaps\" we gave it having to mount the microprocessor, battery and lights, it was still reasonably fast. It won \"best overall\" his last year of scouts. Of course we tested it on our Arduino powered pinewood derby test track.  \nIn the past year, we've built a Arduino based model rocket Altimeter that records flight data to an SD card, a simpler one that displays on an OLED screen, a wireless remote control launch pad and sender using ESP32, and a GPS rocket tracker that sends a Lat/Long wirelessly from the tracker back to base station. It also records flight data so you can make 3d plots of your flights in google Earth. We had ZERO programming knowledge when started (apart from basic ages ago). If we can do it, anyone can!",
+      "author": "@shullln",
+      "votes": "0",
+      "time": "1 year ago (edited)",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 86,
+      "text": "This is honestly one of the most full and descriptive and easy to understand videos to explain all of this. It's also a great video to show how to be creative. That's a challenge I have been trying to meet is how to \"teach\" creativity. I had told me ex-gf it was possible but she says you are either creative or you are not. Breaking it down to explain how really simple things actually are once you rip the nuts and bolts away is a nice way of introducing this subject matter.",
+      "author": "@jasonbrindamour903",
+      "votes": "0",
+      "time": "2 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 87,
+      "text": "Great video at demystify how easy this stuff is to get into, and the possibilities (I wish this stuff was available when I was a kid).",
+      "author": "@garethevans9789",
+      "votes": "2",
+      "time": "1 year ago (edited)",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 88,
+      "text": "Great video show all key elements of the Adrino",
+      "author": "@flipper751",
+      "votes": "0",
+      "time": "1 month ago (edited)",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 89,
+      "text": "I have been 3d printing for a few years and this would be something neet to have for my projects. Thanks for showing us.",
+      "author": "@petepromise",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 90,
+      "text": "This was an awesome, to the point crash course, Mark. I'm truly excited CrunchLabs is stepping up to the next level. Good luck in your journey 👍",
+      "author": "@MuhammadjavohirSuratov",
+      "votes": "22",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 91,
+      "text": "bro the way you teach is amazing. I wish I had you in schools, life would be fun",
+      "author": "@ravisingh9046",
+      "votes": "0",
+      "time": "2 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 92,
+      "text": "I’m seriously impressed with your teaching!",
+      "author": "@emmahnsonjo-t3k",
+      "votes": "0",
+      "time": "1 month ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 93,
+      "text": "Thank you Mark for inspiring people (myself included) to dive into building some projects! You explain things so well and I'm really grateful that you chose to share your passion with the world.",
+      "author": "@TheLemonLily",
+      "votes": "0",
+      "time": "3 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 94,
+      "text": "As someone who’s trying to get into hardware like this, your video just explained everything perfectly. I’ve been trying to learn how to use all of this for a long time and I learned the basics in a half hour video",
+      "author": "@Jersey-prints",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 95,
+      "text": "As an electronics engineering undergrad, you just lit the motivation to be a great engineer. thanks!",
+      "author": "@shadow_Lime",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 96,
+      "text": "As a self taught intermediate arduino coder/builder, the way how Mark explains is the best that you can get for beginners. A great applaud from me. Great job Mark!! :DD 🔥🔥",
+      "author": "@Me-ss9oe",
+      "votes": "3",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 97,
+      "text": "This was so helpful! Thanks so much for making this video!!",
+      "author": "@theogrupp",
+      "votes": "1",
+      "time": "11 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 98,
+      "text": "Electrons in a metal conductor move from the negative pole (minus) to the positive pole (plus).",
+      "author": "@iskanderm8029",
+      "votes": "0",
+      "time": "6 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 99,
+      "text": "This comment is prob gonna be buried,but let’s be real,Crunch labs/Mark Rober are the two best robotics channels on YouTube,love❤",
+      "author": "@eklau01",
+      "votes": "2",
+      "time": "3 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 100,
+      "text": "So good! I've had an Arduino for like 5 years and just been too intimidated by the first step to do anything with it.",
+      "author": "@skotski",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 101,
+      "text": "I just bought his crunchlabs for adults. Can't wait to learn this",
+      "author": "@HoveyFarms",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 102,
+      "text": "You’re a total rockstar for making this video!",
+      "author": "@AlexPierre-x7r",
+      "votes": "0",
+      "time": "12 days ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 103,
+      "text": "bro can you give me some advice I'm also a self learner and just started and have no idea what to do",
+      "author": "@adhamadel9475",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 104,
+      "text": "can this help code into a sensor system for medical device",
+      "author": "@TheRealChowieee",
+      "votes": "1",
+      "time": "6 days ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 105,
+      "text": "I love this, not only technical instructions but also get to see your projects and making it so fun to learn along❤",
+      "author": "@SolomongFang",
+      "votes": "0",
+      "time": "5 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 106,
+      "text": "Thanks for doing this Mark. I'm someone who's been doing computer stuff for years and years and so even though this video might not be of use to me, it still brings me incredible joy to see it. One of the things I want to do in my life is improve the understanding of computers and how they work to the average person, and you're actively making that goal easier. Thanks again :)",
+      "author": "@ShydenPierce",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 107,
+      "text": "ive been around a long time and had teachers but to learn anything one needs an instructor and you sir are a top-notch instructor .... many tanks Mark",
+      "author": "@peterpadacz4629",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 108,
+      "text": "This kind of content deserves millions of views!",
+      "author": "@AmontepNew-s2k",
+      "votes": "0",
+      "time": "1 month ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 109,
+      "text": "Nice video, thank you :)",
+      "author": "@RixtronixLAB",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 110,
+      "text": "This video has completely transformed my understanding!",
+      "author": "@AabhaBharti-x1d",
+      "votes": "0",
+      "time": "3 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 111,
+      "text": "This was such a satisfying watch, amazing!",
+      "author": "@SoniKumari-hh4bh",
+      "votes": "0",
+      "time": "2 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 112,
+      "text": "My jaw dropped at how well you explained this!",
+      "author": "@emmajohnson-d4k",
+      "votes": "0",
+      "time": "3 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 113,
+      "text": "Thanks so much, I appreciate these kinds of videos, great job Mark!",
+      "author": "@Laugh_out_loud_hahah",
+      "votes": "0",
+      "time": "8 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 114,
+      "text": "Your explanation was great. I wish more teachers taught this way. You had me engaged from beginning to end even thought I already have some basic understanding of Arduino",
+      "author": "@masflow7",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 115,
+      "text": "Love it. You found a way to make learning difficult subjects enjoyable. Gives a LOT of inspiration.",
+      "author": "@Kuzyman",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 116,
+      "text": "Thank you so much. Never thought I'd like these this much. Hungry for more now",
+      "author": "@gibraltarsfriend",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 117,
+      "text": "Well thought out! Great job!",
+      "author": "@Bud6333",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 118,
+      "text": "VERY NICE! Amazing content, loved it!",
+      "author": "@ldizai",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 119,
+      "text": "How was this more informative than my college class like what!?",
+      "author": "@davidjamesmagtibay6065",
+      "votes": "1",
+      "time": "9 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 120,
+      "text": "before i finish this i would love to say thank you much for making this",
+      "author": "@theblackpearlinspiredstories",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 121,
+      "text": "I love how he explaines it for all ages 😊",
+      "author": "@theoweeyouknow",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 122,
+      "text": "Super. Literally in the process of building a fist-bumping robot, but having trouble learning about arduinos. Then my favorite youtuber posts a video about it. Great stuff man. 👍👍",
+      "author": "@CinematicJack7",
+      "votes": "13",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 123,
+      "text": "Thank you so much for giving a crash course in a simple explanation!",
+      "author": "@miciagaming7323",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 124,
+      "text": "4:49 - The electrons flow the opposite direction from what is explained in the video. They flow from negative to positive of course.",
+      "author": "@BenFenner",
+      "votes": "54",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 125,
+      "text": "Awesome video Mark. Thank you very much! I admire your teaching style.",
+      "author": "@KSDEDU-m8q",
+      "votes": "0",
+      "time": "6 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 126,
+      "text": "Cool explanation!! I have been using Arduino boards for a couple of years. I’m am still learning every time I connect one.  I am going to try the turret build!!",
+      "author": "@msam8282",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 127,
+      "text": "My brain actually applauded. That has never happened before.",
+      "author": "@GotuSonawane-m5h",
+      "votes": "0",
+      "time": "1 month ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 128,
+      "text": "I just started to use Arduino and this is a good beginner explanation",
+      "author": "@thecannonfamily123",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 129,
+      "text": "Amazing! I really needed this as I have no experience in coding but absolutely love electronics",
+      "author": "@Tabiii",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 130,
+      "text": "Mark you and this video are fantastic! I love when I decided a little while ago to get back into circuits.",
+      "author": "@josephkerstetter1162",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 131,
+      "text": "Thank you for sharing! I’ve always been intimidated by the coding portion",
+      "author": "@Veech60",
+      "votes": "2",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 132,
+      "text": "Thanks! It was mind-blowing to see how one can make complex things so easy to understand. 🙏",
+      "author": "@sn-peace",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 133,
+      "text": "Very cool. Thank you for sharing your knowledge. This reminds me a lot of working on PLC stuff. This looks like a really fun way to get into that type of work.",
+      "author": "@3DConstructLLC",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 134,
+      "text": "Every project is super smart and fun to follow. Great mix of learning and fun.",
+      "author": "@GeraldGraham-s7d",
+      "votes": "0",
+      "time": "10 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 135,
+      "text": "Thanks I love this video",
+      "author": "@hongthaivo15",
+      "votes": "0",
+      "time": "8 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 136,
+      "text": "Loved the explanation for a newbie. Already got the coding part down so this will be a lot of fun 🙌🏻",
+      "author": "@tinotaylor",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 137,
+      "text": "This is way better than the other people I've had try to explain the Arduino to me",
+      "author": "@ClaireZandstra",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 138,
+      "text": "You're correct that electron flow is technically from - to +. Conventional current is typically thought of as + to - though and it doesn't make a difference in the evaluation of circuitry. Kinda confusing tbh",
+      "author": "@ebaker8807",
+      "votes": "15",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 139,
+      "text": "Conventional theory vs Electron theory. Both are essentially equally valid.",
+      "author": "@ScruffShop",
+      "votes": "6",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 140,
+      "text": "True but this is for kids so we don't want to confuse them",
+      "author": "@neobossgaming",
+      "votes": "5",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 141,
+      "text": "​ @neobossgaming prolly not many kids learning arduino",
+      "author": "@CoolsaladYT",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 142,
+      "text": " @neobossgaming 10yr olds included",
+      "author": "@DualGT",
+      "votes": "0",
+      "time": "11 months ago",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 143,
+      "text": "At 5:49 Mark said \"ELECTRONS move from the positive terminal of the battery [...] back to the negative terminal\". This is straight up false.\n\nAgain, the historical convention is \"current flows from + to -\". ELECTRONS in a wire move from - to +.\n\nI'm sure he actually knows the difference, but maybe he should proofread his scripts a little more carefully.",
+      "author": "@fipachu",
+      "votes": "3",
+      "time": "1 year ago (edited)",
+      "is_reply": true,
+      "is_favorited": false
+    },
+    {
+      "index": 144,
+      "text": "It weird watching a mark rober video without music😂",
+      "author": "@allaroundnation6572",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 145,
+      "text": "BRO I LOVE YOU THX",
+      "author": "@iwo2137ab",
+      "votes": "0",
+      "time": "2 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 146,
+      "text": "I literally just got into learning about the arduino, then Mark drops a video \nPerfect 🤩",
+      "author": "@itsjustdannyb8091",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 147,
+      "text": "i haven't used arduino in quite a while and this was such an amazing refresher, thanks mark!",
+      "author": "@amultitaskingperson",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 148,
+      "text": "I've used Arduino boards for several of my projects.  I build model starships, and using them for flashing navigation and strobe lights works great.  I've also done torpedo effects, warp drive effects, etc.  They're worth learning for sure!",
+      "author": "@mattalki",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 149,
+      "text": "i wish my school teachers were like you! i learned here what i wasnt able able in a year",
+      "author": "@Rix-editss",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 150,
+      "text": "Love your style of teaching, very engaging. Thank you!",
+      "author": "@snoopy-snoopy2d",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 151,
+      "text": "you can also use Claude to help you with the coding",
+      "author": "@laughing67-u2p",
+      "votes": "0",
+      "time": "9 days ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 152,
+      "text": "mark gave chatgpt seal of approval",
+      "author": "@fsdsfdsd7459",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 153,
+      "text": "We will be using the Arduino to measure the VERY high heat out furnace is going to be producing!",
+      "author": "@LiquidMetalLab",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 154,
+      "text": "I have just order an arduino kit, this is my best purchase yet",
+      "author": "@tedtrinh5323",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 155,
+      "text": "Great video - as a beginner this was super helpful! Thanks for sharing",
+      "author": "@fentonDesigns",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 156,
+      "text": "Funny, yesterday i was fiddeling with the light sensor and resistor, trying to figure out why it doesn't turn off. I used to programm but not to used hardward components, so knowing that even Mark uses the programming approach is nice to know. Makes stuff a lot easier.",
+      "author": "@rakowumusic5143",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 157,
+      "text": "I think I'll wait for my box, before I watch this.",
+      "author": "@BansheeBunny",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 158,
+      "text": "yay another mark rober video!!!",
+      "author": "@smiles-dr6rp",
+      "votes": "2",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 159,
+      "text": "Thanks, this is cool!)",
+      "author": "@ivan-cb4px",
+      "votes": "0",
+      "time": "5 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 160,
+      "text": "Brilliant channel! Thank you!",
+      "author": "@minskie",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 161,
+      "text": "Great job Mark! Your awesome at explaining these systems very simply.",
+      "author": "@kylemanuel1",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 162,
+      "text": "Love it Mark!",
+      "author": "@moisessanchez7736",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 163,
+      "text": "so fun! Thank you",
+      "author": "@minhthongnguyen8482",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 164,
+      "text": "You have a very unique way of explaining that I think kids would understand.  I am glad you are challenging their minds to do more.  Give hem the \"building blocks\" and see where it can take us.  The imagination of a child, cant be beat.",
+      "author": "@JustMe-ew2wt",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 165,
+      "text": "This was a great video...",
+      "author": "@lorvin5673",
+      "votes": "0",
+      "time": "4 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 166,
+      "text": "I might be buying a set box and trying to build something. Thanks for inspiring me, Mark!",
+      "author": "@Ken98765",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 167,
+      "text": "you make everything easy, tysm you made me find a new passion since 2023!",
+      "author": "@NTEdits5",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 168,
+      "text": "This is awesome.  I've always wanted to get into arduino's but they seemed so advanced.  This inspires confidence to start messing with them.",
+      "author": "@thomasodonnell2191",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 169,
+      "text": "Great job",
+      "author": "@carsonbrooks",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 170,
+      "text": "this tutorial was better than the one on the actual arduino website. THank you SO MUCH MARK",
+      "author": "@nflfandom277",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 171,
+      "text": "i took a whole course on microprocessors and the pi pico in college this past sem and the first 3 minutes of this vid alone was more concise than my bad prof 😭",
+      "author": "@gilernt",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 172,
+      "text": "Thank you Mark! This was very inspiring and encouraging!",
+      "author": "@Pro100tv9",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 173,
+      "text": "I think you should be specific when you point out what an Arduino is. As in what exact model of Arduino that specific model is. Not all microcontrollers are Arduino and I think it's an important detail.",
+      "author": "@MikeyMystery45",
+      "votes": "1",
+      "time": "5 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 174,
+      "text": "wow so cool ... im gonna start learning this today",
+      "author": "@gouthamkumarreddykaluvakol1717",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 175,
+      "text": "Very helpful thank you",
+      "author": "@No_skibidi_kids",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 176,
+      "text": "This was really a cool and engaging way to put it all together. It answered many basic questions I had about this and gave the whole gist of the topic. Thanks heaps Mark, it actually made sense by the end",
+      "author": "@hdadyala9878",
+      "votes": "0",
+      "time": "11 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 177,
+      "text": "This is Amazing!! 😊😍",
+      "author": "@guynyzio2404",
+      "votes": "0",
+      "time": "2 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 178,
+      "text": "He is an absolute genius.  Trying to get my teenage daughter, who loves science, into him.",
+      "author": "@johnkurland3912",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 179,
+      "text": "Great video. The number of things that one can build with such a small and affordable device is awesome and these videos will inspire many young engineers.",
+      "author": "@antheus_s",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 180,
+      "text": "I'm trying to do the night light",
+      "author": "@E-x-t-r-e-m-e-r",
+      "votes": "2",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 181,
+      "text": "Mr. Rober! Long time fan but first time arduino project, thank you as always!",
+      "author": "@mikeauty6233",
+      "votes": "0",
+      "time": "9 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 182,
+      "text": "Thenk you❤❤",
+      "author": "@НаталияДанилевская",
+      "votes": "1",
+      "time": "2 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 183,
+      "text": "I love what you're doing Mark. The joy of creation should be shared!",
+      "author": "@jacklimestone2559",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 184,
+      "text": "19:35 PCB- Physics Chemistry Biology",
+      "author": "@namitaclasses8698",
+      "votes": "2",
+      "time": "5 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 185,
+      "text": "Your energy is awesome",
+      "author": "@ModiLab",
+      "votes": "0",
+      "time": "3 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 186,
+      "text": "Cool, Thanks",
+      "author": "@CODE3p141",
+      "votes": "0",
+      "time": "2 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 187,
+      "text": "Electrons move from negative to positive terminal opposite to that of conventional current  . Electrons do not travel at the speed of light . They still have a bit of rest mass.",
+      "author": "@arkamaity4532",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 188,
+      "text": "Wow! Now I just need to buy the kit and off I go!",
+      "author": "@gauranshbansal8915",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 189,
+      "text": "I love the creativity of the hack pack logo.",
+      "author": "@3joseph7",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 190,
+      "text": "6:00 just that the flow of electrons is from negative to the positive terminal, opposite to the conventional flow of electricity which we consider flowing from the positive to the negative terminals.",
+      "author": "@vjndr32",
+      "votes": "0",
+      "time": "9 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 191,
+      "text": "Thank you Mark Robot, very cool.",
+      "author": "@NitteFatter",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 192,
+      "text": "How delightful, Mark 💕",
+      "author": "@LorieRudder",
+      "votes": "0",
+      "time": "11 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 193,
+      "text": "This is the best!",
+      "author": "@khushbooagrawal",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 194,
+      "text": "Imagine going for your first interview after getting your engineering degree.\nAnd then when he asks you what projects have you done, you present to them your lost of pranks projects, and STILL got hired.",
+      "author": "@ChinchillaBONK",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 195,
+      "text": "Best Best Best Hands Down The Best Explanation Video I have seen. Can’t wait to share this with the kids at the nonprofit that I work with. Thanks so very much!!",
+      "author": "@Ernest-x3l",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 196,
+      "text": "This video was very useful for me",
+      "author": "@kartiksworld2011",
+      "votes": "0",
+      "time": "3 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 197,
+      "text": "Thank you Mark \nNow i understand the arduino more better !",
+      "author": "@Abaikurmanali",
+      "votes": "0",
+      "time": "3 months ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 198,
+      "text": "I love your hot wheels refrence, but you had the direction of electrons backwards when talking about the battery..... electrons actually flow from neg to pos... its neg because its giving up electrons and pos because it absorbing electrons...",
+      "author": "@MrHaydenJr",
+      "votes": "1",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 199,
+      "text": "well I'm going to a program called programmable electronics engineering in college so it pretty much this plus i already know of how easy it is to get code for Arduino because i went and saw how the program went. i even got to weld all of the component on a circuit board for a heads or tails program.",
+      "author": "@DarCuter",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 200,
+      "text": "Ahh, I’ve been waiting for adult arduino/raspberry pi crunchlab boxes. I’ll have to snag one 👍🏻",
+      "author": "@plat6667",
+      "votes": "0",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    }
+  ]
+}

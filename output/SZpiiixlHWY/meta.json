@@ -1,0 +1,59 @@
+{
+  "video_id": "SZpiiixlHWY",
+  "url": "http://www.youtube.com/watch?v=SZpiiixlHWY",
+  "extracted_at": "2026-03-15T09:45:48.630087+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "error: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=SZpiiixlHWY! This is most likely cause...",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": false
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 30900,
+    "avg_votes_per_comment": 6180.0,
+    "total_words": 36,
+    "avg_words": 7.2,
+    "max_words": 10,
+    "min_words": 6,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@yahyaabdi3562",
+        "votes": "9.6k",
+        "text": "Everytime  someone likes I'll watch again"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@itzlia_lye",
+        "votes": "6.7k",
+        "text": "Everytime someone likes I'll watch again"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@couldthatbegio",
+        "votes": "6k",
+        "text": "Proud South Africans let’s gather here for our girl 🥹🇿🇦"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@vlm360",
+        "votes": "5.7k",
+        "text": "Who’s here before 1 million views? 🎉"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@-itsmejason-6567",
+        "votes": "2.9k",
+        "text": "tyla’s next album will be BIG !!!!!"
+      }
+    ]
+  }
+}

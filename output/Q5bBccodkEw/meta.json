@@ -1,0 +1,79 @@
+{
+  "video_id": "Q5bBccodkEw",
+  "url": "http://www.youtube.com/watch?v=Q5bBccodkEw",
+  "extracted_at": "2026-03-12T06:30:49.028501+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 134,
+    "unique_word_count": 61,
+    "vocabulary_richness": 0.455,
+    "line_count": 31,
+    "char_count": 800,
+    "avg_words_per_line": 4.3,
+    "estimated_duration_mins": 1.0,
+    "top_keywords": [
+      "spanish",
+      "german",
+      "speakers",
+      "likely",
+      "broke",
+      "bridge",
+      "grammatically",
+      "feminine",
+      "masculine",
+      "words"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 117,
+    "top_level_count": 86,
+    "reply_count": 31,
+    "unique_authors": 105,
+    "favorited_count": 0,
+    "total_votes": 1677,
+    "avg_votes_per_comment": 14.3,
+    "total_words": 2425,
+    "avg_words": 20.73,
+    "max_words": 159,
+    "min_words": 1,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@williamscottgordon628",
+        "votes": "454",
+        "text": "Yep. I'm an American who grew up speaking English but  started learning Japanese in my 20s; I've been in Japan for over "
+      },
+      {
+        "vote_rank": 2,
+        "author": "@ericfransen4371",
+        "votes": "382",
+        "text": "English: \"I missed the bus.\".\nSpanish: \"The bus left without me.\"."
+      },
+      {
+        "vote_rank": 3,
+        "author": "@leonardodicapthezhoes",
+        "votes": "293",
+        "text": "The stock photo of the vase guy made me chuckle"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@islandmaster5064",
+        "votes": "100",
+        "text": "Intent may be the same, but the words used to convey that intent changes with each language"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@ignorasmus",
+        "votes": "76",
+        "text": "SO True!\r\nWe all need to make sure that this rich cultural heritage of humanity does not get totally overrun by just one"
+      }
+    ]
+  }
+}

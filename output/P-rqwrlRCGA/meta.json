@@ -1,0 +1,78 @@
+{
+  "video_id": "P-rqwrlRCGA",
+  "url": "http://www.youtube.com/watch?v=P-rqwrlRCGA",
+  "extracted_at": "2026-03-15T09:45:59.206245+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 8269,
+    "unique_word_count": 1392,
+    "vocabulary_richness": 0.168,
+    "line_count": 1166,
+    "char_count": 41532,
+    "avg_words_per_line": 7.1,
+    "estimated_duration_mins": 63.6,
+    "top_keywords": [
+      "field",
+      "ball",
+      "right",
+      "run",
+      "center",
+      "play",
+      "catch",
+      "game",
+      "left",
+      "home"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 231,
+    "avg_votes_per_comment": 46.2,
+    "total_words": 61,
+    "avg_words": 12.2,
+    "max_words": 18,
+    "min_words": 4,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@futurestar99999",
+        "votes": "119",
+        "text": "Any other year, the walk off grand slam in the World Series is the play of the year."
+      },
+      {
+        "vote_rank": 2,
+        "author": "@kidswithcash2814",
+        "votes": "80",
+        "text": "10:42   “Aaron Judge putting a stamp on game 5” little did they know😂😂"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@jrodismyhero",
+        "votes": "26",
+        "text": "i miss baseball already😢"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@JSTNmusicofficial",
+        "votes": "4",
+        "text": "dude the opening clip, the whole stadium going \"YEEAHHHH\" at the same time was DOPE AF!"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@thejaredk-0432",
+        "votes": "2",
+        "text": "Love #51 when the catcher is hyped for the throw"
+      }
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "video_id": "yi29dbPnu28",
+  "url": "http://www.youtube.com/watch?v=yi29dbPnu28",
+  "extracted_at": "2026-03-12T06:32:46.121604+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 4522,
+    "unique_word_count": 812,
+    "vocabulary_richness": 0.18,
+    "line_count": 614,
+    "char_count": 23366,
+    "avg_words_per_line": 7.4,
+    "estimated_duration_mins": 34.8,
+    "top_keywords": [
+      "here",
+      "brain",
+      "right",
+      "code",
+      "arduino",
+      "light",
+      "electrons",
+      "let",
+      "information",
+      "off"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 200,
+    "top_level_count": 148,
+    "reply_count": 52,
+    "unique_authors": 192,
+    "favorited_count": 0,
+    "total_votes": 4908,
+    "avg_votes_per_comment": 24.5,
+    "total_words": 4680,
+    "avg_words": 23.4,
+    "max_words": 204,
+    "min_words": 2,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@yobgow",
+        "votes": "1.9k",
+        "text": "I just think of how different my life could have been if I had more teachers that could engage their audience like you d"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@michaelbryson5870",
+        "votes": "854",
+        "text": "I’m an electrical/computer engineer and I love using Arduino for projects. This is a great big picture explanation of ho"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@pacsmile",
+        "votes": "755",
+        "text": "you definitely need to know how to code, people can copy/paste whatever they want, but if they don't understand what the"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@NicholasRehm",
+        "votes": "188",
+        "text": "Mark hit the nail on the head describing robotics: just inputs and outputs creatively mapped to each other through a com"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@beautifulsmall",
+        "votes": "147",
+        "text": "As an electronics engineer with 40 years experience I believe the Arduino project is one of the greatest enablers of tec"
+      }
+    ]
+  }
+}

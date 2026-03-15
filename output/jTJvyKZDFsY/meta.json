@@ -1,0 +1,78 @@
+{
+  "video_id": "jTJvyKZDFsY",
+  "url": "https://youtu.be/jTJvyKZDFsY?si=WS8z0JcVqSLQyH8k",
+  "extracted_at": "2026-03-15T09:45:00.835147+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 3296,
+    "unique_word_count": 616,
+    "vocabulary_richness": 0.187,
+    "line_count": 450,
+    "char_count": 17277,
+    "avg_words_per_line": 7.3,
+    "estimated_duration_mins": 25.4,
+    "top_keywords": [
+      "project",
+      "learning",
+      "resume",
+      "worthy",
+      "coolness",
+      "difficulty",
+      "own",
+      "value",
+      "learn",
+      "pretty"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 15100,
+    "avg_votes_per_comment": 3020.0,
+    "total_words": 81,
+    "avg_words": 16.2,
+    "max_words": 39,
+    "min_words": 5,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@toadragethe5th",
+        "votes": "5.2k",
+        "text": "BUT I CODE IN ASSEMBLY"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@TheCodingSloth",
+        "votes": "3.3k",
+        "text": "I think i'm gonna make an AI girlfriend for reasons"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@jpahd",
+        "votes": "3k",
+        "text": "Just came here for some new ideas: 1. portfolio.. ok boring, 2. build your own git.. WTF? :D"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@ИльяКирьянов-х5е",
+        "votes": "1.9k",
+        "text": "The final step is to create your own company"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@slonkweerd4858",
+        "votes": "1.7k",
+        "text": "If you're a beginner, dont hesitate to start with hard projects if you want to do them. It will be tough and you will ma"
+      }
+    ]
+  }
+}

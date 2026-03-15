@@ -1,0 +1,36 @@
+{
+  "video_id": "wxjmvCsWyL0",
+  "url": "http://www.youtube.com/watch?v=wxjmvCsWyL0",
+  "extracted_at": "2026-03-15T09:45:09.204702+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 1543,
+    "unique_word_count": 303,
+    "vocabulary_richness": 0.196,
+    "line_count": 310,
+    "char_count": 7856,
+    "avg_words_per_line": 5.0,
+    "estimated_duration_mins": 11.9,
+    "top_keywords": [
+      "water",
+      "float",
+      "sink",
+      "let",
+      "guys",
+      "dense",
+      "right",
+      "three",
+      "object",
+      "okay"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

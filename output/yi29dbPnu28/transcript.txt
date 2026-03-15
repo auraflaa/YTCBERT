@@ -1,0 +1,624 @@
+========================================================================
+  TRANSCRIPT
+========================================================================
+  Video ID   : yi29dbPnu28
+  URL        : http://www.youtube.com/watch?v=yi29dbPnu28
+  Extracted  : 2026-03-12 06:32:19 UTC
+  Words      : 4,522
+  Lines      : 614
+========================================================================
+
+welcome back to Crunch Labs I'm Mark
+Rober and today we're doing just like a
+quick crash course on arduinos so let's
+start with the basics this is an Arduino
+you might have seen it in some
+Electronics builds in fact you might
+have seen it on a lot of Builds on my
+channel I use these all the time to get
+revenge on Halloween candy thieves
+that's something you can do you can go
+to the arcade and suddenly dominate a
+bunch of the games like this you can
+build shark Bing devices squirrel
+baiting devices and even porch pirate
+baiting devices you can make automatic
+Strike bowling balls or automatic
+Bullseye dart boards even if it's just
+for something simple like a candy
+dispenser when Mr Beast tricks you to go
+on vacation with him to an abandon City
+so it's some kind of complicated looking
+Electronics board but what exactly is it
+so a good analogy is looking at us
+humans for starters I need energy so I
+eat food and then with that energy I can
+power my eyes and ears and I get
+information from the world around me
+then I take that information and then
+that goes to my brain then my brain
+processes that and then it tells my
+muscles to do something for example ah
+that light is kind of bright I'm going
+to raise my arm to sort of block it from
+hitting my eyes now just like that with
+these components you see in front of me
+first of all there's a battery pack that
+powers this whole system so that's like
+me eating things to have energy right
+here we have a sensor in this case it
+picks up IR signals this is like our
+ears and eyes we call this an input so
+it takes that information sends it right
+here to the brain that Arduino
+microcontroller it does some thinking
+and then it sends information down these
+wires to these Servo Motors these are
+the outputs or the affectors and sure
+enough if we test this out I'm going to
+send a signal to the input you can see
+the Arduino thinking about here as it
+lights up and then it tells the muscles
+to do something in this case for this YW
+motor to spin around now I'm going to be
+honest this is kind of boring an
+electronic system just like this just
+isn't that interesting but if you
+combine it with some mechanical pieces
+that could kind of move place in some
+interesting spots well now you suddenly
+have a super cool desktop
+turret and you can see it's this exact
+system just applied here there's three
+Servo Motors here here and here we've
+got our brain right here and our battery
+pack right here and now I can spin this
+all around I can go down and up just by
+controlling the different Servo Motors
+and of course I could fire my darts
+rapid
+fire heck yeah and just to ease your
+mind out of the gate if you can put
+together a Lego build you can program
+with an Arduino so my goal today is just
+to break it down to First principles and
+make it really straightforward because
+the trick is you don't need to know how
+to code to program and build cool stuff
+with an Arduino there's just so many
+resources out there there's tons of code
+that already exists for almost anything
+you can imagine that you can just copy
+and paste with minor tweaks even if that
+on top of that there's a lot of AI chat
+Bots that can actually help you program
+help you think about your code and help
+you actually write the code in debug it
+so it's totally fine if you've never
+taken any kind of coding class this can
+still make perfect sense and so after
+watching this video and doing a few hack
+packs now when you see something like
+the glitter balm and at first you might
+think this is indistinguishable for
+magic like how does it know when you
+lift the lid to wait a few seconds to
+spin the cup to fire the fart spray to
+tell the phones to record but then when
+you see this you're like aha there's the
+brain so just like in our simple example
+there's inputs that tell it hey the lid
+has been lifted the brain takes that
+information and then it says information
+to the outputs I.E spinning a pound of
+the world's finest glitter and firing an
+uncharitable amount of fart spray to
+fill your whole
+apartment hello
+keep the change you filthy
+animal operation whoever smelt it delted
+initiated operation butt trumpet
+initiated
+oh you
+ all right all right we all right
+all right weing get it okay smells like
+in
+here so let's briefly start right at the
+beginning and just say what is even
+electricity well
+electricity is really just moving
+electrons so I have some delicious lemon
+electrons right here now if these
+electrons were just chilling like this
+that's not electricity but as soon as
+they all start moving now we've got
+electricity so now if you had more of
+these lined up and they were moving
+faster that's more electricity it would
+be more powerful but at the end of the
+day your phone your computer your
+glitter bomb the blood that's running
+through those veins of all those pieces
+of Hardware is just moving electrons and
+the difference between having a motor
+spin that sprays out glitter or having
+your phone have a screen that just
+lights up is how you decide to sort of
+divide and send those electrons
+throughout that mechanical build now
+let's talk about the electrical circuit
+now you can think about the electrical
+circuit sort of like a Hot Wheels track
+for these electrons to travel on so if I
+connect this wire here you'll notice
+this light bulb lights up again instant
+replay no light soon as I connect it
+light well why is that well you've made
+a full electric circuit so these
+electrons could flow from the positive
+terminal of this battery through this
+wire at the speed of light through the
+outside casing on the light bulb up
+through the bright little spot down and
+then back to the negative terminal and
+as the electrons pass over this spot
+there's a resistance built up there and
+it gives off light so all the electrons
+that have been stored up on this side of
+the battery just coming out this wire
+just flowing around through the light
+bulb and then there're stockpiling on
+the negative side of the battery now
+eventually if we let this go for long
+enough all the electrons will be from
+this side over this side and we call
+that a dead battery now a cool addition
+we could put into this electronic
+circuit is a switch so if I just
+disconnect this and I'm basically
+extending my hot Wheels track here wait
+a sec the light doesn't come on well
+that's because this switch is in the off
+position it's like a gate that's
+stopping the electrons so they can't
+move and if they're not moving guess
+what no electricity but as soon as we
+flip that on now the electrons can move
+again and that's electricity which is
+why our light bulb is now once again
+turning on all right well now let's talk
+about how arduinos harness moving
+electrons or electricity but not before
+I eat one more delicious
+elron so what we've got here is an
+Arduino build now again you might be
+looking and be like Ah that's kind of
+complicated but what this is is it's a
+nightlight when the lights go off and
+you cover this the LED light it gets
+brighter so this is effectively exactly
+how a nightlight works in your house so
+when it's dark you turn the lights off
+this little light sensor senses that and
+turns the light to get brighter now just
+like before all that's happening here is
+moving electrons except we've added this
+Arduino so we've made the electronic
+circuit a little bit smarter so the
+electrons come from the positive
+terminal of this battery and one Hot
+Wheels track is over here where it's
+just continuously checking this sensor
+and saying is it dark or is it bright
+and then there's a second Hot Wheels
+track here and if the brain senses that
+it's dark it's like yo we need to
+increase the amount of little yellow
+Skittles of electrons on this Hot Wheels
+track so that this light will get
+brighter so this is an example just a
+really simple thing that you could build
+using arduinos and we're going to get to
+a bunch more really fun ones in a second
+but first let's review the four parts
+you need for any Arduino build so the
+four parts to any Arduino build or
+really like any robot or any piece of
+electronic equipment you interact with
+like your washing machine or a
+calculator or your phone is you have
+your inputs then you have the brain
+itself that does the Computing and the
+outputs so that's three and the fourth
+of course is just the wires that connect
+those three and then again going back to
+the human analogy these inputs the
+sensors this is your eyes and ears the
+Arduino or the computer that's your
+brain then the outputs or the affectors
+those are your muscles and of course the
+wires are the nervous system so your
+eyes and ears send the information
+across the nervous system to your brain
+and the Brain decides what to do with it
+and sends that information through the
+nervous system to your muscles that then
+affect the world these are the affectors
+the outputs so let's look at some of the
+sensors some of the inputs the eyes and
+ears well the first one is this light
+sensor that's just what we saw in the
+NightLight example right so you get in
+information on the light around you goes
+to the brain the brain's like hey it
+suddenly got dark goes to an output well
+one of the outputs are LEDs so it would
+say make this brighter or make it dimmer
+let's look at some other inputs this is
+just a simple button this is a
+microphone so literally it's like an ear
+this right here is really cool it's a
+proximity sensor so it's sensing if
+something's close or far away this is
+just a knob this is a joystick this is a
+soil moisture sensor now we go to the
+brain and now let's skip to some of the
+outputs this is called a Servo motor
+these are the same type of Motors that
+were on our turret at the beginning of
+the video this is just a little DC motor
+in this case it's got a little fan on
+the end here's some LEDs and then here's
+a little buzzer speaker and by the way
+if you go online there is a ton of
+relatively inexpensive options where you
+justed a kit that has a bunch of these
+inputs or sensors and then also a bunch
+of these outputs or the affectors and
+this is where it gets really fun because
+how can we creatively combine these
+inputs to do cool stuff with these
+outputs well here's some examples you
+could maybe stick this soil moisture
+sensor in your plant and then when the
+soil gets dry you could have it light up
+an LED so you know it's dry or even
+better have it send a file that says I'm
+thirsty feed me water or maybe you could
+use this microphone and you could have a
+box a locked box and it's locked with
+this output with this Servo motor and
+the only way to open that box is if you
+give a secret knock in just the the
+right order and when it hears that very
+specific knock on the microphone at just
+the right spacing well then the brain
+gets that information and says that's it
+and then it turns the super motor that
+then opens the door and allows you to
+get your secret stash what's inside I
+don't know maybe some delicious yellow
+electrons you can use this knob here to
+increase the speed of a fan that's on
+you or maybe you use a thermometer to
+even turn the fan on at the right
+temperature so you don't even have to
+turn it kn you could have a cookie jar
+and when the lid is lifted this button
+gets unpressed and when that happens you
+have an alarm goes off because someone's
+invaded your secret stash of cookies and
+so now you can get a sense that for a
+lot of these it's just kind of like the
+story you package around the hardware
+you can even do something really simple
+with like this proximity sensor and this
+lights and buzzer and then a secret
+button and you could call it a cool guy
+finder so you go up to one of your
+buddies and the buzzer goes off and it
+lights up he must be a cool guy then you
+secretly release the button that breaks
+the circuit and you go up to another
+buddy and it doesn't light up kind of a
+ridiculous concept but you can see all
+the fun you can have with something like
+this if you just package the right story
+around it and that's really what's going
+on with my videos that have these
+electronic builds in them they're
+usually not that complicated it's really
+about the story you package around it to
+have this really creative fun
+engineering build that can either just
+be really useful in your life or it
+could just be fun and bring joy to your
+friends and family family all right so
+now that we've got a prettyy good
+overview of what you can do with
+arduinos and microcontrollers I just
+want to go one level deeper really
+briefly to talk about how you actually
+put new code onto this thing or swap out
+the brain so now it knows when it gets
+some information from a soil moisture
+sensor what to do with that information
+cuz that's a different brain than the
+one that looks for a specific set of
+knock knocks before opening the box
+right for each one of those you just
+swap out the brain so it knows what this
+input is and then what to do with it and
+before we do that I do want to briefly
+mention I'm saying Arduino and
+microcontroller sort of interchangeably
+Arduino is name of the company they're
+open source they're super super cool
+they basically got this whole movement
+started and so massive props to them
+there's different types of board this is
+the Arduino Uno it's very common the
+nice part about this is you've got these
+header pins so your wires can just plug
+like directly into the board which is
+pretty convenient now in the case of
+hackpack technically this isn't an
+Arduino because because we made our own
+version so it's just a microcontroller
+so like an Arduino is a specific brand
+of microcontroller in the same way that
+Tesla is a specific brand of car so
+let's just take a quick look about what
+the software looks like and how you
+actually do the brain swapping so the
+first thing you've got to do is just go
+to arduino.cc and you're going to
+download a specific piece of software
+called Arduino IDE it's free and then
+when you download the program and open
+it up you get a screen like this so all
+you got to do is plug in your Arduino
+select your correct port and now you've
+got a connection to the brain so each
+version of a brain is called a sketch so
+this is called an Arduino sketch again
+you do not need to learn to code you
+just need to be good at copying and
+pasting because there's so much on the
+internet as far as like what kind of
+code this is the code in these sketches
+is a slightly modified version of C++
+it's just an incredibly common language
+that is used a lot especially anytime
+you're interacting with Hardware so when
+you look at the code you'll see there's
+kind of two chunks the first is the
+setup and ultimately all you need to
+know here is setup only happens once
+that's where you're kind of establishing
+the rules of the game and then Loop is
+the thing that just runs over and over
+and over like with the NightLight we set
+that up runs right when you turn it on
+after that it's just continuously
+running a loop over and over and over
+just continuously asking what is the
+value of that light and if at any point
+it gets too dark then in that Loop it
+has a little spot that says Ah then turn
+on the LED and then it keeps checking is
+it still dark is it still dark as soon
+as it gets light okay now turn off the
+light and if you want your mind blown by
+just how powerful even a small computer
+like this can be it runs that Loop 4
+million times in 1 second so let's just
+run a simple program and see how this
+works so I can go up here to file
+examples and then Basics and I'm going
+to choose blink and when I do this
+you'll see it preloads a sketch so again
+here's the setup where it's calling out
+what pins and stuff we're using using
+and then here's the loop that just Loops
+over and over and what you should know
+is that anything that's like in this
+grayed out color that's in between these
+forward slash and the asteris that's
+just what we called a comment it does
+nothing it's like it's not even there
+it's just as humans it helps us read it
+so there's a link to where you could
+learn more it says who modified and
+created this but anything not in Gray
+like the setup here or the actual
+information on the loop that's what the
+board is actually using so I'm going to
+go ahead and hit this over Arrow which
+will upload the code to my Arduino know
+effectively swapping out the brain on
+this thing and lo and behold we now see
+the onboard LED is blinking now here's
+what's really cool and I remember the
+first time I did this it was just like
+this aha moment that felt really
+powerful but I can change the rate at
+which it blinks so I'm going to check
+into the code here and sure enough it
+says it turns the LED on and then it
+waits for a second that's this delay and
+then it turns the LED off by making the
+voltage low and then it waits for a
+second so you can see the number here is
+in milliseconds so I'm going to get
+crazy and let's say I want it to stay
+off for 3 seconds so I'm going to change
+that to a 3,000 and then I want it to
+stay on for 4 seconds so I'm going to
+change that to 4,000 now I'm just going
+to upload that code swap out that new
+brain for this it's only slightly
+modified and now when we look at this
+led wouldn't you know it it's turning
+off for 3 seconds then staying on for
+four and when you do that for the first
+time it's just this powerful moment that
+like you controlled this piece of very
+complicated Hardware to do something you
+wanted this is a great first step and
+now just to be fun I'm going to change
+this to go even faster so I'm deleting a
+zero off of both of those and now when I
+upload we should see that it's blinking
+way faster so that's just about the most
+simple example of how you can swap out
+the brain on this thing but there's tons
+more examples online where you'll not
+only get the code but they'll also give
+you the schematic or basically how you
+would wire up and connect your inputs
+and outputs so as an example of one of
+those just going to go ahead and pull up
+this one I found where you use a knob to
+control a motor so here's a program I
+Googled called knob and it tells you at
+the top what it does it says it controls
+the position of a servo motor with a
+knob basically and I'll just cut to the
+Chase and show you that so you see as I
+turn this knob the motor itself turns so
+the question is a what kind of creative
+story could you put on this to make it
+interesting and I'm just thinking oh you
+could have this in your car at your
+dashboard and maybe at your back window
+you've just got like a funny picture and
+maybe the arm you Pace to this thing so
+if you want to wave to someone cuz they
+were nice and they let you in you can
+just spin the knob like this and now
+you're waving to the car behind you or I
+don't know maybe you're in an abandoned
+city with Mr Beast and you want to scare
+him by turning a knob to have a Servo
+arm push a glass bottle off the top
+story so he thinks scary people are out
+to get us I'm just saying hypothetically
+that's something something you could do
+or maybe in bed if you want to turn off
+your lights remotely you just turn this
+knob and then it flicks the switch down
+infinite options of how you take this
+hardware setup and apply it creatively
+to the world around you at any rate as
+we scroll down on this page you'll see
+it shows you exactly how to set this up
+where to plug each of the colored wires
+into we call this a schematic and then
+it gives you the code so you literally
+just copy and paste this into your own
+code then hit upload and now you're
+totally golden now one thing I'll point
+out is I've got this white thing here we
+called that a solderless breadboard and
+that's because I could technically
+solder all these wires together to make
+that Hot Wheel track right to make the
+electronic circuit the cool thing about
+these breadboards is if you flip it over
+you'll see these are all connected so if
+you plug in something here that means if
+I plug in anything along this row
+because those are all connected with
+this little piece of metal it's no
+different if both of these wires were
+physically touching each other and the
+same also goes for all of these rows
+because you can see those are also
+horizontally connected as you go down
+the breadboard so plugging in this wire
+here and this wire here is the same as
+connecting them and it just makes it
+super convenient for sort of prototyping
+and testing and then once you have it
+and you like it and you want to lock it
+down let's say you want to go to mass
+production or let's say you want to make
+20 glitter bombs you could send all
+across the country then you do what's
+called a custom printed circuit board
+and that's basically where you take the
+breadboard and the sardu you package
+them all in one thing you get these
+custom made and this custom PCB is
+essentially this just in the printed
+form even the battery holster you can
+see is just part of the board and so a
+custom PCB is what you'll find in your
+calculator in your microwave in your
+washing machine in your car basically
+anything electronic that you interact
+with will have a custom PCB just for
+that piece of hardware and it's no
+different than a breadboard and an
+arduin know just packaged into one clean
+thing that you could Mass produce and so
+for the NightLight example I showed
+earlier I also just found that by
+Googling it and using this website that
+also showed me exactly how to set it up
+with the breadboard and gave me the
+actual code to run and of course in
+addition to just Googling and finding
+pre-written codes you know chat GPT and
+other llm models are a game Cher so you
+can actually put your code into there if
+it's not compiling you could ask it
+questions on how to improve the code and
+simplify it if you have a really cool
+idea you want to try can literally have
+a conversation and have it be your tutor
+to help you get your code exactly what
+you want or maybe you've copy and pasted
+a few bits of code you're not sure why
+they aren't playing nicely together it
+can help you figure that stuff out now
+coming back full circle to where we
+started this video for hackpack which
+are these really fun robots that you can
+put together where the brain is a
+microcontroller which just makes this so
+fun is you could swap out that brain to
+completely upgrade the functionality
+that that's the secer sauce that's the
+magic but then with hackpack when you
+want to plug it into your computer to
+swap the brain instead of using the
+Arduino IDE that I showed earlier we
+have our own browser based coding
+console and when you're there you'll see
+there's three levels at level one the
+code is fully locked down and you can
+only swap out the full code for verified
+new hacks like the passcode hack at
+level two you can now change some key
+variables like how quickly the barrel
+turns or how many numbers to put in your
+passcode lock and then at level three
+you have full access to change
+everything so if you want to learn more
+about hackpack get that robot in a box
+coming right to your door where it's
+like that first step and getting you
+down the path creative engineering you
+just go to crunch labs.com but either
+way hopefully this was a useful crash
+course in how arduinos work I'm really
+stoked you're taking this step because I
+found so much joy from taking my
+mechanical engineering skills and sort
+of combining them with electronics and
+then wrapping it in a story to make
+really fun content for the world
+and even just for my family and friends
+so good luck and thanks for watching

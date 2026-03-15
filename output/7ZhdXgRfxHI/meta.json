@@ -1,0 +1,78 @@
+{
+  "video_id": "7ZhdXgRfxHI",
+  "url": "http://www.youtube.com/watch?v=7ZhdXgRfxHI",
+  "extracted_at": "2026-03-15T09:45:41.065159+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 12165,
+    "unique_word_count": 2471,
+    "vocabulary_richness": 0.203,
+    "line_count": 2699,
+    "char_count": 66665,
+    "avg_words_per_line": 4.5,
+    "estimated_duration_mins": 93.6,
+    "top_keywords": [
+      "music",
+      "here",
+      "applause",
+      "fish",
+      "must",
+      "food",
+      "water",
+      "prey",
+      "sea",
+      "long"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 2,
+    "total_votes": 6371,
+    "avg_votes_per_comment": 1274.2,
+    "total_words": 79,
+    "avg_words": 15.8,
+    "max_words": 31,
+    "min_words": 6,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@stevecase6168",
+        "votes": "3.9k",
+        "text": "One day, Sir David Attenborough will no longer be with us. But his legacy, along with his rare gift for educating us thr"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@bbcearth",
+        "votes": "917",
+        "text": "What's your favourite David Attenborough show?"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@lonely_lamp",
+        "votes": "771",
+        "text": "David's voice used to put me to sleep as a kid watching these, and sometimes it still does"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@gangster3591",
+        "votes": "529",
+        "text": "Wow! 4 free hours of Sir David, the world's greatest naturalist. Thanks so much"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@Alastor1932",
+        "votes": "254",
+        "text": "Who else woke up and this was on..? Only me??"
+      }
+    ]
+  }
+}

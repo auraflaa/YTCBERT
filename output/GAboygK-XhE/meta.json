@@ -1,0 +1,78 @@
+{
+  "video_id": "GAboygK-XhE",
+  "url": "http://www.youtube.com/watch?v=GAboygK-XhE",
+  "extracted_at": "2026-03-15T09:45:27.618833+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 1286,
+    "unique_word_count": 579,
+    "vocabulary_richness": 0.45,
+    "line_count": 198,
+    "char_count": 7091,
+    "avg_words_per_line": 6.5,
+    "estimated_duration_mins": 9.9,
+    "top_keywords": [
+      "marquez",
+      "sandal",
+      "don",
+      "here",
+      "foot",
+      "test",
+      "footwear",
+      "mean",
+      "made",
+      "tech"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 2,
+    "total_votes": 56900,
+    "avg_votes_per_comment": 11380.0,
+    "total_words": 165,
+    "avg_words": 33.0,
+    "max_words": 91,
+    "min_words": 14,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@mkbhd",
+        "votes": "35k",
+        "text": "NEXT LEVEL INTRO\nI'll admit I was nervous putting these shoes in your hands, consider the fashion icon that you are. I k"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@rohitmishra3284",
+        "votes": "8.9k",
+        "text": "He's an absolute legend for helping out a small youtuber by promoting their merch."
+      },
+      {
+        "vote_rank": 3,
+        "author": "@BuffDad55",
+        "votes": "6.6k",
+        "text": "This is one of these videos where you go ''Wow i'm so glad Linus invested an insane amount of money into the lab''"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@Dashki",
+        "votes": "4.9k",
+        "text": "The D brand and LTT beef is one of my favorite things to happen with sponsors ever I think"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@YU_ZU98",
+        "votes": "1.5k",
+        "text": "This feels like an extra April's Fools video on top of the ones they made for this year"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "video_id": "oo9c9HC-pmM",
+  "url": "http://www.youtube.com/watch?v=oo9c9HC-pmM",
+  "extracted_at": "2026-03-15T09:45:37.767931+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 7094,
+    "unique_word_count": 1729,
+    "vocabulary_richness": 0.244,
+    "line_count": 1386,
+    "char_count": 39600,
+    "avg_words_per_line": 5.1,
+    "estimated_duration_mins": 54.6,
+    "top_keywords": [
+      "music",
+      "here",
+      "forest",
+      "frog",
+      "tree",
+      "yeah",
+      "around",
+      "ants",
+      "wallace",
+      "leaves"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 1085,
+    "avg_votes_per_comment": 217.0,
+    "total_words": 140,
+    "avg_words": 28.0,
+    "max_words": 52,
+    "min_words": 10,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@야생의기록",
+        "votes": "396",
+        "text": "Waiting 24 days for rain just to capture the tree frogs gliding during their breeding moment — it wasn’t just beautiful,"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@racoonman127",
+        "votes": "373",
+        "text": "took mt ADHD medication at the wrong time and i watch the whole thing while i actually needed to do homwork best 90 minu"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@ONA_WILD_AnimalDocumentary",
+        "votes": "162",
+        "text": "Imagine spending months in steamy jungles for that one perfect sighting. It's such a great reminder of why exploring, do"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@PINEPUPPY",
+        "votes": "125",
+        "text": "Thank you BBC. This will be 90 minutes well spent!"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@KBirkett-l3k",
+        "votes": "29",
+        "text": "It's good to know we aren't the only parents who have our kids reject the food we get for them. The orangutans are beaut"
+      }
+    ]
+  }
+}

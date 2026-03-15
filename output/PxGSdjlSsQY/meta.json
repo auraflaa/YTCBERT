@@ -1,0 +1,78 @@
+{
+  "video_id": "PxGSdjlSsQY",
+  "url": "https://youtu.be/PxGSdjlSsQY?si=F34PJgsR8ckvVN2N",
+  "extracted_at": "2026-03-15T09:44:54.608820+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 3035,
+    "unique_word_count": 683,
+    "vocabulary_richness": 0.225,
+    "line_count": 425,
+    "char_count": 16079,
+    "avg_words_per_line": 7.1,
+    "estimated_duration_mins": 23.3,
+    "top_keywords": [
+      "music",
+      "business",
+      "thing",
+      "kind",
+      "link",
+      "enough",
+      "digital",
+      "phone",
+      "company",
+      "called"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 95,
+    "avg_votes_per_comment": 19.0,
+    "total_words": 267,
+    "avg_words": 53.4,
+    "max_words": 209,
+    "min_words": 12,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@flourishomotola4902",
+        "votes": "41",
+        "text": "HOW TO BUILD A START UP BY PETER ELIOTT (CEO OF LINK), 08/03/2026\n\n1. The road to hell is paved with premature optimisat"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@nydndr",
+        "votes": "37",
+        "text": "Okay, after watching all the videos on the channel, I finally know what you guys do lol"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@Adrian-px3qg",
+        "votes": "8",
+        "text": "Click so fast on these, Elliot. Keep em comin. Inside look is priceless"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@uchithahettiarachchi7906",
+        "votes": "5",
+        "text": "Though his name is Potter, he definitely looks like Malfoy :D Thanks for the value, btw!"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@muperdev",
+        "votes": "4",
+        "text": "really love this guy, lowkey one of the best in the world"
+      }
+    ]
+  }
+}

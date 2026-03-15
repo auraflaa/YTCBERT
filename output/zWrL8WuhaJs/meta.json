@@ -1,0 +1,79 @@
+{
+  "video_id": "zWrL8WuhaJs",
+  "url": "http://www.youtube.com/watch?v=zWrL8WuhaJs",
+  "extracted_at": "2026-03-12T06:29:52.882448+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 2649,
+    "unique_word_count": 807,
+    "vocabulary_richness": 0.305,
+    "line_count": 328,
+    "char_count": 15856,
+    "avg_words_per_line": 8.1,
+    "estimated_duration_mins": 20.4,
+    "top_keywords": [
+      "iran",
+      "here",
+      "iranian",
+      "hit",
+      "strike",
+      "satellite",
+      "damage",
+      "strikes",
+      "israeli",
+      "military"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 200,
+    "top_level_count": 19,
+    "reply_count": 181,
+    "unique_authors": 159,
+    "favorited_count": 0,
+    "total_votes": 4423,
+    "avg_votes_per_comment": 22.1,
+    "total_words": 4007,
+    "avg_words": 20.04,
+    "max_words": 174,
+    "min_words": 2,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@Wort.der.Wahrheit",
+        "votes": "1.2k",
+        "text": "Netanyahu: We will fight until the last American soldier."
+      },
+      {
+        "vote_rank": 2,
+        "author": "@scob5475",
+        "votes": "715",
+        "text": "How did the United States track the leader so precisely but then mistakenly blows up a school of children?"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@atilkan",
+        "votes": "360",
+        "text": "Netanyahu is the worst president the US have ever had"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@fronabulax63",
+        "votes": "334",
+        "text": "killing your counterpart while negogiatens brings diplomathie to new highs"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@sheilaghmcgrory5039",
+        "votes": "316",
+        "text": "Hitting or damaging hospitals... seems similar to the hits in Gaza...."
+      }
+    ]
+  }
+}
