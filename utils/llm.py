@@ -64,15 +64,24 @@ def summarize(
     elif any(x in model.lower() for x in ["gemini", "gemma"]) or model.startswith("models/"):
         # Google Gemini / Gemma
         client = genai.Client(api_key=api_key)
-        # Handle "Gemma 3 27B" style names by making them standard slugs if needed
-        # but modern SDK usually likes the string as is or with models/ prefix
         target_model = model if model.startswith("models/") else f"models/{model.lower().replace(' ', '-')}"
         
-        resp = client.models.generate_content(
-            model=target_model,
-            config={'system_instruction': sys_p},
-            contents=user_msg
-        )
+        # Check if the model supports system_instruction (standard Gemini does, Gemma often doesn't)
+        is_gemma = "gemma" in target_model.lower()
+        
+        if is_gemma:
+            # For Gemma, prepend system prompt to user message instead of using system_instruction
+            full_msg = f"{sys_p}\n\n{user_msg}"
+            resp = client.models.generate_content(
+                model=target_model,
+                contents=full_msg
+            )
+        else:
+            resp = client.models.generate_content(
+                model=target_model,
+                config={'system_instruction': sys_p},
+                contents=user_msg
+            )
         return resp.text
     else:
         raise ValueError(f"Unsupported model: {model}. Must start with 'gpt-', 'gemini-', or contain 'gemma'.")
