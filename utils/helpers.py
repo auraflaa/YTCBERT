@@ -5,9 +5,11 @@ General-purpose helpers: URL parsing, cache freshness checks,
 error sanitisation, duration formatting, and YouTube API stats.
 """
 
+import html
 import json
 import re
 import urllib.request
+import urllib.parse
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -59,6 +61,7 @@ def clean_err(exc: Exception | str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # Duration formatting
 # ---------------------------------------------------------------------------
 
@@ -72,21 +75,31 @@ def fmt_duration(seconds: float) -> str:
     return f"{s // 3600}h {(s % 3600) // 60}m"
 
 
-# ---------------------------------------------------------------------------
-# YouTube Data API v3
-# ---------------------------------------------------------------------------
+def parse_duration(duration_string: str) -> int:
+    """Parses ISO 8601 duration (e.g. PT5M10S) to total seconds."""
+    if not duration_string:
+        return 0
+    match = re.search(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', duration_string)
+    if not match:
+        return 0
+    hours = int(match.group(1) or 0)
+    minutes = int(match.group(2) or 0)
+    seconds = int(match.group(3) or 0)
+    return hours * 3600 + minutes * 60 + seconds
+
 
 def get_video_stats(video_id: str, api_key: str) -> dict:
     """
-    Fetches title, comment_count, view_count, like_count for a video.
+    Fetches title, comment_count, view_count, like_count, and duration for a video.
     Returns an empty dict if the key is missing or the request fails.
     """
     if not api_key:
         return {}
     try:
+        # part=contentDetails is needed for duration
         url = (
             f"https://www.googleapis.com/youtube/v3/videos"
-            f"?part=statistics,snippet&id={video_id}&key={api_key}"
+            f"?part=statistics,snippet,contentDetails&id={video_id}&key={api_key}"
         )
         with urllib.request.urlopen(url, timeout=10) as resp:
             data = json.loads(resp.read())
@@ -95,11 +108,14 @@ def get_video_stats(video_id: str, api_key: str) -> dict:
             return {}
         snippet = items[0].get("snippet", {})
         stats   = items[0].get("statistics", {})
+        content = items[0].get("contentDetails", {})
         return {
             "title":         snippet.get("title", ""),
-            "comment_count": int(stats.get("commentCount", 0)),
+            "comment_count": int(stats.get("commentCount", 0)) if "commentCount" in stats else 0,
             "view_count":    int(stats.get("viewCount",    0)),
             "like_count":    int(stats.get("likeCount",    0)),
+            "duration":      parse_duration(content.get("duration", "")),
+            "comments_disabled": "commentCount" not in stats
         }
     except Exception:
         return {}
@@ -160,3 +176,36 @@ def load_prompts(prompt_file: str = "prompt.txt"):
         return system, user
     except FileNotFoundError:
         return None, None
+
+
+# ---------------------------------------------------------------------------
+# Text Cleaning & PII Redaction
+# ---------------------------------------------------------------------------
+
+def clean_comment_text(text: str) -> str:
+    """
+    Strips @mentions, URLs, and redacts PII (emails, phone numbers).
+    Decodes HTML entities and normalizes whitespace.
+    """
+    if not text:
+        return ""
+    
+    # 1. HTML Entity Decoding (e.g., &quot; -> ")
+    text = html.unescape(text)
+    
+    # 2. Remove URLs
+    text = re.sub(r'https?://\S+|www\.\S+', '', text)
+    
+    # 3. Remove @mentions
+    text = re.sub(r'@[A-Za-z0-9_-]+', '', text)
+    
+    # 4. Redact Emails
+    text = re.sub(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', '[EMAIL]', text)
+    
+    # 5. Redact Phone Numbers (Simple regex for global variety)
+    text = re.sub(r'(\+?\d{1,4}[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}', '[PHONE]', text)
+    
+    # 6. Normalize Whitespace
+    text = re.sub(r'\s+', ' ', text).strip()
+    
+    return text

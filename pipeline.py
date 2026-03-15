@@ -41,7 +41,11 @@ import langdetect
 from langdetect.lang_detect_exception import LangDetectException
 
 from utils.formatters import format_comments_json, format_transcript
-from utils.helpers import clean_err, extract_video_id, fmt_duration, get_video_stats, needs_refresh, with_retry, load_prompts
+from utils.helpers import (
+    clean_err, extract_video_id, fmt_duration, 
+    get_video_stats, needs_refresh, with_retry, 
+    load_prompts, clean_comment_text
+)
 from utils.stats import comment_texts, comments_meta, transcript_meta
 
 load_dotenv()
@@ -98,9 +102,14 @@ def _fetch_comments(video_id: str, max_comments: int = 0,
         start_time = time.time()
         
         for item in downloader.get_comments_from_url(url, sort_by=SORT_BY_POPULAR):
-            text = item.get("text", "").strip()
+            # Clean and redact PII
+            text = clean_comment_text(item.get("text", ""))
+            
             if not text:
                 continue
+            
+            # Update item with cleaned text
+            item["text"] = text
 
             # Skip non-English comments
             try:
@@ -170,11 +179,27 @@ def process_video(url: str, idx: int, total: int, force: bool,
         print(f"{tag} [SKIP] {video_id} — fresh (<{refresh_days} days)")
         return "skip"
 
+    # --- Early Filter: Shorts (URL patterns) ---
+    if "/shorts/" in url.lower():
+        print(f"{tag} [SKIP] (Short detected via URL): {url}")
+        return "skip"
+
     print(f"{tag} [START] {video_id}")
     video_dir.mkdir(parents=True, exist_ok=True)
 
     # Pre-fetch stats (requires YOUTUBE_API_KEY in .env)
     yt      = get_video_stats(video_id, YOUTUBE_API_KEY)
+    
+    # --- Early Filter: Disabled Comments ---
+    if yt and yt.get("comments_disabled"):
+        print(f"      [SKIP] Comments are disabled. Skipping.")
+        return "skip"
+
+    # --- Early Filter: Shorts (Duration < 60s) ---
+    if yt and 0 < yt.get("duration", 0) < 60:
+        print(f"      [SKIP] Video length is {yt['duration']}s (likely a Short). Skipping.")
+        return "skip"
+
     n_total = 0
     if yt:
         n_total = yt.get("comment_count", 0)

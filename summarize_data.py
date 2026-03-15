@@ -92,32 +92,23 @@ def main():
     parser = argparse.ArgumentParser(description="Batch summarize extracted YouTube data.")
     parser.add_argument("--video", help="Specific Video ID to summarize (defaults to all)")
     parser.add_argument("--force", action="store_true", help="Overwrite existing summaries")
-    parser.add_argument("--model", default=None, help=f"LLM model to use")
-    parser.add_argument("--key-env", default="LLM_API_KEY", help="Env var name for the API key (default: LLM_API_KEY)")
+    parser.add_argument("--model", default=None, help="LLM model to use")
     parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help=f"Number of parallel workers (default: {DEFAULT_WORKERS})")
     args = parser.parse_args()
 
-    api_key = os.getenv(args.key_env)
+    # Determine API key - prioritise GOOGLE_API_KEY as requested
+    api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("LLM_API_KEY")
     if not api_key:
-        if args.key_env == "LLM_API_KEY":
-            api_key = os.getenv("GOOGLE_API_KEY")
-            if api_key:
-                print(f"[INFO] LLM_API_KEY not found, using GOOGLE_API_KEY.")
-    
-    if not api_key:
-        print(f"[ERR] API key not found in env var '{args.key_env}'. Summarization aborted.")
+        print(f"[ERR] API key (GOOGLE_API_KEY or LLM_API_KEY) not found in .env.")
         sys.exit(1)
 
-    # Determine model
+    # Determine model - default to Gemini if using Google key
     if args.model:
         model = args.model
     elif os.getenv("LLM_MODEL"):
         model = os.getenv("LLM_MODEL")
     else:
-        if "GOOGLE" in args.key_env or (args.key_env == "LLM_API_KEY" and os.getenv("GOOGLE_API_KEY")):
-            model = "gemini-1.5-flash-latest"
-        else:
-            model = LLM_MODEL_DEFAULT
+        model = "gemini-1.5-flash" if os.getenv("GOOGLE_API_KEY") else LLM_MODEL_DEFAULT
 
     system_p, user_p = load_prompts(PROMPT_FILE)
     

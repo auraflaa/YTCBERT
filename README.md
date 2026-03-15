@@ -1,141 +1,113 @@
-# YouTube Data Pipeline
+# YouTube Data Pipeline (YTCBERT)
 
-A two-step pipeline to extract YouTube video data and generate LLM summaries.
-1. **Extract**: Fetch transcripts and comments using `pipeline.py`.
-2. **Summarize**: Generate LLM summaries for extracted data using `summarize_data.py`.
+A high-performance, two-step pipeline designed to extract YouTube transcripts and comments at scale, followed by AI-powered summarization and model comparison.
 
-## Project Structure
+## 🚀 Optimized Workflow
 
-```
+1.  **Extract**: Use `pipeline.py` to fetch raw data (transcripts + comments).
+2.  **Summarize**: Use `summarize_data.py` to process extracted data with LLMs.
+
+---
+
+## 📂 Project Structure
+
+```text
 YTCBERT/
-├── pipeline.py          # Step 1: Extraction pipeline
-├── summarize_data.py    # Step 2: Batch summarization script
-├── compare_models.py    # Side-by-side LLM comparison tool
-├── video.txt            # Input URLs for extraction
-├── models.txt           # Model definitions for comparison
-├── prompt.txt           # Prompt templates for LLMs
-├── requirements.txt     # Python dependencies
-├── .env                 # API keys (gitignored)
-├── .env.example         # Template for .env
-├── .gitignore
-├── output/              # Extracted data (per-video folders)
+├── pipeline.py          # Step 1: High-speed data extraction
+├── summarize_data.py    # Step 2: Multithreaded batch summarization
+├── compare_models.py    # Side-by-side LLM performance comparison
+├── utils/               # Core logic (LLM, Formatters, Helpers)
+├── video.txt            # Input: List of YouTube URLs
+├── prompt.txt           # Input: System/User prompt templates
+├── models.txt           # Input: Model definitions for comparison
+├── output/              # Data Store: Per-video folders
 │   └── <video_id>/
-│       ├── transcript.txt   # Full video transcript (with header)
-│       ├── comments.json    # Top comments with full metadata
-│       ├── summary.txt      # LLM-generated summary (with header)
-│       └── meta.json        # Extraction stats + status
-└── comparisons/         # Comparison reports
+│       ├── transcript.txt   # Cleaned transcript
+│       ├── comments.json    # Metadata-rich comment storage
+│       ├── summary.txt      # AI Summary
+│       └── meta.json        # Extraction stats & status
+└── comparisons/         # Generated comparison reports
 ```
 
-## Setup
+---
 
-```powershell
-# 1. Create and activate virtual environment
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+## ⚙️ Features & Optimizations
 
-# 2. Install dependencies
-pip install -r requirements.txt
+*   **Multithreaded Processing**: Process dozens of summaries or model comparisons in parallel using `--workers`.
+*   **Granular Resumption**: If interrupted, the pipeline skips individual files (`transcript.txt`, `comments.json`) already successfully downloaded.
+*   **Video Filtering**: Automatically skips **YouTube Shorts** (via URL or duration < 60s) and videos with **disabled comments** to ensure data quality for training.
+*   **Smart Fallbacks**: Automatically switches between `GOOGLE_API_KEY` (Gemini) and `LLM_API_KEY` (OpenAI/GPT) depending on availability.
+*   **Engagement-First**: Comments are fetched in order of popularity, perfect for BERT-based sentiment analysis.
 
-# 3. Configure API keys
-copy .env.example .env
-# Edit .env and set your keys (LLM_API_KEY, GOOGLE_API_KEY, etc.)
-```
+---
 
-## Usage
+## 🛠️ Setup
+
+1.  **Environment**:
+    ```powershell
+    python -m venv venv
+    .\venv\Scripts\Activate.ps1
+    pip install -r requirements.txt
+    ```
+
+2.  **Configuration**:
+    Copy `.env.example` to `.env` and add your `GOOGLE_API_KEY` or `OPENROUTER_API_KEY`.
+
+---
+
+## 📖 Usage Guide
 
 ### 1. Data Extraction
-Add YouTube URLs to `video.txt` and run:
+Add URLs to `video.txt` and run:
 ```bash
-python pipeline.py
+python pipeline.py --max-comments 5000
 ```
-*Extracts transcripts and comments to the `output/` directory.*
+*   **Resume Capability**: Run again any time; it will only fetch missing or stale data.
+*   **Flags**: Use `--force` to ignore the 30-day cache.
 
-### 2. Batch Summarization
-Generate summaries for all extracted videos:
+### 2. AI Summarization
+Generate summaries for your extracted data:
 ```bash
-python summarize_data.py
-# Use --force to overwrite existing summaries
-# Use --video <ID> to process a specific video
+python summarize_data.py --workers 10
 ```
-*Saves `summary.txt` into the corresponding video folder.*
+*   **Performance**: Use `--workers` to set concurrency (default: 5).
+*   **Flexibility**: Specify models with `--model gemini-1.5-flash`.
 
 ### 3. Model Comparison
-Compare different models side-by-side:
+Evaluate different LLM providers side-by-side:
 ```bash
-python compare_models.py
+python compare_models.py --video <ID> --workers 3
 ```
+*   Results are saved as a markdown report in `comparisons/report_<ID>.md`.
 
-## Behavior
+---
 
-| Scenario | Outcome |
-|---|---|
-| Video already processed, data < 30 days old | Skipped |
-| Video already processed, data > 30 days old | Re-fetched |
-| Transcript disabled / unavailable | Logged as warning, continues to comments |
-| Comments disabled | Logged as warning, continues to summary |
-| No API key set | Summary skipped, rest saves normally |
-| Network error | Retries up to 3× with exponential backoff |
-| Duplicate URL in `video.txt` | Deduplicated automatically |
+## 📊 Data Schema (`comments.json`)
 
-## comments.json Schema
+The extracted data is structured for immediate use in NLP pipelines:
 
 ```json
 {
-  "meta": {
-    "video_id": "dQw4w9WgXcQ",
-    "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "extracted_at": "2026-03-09T06:22:45+00:00",
-    "count": 500,
-    "total_words": 2200,
-    "avg_words_per_comment": 4.4,
-    "max_words": 31,
-    "min_words": 1
-  },
+  "meta": { "video_id": "...", "url": "...", "count": 10000 },
   "comments": [
     {
-      "index": 1,
-      "text": "can confirm: he never gave us up",
-      "author": "@YouTube",
-      "votes": "193k",
-      "time": "10 months ago",
-      "is_reply": false,
-      "is_favorited": true
+      "text": "Insightful breakdown!",
+      "author": "@user",
+      "votes": "1.2k",
+      "time": "2 days ago"
     }
   ]
 }
 ```
 
-**Loading for BERT pipelines:**
-```python
-import json
+---
 
-data = json.load(open("comments.json"))
+## 🔧 Configuration Constants
 
-# Top-level comments only, sorted by engagement
-top = sorted(
-    [c for c in data["comments"] if not c["is_reply"]],
-    key=lambda c: int(c["votes"].replace("k","000").replace(".","")) if c["votes"].isdigit() else 0,
-)
-texts = [c["text"] for c in top]
-```
-
-## Configuration
-
-Edit the constants at the top of `pipeline.py`:
-
-| Constant | Default | Description |
-|---|---|---|
-| `MAX_COMMENTS` | `10000` | Max comments fetched per video |
-| `REFRESH_AFTER_DAYS` | `30` | Days before re-fetching a video |
-| `MAX_TRANSCRIPT_CHARS` | `12000` | Transcript chars sent to LLM (~3k tokens) |
-| `MAX_COMMENTS_CHARS` | `8000` | Comment chars sent to LLM (~2k tokens) |
-| `LLM_MODEL` | `gpt-4o-mini` | OpenAI model used for summarization |
-| `RETRY_ATTEMPTS` | `3` | Max retries on transient network errors |
-
-## Dependencies
-
-- [`youtube-transcript-api`](https://github.com/jdepoix/youtube-transcript-api) — transcript fetching
-- [`youtube-comment-downloader`](https://github.com/egbertbouman/youtube-comment-downloader) — comment scraping (no API key needed)
-- [`openai`](https://github.com/openai/openai-python) — LLM summarization
-- [`python-dotenv`](https://github.com/theskumar/python-dotenv) — `.env` file loading
+| Constant | File | Default | Description |
+|---|---|---|---|
+| `MAX_COMMENTS` | `pipeline.py` | `10000` | Comment cap per video |
+| `REFRESH_AFTER_DAYS` | `pipeline.py` | `30` | Cache expiry |
+| `MAX_TRANSCRIPT_CHARS` | `summarize_data.py` | `12000` | LLM context limit |
+| `MAX_COMMENTS_CHARS` | `summarize_data.py` | `8000` | LLM context limit |
+| `DEFAULT_WORKERS` | `summarize_data.py` | `5` | Concurrency level |
