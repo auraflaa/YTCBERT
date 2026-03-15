@@ -1,0 +1,78 @@
+{
+  "video_id": "hwUixddbmrQ",
+  "url": "http://www.youtube.com/watch?v=hwUixddbmrQ",
+  "extracted_at": "2026-03-15T09:45:45.175349+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 446,
+    "unique_word_count": 108,
+    "vocabulary_richness": 0.242,
+    "line_count": 85,
+    "char_count": 1905,
+    "avg_words_per_line": 5.2,
+    "estimated_duration_mins": 3.4,
+    "top_keywords": [
+      "since",
+      "gone",
+      "still",
+      "better",
+      "ain",
+      "wrong",
+      "damned",
+      "finally",
+      "overnight",
+      "light"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 11600,
+    "avg_votes_per_comment": 2320.0,
+    "total_words": 205,
+    "avg_words": 41.0,
+    "max_words": 76,
+    "min_words": 17,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@Jayvonn07",
+        "votes": "5.1k",
+        "text": "This hits Home . Was engaged and 2 months away from the wedding , Found out I was getting cheated on so I left and went "
+      },
+      {
+        "vote_rank": 2,
+        "author": "@timisin1238",
+        "votes": "2.8k",
+        "text": "I know this song is about a woman but being 8 years sober now. I think about all the time I was lost in the bottle. Grea"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@isaacrivera4618",
+        "votes": "1.6k",
+        "text": "She walked away unphased, no cuts, no injuries.. but morgan is all beat up and injured..\n. Man that hits hard... i see w"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@Byrni1111",
+        "votes": "1.1k",
+        "text": "Relationship was a car crash, she came out unharmed and just walked away, Morgan was badly damaged and wounded from the "
+      },
+      {
+        "vote_rank": 5,
+        "author": "@ErinCostello-v8b",
+        "votes": "1k",
+        "text": "She leaves without a scratch while he's banged up and his poor truck is totaled. Very poetic."
+      }
+    ]
+  }
+}

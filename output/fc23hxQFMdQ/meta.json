@@ -1,0 +1,79 @@
+{
+  "video_id": "fc23hxQFMdQ",
+  "url": "http://www.youtube.com/watch?v=fc23hxQFMdQ",
+  "extracted_at": "2026-03-12T06:29:33.682747+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 2141,
+    "unique_word_count": 539,
+    "vocabulary_richness": 0.252,
+    "line_count": 315,
+    "char_count": 11683,
+    "avg_words_per_line": 6.8,
+    "estimated_duration_mins": 16.5,
+    "top_keywords": [
+      "iran",
+      "base",
+      "pictures",
+      "qatar",
+      "air",
+      "attack",
+      "situation",
+      "doha",
+      "minutes",
+      "iraq"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 200,
+    "top_level_count": 20,
+    "reply_count": 180,
+    "unique_authors": 193,
+    "favorited_count": 0,
+    "total_votes": 76548,
+    "avg_votes_per_comment": 382.7,
+    "total_words": 3348,
+    "avg_words": 16.74,
+    "max_words": 148,
+    "min_words": 1,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@alanparker9608",
+        "votes": "16k",
+        "text": "The moron who said he would end 2 wars started a 3rd one"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@jaymartinez1922",
+        "votes": "11k",
+        "text": "\"They got money for wars but can't feed the poor\"  \n~ Tupac"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@sajjadkhankhan5299",
+        "votes": "10k",
+        "text": "Iran had said that we will answer America, why is the world surprised"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@giftlungu4012",
+        "votes": "7.5k",
+        "text": "And so it begins"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@alanparker9608",
+        "votes": "6.8k",
+        "text": "\"This war would have never happened if I was president\""
+      }
+    ]
+  }
+}

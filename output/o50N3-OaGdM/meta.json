@@ -1,0 +1,78 @@
+{
+  "video_id": "o50N3-OaGdM",
+  "url": "http://www.youtube.com/watch?v=o50N3-OaGdM",
+  "extracted_at": "2026-03-15T09:45:34.441377+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 2842,
+    "unique_word_count": 901,
+    "vocabulary_richness": 0.317,
+    "line_count": 648,
+    "char_count": 16082,
+    "avg_words_per_line": 4.4,
+    "estimated_duration_mins": 21.9,
+    "top_keywords": [
+      "music",
+      "spy",
+      "heat",
+      "must",
+      "here",
+      "sand",
+      "mother",
+      "hippo",
+      "applause",
+      "lions"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 1210,
+    "avg_votes_per_comment": 242.0,
+    "total_words": 92,
+    "avg_words": 18.4,
+    "max_words": 30,
+    "min_words": 6,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@Still_four",
+        "votes": "571",
+        "text": "Today march 27 2025 I hope everyone reading this is blessed in abundance through time...may your thoughts be rich and yo"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@JVlife22",
+        "votes": "285",
+        "text": "Whos a David Attenborough fan? 99 years old still doing it! The Voice of the jungle. God bless you sir. \nI think theyre "
+      },
+      {
+        "vote_rank": 3,
+        "author": "@EbenezerKofiOsei",
+        "votes": "278",
+        "text": "AI can never replace this. Thankful."
+      },
+      {
+        "vote_rank": 4,
+        "author": "@janjan9874",
+        "votes": "52",
+        "text": "28:34 the way the ant looks back in disgust 😂"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@a_onyt",
+        "votes": "24",
+        "text": "I’m sick of the brain rot & depressing news, so here I am watching BBC Earth 🎉🎉 Thank you for the long videos!"
+      }
+    ]
+  }
+}

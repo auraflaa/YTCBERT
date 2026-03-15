@@ -1,0 +1,435 @@
+========================================================================
+  TRANSCRIPT
+========================================================================
+  Video ID   : PxGSdjlSsQY
+  URL        : https://youtu.be/PxGSdjlSsQY?si=F34PJgsR8ckvVN2N
+  Extracted  : 2026-03-15 09:44:53 UTC
+  Words      : 3,035
+  Lines      : 425
+========================================================================
+
+If you want to be a successful
+entrepreneur, you just have to do the
+unsexy manual work and get it done.
+[music] One of my mentors once said,
+"The road to hell is paved with
+premature optimization." Sometimes it's
+just solving problems that no one else
+really wants to solve.
+I've assembled a roster in my head of
+the allstars that I've worked with
+across my 10 year career now, 11 year, I
+guess. And to have the resources to go
+get these people and bring them onto the
+team and assemble the Avengers is um I'm
+in the current I think peak of my career
+so far. So much fun. Get to go speak at
+UAB.
+Hi, my name is [music] Elliot. Very good
+to meet you all. Thank you so much for
+having me. At a startup, everything is
+higher stakes and you are you are closer
+to the customer. You are closer to you
+care about every dollar more than you do
+at a bigger, more traditional company.
+I'm just going to kind of tell you my
+story and I prefer two-sided
+conversations more than like a one-way
+one. So, I want to leave time for
+questions, whatever you guys are curious
+about. I am from Birmingham. I was born
+here. I went to Lee University. Lee
+University is a small private Christian
+liberal arts school in Tennessee. And I
+studied music. I was going to be a
+producer. That was my ambition. My best
+friend from Mountain Brook, this guy
+Charlie, calls me and he's like, "Hey, I
+saw a Craigslist ad for this delivery
+job. I went in and interviewed and I and
+I got a job in the office. It's this
+startup called Shipped. You know, the
+startup is starting. The CEO is kind of
+a prodigy entrepreneur. He dropped out
+of high school at 16, [music] sold his
+first business at 18, sold his second
+business at 21. His name's Bill. I think
+you'd like him. You should interview
+here. And I was like, okay, that could
+be my summer job before I moved to
+Nashville. So, I interview at Shipped.
+Mind you, there are four people employed
+at this company. And they called me back
+the next day and Bill said, you did not
+get the job. And I was like, wow. And he
+was kind of joking. He was like, "You
+didn't get the customer service job, but
+we want to create a position for you
+called head of city launch." [music] And
+I was like, "Sweet. What does that
+mean?" I personally was uh responsible
+for the team that expanded to 63 cities
+in [music] 2 years. I was on the road a
+lot. But it was a ton of fun. As you can
+imagine, that is one of the through
+lines of startups. Regardless of what
+industry you're in or what sector, what
+market you're in, if you want to be a
+successful entrepreneur, you just
+[music]
+have to do the unsexy manual work and
+get it done. It's very tempting,
+especially now in the age of like vibe
+coding and AI, to try to automate things
+prematurely. [music] One of my mentors
+once said, "The road to hell is paved
+with premature optimization." Being an
+entrepreneur is about doing what other
+people are not willing to do. And that
+doesn't necessarily mean building the
+best pitch deck or [music] pitching the
+biggest investors. Sometimes it's just
+solving problems that no one else really
+wants to solve. And I fell totally in
+love with the idea of like leveraging
+myself and my team with software to do
+way more than we could without it. So, I
+[music] had already fallen in love with
+startups. So I had already said we'll do
+the music thing later. This is too much
+[music] fun. And then when I discovered
+software engineering, it was like game
+over. Shipped was an incredible [music]
+ride. We sold to Target for 550 million
+in 2 and 1/2 years. And as an early
+employee, we had stock options. [music]
+I took some of the money that that we
+made when we sold and started link. And
+I'll tell you [music] about that before
+I get into link and kind of where we are
+now. Does anybody have questions? Yes.
+>> Do you think it's necessary for
+entrepreneurs to learn how to code like
+yourself? I don't think anything is
+necessary to be an entrepreneur. You
+know, the the definition of entrepreneur
+is very broad. There are totally
+non-technical entrepreneurs. You can
+have a service-based business and be an
+entrepreneur. And so, if you want to be
+if you want to start a tech company,
+learning the fundamentals or the first
+principles, I think, is pretty
+important. Whether or not you become
+competent enough to go start and build
+your own app from scratch is not
+necessarily what I'm saying, but enough
+to say to have a sense of this person
+knows what they're talking about and is
+good and this person is is not [music]
+like enough to hone your own judgment,
+I'd say. So, it's 2019. My co-founders
+and I, we were bored at Shift and we had
+this side hustle called Sidekick. And
+Sidekick was, have you ever used like
+sneaker buying bots? Is that [music]
+still a thing? Limited edition sneakers.
+They got use a bot to buy them. We had
+an Instagram growth bot called Sidekick.
+And we would sell it to small
+businesses. Me and [music] my my actual
+two co-founders worked on this before
+Link. And this is 2019, right when Apple
+released the ability to scan a QR code
+with a native camera. They used to have
+to download an app to scan QR codes and
+it was like no one did it. And so we
+were like, what if we put the checkout
+link and a little contact exchange
+[music] in this, you know, behind this
+QR code and we could just point people
+to that and they could buy it, get our
+info, [music]
+all at the same time. And what happened
+was people at shipped, our our
+co-workers, and then our friends, then
+family, then people we didn't know
+[music] kept being like, "Hey, how do I
+get a digital business card? I want one
+of those digital business cards." And it
+was just this QR code in your Apple
+wallet. And we were like, "Yeah, that
+yeah, that's what this is, a digital
+business card. We meant to do this for
+sure." Pretty [music] scary, right? We
+had two employees at that point. So,
+there's five of us in a room. We raised
+a million bucks. So, we're sitting on
+money. Thank God. We'd raised money
+right before Birmingham closed down. And
+great, we have a product that people are
+supposed to use for in-person networking
+and the whole world shut down,
+especially inerson networking. And my
+co-founder had the idea that if we could
+put [music] the digital QR code onto a
+physical card, it would be easier for
+people to adopt, right? right? Like
+people were used to paper business cards
+and we had this digital thing, but if we
+like merged the two and put a QR code
+and a physical card and oh this like NFC
+technology could be a nice complement to
+the QR code, you know, [music] you could
+tap it to someone's phone and then
+instead of them having to scan it, that
+felt cool. and we like went on Alibaba.
+[music]
+We ordered these black PVC cards with
+NFC chips, NFC chips in them and our QR
+codes on them and we [music] got like
+2,000 of them to our apartment in uh in
+Jimson Flats and we put them on Facebook
+and we started selling physical cards.
+Believe it or not, it [music] blew up
+and the whole thing was just we got a
+little bit of signal of something that
+people wanted and something that worked
+and we just we doubled down. That's kind
+of entrepreneurship in a nutshell.
+Doubled down. People were like, "Hey, I
+want custom designs printed on these
+cards." We were like, "Okay." And then
+we sold that for like three times the
+price of the standard card. And started
+making bank. And then we were like,
+"Okay, what if on the digital side of
+things, we sold a subscription because
+subscriptions are the best way to make
+money to customize the digital aspects
+of your page, right? And scaling
+software is infinitely cheaper than
+scaling physical hardware." And people
+bought it. And we called it Link Pro.
+And we sold it for $5 a month. And we
+were nervous to charge anything, but
+people bought it. That was like 2020 and
+2021, you know, customers kept saying,
+"Hey, how do I standardize the physical
+branding of the card, the digital
+branding of the profiles, and maybe put
+like a an integration or two on the back
+end so that when my team is meeting
+leads or meeting customers, we could
+sync all that to our CRM like Salesforce
+or HubSpot." And we heard that enough
+and we were like, we should bundle this
+up and sell it to businesses and call it
+link for teams and [music] we did. So, a
+lot of businesses are solutions looking
+for a problem. A lot of the startup
+advice is like find a problem that no
+one else is solving. And that's pretty
+hard to do. You have to have both. You
+can't be totally problem oriented. You
+know, Henry Ford said if I'd asked
+people what they wanted, they would have
+said a faster horse. So, you can't
+totally rely on like talking to people
+about the problems and [music] get their
+advice on how they think you should
+solve them because most people aren't
+dreamers and builders and entrepreneurs.
+But on the other hand, you can't just go
+build stuff and hope people want it. I
+mean you can but I think generally
+having enough agency and creativity to
+create something some kind of solution
+and enough wherewithal to know
+directionally what kinds of problems
+that thing could solve is a healthy mix.
+When we started the QR code thing we
+didn't even we didn't really
+conceptualized it as a digital business
+card per se. People started calling it
+that and we kind of we kind of shifted
+with where the market was pulling us.
+That's been our whole story. I was like,
+"All right, if we give sales people a
+phone number that we controlled, like AI
+powered, but behind the scenes, you made
+calls to and from that number, we could
+take notes on the phone call for you,
+put those notes into your CRM." Where it
+started was when you met leads through
+Link's digital business cards, we could
+text those leads automatically for you.
+And to the end user, they just it looks
+like your phone number. They don't know
+that's your work number versus your
+personal. And we thought about it for a
+while. We talked about it for a while.
+I'm in the hospital with my wife. Our
+second baby has just been born. and my
+co-founder and CTO calls me and he's
+like, "Hey, we can do this thing for the
+digital business card or we can we could
+try this phone thing that we've been
+talking about." And it was like a
+two-cond decision. I was like, "Let's do
+the phone thing. Like, go build a
+prototype." We built it. We launched it.
+And the people who signed up for that
+product very creatively called Link
+Phone used 10 times more than the power
+user of the digital business card. And
+they paid us $149 a year instead of $99
+a year. We were like, "Game on." And
+then customers started asking for
+something else. Most of our customers
+had iPhones. Most of their customers had
+iPhones. And the way that we built Link
+Phone, it sent green text. It sent SMS
+text. [music] And they were like, "We
+want to send blue text." And I was like,
+"Well, that's too bad. There's no blue
+text API. Most people build phone
+technology on top of a company called
+Twilio. And the only way to send
+messages is [music] to make them green."
+And I heard it enough. And I went to
+lunch with Bill Smith and he was like,
+"I really want to use your AI phone
+thing." But he's like, "I will not send
+green text." And I was like, "I get it.
+this is a real thing. And so I went to
+the team and I was like, look, I don't
+know how we would do it, but if we could
+solve and if we could send blue text as
+part of link phone, that'd be really
+valuable. And so we turned on this
+product called link blue for our sales
+team. [music] And basically what would
+happen is you'd come to our site, you'd
+fill out a calendar invitation, and
+instead of getting like green text or
+emails reminding you about the meeting,
+you would get a blue text from Hunter or
+from Mason on our team, and it looked
+like someone just typed a real text to
+you and said, "Hey, I'm excited to meet
+with you tomorrow. Are you still good
+for that time?" The percentage of people
+who attended our sales demos jumped 50%
+in a matter of weeks. Remember, we
+started at 60 a year and then we went to
+99 a year and then 149 a year and then
+we we got crazy and we were like, "Link
+Blue, this product is $1,048 [music]
+a year and it sold like hotcakes." We
+doubled our ARR from the previous four
+years in 8 [music] months last year when
+we launched Link Blue. So, your
+willingness to solve problems that other
+people are not because they're hard or
+messy [music] or unsexy or complicated
+is usually directly proportional to the
+value you create and therefore what
+people are going to pay you for that
+solution. And we had this company come
+through our lead form called the
+interaction company of California and
+they were like, you know, backed by some
+top tier investors and and they were
+like, "Hey, we don't have a CRM. We
+don't care about the sales stuff.
+[music] Can we plug into your API?" We
+were like, "Okay, maybe under the hood,
+the API is what powers [music] the
+sending iMessage from your CRM." And we
+were basically like going to polish that
+up a little bit and sell that to this
+company. And so we did sold it to them
+for the same price we sold, you know,
+normal [music] customers. And it went
+crazy. They built an AI that texted and
+and seemed more human than any other
+conversational AI before them. And they
+went [music] super viral. What caught my
+attention most, we were all of a sudden
+an infrastructure company. We were
+expanding and scaling with [music] our
+customers scale, not with their hiring.
+And if you can build [music] an
+infrastructure type of company, if you
+can be the underbelly of the business
+that powers the whole [music] thing,
+it's a really, really valuable business,
+way better than like a SAS sales tool
+plugin. It's hard to start there. Most
+companies iterate their way there. But
+all [music] of a sudden, we found
+ourselves in a really cool spot. Here's
+kind of the crux of entrepreneurship in
+a nutshell. the sales type customers
+represented [music]
+of the new revenue like 90% of our new
+revenue. But when we saw Poke [music]
+come through and one or two other
+infrastructure customers is what we call
+them who were building on top of our
+API. It was so much a stickier use case
+and a higher value proposition to
+[music] those customers that I was like,
+we're pivoting the whole company and
+we're basically going to turn off this
+thing that's working really, really well
+in order to focus entirely and
+myopically on the thing that's working
+has a kernel of a promise of working
+[music] even better. And so we did.
+Entrepreneurship is kind of just like
+normal life, but the peaks and valleys
+are super amplified. The lows are really
+low, the highs are really high. [music]
+I wouldn't rather be doing anything
+else. The traits I think a good CEO has
+to have. Whether or not I have them is
+up for debate. [music] I think the best
+CEOs are confident enough to try things
+and make decisions, but at the same time
+humble and open-minded enough to be okay
+being wrong. [music] Um, and to
+understand that you a lot of the
+decisions you make will be wrong. I
+mean, you have to be sharp [music]
+enough. You have to be smart enough to
+just kind of make decisions and see
+patterns and see trends. I do think that
+at a certain point intelligence actually
+gets in the way. You don't you don't
+want to be too too smart, but you need
+to be smart enough to to [music] know
+your way around. You need to be good at
+like communicating and understanding
+people. You need to have like a high EQ.
+A lot of the things I just mentioned
+just take practice. I was completely
+unqualified to be CEO when we started
+beyond I just kind of had the gumption
+to go do the thing. And a good CEO kind
+of my last point has to reinvent
+themselves. I have been head of sales,
+head of marketing, head of support, head
+of filming our ads. I I mean I've done
+everything in the business and you kind
+of have to like do everything to know
+what good good looks like to then go
+hire yourself out of that job and and I
+constantly have to reinvent what [music]
+I'm doing for the business at any given
+time. Thank you for having me.
+Appreciate you guys.
+>> Yeah. [applause]
+[music]
+>> [music]

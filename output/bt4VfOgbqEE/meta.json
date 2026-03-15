@@ -1,0 +1,17 @@
+{
+  "video_id": "bt4VfOgbqEE",
+  "url": "http://www.youtube.com/watch?v=bt4VfOgbqEE",
+  "extracted_at": "2026-03-15T09:46:47.556721+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "error: Transcript failed after 3 attempts: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=bt4VfOgbqEE! This is most likely cause...",
+    "comments": "error: Comments failed after 3 attempts: [Errno 22] Invalid argument"
+  },
+  "transcript": {
+    "available": false
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

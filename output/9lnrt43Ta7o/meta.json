@@ -1,0 +1,78 @@
+{
+  "video_id": "9lnrt43Ta7o",
+  "url": "http://www.youtube.com/watch?v=9lnrt43Ta7o",
+  "extracted_at": "2026-03-15T09:45:30.957322+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 179,
+    "unique_word_count": 89,
+    "vocabulary_richness": 0.497,
+    "line_count": 24,
+    "char_count": 921,
+    "avg_words_per_line": 7.5,
+    "estimated_duration_mins": 1.4,
+    "top_keywords": [
+      "iphone",
+      "actually",
+      "something",
+      "pocket",
+      "wait",
+      "pretty",
+      "pro",
+      "phone",
+      "higher",
+      "please"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 27700,
+    "avg_votes_per_comment": 5540.0,
+    "total_words": 54,
+    "avg_words": 10.8,
+    "max_words": 18,
+    "min_words": 4,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@mdukasa",
+        "votes": "13k",
+        "text": "It has, indeed, dropped."
+      },
+      {
+        "vote_rank": 2,
+        "author": "@mma0911",
+        "votes": "6.5k",
+        "text": "\"But what about 120Hz?\" \n\nRemember, Linus uses a Note 9. He's already used to 60Hz on a phone."
+      },
+      {
+        "vote_rank": 3,
+        "author": "@telefactfiles5430",
+        "votes": "3.8k",
+        "text": "Bro sponsored the short so he can afford the wallpaper app"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@spongist",
+        "votes": "3.2k",
+        "text": "This feels like an ai convo😂\nEdit: first time getting this many likes, thanks."
+      },
+      {
+        "vote_rank": 5,
+        "author": "@LinusTechTips",
+        "votes": "1.2k",
+        "text": "Grab your LTT Ridge Wallet here:\nhttps://ridge.com/circuitboard"
+      }
+    ]
+  }
+}

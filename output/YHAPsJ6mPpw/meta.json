@@ -1,0 +1,78 @@
+{
+  "video_id": "YHAPsJ6mPpw",
+  "url": "http://www.youtube.com/watch?v=YHAPsJ6mPpw",
+  "extracted_at": "2026-03-15T09:45:16.966190+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 209,
+    "unique_word_count": 87,
+    "vocabulary_richness": 0.416,
+    "line_count": 30,
+    "char_count": 1036,
+    "avg_words_per_line": 7.0,
+    "estimated_duration_mins": 1.6,
+    "top_keywords": [
+      "eggs",
+      "kind",
+      "little",
+      "bit",
+      "salt",
+      "pan",
+      "scrambled",
+      "slices",
+      "prosciutto",
+      "nice"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 4673,
+    "avg_votes_per_comment": 934.6,
+    "total_words": 127,
+    "avg_words": 25.4,
+    "max_words": 70,
+    "min_words": 9,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@ryansoccervids2112",
+        "votes": "1.6k",
+        "text": "A true one would’ve made the eggs in the meat oil"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@meowmeow4.20",
+        "votes": "1.3k",
+        "text": "We all have that person who \"makes the best eggs\" and that person usually cannot cook"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@larrman5409",
+        "votes": "1.2k",
+        "text": "Haven’t seen Bobby flay content in like 8 years"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@cometasporelcielo",
+        "votes": "458",
+        "text": "I met bobby flay years ago when he visited his burger restaurant near us. Came in at 2 pm on a tuesday and my husband an"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@cchisolm92cc",
+        "votes": "115",
+        "text": "I haven't seen this man on anything in over 10 years. Seeing him still doing what he loves, makes me happy."
+      }
+    ]
+  }
+}

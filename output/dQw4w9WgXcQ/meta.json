@@ -1,0 +1,78 @@
+{
+  "video_id": "dQw4w9WgXcQ",
+  "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+  "extracted_at": "2026-03-15T09:44:51.965285+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 487,
+    "unique_word_count": 60,
+    "vocabulary_richness": 0.123,
+    "line_count": 90,
+    "char_count": 2089,
+    "avg_words_per_line": 5.4,
+    "estimated_duration_mins": 3.7,
+    "top_keywords": [
+      "gonna",
+      "never",
+      "tell",
+      "let",
+      "down",
+      "run",
+      "around",
+      "desert",
+      "cry",
+      "goodbye"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 1,
+    "total_votes": 210348,
+    "avg_votes_per_comment": 42069.6,
+    "total_words": 37,
+    "avg_words": 7.4,
+    "max_words": 11,
+    "min_words": 3,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@YouTube",
+        "votes": "198k",
+        "text": "can confirm: he never gave us up"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@ItzAravind",
+        "votes": "5.6k",
+        "text": "CBSE has humor"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@sebastianlugun2501",
+        "votes": "3.7k",
+        "text": "CBSE BOARD REALISING THEY HAVE FREE WILL"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@insanelymaniac8522",
+        "votes": "2.3k",
+        "text": "Getting rickrolled by a national examination board 🥀🥀\nCBSE😭😭"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@aayushpandey8058",
+        "votes": "748",
+        "text": "\" Not every QR leads to a Math Solution \" \n                             ~CBSE,2026"
+      }
+    ]
+  }
+}

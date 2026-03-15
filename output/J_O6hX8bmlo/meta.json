@@ -1,0 +1,60 @@
+{
+  "video_id": "J_O6hX8bmlo",
+  "url": "http://www.youtube.com/watch?v=J_O6hX8bmlo",
+  "extracted_at": "2026-03-12T06:29:02.113995+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "error: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=J_O6hX8bmlo! This is most likely cause...",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": false
+  },
+  "comments": {
+    "available": true,
+    "count": 200,
+    "top_level_count": 19,
+    "reply_count": 181,
+    "unique_authors": 192,
+    "favorited_count": 0,
+    "total_votes": 352979,
+    "avg_votes_per_comment": 1764.9,
+    "total_words": 5773,
+    "avg_words": 28.86,
+    "max_words": 194,
+    "min_words": 2,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@savageornah7696",
+        "votes": "153k",
+        "text": "Woman don’t go out at night in Morocco from a local don’t risk it"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@berriesandbears",
+        "votes": "49k",
+        "text": "You shouldn't hesitate to make such videos"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@Human-lg8hb",
+        "votes": "28k",
+        "text": "My friend is from Morocco and she told me that her family doesn’t let her walk outside alone, she always has to be accom"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@loallia",
+        "votes": "17k",
+        "text": "As a French women, it's a known fact in France to NEVER go alone in Paris, especially at night. There are so much bad or"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@eriniyin",
+        "votes": "17k",
+        "text": "I have lived in Morocco my entire life and PLEASE, do not go out at night if you don’t need to (unfortunately, it’s for "
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "video_id": "ivpdGrsMPqg",
+  "url": "http://www.youtube.com/watch?v=ivpdGrsMPqg",
+  "extracted_at": "2026-03-15T09:45:55.847311+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 28826,
+    "unique_word_count": 2867,
+    "vocabulary_richness": 0.099,
+    "line_count": 4561,
+    "char_count": 153530,
+    "avg_words_per_line": 6.3,
+    "estimated_duration_mins": 221.7,
+    "top_keywords": [
+      "down",
+      "right",
+      "play",
+      "here",
+      "off",
+      "ball",
+      "catch",
+      "game",
+      "end",
+      "line"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 120,
+    "avg_votes_per_comment": 24.0,
+    "total_words": 49,
+    "avg_words": 9.8,
+    "max_words": 14,
+    "min_words": 6,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@Colours.Gaming",
+        "votes": "44",
+        "text": "Last season was crazy these YT compilations getting me through the horrific wait 😅"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@ngelwings",
+        "votes": "41",
+        "text": "3:57 lacy was so good😢 i hate what transpired with him after the season"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@dominichahn169",
+        "votes": "15",
+        "text": "Clicked this so fast. We need football back"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@Seahawkfilms",
+        "votes": "14",
+        "text": "Getting us thru the next 9 days"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@AtlantaXFN",
+        "votes": "6",
+        "text": "👇who’s here in under one hour"
+      }
+    ]
+  }
+}

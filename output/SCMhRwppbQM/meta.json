@@ -1,0 +1,78 @@
+{
+  "video_id": "SCMhRwppbQM",
+  "url": "http://www.youtube.com/watch?v=SCMhRwppbQM",
+  "extracted_at": "2026-03-15T09:45:52.423978+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 489,
+    "unique_word_count": 96,
+    "vocabulary_richness": 0.196,
+    "line_count": 103,
+    "char_count": 2173,
+    "avg_words_per_line": 4.7,
+    "estimated_duration_mins": 3.8,
+    "top_keywords": [
+      "haunted",
+      "music",
+      "real",
+      "lively",
+      "wanted",
+      "many",
+      "times",
+      "off",
+      "continues",
+      "yeah"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 0,
+    "total_votes": 2386,
+    "avg_votes_per_comment": 477.2,
+    "total_words": 128,
+    "avg_words": 25.6,
+    "max_words": 49,
+    "min_words": 7,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@bhamthelyricist5723",
+        "votes": "1.1k",
+        "text": "WOW, what an unbelievable song... Depression is real, anxiety is real.. its okay to be down.. but please, please just do"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@DaytGmes",
+        "votes": "664",
+        "text": "Who’s here for jelly roll?\n\nThanks for the likes!!"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@CountryHitsCollection6688",
+        "votes": "408",
+        "text": "Everyone who reads this, we don't know each other and probably never will but I wish you all the best in life and all th"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@IllIlIllIIIlI",
+        "votes": "140",
+        "text": "Whoever reads this:    keep goin....you matter. 🫶🏼"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@drex8595",
+        "votes": "74",
+        "text": "To all the people out there waking up and fighting every day like me, I respect you more than any man out there. People "
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "video_id": "VxRfUjMMUew",
+  "url": "https://youtu.be/VxRfUjMMUew?si=L6eCTilL5cNOOibV",
+  "extracted_at": "2026-03-15T09:44:57.314275+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 2057,
+    "unique_word_count": 461,
+    "vocabulary_richness": 0.224,
+    "line_count": 336,
+    "char_count": 9994,
+    "avg_words_per_line": 6.1,
+    "estimated_duration_mins": 15.8,
+    "top_keywords": [
+      "yeah",
+      "right",
+      "here",
+      "let",
+      "gonna",
+      "phil",
+      "okay",
+      "down",
+      "don",
+      "propaganda"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 5,
+    "top_level_count": 5,
+    "reply_count": 0,
+    "unique_authors": 5,
+    "favorited_count": 3,
+    "total_votes": 6278,
+    "avg_votes_per_comment": 1255.6,
+    "total_words": 89,
+    "avg_words": 17.8,
+    "max_words": 37,
+    "min_words": 6,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@isiwneididnsp",
+        "votes": "3.3k",
+        "text": "You are on everybody’s recommendations Congratulations"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@josephgiesing8714",
+        "votes": "1.7k",
+        "text": "\"HE KNOWS HOW TO OPEN DOORS!!!\" Now this is an avengers level threat."
+      },
+      {
+        "vote_rank": 3,
+        "author": "@bubby7797",
+        "votes": "836",
+        "text": "13:40 techno saying “I love peace! “with hundreds of wither skulls on his walls."
+      },
+      {
+        "vote_rank": 4,
+        "author": "@skybeanie9986",
+        "votes": "403",
+        "text": "4:35 \n“I think he saw us”\nAlso techno: N O W I T N E S E S S"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@KINGPOTATO1",
+        "votes": "39",
+        "text": "Unlock Your “Wealth DNA”\nhttps://www.theuniversewealth.info/\nThis free PDF will teach you how to free yourself from the "
+      }
+    ]
+  }
+}

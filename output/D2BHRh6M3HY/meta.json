@@ -1,0 +1,79 @@
+{
+  "video_id": "D2BHRh6M3HY",
+  "url": "http://www.youtube.com/watch?v=D2BHRh6M3HY",
+  "extracted_at": "2026-03-12T06:31:07.980897+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 35,
+    "unique_word_count": 27,
+    "vocabulary_richness": 0.771,
+    "line_count": 6,
+    "char_count": 205,
+    "avg_words_per_line": 5.8,
+    "estimated_duration_mins": 0.3,
+    "top_keywords": [
+      "mental",
+      "three",
+      "ted",
+      "talks",
+      "must",
+      "definitely",
+      "watch",
+      "yourself",
+      "mentally",
+      "better"
+    ]
+  },
+  "comments": {
+    "available": true,
+    "count": 11,
+    "top_level_count": 9,
+    "reply_count": 2,
+    "unique_authors": 11,
+    "favorited_count": 0,
+    "total_votes": 17,
+    "avg_votes_per_comment": 1.5,
+    "total_words": 147,
+    "avg_words": 13.36,
+    "max_words": 34,
+    "min_words": 6,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@rakshita_sodhi",
+        "votes": "8",
+        "text": "Thanks a lot❤ it helped me sooo much😊"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@aninditaarundhati1395",
+        "votes": "7",
+        "text": "1. How to protect your brain from stress/ Niki Korteweg\n2. How to manage your mental health / Leon Taylor \n3. Mental tou"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@shubhiatram1715",
+        "votes": "1",
+        "text": "First i thought who 😂 is this foreigners women , when I watch the reel, this is our indian girl"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@Anonymous-uk8ee",
+        "votes": "1",
+        "text": "Some people have an accent. Calm down🤦‍♂️"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@mahijainvlog6118",
+        "votes": "0",
+        "text": "It seems like you come out of deression phase"
+      }
+    ]
+  }
+}

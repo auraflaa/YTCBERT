@@ -1,0 +1,60 @@
+{
+  "video_id": "IF8CO57ATs8",
+  "url": "http://www.youtube.com/watch?v=IF8CO57ATs8",
+  "extracted_at": "2026-03-12T06:28:42.895330+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "error: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=IF8CO57ATs8! This is most likely cause...",
+    "comments": "ok",
+    "summary": "skipped: --no-summary flag"
+  },
+  "transcript": {
+    "available": false
+  },
+  "comments": {
+    "available": true,
+    "count": 133,
+    "top_level_count": 116,
+    "reply_count": 17,
+    "unique_authors": 131,
+    "favorited_count": 4,
+    "total_votes": 417,
+    "avg_votes_per_comment": 3.1,
+    "total_words": 840,
+    "avg_words": 6.32,
+    "max_words": 30,
+    "min_words": 1,
+    "top_5_by_votes": [
+      {
+        "vote_rank": 1,
+        "author": "@tahiatasneem5431",
+        "votes": "167",
+        "text": "Not Thailand being in a flood 😢😂"
+      },
+      {
+        "vote_rank": 2,
+        "author": "@ManikumariRentikota",
+        "votes": "70",
+        "text": "Japan  is the  cute and  peaceful  place  which  I love ❤❤❤❤❤❤❤❤❤❤"
+      },
+      {
+        "vote_rank": 3,
+        "author": "@sumontipsakulsuwan8598",
+        "votes": "34",
+        "text": "Wow they train dogs like that on my country so cute❤❤🎉🎉🎉🎉🤩🤩"
+      },
+      {
+        "vote_rank": 4,
+        "author": "@AlleahmaeLebuna",
+        "votes": "22",
+        "text": "The Philippines so beautiful"
+      },
+      {
+        "vote_rank": 5,
+        "author": "@melakuhailu1376",
+        "votes": "20",
+        "text": "Japan is my favorite ❤ and it's cute their"
+      }
+    ]
+  }
+}

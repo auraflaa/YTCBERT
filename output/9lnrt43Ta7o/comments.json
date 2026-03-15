@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "video_id": "9lnrt43Ta7o",
+    "url": "http://www.youtube.com/watch?v=9lnrt43Ta7o",
+    "extracted_at": "2026-03-15T09:45:30.956797+00:00",
+    "count": 5,
+    "total_words": 54,
+    "avg_words_per_comment": 10.8,
+    "max_words": 18,
+    "min_words": 4
+  },
+  "comments": [
+    {
+      "index": 1,
+      "text": "Grab your LTT Ridge Wallet here:\nhttps://ridge.com/circuitboard",
+      "author": "@LinusTechTips",
+      "votes": "1.2k",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 2,
+      "text": "\"But what about 120Hz?\" \n\nRemember, Linus uses a Note 9. He's already used to 60Hz on a phone.",
+      "author": "@mma0911",
+      "votes": "6.5k",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 3,
+      "text": "It has, indeed, dropped.",
+      "author": "@mdukasa",
+      "votes": "13k",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 4,
+      "text": "This feels like an ai convo😂\nEdit: first time getting this many likes, thanks.",
+      "author": "@spongist",
+      "votes": "3.2k",
+      "time": "1 year ago (edited)",
+      "is_reply": false,
+      "is_favorited": false
+    },
+    {
+      "index": 5,
+      "text": "Bro sponsored the short so he can afford the wallpaper app",
+      "author": "@telefactfiles5430",
+      "votes": "3.8k",
+      "time": "1 year ago",
+      "is_reply": false,
+      "is_favorited": false
+    }
+  ]
+}

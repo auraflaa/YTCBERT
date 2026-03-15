@@ -1,0 +1,36 @@
+{
+  "video_id": "HaEmIakO7f4",
+  "url": "http://www.youtube.com/watch?v=HaEmIakO7f4",
+  "extracted_at": "2026-03-15T09:45:06.719241+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "ok"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 2372,
+    "unique_word_count": 730,
+    "vocabulary_richness": 0.308,
+    "line_count": 470,
+    "char_count": 12965,
+    "avg_words_per_line": 5.0,
+    "estimated_duration_mins": 18.2,
+    "top_keywords": [
+      "water",
+      "floods",
+      "called",
+      "music",
+      "don",
+      "landslides",
+      "ocean",
+      "earth",
+      "drought",
+      "tsunami"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}
