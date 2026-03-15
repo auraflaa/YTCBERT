@@ -136,3 +136,27 @@ def with_retry(fn, *args, attempts: int = 3, backoff: int = 2, label: str = "", 
             
             time.sleep(wait)
     return None, f"{label} failed: {last_error}"
+
+
+# ---------------------------------------------------------------------------
+# Text / Content helpers
+# ---------------------------------------------------------------------------
+
+def strip_banner(text: str) -> str:
+    """Strips the ASCII banner from the start of a transcript/summary if it exists."""
+    if "======" in text:
+        parts = text.split("========================================================================\n\n", 1)
+        return parts[1] if len(parts) > 1 else text
+    return text
+
+
+def load_prompts(prompt_file: str = "prompt.txt"):
+    """Loads system and user prompts from a file."""
+    try:
+        raw = Path(prompt_file).read_text(encoding="utf-8")
+        parts = raw.split("## USER", 1)
+        system = parts[0].replace("## SYSTEM", "").strip()
+        user = parts[1].strip() if len(parts) > 1 else None
+        return system, user
+    except FileNotFoundError:
+        return None, None

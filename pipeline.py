@@ -41,7 +41,7 @@ import langdetect
 from langdetect.lang_detect_exception import LangDetectException
 
 from utils.formatters import format_comments_json, format_transcript
-from utils.helpers import clean_err, extract_video_id, fmt_duration, get_video_stats, needs_refresh, with_retry
+from utils.helpers import clean_err, extract_video_id, fmt_duration, get_video_stats, needs_refresh, with_retry, load_prompts
 from utils.stats import comment_texts, comments_meta, transcript_meta
 
 load_dotenv()
@@ -51,7 +51,7 @@ load_dotenv()
 # =============================================================================
 VIDEO_LIST_FILE      = "video.txt"
 OUTPUT_DIR           = Path("output")
-MAX_COMMENTS         = 0        # 0 = fetch all; set > 0 to cap
+MAX_COMMENTS         = 10000    # Cap at 10k comments (better for BERT analysis)
 REFRESH_AFTER_DAYS   = 30
 RETRY_ATTEMPTS       = 3
 RETRY_BACKOFF_BASE   = 2        # seconds; doubles each retry
@@ -194,27 +194,48 @@ def process_video(url: str, idx: int, total: int, force: bool,
     results = []
 
     # --- Transcript ---
-    p_fetch = (TranscriptsDisabled, NoTranscriptFound, VideoUnavailable)
-    transcript, err = with_retry(_fetch_transcript, video_id, label="Transcript", permanent_exceptions=p_fetch)
-    if err:
-        status["transcript"] = f"error: {err}"
-        print(f"  [WARN] Transcript: {err}")
-        any_error = True
-    else:
-        (video_dir / "transcript.txt").write_text(format_transcript(transcript, video_id, url), encoding="utf-8")
+    t_path = video_dir / "transcript.txt"
+    if not force and t_path.exists():
+        print("  [SKIP] Transcript already exists")
         status["transcript"] = "ok"
-        results.append("Transcript")
+        results.append("Transcript (cached)")
+        # Load transcript for meta-recording
+        transcript = t_path.read_text(encoding="utf-8")
+    else:
+        p_fetch = (TranscriptsDisabled, NoTranscriptFound, VideoUnavailable)
+        transcript, err = with_retry(_fetch_transcript, video_id, label="Transcript", permanent_exceptions=p_fetch)
+        if err:
+            status["transcript"] = f"error: {err}"
+            print(f"  [WARN] Transcript: {err}")
+            any_error = True
+        else:
+            (video_dir / "transcript.txt").write_text(format_transcript(transcript, video_id, url), encoding="utf-8")
+            status["transcript"] = "ok"
+            results.append("Transcript")
 
     # --- Comments ---
-    comments, err = with_retry(_fetch_comments, video_id, max_comments, n_total, label="Comments")
-    if err:
-        status["comments"] = f"error: {err}"
-        print(f"  [WARN] Comments: {err}")
-        any_error = True
-    else:
-        (video_dir / "comments.json").write_text(format_comments_json(comments, video_id, url), encoding="utf-8")
-        status["comments"] = "ok"
-        results.append(f"Comments({len(comments)})")
+    c_path = video_dir / "comments.json"
+    if not force and c_path.exists():
+        print(f"  [SKIP] Comments already exist")
+        try:
+            c_data = json.loads(c_path.read_text(encoding="utf-8"))
+            comments = c_data.get("comments", [])
+            status["comments"] = "ok"
+            results.append(f"Comments({len(comments)}) (cached)")
+        except Exception:
+            # If JSON is corrupted, we re-fetch
+            pass
+
+    if not comments:
+        comments, err = with_retry(_fetch_comments, video_id, max_comments, n_total, label="Comments")
+        if err:
+            status["comments"] = f"error: {err}"
+            print(f"  [WARN] Comments: {err}")
+            any_error = True
+        else:
+            (video_dir / "comments.json").write_text(format_comments_json(comments, video_id, url), encoding="utf-8")
+            status["comments"] = "ok"
+            results.append(f"Comments({len(comments)})")
 
     
     _write_meta(video_dir, video_id, url, transcript, comments, status)
@@ -237,8 +258,8 @@ def _print_help() -> None:
         print(f"| {text:<{w - 2}} |")
     print(border)
     row("  YouTube Data Pipeline")
-    row("  Reads video.txt and extracts transcript, comments,")
-    row("  and LLM summary for each video.")
+    row("  Reads video.txt and extracts transcripts and comments")
+    row("  for each video.")
     print(border)
     row()
     row("  USAGE")
@@ -252,20 +273,18 @@ def _print_help() -> None:
     row()
     row("  EXAMPLES")
     row("    python pipeline.py")
-    row("    python pipeline.py --force --no-summary")
+    row("    python pipeline.py --force")
     row("    python pipeline.py --refresh-days 7")
     row("    python pipeline.py --max-comments 500")
     row()
     row("  OUTPUT  output/<video_id>/")
     row("    transcript.txt    full video transcript")
     row("    comments.json     comments with full metadata")
-    row("    summary.txt       LLM-generated summary")
     row("    meta.json         extraction stats + status")
     row()
     row("  SETUP")
     row("    1. Add YouTube URLs to video.txt (one per line)")
-    row("    2. Set LLM_API_KEY in .env")
-    row("    3. python pipeline.py")
+    row("    2. python pipeline.py")
     row()
     print(border)
 
