@@ -5,13 +5,12 @@ Reads YouTube URLs from video.txt and for each video:
   1. Skips if data is fresh (< REFRESH_AFTER_DAYS old) — override with --force
   2. Fetches the video transcript  (retries on transient errors)
   3. Fetches all comments          (retries on transient errors)
-  4. Summarizes via LLM            (skip with --no-summary)
-  5. Saves transcript.txt, comments.json, summary.txt, meta.json
+  4. Saves transcript.txt, comments.json, meta.json
      into output/<video_id>/
-  6. Prints a run summary (processed / skipped / failed)
+  5. Prints a run summary (processed / skipped / failed)
 
 Usage:
-  python pipeline.py [--force] [--no-summary] [--refresh-days N] [--max-comments N]
+  python pipeline.py [--force] [--refresh-days N] [--max-comments N]
 
 Setup:
   pip install -r requirements.txt
@@ -26,7 +25,6 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import openai
 from dotenv import load_dotenv
 from rich.progress import (
     BarColumn,
@@ -42,10 +40,9 @@ from youtube_transcript_api._errors import NoTranscriptFound, TranscriptsDisable
 import langdetect
 from langdetect.lang_detect_exception import LangDetectException
 
-from utils.formatters import format_comments_json, format_summary, format_transcript
+from utils.formatters import format_comments_json, format_transcript
 from utils.helpers import clean_err, extract_video_id, fmt_duration, get_video_stats, needs_refresh, with_retry
 from utils.stats import comment_texts, comments_meta, transcript_meta
-from utils.llm import summarize
 
 load_dotenv()
 
@@ -54,33 +51,13 @@ load_dotenv()
 # =============================================================================
 VIDEO_LIST_FILE      = "video.txt"
 OUTPUT_DIR           = Path("output")
-PROMPT_FILE          = "prompt.txt"
 MAX_COMMENTS         = 0        # 0 = fetch all; set > 0 to cap
 REFRESH_AFTER_DAYS   = 30
-MAX_TRANSCRIPT_CHARS = 12_000   # ~3k tokens sent to LLM
-MAX_COMMENTS_CHARS   = 8_000    # ~2k tokens sent to LLM
-LLM_MODEL            = "gpt-4o-mini"
 RETRY_ATTEMPTS       = 3
 RETRY_BACKOFF_BASE   = 2        # seconds; doubles each retry
 LIVE_PRINT_EVERY     = 50       # print progress every N comments
 
-LLM_API_KEY     = os.getenv("LLM_API_KEY", "")
 YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
-
-# ---------------------------------------------------------------------------
-# Load prompt template (prompt.txt).
-# ---------------------------------------------------------------------------
-def _load_prompts():
-    try:
-        raw = Path(PROMPT_FILE).read_text(encoding="utf-8")
-        parts = raw.split("## USER", 1)
-        system = parts[0].replace("## SYSTEM", "").strip()
-        user = parts[1].strip() if len(parts) > 1 else None
-        return system, user
-    except FileNotFoundError:
-        return None, None
-
-PROMPT_SYSTEM, PROMPT_USER = _load_prompts()
 
 
 # =============================================================================
@@ -145,18 +122,13 @@ def _fetch_comments(video_id: str, max_comments: int = 0,
     return comments
 
 
-def _do_summarize(transcript: str | None, comments: list[dict]) -> str:
-    """Wrapper for utils.llm.summarize using pipeline globals."""
-    return summarize(
-        transcript=transcript,
-        comments=comments,
-        api_key=LLM_API_KEY,
-        model=LLM_MODEL,
-        system_prompt=PROMPT_SYSTEM,
-        user_prompt_template=PROMPT_USER,
-        max_transcript_chars=MAX_TRANSCRIPT_CHARS,
-        max_comments_chars=MAX_COMMENTS_CHARS
-    )
+
+
+def _short_num(n: int) -> str:
+    """Formats large numbers (e.g., 1500 -> 1.5k)."""
+    if n >= 1_000_000: return f"{n/1_000_000:.1f}M"
+    if n >= 1_000:     return f"{n/1_000:.1f}k"
+    return str(n)
 
 
 # =============================================================================
@@ -185,9 +157,8 @@ def _write_meta(video_dir: Path, video_id: str, url: str,
 # =============================================================================
 
 def process_video(url: str, idx: int, total: int, force: bool,
-                  no_summary: bool, refresh_days: int,
-                  max_comments: int) -> str:
-    """Runs the full pipeline for one video. Returns 'ok', 'skip', or 'fail'."""
+                  refresh_days: int, max_comments: int) -> str:
+    """Runs the extraction pipeline for one video. Returns 'ok', 'skip', or 'fail'."""
     tag      = f"[{idx}/{total}]"
     video_id = extract_video_id(url)
     if not video_id:
@@ -245,21 +216,6 @@ def process_video(url: str, idx: int, total: int, force: bool,
         status["comments"] = "ok"
         results.append(f"Comments({len(comments)})")
 
-    # --- Summary ---
-    if not no_summary:
-        if not LLM_API_KEY:
-            status["summary"] = "skipped: LLM_API_KEY not set"
-        elif transcript or comments:
-            p_llm = (openai.AuthenticationError,)
-            summary, err = with_retry(_do_summarize, transcript, comments or [], label="Summary", permanent_exceptions=p_llm)
-            if err:
-                status["summary"] = f"error: {err}"
-                print(f"  [WARN] Summary: {err}")
-            else:
-                t_words = len((transcript or "").split())
-                (video_dir / "summary.txt").write_text(format_summary(summary, video_id, url, LLM_MODEL, t_words, len(comments or [])), encoding="utf-8")
-                status["summary"] = "ok"
-                results.append("Summary")
     
     _write_meta(video_dir, video_id, url, transcript, comments, status)
     
@@ -290,7 +246,6 @@ def _print_help() -> None:
     row()
     row("  OPTIONS")
     row("    --force              Re-fetch even if data is fresh")
-    row("    --no-summary         Skip LLM summarization")
     row(f"    --refresh-days N     Staleness threshold in days (default: {REFRESH_AFTER_DAYS})")
     row("    --max-comments N     Cap comments per video (default: 0 = all)")
     row("    -h, --help           Show this help panel")
@@ -321,7 +276,6 @@ def _parse_args() -> argparse.Namespace:
         sys.exit(0)
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--force",         action="store_true")
-    parser.add_argument("--no-summary",    action="store_true")
     parser.add_argument("--refresh-days",  type=int, default=REFRESH_AFTER_DAYS, metavar="N")
     parser.add_argument("--max-comments",  type=int, default=MAX_COMMENTS,        metavar="N")
     return parser.parse_args()
@@ -358,7 +312,6 @@ def main() -> None:
 
     flags = []
     if args.force:                              flags.append("--force")
-    if args.no_summary:                         flags.append("--no-summary")
     if args.refresh_days != REFRESH_AFTER_DAYS: flags.append(f"--refresh-days {args.refresh_days}")
     if args.max_comments != MAX_COMMENTS:       flags.append(f"--max-comments {args.max_comments}")
 
@@ -370,7 +323,7 @@ def main() -> None:
     results = {"ok": 0, "skip": 0, "fail": 0}
     for i, url in enumerate(urls, 1):
         outcome = process_video(url, i, len(urls),
-                                args.force, args.no_summary,
+                                args.force,
                                 args.refresh_days, args.max_comments)
         results[outcome] += 1
 

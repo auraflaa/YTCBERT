@@ -6,6 +6,7 @@ venv/
 
 # Pipeline output (large, not for VCS)
 output/
+comparisons/
 
 # Text files
 video.txt

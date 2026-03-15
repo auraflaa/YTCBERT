@@ -1,23 +1,30 @@
 # YouTube Data Pipeline
 
-A sequential pipeline that reads YouTube URLs from `video.txt`, fetches transcripts and comments per video, summarizes them using an LLM, and saves everything into a structured output folder.
+A two-step pipeline to extract YouTube video data and generate LLM summaries.
+1. **Extract**: Fetch transcripts and comments using `pipeline.py`.
+2. **Summarize**: Generate LLM summaries for extracted data using `summarize_data.py`.
 
 ## Project Structure
 
 ```
 YTCBERT/
-├── pipeline.py          # Main pipeline script
-├── video.txt            # Input: one YouTube URL per line
+├── pipeline.py          # Step 1: Extraction pipeline
+├── summarize_data.py    # Step 2: Batch summarization script
+├── compare_models.py    # Side-by-side LLM comparison tool
+├── video.txt            # Input URLs for extraction
+├── models.txt           # Model definitions for comparison
+├── prompt.txt           # Prompt templates for LLMs
 ├── requirements.txt     # Python dependencies
 ├── .env                 # API keys (gitignored)
 ├── .env.example         # Template for .env
 ├── .gitignore
-└── output/
-    └── <video_id>/
-        ├── transcript.txt   # Full video transcript (with header)
-        ├── comments.json    # Top comments with full metadata
-        ├── summary.txt      # LLM-generated summary (with header)
-        └── meta.json        # Extraction stats + status
+├── output/              # Extracted data (per-video folders)
+│   └── <video_id>/
+│       ├── transcript.txt   # Full video transcript (with header)
+│       ├── comments.json    # Top comments with full metadata
+│       ├── summary.txt      # LLM-generated summary (with header)
+│       └── meta.json        # Extraction stats + status
+└── comparisons/         # Comparison reports
 ```
 
 ## Setup
@@ -30,27 +37,33 @@ python -m venv venv
 # 2. Install dependencies
 pip install -r requirements.txt
 
-# 3. Configure API key
+# 3. Configure API keys
 copy .env.example .env
-# Edit .env and set your OPENAI_API_KEY
+# Edit .env and set your keys (LLM_API_KEY, GOOGLE_API_KEY, etc.)
 ```
 
 ## Usage
 
-Add YouTube URLs to `video.txt` (one per line, `#` prefixes are treated as comments):
-
+### 1. Data Extraction
+Add YouTube URLs to `video.txt` and run:
+```bash
+python pipeline.py
 ```
-# My videos
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
-https://youtu.be/XXXXXX
+*Extracts transcripts and comments to the `output/` directory.*
+
+### 2. Batch Summarization
+Generate summaries for all extracted videos:
+```bash
+python summarize_data.py
+# Use --force to overwrite existing summaries
+# Use --video <ID> to process a specific video
 ```
+*Saves `summary.txt` into the corresponding video folder.*
 
-Then run the pipeline:
-
-```powershell
-python pipeline.py                # Normal run
-python pipeline.py --force        # Re-fetch all, ignoring freshness
-python pipeline.py --no-summary   # Skip LLM summarization
+### 3. Model Comparison
+Compare different models side-by-side:
+```bash
+python compare_models.py
 ```
 
 ## Behavior
