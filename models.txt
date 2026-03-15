@@ -1,0 +1,4 @@
+gemini-1.5-flash-latest GOOGLE_API_KEY
+gpt-4o-mini LLM_API_KEY
+openrouter/google/gemma-3-27b-it:free OPENROUTER_API_KEY
+gemini-2.0-flash-exp GOOGLE_API_KEY

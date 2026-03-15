@@ -5,7 +5,7 @@ from utils.stats import comment_texts
 DEFAULT_SYSTEM_PROMPT = "You analyze YouTube video discussions. Be concise and structured."
 DEFAULT_USER_PROMPT = (
     "TRANSCRIPT:\n{transcript}\n\n"
-    "TOP COMMENTS ({n_comments}):\n{comments}\n\n"
+    "TOP COMMENTS:\n{comments}\n\n"
     "Summarize viewer sentiment and key themes, referencing the transcript where relevant."
 )
 
@@ -41,7 +41,6 @@ def summarize(
     # Build final user message
     user_msg = usr_p.format(
         transcript=t, 
-        n_comments=len(texts), 
         comments=c_block
     )
 

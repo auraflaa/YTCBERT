@@ -126,7 +126,7 @@ Edit the constants at the top of `pipeline.py`:
 
 | Constant | Default | Description |
 |---|---|---|
-| `MAX_COMMENTS` | `500` | Max comments fetched per video |
+| `MAX_COMMENTS` | `10000` | Max comments fetched per video |
 | `REFRESH_AFTER_DAYS` | `30` | Days before re-fetching a video |
 | `MAX_TRANSCRIPT_CHARS` | `12000` | Transcript chars sent to LLM (~3k tokens) |
 | `MAX_COMMENTS_CHARS` | `8000` | Comment chars sent to LLM (~2k tokens) |
