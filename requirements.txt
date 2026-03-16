@@ -5,4 +5,8 @@ python-dotenv>=1.0.1
 rich>=13.9.4
 langdetect>=1.0.9
 google-genai>=1.0.0
+yt-dlp>=2025.01.26
+pandas>=2.2.0
 requests>=2.32.3
+# Added for robustness
+python-slugify>=8.0.4

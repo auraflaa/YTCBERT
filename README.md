@@ -1,11 +1,13 @@
 # YouTube Data Pipeline (YTCBERT)
 
-A high-performance, two-step pipeline designed to extract YouTube transcripts and comments at scale, followed by AI-powered summarization and model comparison.
+A high-performance system designed to extract YouTube transcripts and comments at scale, followed by hierarchical AI-powered summarization and dataset exportation for fine-tuning models like FLAP-T5.
 
 ## 🚀 Optimized Workflow
 
-1.  **Extract**: Use `pipeline.py` to fetch raw data (transcripts + comments).
-2.  **Summarize**: Use `summarize_data.py` to process extracted data with LLMs.
+1.  **Discover**: Use `video_pipeline/discover_videos.py` to find diverse English content.
+2.  **Extract**: Use `video_pipeline/pipeline.py` to fetch raw transcripts and engagement-rich comments.
+3.  **Summarize**: Use `video_pipeline/summarize_data.py` to process long videos using hierarchical condensation.
+4.  **Export**: Use `video_pipeline/export_dataset.py` to generate training-ready JSONL datasets.
 
 ---
 
@@ -13,101 +15,82 @@ A high-performance, two-step pipeline designed to extract YouTube transcripts an
 
 ```text
 YTCBERT/
-├── pipeline.py          # Step 1: High-speed data extraction
-├── summarize_data.py    # Step 2: Multithreaded batch summarization
-├── compare_models.py    # Side-by-side LLM performance comparison
-├── utils/               # Core logic (LLM, Formatters, Helpers)
+├── video_pipeline/      # Descriptive home for all processing code (The Engine)
+│   ├── discover_videos.py   # Step 0: Automated English video discovery
+│   ├── pipeline.py          # Step 1: High-speed data extraction (Checkpointed)
+│   ├── summarize_data.py    # Step 2: Hierarchical Map-Reduce summarization
+│   ├── export_dataset.py    # Step 3: Export curation to JSONL (FLAP-T5 format)
+│   ├── verify_videos.py     # Utility: Validate status of URLs in video.txt
+│   ├── remove_duplicates.py # Utility: Clean duplicates from video.txt
+│   └── utils/               # Core logic (LLM, Helpers, Formatters)
 ├── video.txt            # Input: List of YouTube URLs
-├── prompt.txt           # Input: System/User prompt templates
-├── models.txt           # Input: Model definitions for comparison
-├── output/              # Data Store: Per-video folders
-│   └── <video_id>/
-│       ├── transcript.txt   # Cleaned transcript
-│       ├── comments.json    # Metadata-rich comment storage
-│       ├── summary.txt      # AI Summary
-│       └── meta.json        # Extraction stats & status
-└── comparisons/         # Generated comparison reports
+├── output/              # Data Store: Per-video structured folders
+├── backups/             # Automatic backups of video.txt
+└── .env                 # Environment variables (API Keys)
 ```
 
 ---
 
 ## ⚙️ Features & Optimizations
 
-*   **Multithreaded Processing**: Process dozens of summaries or model comparisons in parallel using `--workers`.
-*   **Granular Resumption**: If interrupted, the pipeline skips individual files (`transcript.txt`, `comments.json`) already successfully downloaded.
-*   **Video Filtering**: Automatically skips **YouTube Shorts** (via URL or duration < 60s) and videos with **disabled comments** to ensure data quality for training.
-*   **Smart Fallbacks**: Automatically switches between `GOOGLE_API_KEY` (Gemini) and `LLM_API_KEY` (OpenAI/GPT) depending on availability.
-*   **Engagement-First**: Comments are fetched in order of popularity, perfect for BERT-based sentiment analysis.
+*   **Video Pipeline Engine**: Centralized, descriptive folder structure for easy maintenance and scaling.
+*   **Pro Video Discovery**: Scalable English video mining with category-based rotation.
+*   **Hierarchical Summarization**: Map-Reduce architecture for long videos, ensuring full context coverage.
+*   **Checkpointing & Atomic Writes**: Resumable comment downloads and crash-safe JSON/Text saving.
+*   **Multithreaded Processing**: Process dozens of videos or sub-batches in parallel.
 
 ---
 
 ## 🛠️ Setup
 
 1.  **Environment**:
-    ```powershell
+    ```bash
     python -m venv venv
-    .\venv\Scripts\Activate.ps1
+    source venv/bin/activate  # Or .\venv\Scripts\Activate.ps1 on Windows
     pip install -r requirements.txt
     ```
 
 2.  **Configuration**:
-    Copy `.env.example` to `.env` and add your `GOOGLE_API_KEY` or `OPENROUTER_API_KEY`.
+    Create a `.env` file in the project root with:
+    ```env
+    LLM_API_KEY=your_openai_or_gemini_key
+    YOUTUBE_API_KEY=optional_key_for_rich_stats
+    ```
 
 ---
 
 ## 📖 Usage Guide
 
-### 1. Data Extraction
-Add URLs to `video.txt` and run:
+> [!IMPORTANT]
+> All scripts should be run from the **project root** directory.
+
+### 1. Broad Discovery
+Find new English content across high-quality categories:
 ```bash
-python pipeline.py --max-comments 5000
+python video_pipeline/discover_videos.py --count 25 --append
 ```
-*   **Resume Capability**: Run again any time; it will only fetch missing or stale data.
-*   **Flags**: Use `--force` to ignore the 30-day cache.
 
-### 2. AI Summarization
-Generate summaries for your extracted data:
+### 2. Data Extraction
+Gather transcripts and comments for everything in `video.txt`:
 ```bash
-python summarize_data.py --workers 10
+python video_pipeline/pipeline.py --workers 4 --max-comments 5000
 ```
-*   **Performance**: Use `--workers` to set concurrency (default: 5).
-*   **Flexibility**: Specify models with `--model gemini-1.5-flash`.
 
-### 3. Model Comparison
-Evaluate different LLM providers side-by-side:
+### 3. Hierarchical Summarization
+Generate high-density summaries for long-form content:
 ```bash
-python compare_models.py --video <ID> --workers 3
+python video_pipeline/summarize_data.py --workers 5 --workers-inner 3
 ```
-*   Results are saved as a markdown report in `comparisons/report_<ID>.md`.
 
----
-
-## 📊 Data Schema (`comments.json`)
-
-The extracted data is structured for immediate use in NLP pipelines:
-
-```json
-{
-  "meta": { "video_id": "...", "url": "...", "count": 10000 },
-  "comments": [
-    {
-      "text": "Insightful breakdown!",
-      "author": "@user",
-      "votes": "1.2k",
-      "time": "2 days ago"
-    }
-  ]
-}
+### 4. Dataset Export
+Build your training file:
+```bash
+python video_pipeline/export_dataset.py --out my_t5_dataset.jsonl
 ```
 
 ---
 
-## 🔧 Configuration Constants
+## 🔧 Maintenance Utilities
 
-| Constant | File | Default | Description |
-|---|---|---|---|
-| `MAX_COMMENTS` | `pipeline.py` | `10000` | Comment cap per video |
-| `REFRESH_AFTER_DAYS` | `pipeline.py` | `30` | Cache expiry |
-| `MAX_TRANSCRIPT_CHARS` | `summarize_data.py` | `12000` | LLM context limit |
-| `MAX_COMMENTS_CHARS` | `summarize_data.py` | `8000` | LLM context limit |
-| `DEFAULT_WORKERS` | `summarize_data.py` | `5` | Concurrency level |
+*   **Verify**: `python video_pipeline/verify_videos.py` (Checks availability).
+*   **Deduplicate**: `python video_pipeline/remove_duplicates.py` (Cleans your list).
