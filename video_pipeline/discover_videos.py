@@ -1,12 +1,13 @@
 """
-Pro Video Discovery Utility for YouTube.
+Broad Video Discovery for diverse YouTube datasets.
 
-This script automates the discovery of high-quality English videos to build
-a diverse dataset for training. It uses a "Pro" filtering strategy:
-1. Randomized keyword search via seeds (entropy).
-2. Category-based rotation (AI, Tech, Science, etc.).
-3. Quality filtering (Duration: 2-30 min, Views: >5,000).
-4. Language detection (English only).
+Step 0 of the YTCBERT pipeline.
+This script performs automated video discovery based on 12 categorized niches.
+Features:
+- Goal-Aware Discovery: Treats --count as a total target for video.txt.
+- Auto-Balancing: Prioritizes searching for least-represented categories.
+- English-Only Filtering: Uses keyword entropy for quality control.
+- Real-time Checkpointing: Saves links as they are found.
 """
 
 import argparse
@@ -19,9 +20,10 @@ import yt_dlp
 from langdetect import detect, DetectorFactory
 from rich.console import Console
 from rich.table import Table
+from rich.panel import Panel
 from rich.progress import Progress, BarColumn, TextColumn, TimeRemainingColumn, SpinnerColumn
 
-from utils.helpers import extract_video_id
+from utils.helpers import extract_video_id, parse_count
 
 # Ensures consistent results for language detection across runs
 DetectorFactory.seed = 0
@@ -33,18 +35,87 @@ console = Console()
 
 # Category definition for balanced vertical variety
 CATEGORIES = {
-    "AI & Deep Learning": ["Karpathy", "3Blue1Brown", "Deep Learning", "Neural Networks"],
-    "Data Science / Python": ["Krish Naik", "Data Science tutorial", "Pandas tutorial", "Machine Learning Python"],
-    "Tech Ethics & News": ["Tech Ethics", "AI Safety", "Tech News", "Silicon Valley news"],
-    "Engineering/Science": ["Veritasium", "Mark Rober", "Engineering explained", "SmarterEveryDay"],
-    "Gadget Reviews": ["MKBHD", "Linus Tech Tips", "Dave2D", "Smartphone review"],
-    "Productivity/Dev": ["Ali Abdaal", "Fireship", "Programming tutorial", "Developer productivity"],
-    "Startup/Business": ["Y Combinator", "Startup pitch", "Business strategy", "Tech entrepreneurship"],
-    "Documentaries": ["Kurzgesagt", "Wendover Productions", "PolyMatter", "Educational documentary"],
-    "Space & Physics": ["PBS Space Time", "Scott Manley", "Astrophysics", "Space exploration"],
-    "Educational Wildcards": ["Expert breakdown", "Deep dive tutorial", "Video essay", "Technical lecture"],
-    "Industry Insights": ["System design", "Software architecture", "Engineering blog", "Industry standards"],
-    "Casual Learning": ["Explain like I'm five", "Quick intro", "Summary of", "Overview of"]
+    # --- TECH & DATA (The Core) ---
+    "AI & Deep Learning": ["Karpathy", "Neural Networks", "LLM architecture", "Transformer models"],
+    "Data Science / Python": ["Krish Naik", "Scikit-learn tutorial", "Data visualization", "SQL for Data Science"],
+    "Tech Ethics & News": ["AI Alignment", "Privacy laws tech", "Silicon Valley news", "Tech monopoly debate"],
+    "Software Engineering": ["System Design", "Microservices architecture", "Clean Code principles", "LeetCode solutions"],
+    "Cybersecurity": ["Penetration testing", "Zero trust architecture", "Cyber attack analysis", "Encryption explained"],
+    "Cloud Computing": ["AWS vs Azure vs GCP", "Docker and Kubernetes", "Serverless architecture", "Cloud migration"],
+
+    # --- SCIENCE & ENGINEERING ---
+    "Physics & Space": ["PBS Space Time", "Astrophysics", "Quantum mechanics", "James Webb Telescope"],
+    "Biology & Medicine": ["Molecular biology", "Genetics explained", "Medical breakthroughs", "Neuroscience"],
+    "General Engineering": ["Structural engineering", "Mechanical design", "Mark Rober", "Veritasium"],
+    "Mathematics": ["Number Theory", "Linear Algebra", "Calculus visual", "3Blue1Brown"],
+    "Chemistry": ["Chemical reactions", "Organic chemistry", "Material science", "Periodic table deep dive"],
+
+    # --- BUSINESS & FINANCE ---
+    "Personal Finance": ["Investment strategies", "Index funds explained", "Credit score optimization", "Retirement planning"],
+    "Macroeconomics": ["Global inflation", "Central banks", "Supply chain crisis", "Economic history"],
+    "Cryptocurrency/Web3": ["Blockchain technology", "Ethereum smart contracts", "Bitcoin news", "DeFi explained"],
+    "Startups & VC": ["Y Combinator", "Pitch deck analysis", "Venture capital trends", "SaaS business model"],
+    "Real Estate": ["Property investment", "Housing market analysis", "Commercial real estate", "House flipping"],
+
+    # --- LIFESTYLE & CULTURE ---
+    "Travel & Tourism": ["Luxury travel", "Budget backpacking", "Hidden gems Japan", "Travel documentary"],
+    "Fashion & Style": ["Streetwear trends", "Luxury brand history", "Sustainable fashion", "Watch collecting"],
+    "Interior Design": ["Minimalist home decor", "Architectural Digest", "Small apartment ideas", "DIY home renovation"],
+    "Cooking & Food": ["Gordon Ramsay", "Street food tour", "Molecular gastronomy", "Traditional Italian recipes"],
+    "Fitness & Health": ["Strength training", "Longevity science", "Nutrition myths", "Marathon preparation"],
+
+    # --- ARTS & ENTERTAINMENT ---
+    "Film & Cinema": ["Video essay movies", "Cinematography analysis", "Film history", "Screenwriting tips"],
+    "Music Theory": ["Jazz improvisation", "Music production tutorial", "Synthesizer history", "Musicology"],
+    "Gaming Culture": ["Esports industry", "Game design analysis", "Retro gaming", "Speedrunning documentary"],
+    "Literature & Books": ["Classic literature", "Modern fiction reviews", "Creative writing", "Poetry analysis"],
+    "Visual Arts": ["Oil painting tutorial", "Digital illustration", "Art history", "Graphic design trends"],
+
+    # --- HUMANITIES & SOCIAL SCIENCES ---
+    "Philosophy": ["Stoicism", "Existentialism", "Ethics and Morality", "Eastern philosophy"],
+    "History": ["World War II history", "Ancient Civilizations", "History of the Silk Road", "Industrial Revolution"],
+    "Psychology": ["Cognitive biases", "Behavioral psychology", "Mental health awareness", "Child development"],
+    "Sociology": ["Urban planning", "Social movements", "Demographic shifts", "Cultural anthropology"],
+    "Politics": ["Election analysis", "Geopolitics", "Public policy", "Political theory"],
+
+    # --- SPECIALIZED NICHES ---
+    "Automotive": ["Electric vehicle tech", "Classic car restoration", "F1 technical analysis", "Off-roading"],
+    "Aviation": ["Commercial pilot life", "Air crash investigation", "Future of flight", "Private jets"],
+    "Photography": ["Portrait lighting", "Landscape photography", "Camera gear reviews", "Film photography"],
+    "Sustainability": ["Renewable energy", "Zero waste living", "Circular economy", "Ocean conservation"],
+    "Education/Pedagogy": ["Teaching methods", "EdTech trends", "Montessori education", "Learning science"],
+
+    # --- HUMAN EXPERIENCE ---
+    "Podcasts & Talk": ["Long-form interviews", "Roundtable discussions", "Joe Rogan style", "TED Talks"],
+    "True Crime": ["Unsolved mysteries", "Forensic analysis", "Famous trials", "Cold case files"],
+    "Documentary": ["National Geographic", "Nature documentaries", "Human interest stories", "Investigative journalism"],
+    "Parenting": ["Early childhood development", "Modern parenting tips", "Family vlogs", "Educational toys"],
+    "Self-Improvement": ["Habit building", "Public speaking", "Time management", "Emotional intelligence"],
+
+    # --- CRAFTS & HOBBIES ---
+    "Woodworking": ["Furniture building", "Carpentry tips", "Epoxy resin art", "Hand tool skills"],
+    "Gardening": ["Urban farming", "Hydroponics", "Permaculture", "Houseplant care"],
+    "Collectibles": ["TCG collecting", "Vintage toys", "Sneaker culture", "Antiques Roadshow"],
+    "Outdoor Sports": ["Rock climbing", "Surfing", "Hiking trails", "Survival skills"],
+    "DIY/Crafts": ["Pottery", "Knitting/Crochet", "Glass blowing", "Leatherworking"],
+
+    # --- NEWS & CURRENT EVENTS ---
+    "Global News": ["BBC World Service", "Al Jazeera", "Reuters reports", "International crisis"],
+    "Local News": ["Community issues", "Regional politics", "Local events", "Hyper-local reporting"],
+    "Investigative": ["Undercover reporting", "Documentary exposes", "Whistleblower stories", "Financial fraud"],
+
+    # --- MISCELLANEOUS ---
+    "ASMR": ["Relaxation sounds", "Ambience 4k", "Study music", "Focus sounds"],
+    "Pets & Animals": ["Dog training", "Exotic pets", "Veterinary science", "Animal behavior"],
+    "Spirituality": ["Meditation", "Comparative religion", "Modern spirituality", "Mindfulness"],
+    "Law": ["Legal breakdowns", "Supreme court analysis", "Contract law", "Criminal defense"],
+    "Language Learning": ["Polyglot tips", "Linguistics", "Language history", "ESL lessons"],
+    "Comedy": ["Stand-up specials", "Satire", "Sketch comedy", "Humor analysis"],
+    "Architecture": ["Modernist architecture", "Skyscraper design", "Urban design", "Historical landmarks"],
+    "Astronomy": ["Telescope reviews", "Stargazing tips", "Solar system exploration", "NASA updates"],
+    "Mythology": ["Greek myths", "Norse mythology", "Folklore", "Legend analysis"],
+    "Career Advice": ["Resume building", "Interview prep", "Corporate culture", "Remote work tips"],
+    "Military Tech": ["Modern weaponry", "Military strategy", "Defense industry", "Historical battles"]
 }
 
 def is_english(title, description=""):
@@ -60,142 +131,250 @@ def is_english(title, description=""):
     except:
         return False
 
+class YDLSilentLogger:
+    """Custom logger to keep the console clean from yt-dlp internal noise."""
+    def debug(self, msg):
+        pass
+    def warning(self, msg):
+        pass
+    def error(self, msg):
+        # We handle critical errors (like rate limits) ourselves via the exception message
+        pass
+
 def get_ydl_opts(verify_subtitles=True):
     """Returns standardized configuration for yt-dlp."""
     return {
+        'logger': YDLSilentLogger(),
         'quiet': True,
         'extract_flat': False, # Extract full info to check views/duration
         'search_filter': 'relevance', 
-        'ignoreerrors': True,
+        'ignoreerrors': False,
         'no_warnings': True,
         'writesubtitles': verify_subtitles,
         'writeautomaticsub': verify_subtitles,
         'skip_download': True, # We only want metadata
     }
 
-def discover_pro_videos(target_count=50, min_views=0, min_duration=0, max_duration=99999):
+def count_existing_categories():
+    """Returns a dict of {category: count} based on current video.txt."""
+    counts = {cat: 0 for cat in CATEGORIES.keys()}
+    if not Path(VIDEO_FILE).exists():
+        return counts
+    
+    current_cat = None
+    with open(VIDEO_FILE, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line.startswith("# Category:"):
+                current_cat = line.split(":", 1)[1].strip()
+            elif line and not line.startswith("#"):
+                if current_cat in counts:
+                    counts[current_cat] += 1
+                else:
+                    # In case of manual edits or unknown categories
+                    counts[current_cat] = counts.get(current_cat, 0) + 1
+    return counts
+
+def discover_pro_videos(target_count=50, max_per_channel=20):
     """
-    Main discovery logic. Rotates through categories and keywords.
-    Loosened filters to include all types of videos (no transcripts, low comments, etc.)
+    Main discovery logic. Goal-aware and balance-aware.
+    It prioritizes categories that are currently under-represented in video.txt.
     """
     video_links = []
     seen_ids = set()
+    channel_counts = {} # Track how many videos we've taken from each channel in THIS session
     
-    # Load existing IDs to avoid duplicates in the current video.txt
+    # 1. Audit the existing file
+    existing_stats = count_existing_categories()
+    total_existing = sum(existing_stats.values())
+    
     if Path(VIDEO_FILE).exists():
         content = Path(VIDEO_FILE).read_text(encoding="utf-8")
         for line in content.splitlines():
             vid = extract_video_id(line.strip())
             if vid: seen_ids.add(vid)
 
-    console.print(f"[bold blue]Starting Broad Discovery for {target_count} videos (All Types)...[/bold blue]")
+    if total_existing >= target_count:
+        console.print(f"[yellow]Target reached! You already have {total_existing}/{target_count} videos.[/yellow]")
+        return []
+
+    remaining = target_count - total_existing
+    console.print(f"[bold blue]Discovery Goal: {target_count} total videos.[/bold blue]")
+    console.print(f"[dim]Current: {total_existing} | Needs: {remaining} new links[/dim]\n")
     
+    from rich.progress import MofNCompleteColumn, TimeElapsedColumn, TaskProgressColumn
+    last_saved_category = None
+
     with Progress(
         SpinnerColumn(),
         TextColumn("[progress.description]{task.description}"),
-        BarColumn(),
-        TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+        BarColumn(bar_width=None),
+        MofNCompleteColumn(),
+        TaskProgressColumn(),
+        TextColumn("•"),
+        TimeElapsedColumn(),
+        TextColumn("•"),
         TimeRemainingColumn(),
-        console=console
+        console=console,
+        refresh_per_second=4,
+        expand=True
     ) as progress:
-        task = progress.add_task("Discovering...", total=target_count)
+        task = progress.add_task("Total Progress...", total=target_count, completed=total_existing)
         
-        # Flattened query list for easy rotation
-        all_queries = []
+        # Build a pool of all possible queries
+        query_pool = []
         for cat, kw_list in CATEGORIES.items():
             for kw in kw_list:
-                all_queries.append((cat, kw))
-        random.shuffle(all_queries) # Shuffle once for initial randomness
+                query_pool.append({"cat": cat, "kw": kw})
+        random.shuffle(query_pool)
 
-        query_idx = 0
         with yt_dlp.YoutubeDL(get_ydl_opts(verify_subtitles=False)) as ydl:
-            while len(video_links) < target_count:
-                # Cycle through the category/keyword pool
-                cat, base_query = all_queries[query_idx % len(all_queries)]
-                query_idx += 1
+            while (total_existing + len(video_links)) < target_count:
+                # BALANCE LOGIC: Find which category is currently the "thinnest"
+                # (Existing in file + Discovered in this session)
+                current_balance = {cat: existing_stats.get(cat, 0) for cat in CATEGORIES}
+                for v in video_links:
+                    current_balance[v['category']] += 1
                 
-                # Add a random 3-letter seed to query to find less obvious videos (discovery entropy)
+                min_count = min(current_balance.values())
+                under_represented = [cat for cat, count in current_balance.items() if count == min_count]
+                target_cat = random.choice(under_represented)
+                
+                # Pick a random keyword from the target category
+                cat_kws = [q for q in query_pool if q['cat'] == target_cat]
+                query_obj = random.choice(cat_kws)
+                base_query = query_obj['kw']
+                
                 seed = ''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=3))
                 query = f"{base_query} {seed}"
                 
-                progress.update(task, description=f"Querying [magenta]{cat}[/magenta]: '{base_query}'")
-                
-                try:
-                    # Probe YouTube Search (Top 20 results per query for broader reach)
-                    results = ydl.extract_info(f"ytsearch20:{query}", download=False)
-                    if not results or 'entries' not in results:
-                        continue
+                progress.update(task, description=f"Balancing [magenta]{target_cat}[/magenta]...")
 
-                    for entry in results['entries']:
+                # Multi-stage retry for Transient RPM limits
+                search_success = False
+                for attempt in range(3):
+                    try:
+                        results = ydl.extract_info(f"ytsearch15:{query}", download=False)
+                        search_success = True
+                        break # Success!
+                    except Exception as e:
+                        err_str = str(e).lower()
+                        # Tier 1: Transient RPM (Too Many Requests / 429)
+                        if "429" in err_str or "too many requests" in err_str:
+                            wait_sec = 30 * (attempt + 1)
+                            progress.update(task, description=f"[yellow]RPM Limit (429)[/yellow] - Waiting {wait_sec}s...")
+                            time.sleep(wait_sec)
+                            continue # Retry the same query
+                        
+                        # Tier 2: Hard Session Block
+                        if "rate-limited" in err_str or "try again later" in err_str:
+                            progress.console.print(Panel(
+                                "[bold red][BLOCK] Your IP/Session has been rate-limited by YouTube.[/bold red]\n"
+                                "Please wait [bold yellow]60 minutes[/bold yellow] before retrying.\n"
+                                f"Discovery halted at [cyan]{total_existing + len(video_links)}[/cyan] videos.",
+                                title="YouTube Safety Halt", border_style="red"
+                            ))
+                            return video_links
+                        
+                        # Other errors (e.g. network) - Just skip silently
+                        break # Give up on this specific niche/seed
+
+                if not search_success or not results or 'entries' not in results:
+                    continue
+
+                # Add a jittered delay between successful searches
+                time.sleep(random.uniform(2.0, 4.0))
+
+                for entry in results['entries']:
                         if not entry: continue
-                        if len(video_links) >= target_count: break
+                        if (total_existing + len(video_links)) >= target_count: break
                         
                         v_id = entry.get('id')
                         if not v_id or v_id in seen_ids: continue
                         
-                        # -- Applied Minimum Logic (Mostly Basic Sanity) --
-                        duration = entry.get('duration', 0)
-                        view_count = entry.get('view_count', 0)
-                        title = entry.get('title', '')
+                        # Filter out restricted or non-public videos without extra latency
+                        availability = entry.get('availability')
+                        if availability and availability != 'public':
+                            continue
+                        if entry.get('is_private'):
+                            continue
+                            
+                        # Also skip live streams to ensure we get static content
+                        if entry.get('live_status') in ['is_live', 'is_upcoming']:
+                            continue
+
+                        uploader = entry.get('uploader_id') or entry.get('uploader') or "Unknown"
+                        if channel_counts.get(uploader, 0) >= max_per_channel:
+                            continue
                         
-                        # Only check if TITLE is English (basic language sanity)
+                        title = entry.get('title', '')
                         if not is_english(title): continue
                         
-                        # Success! Add to the dataset (No more elite filters)
-                        video_links.append({
+                        duration = entry.get('duration', 0)
+                        view_count = entry.get('view_count', 0)
+                        
+                        video_obj = {
                             'id': v_id,
                             'title': title,
                             'url': f"https://www.youtube.com/watch?v={v_id}",
-                            'category': cat,
+                            'category': target_cat,
                             'views': view_count,
                             'duration': f"{duration//60}:{duration%60:02d}" if duration else "N/A"
-                        })
-                        seen_ids.add(v_id)
-                        progress.advance(task)
+                        }
                         
-                except Exception:
-                    # Silently skip errors during massive searches
-                    continue
+                        video_links.append(video_obj)
+                        seen_ids.add(v_id)
+                        channel_counts[uploader] = channel_counts.get(uploader, 0) + 1
+
+                        with open(VIDEO_FILE, "a", encoding="utf-8") as f:
+                            if target_cat != last_saved_category:
+                                f.write(f"\n# Category: {target_cat}\n")
+                                last_saved_category = target_cat
+                            f.write(f"{video_obj['url']}\n")
+                        
+                        progress.advance(task)
+                        time.sleep(0.01)
 
     return video_links
 
 def main():
-    """CLI Entry point for video discovery."""
-    parser = argparse.ArgumentParser(description="Broad Video Discovery for diverse YouTube datasets.")
-    parser.add_argument("--count", type=int, default=10, help="Number of new videos to find (default: 10)")
-    parser.add_argument("--append", action="store_true", help="Append found links to video.txt")
+    """CLI Entry point for goal-aware video discovery."""
+    parser = argparse.ArgumentParser(
+        description="Goal-Aware Video Discovery: Reaches a total target count while balancing niches."
+    )
+    parser.add_argument("--count", type=parse_count, default=10, help="Total target count (e.g. 10, 2K, 1M)")
+    parser.add_argument("--max-per-channel", type=int, default=20, help="Max videos from a single channel (default: 20)")
     args = parser.parse_args()
 
-    # Run the broad discovery
-    found = discover_pro_videos(args.count)
-    
-    if not found:
-        console.print("[yellow]No new videos found.[/yellow]")
-        return
+    try:
+        # Discover and Save in real-time
+        found = discover_pro_videos(args.count, args.max_per_channel)
+        
+        if not found:
+            console.print("[yellow]No new videos found in this session.[/yellow]")
+            return
 
-    # Display pretty results table
-    table = Table(title=f"Discovered {len(found)} High-Quality Videos")
-    table.add_column("Category", style="magenta")
-    table.add_column("Title", style="white")
-    table.add_column("Views", justify="right", style="green")
-    table.add_column("Duration", justify="right", style="cyan")
-    
-    for v in found:
-        table.add_row(v['category'], v['title'][:40]+"...", f"{v['views']:,}", v['duration'])
-    
-    console.print(table)
-
-    # Save to file if requested
-    if args.append:
-        with open(VIDEO_FILE, "a", encoding="utf-8") as f:
-            current_cat = None
-            for v in found:
-                # Group by category in the file for user readability
-                if v['category'] != current_cat:
-                    current_cat = v['category']
-                    f.write(f"\n# Category: {current_cat}\n")
-                f.write(f"{v['url']}\n")
-        console.print(f"[bold green]Successfully added {len(found)} elite links to {VIDEO_FILE}![/bold green]")
+        # Display pretty results table of the session
+        console.print("\n")
+        table = Table(title=f"Discovered {len(found)} High-Quality Videos", title_style="bold cyan")
+        table.add_column("Category", style="magenta", no_wrap=True)
+        table.add_column("Title", style="white", overflow="ellipsis", max_width=50)
+        table.add_column("Views", justify="right", style="green")
+        table.add_column("Duration", justify="right", style="cyan")
+        
+        for v in found:
+            table.add_row(v['category'], v['title'], f"{v['views']:,}", v['duration'])
+        
+        console.print(table)
+        console.print(f"\n[bold green]Session complete. {len(found)} links were checkpointed to {VIDEO_FILE}![/bold green]")
+    except KeyboardInterrupt:
+        console.print("\n\n[bold red][HALT] Discovery interrupted by user.[/bold red]")
+        console.print(f"[dim]Progress saved to {VIDEO_FILE}.[/dim]")
+        sys.exit(0)
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        console.print("\n\n[bold red][HALT] Discovery interrupted by user.[/bold red]")
+        sys.exit(0)

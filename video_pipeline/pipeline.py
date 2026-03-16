@@ -1,15 +1,13 @@
 """
-YouTube Data Extraction Pipeline.
+High-Performance YouTube Data Extractor (Step 1).
 
-This script manages the high-level flow of data gathering:
-1. Reads YouTube URLs from a source file (video.txt).
-2. For each video, it checks if fresh data already exists (output/<id>/).
+Manages the core data gathering flow:
+1. Reads YouTube URLs from video_pipeline/video.txt.
+2. Checks for fresh local data in output/ folders.
 3. Concurrently fetches transcripts and comments with retry logic.
-4. Saves raw data with atomic-style writes to prevent corruption.
-5. Supports checkpointed resumption for interrupted comment downloads.
-
-Usage:
-  python pipeline.py --workers 4 --max-comments 5000
+4. Saves data with atomic writes to prevent corruption.
+5. Supports checkpointed resumption for comment downloads.
+6. Gracefully handles Ctrl+C to save in-flight work.
 """
 
 import argparse
@@ -39,7 +37,7 @@ from utils.formatters import format_comments_json, format_transcript
 from utils.helpers import (
     clean_err, extract_video_id, fmt_duration, 
     get_video_stats, needs_refresh, with_retry, 
-    load_prompts, clean_comment_text
+    load_prompts, clean_comment_text, parse_count
 )
 from utils.stats import comment_texts, comments_meta, transcript_meta
 
@@ -103,15 +101,15 @@ def _fetch_comments(video_id: str, max_comments: int = 0,
         TextColumn("  [cyan]Fetching..."),
         BarColumn(bar_width=30),
         TaskProgressColumn(),
-        TextColumn("•"),
-        MofNCompleteColumn(),
         # rate is custom field
         TextColumn("•"),
         TextColumn("[green]{task.fields[rate]} c/s"),
         TextColumn("•"),
-        TextColumn("ETA"),
+        MofNCompleteColumn(),
+        TextColumn("•"),
         TimeRemainingColumn(),
-        transient=True
+        transient=True,
+        console=console
     ) as progress:
         task = progress.add_task("download", total=cap if cap > 0 else None, rate="0.0")
         # Initialize progress for resumed data
@@ -119,44 +117,44 @@ def _fetch_comments(video_id: str, max_comments: int = 0,
         
         start_time = time.time()
         
-        for item in downloader.get_comments_from_url(url, sort_by=SORT_BY_POPULAR):
-            cid = item.get("cid")
-            if cid in seen_ids:
-                continue
-                
-            # Clean and redact PII
-            text = clean_comment_text(item.get("text", ""))
-            if not text:
-                continue
-            
-            item["text"] = text
-
-            # Skip non-English comments
-            try:
-                if langdetect.detect(text) != 'en':
+        try:
+            for item in downloader.get_comments_from_url(url, sort_by=SORT_BY_POPULAR):
+                cid = item.get("cid")
+                if cid in seen_ids:
                     continue
-            except LangDetectException:
-                continue
+                    
+                text = clean_comment_text(item.get("text", ""))
+                if not text: continue
+                
+                item["text"] = text
 
-            comments.append(item)
-            seen_ids.add(cid)
-            new_count += 1
-            
-            # --- Checkpointing ---
-            if video_dir and new_count >= checkpoint_batch:
+                # Minimal language sanity
+                try:
+                    if langdetect.detect(text) != 'en': continue
+                except Exception: continue
+
+                comments.append(item)
+                seen_ids.add(cid)
+                new_count += 1
+                
+                if video_dir and new_count >= checkpoint_batch:
+                    _atomic_save_comments(c_path, comments, video_id, url_str)
+                    new_count = 0
+                
+                elapsed = time.time() - start_time
+                n = len(comments)
+                rate_val = (n - (len(comments) - new_count)) / elapsed if elapsed > 0 else 0.0
+                progress.update(task, completed=n, rate=f"{rate_val:.1f}")
+
+                if max_comments > 0 and len(comments) >= max_comments:
+                    break
+        except KeyboardInterrupt:
+            if video_dir and new_count > 0:
+                print(f"\n      [HALT] Interrupted. Flushing {new_count} new comments to disk...")
                 _atomic_save_comments(c_path, comments, video_id, url_str)
-                new_count = 0
-            
-            elapsed = time.time() - start_time
-            n = len(comments)
-            rate_val = (n - (len(comments) - new_count)) / elapsed if elapsed > 0 else 0.0
-            progress.update(task, completed=n, rate=f"{rate_val:.1f}")
-
-            if max_comments > 0 and len(comments) >= max_comments:
-                break
+            raise # Re-raise to be caught by the thread pool or main logic
 
     return comments
-
 
 def _atomic_save_comments(path: Path, comments: list[dict], video_id: str, url: str):
     """Saves comments to a temp file and renames it to prevent corruption."""
@@ -372,7 +370,7 @@ def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--force",         action="store_true")
     parser.add_argument("--refresh-days",  type=int, default=REFRESH_AFTER_DAYS, metavar="N")
-    parser.add_argument("--max-comments",  type=int, default=MAX_COMMENTS,        metavar="N")
+    parser.add_argument("--max-comments",  type=parse_count, default=MAX_COMMENTS,        metavar="N", help="Max comments (e.g. 100, 5K, 1M)")
     parser.add_argument("--workers",       type=int, default=4,                  metavar="N")
     return parser.parse_args()
 
@@ -447,4 +445,8 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\n[HALT] Pipeline interrupted by user.")
+        sys.exit(0)

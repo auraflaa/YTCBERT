@@ -1,10 +1,8 @@
 """
-Export Script for FLAP-T5 Dataset Generation.
+Export Utility for FLAP-T5 Dataset Generation (Step 4).
 
-This script aggregates raw YouTube data (transcripts and comments) and their 
-hierarchical summaries from the output/ directory into a single JSONL file.
-The resulting file is formatted as (source, target) pairs ideal for 
-fine-tuning T5-based models for high-density video summarization.
+Aggregates raw data and hierarchical summaries from output/ into a JSONL file.
+Formatted as (source, target) pairs ideal for T5-based fine-tuning.
 """
 
 import json
@@ -90,4 +88,8 @@ def main():
     console.print(f"[bold green]Successfully exported {exported_count} examples to {args.out}[/bold green]")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        console.print("\n\n[bold red][HALT] Export interrupted by user.[/bold red]")
+        sys.exit(0)

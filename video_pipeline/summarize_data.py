@@ -1,13 +1,12 @@
 """
-Hierarchical Summarization Core.
+Hierarchical AI Summarization Core (Step 2).
 
-Processes raw YouTube data in the output/ directory using a Map-Reduce approach:
-Stage 1: Transcript Chunk Summarization (Condensation)
-Stage 2: Comment Batch Summarization with Transcript Context (Synthesis)
-Stage 3: Final Master Summary Generation (Aggregation)
+Processes raw data in the output/ directory using a 3-stage Map-Reduce approach:
+Stage 1 (Condensation): Parallel transcript chunk summarization.
+Stage 2 (Synthesis): Comment batch summarization with transcript context.
+Stage 3 (Aggregation): Final master summary generation.
 
-This ensures that even very long videos with thousands of comments can be 
-fully represented within the LLM's context window.
+Ensures long videos and thousands of comments fit within the LLM's context window.
 """
 
 import argparse
@@ -167,4 +166,8 @@ def main():
     print(f"[FINISHED] Processed: {results['ok']} | Failed: {results['fail']}")
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\n\n[HALT] Summarization interrupted by user.")
+        sys.exit(0)

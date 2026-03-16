@@ -5,6 +5,7 @@ General-purpose helpers: URL parsing, cache freshness checks,
 error sanitisation, duration formatting, and YouTube API stats.
 """
 
+import argparse
 import html
 import json
 import re
@@ -13,6 +14,28 @@ import urllib.parse
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+
+# ---------------------------------------------------------------------------
+# CLI / Input helpers
+# ---------------------------------------------------------------------------
+
+def parse_count(count_str: str | int) -> int:
+    """Converts shorthand strings like '1K', '2M', '1B' to integers."""
+    if isinstance(count_str, int):
+        return count_str
+    val = str(count_str).upper().strip()
+    multipliers = {'K': 1000, 'M': 1000000, 'B': 1000000000}
+    
+    if val and val[-1] in multipliers:
+        try:
+            return int(float(val[:-1]) * multipliers[val[-1]])
+        except ValueError:
+            raise argparse.ArgumentTypeError(f"Invalid count format: '{count_str}'")
+    try:
+        return int(val)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"Invalid count format: '{count_str}'")
 
 
 # ---------------------------------------------------------------------------
@@ -111,6 +134,7 @@ def get_video_stats(video_id: str, api_key: str) -> dict:
         content = items[0].get("contentDetails", {})
         return {
             "title":         snippet.get("title", ""),
+            "channel_title": snippet.get("channelTitle", "Unknown Channel"),
             "comment_count": int(stats.get("commentCount", 0)) if "commentCount" in stats else 0,
             "view_count":    int(stats.get("viewCount",    0)),
             "like_count":    int(stats.get("likeCount",    0)),
