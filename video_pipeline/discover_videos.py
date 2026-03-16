@@ -229,111 +229,116 @@ def discover_pro_videos(target_count=50, max_per_channel=20):
         random.shuffle(query_pool)
 
         with yt_dlp.YoutubeDL(get_ydl_opts(verify_subtitles=False)) as ydl:
-            while (total_existing + len(video_links)) < target_count:
-                # BALANCE LOGIC: Find which category is currently the "thinnest"
-                # (Existing in file + Discovered in this session)
-                current_balance = {cat: existing_stats.get(cat, 0) for cat in CATEGORIES}
-                for v in video_links:
-                    current_balance[v['category']] += 1
-                
-                min_count = min(current_balance.values())
-                under_represented = [cat for cat, count in current_balance.items() if count == min_count]
-                target_cat = random.choice(under_represented)
-                
-                # Pick a random keyword from the target category
-                cat_kws = [q for q in query_pool if q['cat'] == target_cat]
-                query_obj = random.choice(cat_kws)
-                base_query = query_obj['kw']
-                
-                seed = ''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=3))
-                query = f"{base_query} {seed}"
-                
-                progress.update(task, description=f"Balancing [magenta]{target_cat}[/magenta]...")
+            try:
+                while (total_existing + len(video_links)) < target_count:
+                    # BALANCE LOGIC: Find which category is currently the "thinnest"
+                    # (Existing in file + Discovered in this session)
+                    current_balance = {cat: existing_stats.get(cat, 0) for cat in CATEGORIES}
+                    for v in video_links:
+                        current_balance[v['category']] += 1
+                    
+                    min_count = min(current_balance.values())
+                    under_represented = [cat for cat, count in current_balance.items() if count == min_count]
+                    target_cat = random.choice(under_represented)
+                    
+                    # Pick a random keyword from the target category
+                    cat_kws = [q for q in query_pool if q['cat'] == target_cat]
+                    query_obj = random.choice(cat_kws)
+                    base_query = query_obj['kw']
+                    
+                    seed = ''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=3))
+                    query = f"{base_query} {seed}"
+                    
+                    progress.update(task, description=f"Balancing [magenta]{target_cat}[/magenta]...")
 
-                # Multi-stage retry for Transient RPM limits
-                search_success = False
-                for attempt in range(3):
-                    try:
-                        results = ydl.extract_info(f"ytsearch15:{query}", download=False)
-                        search_success = True
-                        break # Success!
-                    except Exception as e:
-                        err_str = str(e).lower()
-                        # Tier 1: Transient RPM (Too Many Requests / 429)
-                        if "429" in err_str or "too many requests" in err_str:
-                            wait_sec = 30 * (attempt + 1)
-                            progress.update(task, description=f"[yellow]RPM Limit (429)[/yellow] - Waiting {wait_sec}s...")
-                            time.sleep(wait_sec)
-                            continue # Retry the same query
-                        
-                        # Tier 2: Hard Session Block
-                        if "rate-limited" in err_str or "try again later" in err_str:
-                            progress.console.print(Panel(
-                                "[bold red][BLOCK] Your IP/Session has been rate-limited by YouTube.[/bold red]\n"
-                                "Please wait [bold yellow]60 minutes[/bold yellow] before retrying.\n"
-                                f"Discovery halted at [cyan]{total_existing + len(video_links)}[/cyan] videos.",
-                                title="YouTube Safety Halt", border_style="red"
-                            ))
-                            return video_links
-                        
-                        # Other errors (e.g. network) - Just skip silently
-                        break # Give up on this specific niche/seed
-
-                if not search_success or not results or 'entries' not in results:
-                    continue
-
-                # Add a jittered delay between successful searches
-                time.sleep(random.uniform(2.0, 4.0))
-
-                for entry in results['entries']:
-                        if not entry: continue
-                        if (total_existing + len(video_links)) >= target_count: break
-                        
-                        v_id = entry.get('id')
-                        if not v_id or v_id in seen_ids: continue
-                        
-                        # Filter out restricted or non-public videos without extra latency
-                        availability = entry.get('availability')
-                        if availability and availability != 'public':
-                            continue
-                        if entry.get('is_private'):
-                            continue
+                    # Multi-stage retry for Transient RPM limits
+                    search_success = False
+                    for attempt in range(3):
+                        try:
+                            results = ydl.extract_info(f"ytsearch15:{query}", download=False)
+                            search_success = True
+                            break # Success!
+                        except Exception as e:
+                            err_str = str(e).lower()
+                            # Tier 1: Transient RPM (Too Many Requests / 429)
+                            if "429" in err_str or "too many requests" in err_str:
+                                wait_sec = 30 * (attempt + 1)
+                                progress.update(task, description=f"[yellow]RPM Limit (429)[/yellow] - Waiting {wait_sec}s...")
+                                time.sleep(wait_sec)
+                                continue # Retry the same query
                             
-                        # Also skip live streams to ensure we get static content
-                        if entry.get('live_status') in ['is_live', 'is_upcoming']:
-                            continue
+                            # Tier 2: Hard Session Block
+                            if "rate-limited" in err_str or "try again later" in err_str:
+                                progress.console.print(Panel(
+                                    "[bold red][BLOCK] Your IP/Session has been rate-limited by YouTube.[/bold red]\n"
+                                    "Please wait [bold yellow]60 minutes[/bold yellow] before retrying.\n"
+                                    f"Discovery halted at [cyan]{total_existing + len(video_links)}[/cyan] videos.",
+                                    title="YouTube Safety Halt", border_style="red"
+                                ))
+                                return video_links
+                            
+                            # Other errors (e.g. network) - Just skip silently
+                            break # Give up on this specific niche/seed
 
-                        uploader = entry.get('uploader_id') or entry.get('uploader') or "Unknown"
-                        if channel_counts.get(uploader, 0) >= max_per_channel:
-                            continue
-                        
-                        title = entry.get('title', '')
-                        if not is_english(title): continue
-                        
-                        duration = entry.get('duration', 0)
-                        view_count = entry.get('view_count', 0)
-                        
-                        video_obj = {
-                            'id': v_id,
-                            'title': title,
-                            'url': f"https://www.youtube.com/watch?v={v_id}",
-                            'category': target_cat,
-                            'views': view_count,
-                            'duration': f"{duration//60}:{duration%60:02d}" if duration else "N/A"
-                        }
-                        
-                        video_links.append(video_obj)
-                        seen_ids.add(v_id)
-                        channel_counts[uploader] = channel_counts.get(uploader, 0) + 1
+                    if not search_success or not results or 'entries' not in results:
+                        continue
 
-                        with open(VIDEO_FILE, "a", encoding="utf-8") as f:
-                            if target_cat != last_saved_category:
-                                f.write(f"\n# Category: {target_cat}\n")
-                                last_saved_category = target_cat
-                            f.write(f"{video_obj['url']}\n")
-                        
-                        progress.advance(task)
-                        time.sleep(0.01)
+                    # Add a jittered delay between successful searches
+                    time.sleep(random.uniform(2.0, 4.0))
+
+                    for entry in results['entries']:
+                            if not entry: continue
+                            if (total_existing + len(video_links)) >= target_count: break
+                            
+                            v_id = entry.get('id')
+                            if not v_id or v_id in seen_ids: continue
+                            
+                            # Filter out restricted or non-public videos without extra latency
+                            availability = entry.get('availability')
+                            if availability and availability != 'public':
+                                continue
+                            if entry.get('is_private'):
+                                continue
+                                
+                            # Also skip live streams to ensure we get static content
+                            if entry.get('live_status') in ['is_live', 'is_upcoming']:
+                                continue
+
+                            uploader = entry.get('uploader_id') or entry.get('uploader') or "Unknown"
+                            if channel_counts.get(uploader, 0) >= max_per_channel:
+                                continue
+                            
+                            title = entry.get('title', '')
+                            if not is_english(title): continue
+                            
+                            duration = entry.get('duration', 0)
+                            view_count = entry.get('view_count', 0)
+                            
+                            video_obj = {
+                                'id': v_id,
+                                'title': title,
+                                'url': f"https://www.youtube.com/watch?v={v_id}",
+                                'category': target_cat,
+                                'views': view_count,
+                                'duration': f"{duration//60}:{duration%60:02d}" if duration else "N/A"
+                            }
+                            
+                            video_links.append(video_obj)
+                            seen_ids.add(v_id)
+                            channel_counts[uploader] = channel_counts.get(uploader, 0) + 1
+
+                            with open(VIDEO_FILE, "a", encoding="utf-8") as f:
+                                if target_cat != last_saved_category:
+                                    f.write(f"\n# Category: {target_cat}\n")
+                                    last_saved_category = target_cat
+                                f.write(f"{video_obj['url']}\n")
+                            
+                            progress.advance(task)
+                            time.sleep(0.01)
+            except KeyboardInterrupt:
+                progress.console.print("\n[bold red][HALT] Discovery interrupted by user.[/bold red]")
+                # We stop searching but still return what we have found so far
+                pass
 
     return video_links
 
@@ -367,10 +372,9 @@ def main():
         
         console.print(table)
         console.print(f"\n[bold green]Session complete. {len(found)} links were checkpointed to {VIDEO_FILE}![/bold green]")
-    except KeyboardInterrupt:
-        console.print("\n\n[bold red][HALT] Discovery interrupted by user.[/bold red]")
-        console.print(f"[dim]Progress saved to {VIDEO_FILE}.[/dim]")
-        sys.exit(0)
+    except Exception as e:
+        console.print(f"\n[bold red][ERR] Discovery failed: {e}[/bold red]")
+        sys.exit(1)
 
 if __name__ == "__main__":
     try:

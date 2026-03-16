@@ -101,7 +101,8 @@ python video_pipeline/export_dataset.py --out my_t5_dataset.jsonl
 
 ---
 
-*   **Maintenance Master**: `python video_pipeline/clean_video_links.py`
-    *   `--dedupe` (Default): Prunes duplicates and empty category headers.
-    *   `--verify`: Fast status validation using the OEmbed API (No key required).
-    *   `--audit`: Scans `output/` and removes entries missing transcripts or comments.
+## 🔧 Maintenance Utilities
+
+*   **Clean**: `python video_pipeline/clean_video_links.py` (Removes duplicates. Use `--filter-private` to also purge restricted videos).
+*   **Verify**: `python video_pipeline/verify_videos.py` (Fast status validation using OEmbed).
+*   **Audit**: `python video_pipeline/prune_vids.py` (Scans `output/` and removes entries missing transcripts).
