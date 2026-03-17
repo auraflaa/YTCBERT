@@ -8,6 +8,8 @@ Features:
 - Auto-Balancing: Prioritizes searching for least-represented categories.
 - English-Only Filtering: Uses keyword entropy for quality control.
 - Real-time Checkpointing: Saves links as they are found.
+- Resilient Halts: Graceful Ctrl+C handling with session summaries.
+- Multi-Tier Rate Limiting: Handles both transient and hard blocks.
 """
 
 import argparse

@@ -15,6 +15,8 @@ import os
 import sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from rich.console import Console
+from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskProgressColumn, MofNCompleteColumn
 from utils.llm import (
     summarize, summarize_transcript_chunk, 
     summarize_comment_batch, summarize_final_aggregation
@@ -36,6 +38,7 @@ DEFAULT_WORKERS_OUTER   = 5
 DEFAULT_WORKERS_INNER   = 3       # Parallelism within a single video's chunks
 
 load_dotenv()
+console = Console()
 
 def process_single_video(v_dir, api_key, model, system_p, force, workers_inner):
     """Orchestrates hierarchical summarization for a single video."""
@@ -149,25 +152,42 @@ def main():
         print(f"[ERR] No data found.")
         return
 
-    print(f"[HIERARCHICAL] Model: {model} | Outer: {args.workers} | Inner: {args.workers_inner}")
+    console.print(f"[bold blue][HIERARCHICAL] Model: {model} | Outer: {args.workers} | Inner: {args.workers_inner}[/bold blue]\n")
     
     results = {"ok": 0, "skip": 0, "fail": 0}
-    with ThreadPoolExecutor(max_workers=args.workers) as executor:
-        futures = {executor.submit(process_single_video, v_dir, api_key, model, None, args.force, args.workers_inner): v_dir for v_dir in v_dirs}
-        for future in as_completed(futures):
-            outcome, msg = future.result()
-            results[outcome] += 1
-            if outcome == "ok":
-                print(f"  [DONE] {msg}")
-            elif msg:
-                print(f"  [{outcome.upper()}] {msg}")
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(bar_width=None),
+        TaskProgressColumn(),
+        MofNCompleteColumn(),
+        console=console,
+        expand=True,
+        refresh_per_second=4
+    ) as progress:
+        task_id = progress.add_task("[cyan]Summarizing videos...", total=len(v_dirs))
+        
+        with ThreadPoolExecutor(max_workers=args.workers) as executor:
+            futures = {executor.submit(process_single_video, v_dir, api_key, model, None, args.force, args.workers_inner): v_dir for v_dir in v_dirs}
+            try:
+                for future in as_completed(futures):
+                    outcome, msg = future.result()
+                    results[outcome] += 1
+                    if outcome == "fail" and msg:
+                        progress.console.print(f"  [red][FAIL] {msg}[/red]")
+                    progress.advance(task_id)
+            except KeyboardInterrupt:
+                progress.console.print("\n[bold red][HALT] Summarization interrupted by user.[/bold red]")
+                for f in futures:
+                    f.cancel()
+                pass
 
-    print("-" * 30)
-    print(f"[FINISHED] Processed: {results['ok']} | Failed: {results['fail']}")
+    console.print("-" * 30)
+    console.print(f"[bold green][FINISHED][/bold green] Processed: [green]{results['ok']}[/green] | Skipped: [yellow]{results['skip']}[/yellow] | Failed: [red]{results['fail']}[/red]")
 
 if __name__ == "__main__":
     try:
         main()
-    except KeyboardInterrupt:
-        print("\n\n[HALT] Summarization interrupted by user.")
-        sys.exit(0)
+    except Exception as e:
+        console.print(f"\n[bold red][ERR] Summarization failed: {e}[/bold red]")
+        sys.exit(1)

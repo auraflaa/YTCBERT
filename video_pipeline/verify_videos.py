@@ -4,6 +4,7 @@ Category-Aware Video Verification Utility.
 Checks the status (Available, Private, Deleted) of URLs in video.txt.
 Groups results by niche category and provides a distribution summary.
 Uses the lightweight OEmbed API for fast, keyless validation.
+Supports multi-threading and exports a `.verify_report.json` for fast link pruning.
 """
 import argparse
 import sys
@@ -104,19 +105,27 @@ def main():
 
     with Progress(
         TextColumn("[progress.description]{task.description}"),
-        BarColumn(),
+        BarColumn(bar_width=None),
         TaskProgressColumn(),
         TextColumn("({task.completed}/{task.total})"),
         TimeRemainingColumn(),
-        console=console
+        console=console,
+        expand=True,
+        refresh_per_second=4
     ) as progress:
         task_id = progress.add_task("Verifying", total=len(tasks))
         
         with ThreadPoolExecutor(max_workers=args.workers) as executor:
             futures = [executor.submit(verify_single_video, t[0], t[1], t[2], seen_videos, lock) for t in tasks]
-            for future in as_completed(futures):
-                results.append(future.result())
-                progress.advance(task_id)
+            try:
+                for future in as_completed(futures):
+                    results.append(future.result())
+                    progress.advance(task_id)
+            except KeyboardInterrupt:
+                progress.console.print("\n[bold red][HALT] Verification interrupted by user.[/bold red]")
+                for f in futures:
+                    f.cancel()
+                # Proceed to show results for what was done
 
     # Sort results by line number
     results.sort(key=lambda x: x[0])
@@ -147,6 +156,6 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except KeyboardInterrupt:
-        console.print("\n[bold red][HALT] Verification interrupted by user.[/bold red]")
+    except Exception as e:
+        console.print(f"\n[bold red][ERR] Verification failed: {e}[/bold red]")
         sys.exit(1)

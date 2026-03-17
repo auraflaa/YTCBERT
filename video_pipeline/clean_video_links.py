@@ -5,7 +5,7 @@ Cleans video_pipeline/video.txt by:
 1. Removing duplicate URLs across the entire list.
 2. Deduplicating niche category headers.
 3. Pruning empty categories that no longer contain links.
-4. Optional: Filtering out private/deleted videos (via --filter-private).
+4. Optional: Filtering out private/deleted videos (via --filter-private or --apply-report).
 """
 import argparse
 import sys

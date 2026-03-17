@@ -226,7 +226,15 @@ def process_video(url: str, idx: int, total: int, force: bool,
     video_dir.mkdir(parents=True, exist_ok=True)
 
     # Pre-fetch stats (requires YOUTUBE_API_KEY in .env)
-    yt      = get_video_stats(video_id, YOUTUBE_API_KEY)
+    yt = {}
+    try:
+        yt = get_video_stats(video_id, YOUTUBE_API_KEY)
+    except RuntimeError as e:
+        if str(e) == "YOUTUBE_QUOTA_EXCEEDED":
+            if idx == 1: # Only print this verbose warning once per run
+                print(f"      [WARN] YouTube Data API Quota Exceeded. Some metadata (duration/views) will be missing.")
+        else:
+            raise
     
     # --- Early Filter: Disabled Comments ---
     if yt and yt.get("comments_disabled"):

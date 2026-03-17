@@ -92,6 +92,8 @@ Analyze your dataset balance and engagement distribution:
 ```bash
 python video_pipeline/visualize_diversity.py
 ```
+> [!TIP]
+> **Interactive Reports:** You can generate a beautiful, interactive Plotly dashboard. Use `--show-report` to view it instantly in your browser (temporary), or `--export-report` to save it to the `YTCBERT/reports/` folder!
 
 ### 5. Dataset Export
 Build your training-ready JSONL file:

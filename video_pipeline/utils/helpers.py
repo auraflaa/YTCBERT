@@ -116,33 +116,63 @@ def get_video_stats(video_id: str, api_key: str) -> dict:
     Fetches title, comment_count, view_count, like_count, and duration for a video.
     Returns an empty dict if the key is missing or the request fails.
     """
-    if not api_key:
+    res = get_video_stats_batch([video_id], api_key)
+    return res.get(video_id, {})
+
+def get_video_stats_batch(video_ids: list[str], api_key: str) -> dict[str, dict]:
+    """
+    Fetches stats for UP TO 50 videos in a single API call!
+    This reduces quota usage by 50x.
+    Returns a dictionary mapping video_id -> stats dict.
+    """
+    if not api_key or not video_ids:
         return {}
+    
+    # YouTube API limit: max 50 IDs per request
+    if len(video_ids) > 50:
+        video_ids = video_ids[:50]
+        
+    ids_param = ",".join(video_ids)
     try:
-        # part=contentDetails is needed for duration
         url = (
             f"https://www.googleapis.com/youtube/v3/videos"
-            f"?part=statistics,snippet,contentDetails&id={video_id}&key={api_key}"
+            f"?part=statistics,snippet,contentDetails&id={ids_param}&key={api_key}"
         )
         with urllib.request.urlopen(url, timeout=10) as resp:
             data = json.loads(resp.read())
+            
         items = data.get("items", [])
-        if not items:
-            return {}
-        snippet = items[0].get("snippet", {})
-        stats   = items[0].get("statistics", {})
-        content = items[0].get("contentDetails", {})
-        return {
-            "title":         snippet.get("title", ""),
-            "channel_title": snippet.get("channelTitle", "Unknown Channel"),
-            "comment_count": int(stats.get("commentCount", 0)) if "commentCount" in stats else 0,
-            "view_count":    int(stats.get("viewCount",    0)),
-            "like_count":    int(stats.get("likeCount",    0)),
-            "duration":      parse_duration(content.get("duration", "")),
-            "comments_disabled": "commentCount" not in stats
-        }
-    except Exception:
+        results = {}
+        for item in items:
+            v_id    = item.get("id")
+            snippet = item.get("snippet", {})
+            stats   = item.get("statistics", {})
+            content = item.get("contentDetails", {})
+            
+            results[v_id] = {
+                "title":         snippet.get("title", ""),
+                "channel_title": snippet.get("channelTitle", "Unknown Channel"),
+                "comment_count": int(stats.get("commentCount", 0)) if "commentCount" in stats else 0,
+                "view_count":    int(stats.get("viewCount",    0)),
+                "like_count":    int(stats.get("likeCount",    0)),
+                "duration":      parse_duration(content.get("duration", "")),
+                "comments_disabled": "commentCount" not in stats
+            }
+    except urllib.error.HTTPError as e:
+        if e.code == 403:
+            try:
+                err_content = e.read().decode().lower()
+                if "quota" in err_content:
+                    raise RuntimeError("YOUTUBE_QUOTA_EXCEEDED")
+            except RuntimeError:
+                raise # Re-raise our specific error
+            except Exception:
+                pass
         return {}
+    except Exception as e:
+        # Silently return empty dicts on generic failures
+        return {}
+
 # ---------------------------------------------------------------------------
 # Retry helper
 # ---------------------------------------------------------------------------

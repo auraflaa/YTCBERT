@@ -5,6 +5,8 @@ Scans the extraction output directory and identifies "dud" videos:
 - Missing transcripts
 - Missing or empty comments.json
 - Missing output folders
+
+Automatically creates timestamped backups in the master backups/ directory before altering the video list.
 """
 import argparse
 import sys
