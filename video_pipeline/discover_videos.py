@@ -269,15 +269,12 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
                                 time.sleep(wait_sec)
                                 continue # Retry the same query
                             
-                            # Tier 2: Hard Session Block
-                            if "rate-limited" in err_str or "try again later" in err_str:
-                                progress.console.print(Panel(
-                                    "[bold red][BLOCK] Your IP/Session has been rate-limited by YouTube.[/bold red]\n"
-                                    "Please wait [bold yellow]60 minutes[/bold yellow] before retrying.\n"
-                                    f"Discovery halted at [cyan]{total_existing + len(video_links)}[/cyan] videos.",
-                                    title="YouTube Safety Halt", border_style="red"
-                                ))
-                                return video_links
+                            # Tier 2: Transient Bot Block (Sign in to confirm / Try again later)
+                            if "rate-limited" in err_str or "try again later" in err_str or "sign in" in err_str:
+                                wait_sec = 10 * (attempt + 1)
+                                progress.update(task, description=f"[yellow]Transient Block[/yellow] - Sleeping {wait_sec}s & Switching Queries...")
+                                time.sleep(wait_sec)
+                                break # Give up on this specific niche/seed and try a completely new query
                             
                             # Other errors (e.g. network) - Just skip silently
                             break # Give up on this specific niche/seed
