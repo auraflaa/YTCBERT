@@ -1,0 +1,36 @@
+{
+  "video_id": "gRlR4cxA2XA",
+  "url": "https://www.youtube.com/watch?v=gRlR4cxA2XA",
+  "extracted_at": "2026-03-18T16:30:24.089138+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 16416,
+    "unique_word_count": 1218,
+    "vocabulary_richness": 0.074,
+    "line_count": 2211,
+    "char_count": 80872,
+    "avg_words_per_line": 7.4,
+    "estimated_duration_mins": 126.3,
+    "top_keywords": [
+      "okay",
+      "let",
+      "right",
+      "here",
+      "same",
+      "everyone",
+      "yeah",
+      "things",
+      "idea",
+      "using"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

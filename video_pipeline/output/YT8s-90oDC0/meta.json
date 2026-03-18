@@ -1,0 +1,36 @@
+{
+  "video_id": "YT8s-90oDC0",
+  "url": "https://www.youtube.com/watch?v=YT8s-90oDC0",
+  "extracted_at": "2026-03-18T16:30:51.197999+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 115527,
+    "unique_word_count": 3475,
+    "vocabulary_richness": 0.03,
+    "line_count": 19946,
+    "char_count": 674560,
+    "avg_words_per_line": 5.8,
+    "estimated_duration_mins": 888.7,
+    "top_keywords": [
+      "let",
+      "method",
+      "code",
+      "type",
+      "relevant",
+      "class",
+      "employee",
+      "object",
+      "list",
+      "user"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

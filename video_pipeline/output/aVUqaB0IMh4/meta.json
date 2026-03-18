@@ -1,0 +1,36 @@
+{
+  "video_id": "aVUqaB0IMh4",
+  "url": "https://www.youtube.com/watch?v=aVUqaB0IMh4",
+  "extracted_at": "2026-03-18T16:30:58.925446+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 20985,
+    "unique_word_count": 1676,
+    "vocabulary_richness": 0.08,
+    "line_count": 2969,
+    "char_count": 108604,
+    "avg_words_per_line": 7.1,
+    "estimated_duration_mins": 161.4,
+    "top_keywords": [
+      "here",
+      "click",
+      "ground",
+      "again",
+      "usb",
+      "pcb",
+      "pin",
+      "course",
+      "example",
+      "power"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

@@ -11,6 +11,9 @@ import sys
 import json
 import urllib.request
 import urllib.error
+import urllib.parse
+import os
+from dotenv import load_dotenv
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
@@ -23,6 +26,7 @@ BASE_DIR = Path(__file__).parent
 VIDEO_FILE = BASE_DIR / "video.txt"
 DEFAULT_WORKERS = 10
 console = Console()
+load_dotenv()
 
 try:
     from utils.helpers import extract_video_id
@@ -32,17 +36,11 @@ except ImportError:
         match = re.search(r"v=([a-zA-Z0-9_-]{11})", url)
         return match.group(1) if match else None
 
-def verify_single_video(url, category, line_no, seen_videos, lock):
+def verify_single_video(url, category, line_no):
     """Verifies existence and basic status of a single YouTube video with retries."""
     video_id = extract_video_id(url)
     if not video_id:
         return line_no, url, "INVALID", "Could not parse video ID", category
-    
-    with lock:
-        if video_id in seen_videos:
-            orig_lno = seen_videos[video_id]
-            return line_no, video_id, "DUPLICATE", f"Same as line {orig_lno}", category
-        seen_videos[video_id] = line_no
 
     max_retries = 5
     for attempt in range(max_retries):
@@ -71,11 +69,60 @@ def verify_single_video(url, category, line_no, seen_videos, lock):
                 import time
                 time.sleep(1)
                 continue
-            return line_no, video_id, "ERROR", str(e), category
+def parse_yt_duration(duration_str):
+    import re
+    match = re.match(r'PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?', duration_str or "")
+    if not match: return 0
+    h, m, s = match.groups()
+    return int(h or 0) * 3600 + int(m or 0) * 60 + int(s or 0)
+
+def verify_api_batch(batch, api_key):
+    """Verifies a batch of up to 50 videos via YouTube API."""
+    batch_results = []
+    missing_or_error = []
+    
+    vid_map = {t[3]: t for t in batch} # v_id -> (url, cat, lno, vid_id)
+    ids_param = ",".join(vid_map.keys())
+    
+    try:
+        url = f"https://www.googleapis.com/youtube/v3/videos?part=snippet,status,contentDetails,statistics&id={ids_param}&key={api_key}"
+        with urllib.request.urlopen(url, timeout=10) as resp:
+            data = json.loads(resp.read())
+            
+        found_ids = set()
+        for item in data.get("items", []):
+            v_id = item["id"]
+            found_ids.add(v_id)
+            t = vid_map[v_id]
+            
+            status_block = item.get("status", {})
+            dur_str = item.get("contentDetails", {}).get("duration", "PT0S")
+            dur_sec = parse_yt_duration(dur_str)
+            comment_count = int(item.get("statistics", {}).get("commentCount", 0))
+
+            if status_block.get("privacyStatus") not in ("public", "unlisted"):
+                 batch_results.append((t[2], v_id, "PRIVATE", "Video is not public", t[1]))
+            elif status_block.get("embeddable") is False:
+                 batch_results.append((t[2], v_id, "RESTRICTED", "Embeds disabled", t[1]))
+            elif dur_sec < 30:
+                 batch_results.append((t[2], v_id, "INVALID", f"Too short ({dur_sec}s)", t[1]))
+            elif comment_count == 0:
+                 batch_results.append((t[2], v_id, "INVALID", "No comments", t[1]))
+            else:
+                 batch_results.append((t[2], v_id, "OK", item["snippet"].get("title", ""), t[1]))
+        
+        missing_ids = set(vid_map.keys()) - found_ids
+        for m_id in missing_ids:
+            missing_or_error.append(vid_map[m_id])
+            
+    except Exception:
+        missing_or_error.extend(batch)
+        
+    return batch_results, missing_or_error
 
 def main():
-    parser = argparse.ArgumentParser(description="Verify YouTube videos in video.txt using OEmbed.")
-    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Parallel workers")
+    parser = argparse.ArgumentParser(description="Verify YouTube videos in video.txt.")
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Parallel workers for oEmbed fallback")
     args = parser.parse_args()
 
     if not VIDEO_FILE.exists():
@@ -86,22 +133,36 @@ def main():
     tasks = []
     current_cat = "Uncategorized"
     
+    seen_videos = {}
+    lock = Lock()
+    results = []
+    
     for i, line in enumerate(lines, 1):
         clean = line.strip()
         if clean.startswith("# Category:"):
             current_cat = clean.replace("# Category:", "").strip()
         elif clean and not clean.startswith("#"):
-            tasks.append((clean, current_cat, i))
+            vid_id = extract_video_id(clean)
+            if vid_id:
+                if vid_id in seen_videos:
+                    results.append((i, vid_id, "DUPLICATE", f"Same as line {seen_videos[vid_id]}", current_cat))
+                else:
+                    seen_videos[vid_id] = i
+                    tasks.append((clean, current_cat, i, vid_id))
+            else:
+                results.append((i, clean, "INVALID", "Could not parse video ID", current_cat))
 
     if not tasks:
         console.print("[yellow]No video links found to verify.[/yellow]")
         return
 
-    console.print(f"[bold blue]Verifying {len(tasks)} videos using {args.workers} workers...[/bold blue]")
-
-    results = []
-    seen_videos = {}
-    lock = Lock()
+    api_key = os.getenv("YOUTUBE_API_KEY")
+    if api_key:
+        console.print(f"[bold blue]Executing Verification Engine...[/bold blue]")
+        batch_size = 50
+    else:
+        console.print(f"[bold blue]Verifying {len(tasks)} videos via oEmbed using {args.workers} workers...[/bold blue]")
+        batch_size = 1
 
     with Progress(
         TextColumn("[progress.description]{task.description}"),
@@ -115,17 +176,45 @@ def main():
     ) as progress:
         task_id = progress.add_task("Verifying", total=len(tasks))
         
-        with ThreadPoolExecutor(max_workers=args.workers) as executor:
-            futures = [executor.submit(verify_single_video, t[0], t[1], t[2], seen_videos, lock) for t in tasks]
-            try:
-                for future in as_completed(futures):
-                    results.append(future.result())
-                    progress.advance(task_id)
-            except KeyboardInterrupt:
-                progress.console.print("\n[bold red][HALT] Verification interrupted by user.[/bold red]")
-                for f in futures:
-                    f.cancel()
-                # Proceed to show results for what was done
+        if api_key:
+            # BATCHED API APPROACH (MULTI-THREADED)
+            batches = [tasks[i:i + batch_size] for i in range(0, len(tasks), batch_size)]
+            missing_or_error_tasks = []
+            
+            with ThreadPoolExecutor(max_workers=args.workers) as executor:
+                futures = [executor.submit(verify_api_batch, b, api_key) for b in batches]
+                try:
+                    for future in as_completed(futures):
+                        batch_res, batch_missing = future.result()
+                        results.extend(batch_res)
+                        missing_or_error_tasks.extend(batch_missing)
+                        # Advance progress by the number of successes in this batch
+                        progress.advance(task_id, advance=len(batch_res))
+                except KeyboardInterrupt:
+                    progress.console.print("\n[bold red][HALT] Verification interrupted by user.[/bold red]")
+                    for f in futures:
+                        f.cancel()
+
+            # FALLBACK: Double-check any missing items using original multi-threaded oEmbed
+            if missing_or_error_tasks:
+                with ThreadPoolExecutor(max_workers=args.workers) as executor:
+                    futures = [executor.submit(verify_single_video, t[0], t[1], t[2]) for t in missing_or_error_tasks]
+                    for future in as_completed(futures):
+                        results.append(future.result())
+                        progress.advance(task_id, advance=1)
+                        
+        else:
+            # ORIGINAL OEMBED THREADED APPROACH (No API Key)
+            with ThreadPoolExecutor(max_workers=args.workers) as executor:
+                futures = [executor.submit(verify_single_video, t[0], t[1], t[2]) for t in tasks]
+                try:
+                    for future in as_completed(futures):
+                        results.append(future.result())
+                        progress.advance(task_id)
+                except KeyboardInterrupt:
+                    progress.console.print("\n[bold red][HALT] Verification interrupted by user.[/bold red]")
+                    for f in futures:
+                        f.cancel()
 
     # Sort results by line number
     results.sort(key=lambda x: x[0])

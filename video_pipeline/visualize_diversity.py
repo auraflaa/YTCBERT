@@ -7,7 +7,7 @@ Generates a visual summary of the discovered dataset, including:
 - Channel Diversity (Unique Channels)
 - Content Coverage (Total Duration)
 
-Supports terminal-based dashboards using `rich` and interactive HTML dashboards using `plotly` 
+Supports terminal-based dashboards using `rich` and interactive premium JS dashboards 
 (--show-report / --export-report).
 """
 
@@ -20,8 +20,9 @@ from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import pandas as pd
+import json
+from datetime import datetime
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
@@ -139,121 +140,211 @@ def create_dashboard(df):
     console.print(Columns([col1, col2], expand=True))
     console.print(Panel(cat_table, border_style="magenta"))
 
-def generate_plotly_report(df, save_path=None):
-    """Generates an interactive HTML dashboard using Plotly."""
-    console.print("\n[cyan]Generating interactive Plotly dashboard...[/cyan]")
+def generate_premium_dashboard(df, save_path=None):
+    """Generates a high-fidelity, interactive HTML dashboard using Tailwind + Plotly Components."""
+    console.print("\n[cyan]Generating premium dashboard...[/cyan]")
     
-    fig = make_subplots(
-        rows=2, cols=2,
-        subplot_titles=("Most Common Categories (Sorted)", "Top 10 Channels by Content", 
-                        "Views Distribution", "Views vs Duration (Seconds)"),
-        specs=[[{"type": "xy"}, {"type": "xy"}],
-               [{"type": "xy"}, {"type": "xy"}]]
-    )
+    # Pre-process data
+    total_vids = len(df)
+    unique_cats = df['category'].nunique()
+    unique_channels = df['channel_title'].nunique()
+    df['view_count_num'] = pd.to_numeric(df['view_count'], errors='coerce').fillna(0)
+    df['duration_sec'] = pd.to_numeric(df['duration'], errors='coerce').fillna(0)
     
-    # 1. Category Chart (Horizontal Bar Chart for readability, sorted low to high so largest is at top)
+    total_duration_raw = int(df['duration_sec'].sum())
+    total_duration_fmt = fmt_duration(total_duration_raw)
+    avg_views = int(df['view_count_num'].mean())
+    
+    # --- 1. Category Chart (Dynamic Height!) ---
     cat_counts = df['category'].value_counts().reset_index()
     cat_counts.columns = ['Category', 'Count']
     cat_counts = cat_counts.sort_values(by='Count', ascending=True)
-    fig.add_trace(go.Bar(
-        y=cat_counts['Category'], 
-        x=cat_counts['Count'], 
+    # Ensure every category has at least 28 pixels of vertical space so they never squish
+    cat_height = max(500, len(cat_counts) * 28)
+    
+    fig_cat = go.Figure(go.Bar(
+        x=cat_counts['Count'].tolist(),
+        y=cat_counts['Category'].tolist(),
         orientation='h',
-        marker=dict(color='cyan'),
-        name="Category",
-        showlegend=False
-    ), row=1, col=1)
+        marker=dict(color='#06b6d4', opacity=0.8, line=dict(color='#0891b2', width=1))
+    ))
+    fig_cat.update_layout(
+        height=cat_height, margin=dict(l=180, r=20, t=40, b=40),
+        title=dict(text="Category Distribution", font=dict(color='white')), 
+        template="plotly_dark",
+        paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)'
+    )
+    cat_html = fig_cat.to_html(full_html=False, include_plotlyjs=False)
     
-    # 2. Top Channels Bar Chart
-    channel_counts = df['channel_title'].value_counts().head(10).reset_index()
-    channel_counts.columns = ['Channel', 'Count']
-    channel_counts = channel_counts.sort_values(by='Count', ascending=True)
-    fig.add_trace(go.Bar(
-        y=channel_counts['Channel'], 
-        x=channel_counts['Count'], 
+    # --- 2. Channel Chart (Top 15) ---
+    chan_counts = df['channel_title'].value_counts().head(15).reset_index()
+    chan_counts.columns = ['Channel', 'Count']
+    chan_counts = chan_counts.sort_values(by='Count', ascending=True)
+    
+    fig_chan = go.Figure(go.Bar(
+        x=chan_counts['Count'].tolist(),
+        y=chan_counts['Channel'].tolist(),
         orientation='h',
-        marker=dict(color='magenta'),
-        name="Channels",
-        showlegend=False
-    ), row=1, col=2)
+        marker=dict(color='#d946ef', opacity=0.8, line=dict(color='#c026d3', width=1))
+    ))
+    fig_chan.update_layout(
+        height=400, margin=dict(l=180, r=20, t=40, b=40),
+        title=dict(text="Top 15 Channels", font=dict(color='white')), 
+        template="plotly_dark",
+        paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)'
+    )
+    chan_html = fig_chan.to_html(full_html=False, include_plotlyjs=False)
     
-    # 3. Views Histogram
-    # Ensure view_count is numeric
-    df['view_count_num'] = pd.to_numeric(df['view_count'], errors='coerce').fillna(0)
+    fig_tier = go.Figure(go.Histogram(
+        x=df['view_count_num'].tolist(),
+        nbinsx=50,
+        marker=dict(color='#10b981', opacity=0.8, line=dict(color='#059669', width=1))
+    ))
+    fig_tier.update_layout(
+        height=400, margin=dict(l=60, r=20, t=40, b=40),
+        title=dict(text="Engagement Spread (Views)", font=dict(color='white')), 
+        template="plotly_dark",
+        paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)'
+    )
+    tier_html = fig_tier.to_html(full_html=False, include_plotlyjs=False)
     
-    fig.add_trace(go.Histogram(
-        x=df['view_count_num'], 
-        nbinsx=40, 
-        marker=dict(color='green'),
-        name="All Views",
-        showlegend=False
-    ), row=2, col=1)
-                  
-    # 4. Views vs Duration Scatter
-    # IMPORTANT: df['duration'] from get_video_stats is already an integer (total seconds).
-    df['duration_sec'] = pd.to_numeric(df['duration'], errors='coerce').fillna(0)
-    
-    # Only scatter valid durations/views
+    # --- 4. Interactive Scatter Plot ---
     valid_df = df[(df['duration_sec'] > 0) & (df['view_count_num'] > 0)]
+    fig_scatter = go.Figure()
     
-    # Enable segment extraction by splitting the scatter into Category traces!
-    # This automatically builds an interactive filter Legend on the right side.
-    unique_cats = valid_df['category'].unique()
-    for cat in unique_cats:
+    for cat in valid_df['category'].unique():
         cat_df = valid_df[valid_df['category'] == cat]
-        hover_text = cat_df.apply(lambda row: f"<b>{row['title']}</b><br>Channel: {row['channel_title']}<br>Views: {row['view_count_num']:,}<br>Duration (s): {row['duration_sec']}", axis=1)
+        hover_text = cat_df.apply(lambda row: f"<b>{row['title']}</b><br>Channel: {row['channel_title']}<br>Views: {row['view_count_num']:,}<br>Duration (s): {row['duration_sec']}", axis=1).tolist()
         
-        fig.add_trace(go.Scatter(
-            x=cat_df['duration_sec'], 
-            y=cat_df['view_count_num'], 
+        fig_scatter.add_trace(go.Scatter(
+            x=cat_df['duration_sec'].tolist(), 
+            y=cat_df['view_count_num'].tolist(), 
             mode='markers', 
             text=hover_text,
             hoverinfo='text',
-            name=cat,          # Adds to Legend!
+            name=cat,
             marker=dict(opacity=0.7, size=8)
-        ), row=2, col=2)
-                  
-    fig.update_layout(
-        height=900, 
-        title_text="<b>YTCBERT Dataset Diversity Report</b>", 
-        title_x=0.5,
-        showlegend=True,  # Turn on the legend for the scatter plot
-        legend_title_text="Isolate Segments (Double-Click):",
+        ))
+        
+    fig_scatter.update_layout(
+        height=700, margin=dict(l=80, r=20, t=60, b=60),
+        title=dict(text="Views vs Duration (Double-Click Legend to Isolate)", font=dict(color='white')),
         template="plotly_dark",
-        margin=dict(l=20, r=20, t=60, b=20),
-        hoverlabel=dict(bgcolor="white", font_size=13, font_family="Arial", font_color="black")
+        xaxis_title="Duration (Seconds)", yaxis_title="Views",
+        paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
+        hoverlabel=dict(bgcolor="white", font_size=13, font_family="Inter", font_color="black")
     )
+    scatter_html = fig_scatter.to_html(full_html=False, include_plotlyjs=False)
+
+    # --- HTML Template (Tailwind + Plotly) ---
+    html_template = f"""<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTCBERT Diversity Dashboard</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Plotly.js (Loaded ONCE) -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
     
-    # Update axes titles for clarity
-    fig.update_xaxes(title_text="Video Count", row=1, col=1)
-    fig.update_xaxes(title_text="Video Count", row=1, col=2)
-    fig.update_xaxes(title_text="Views", row=2, col=1)
-    fig.update_xaxes(title_text="Duration (Seconds)", row=2, col=2)
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {{ font-family: 'Inter', sans-serif; }}
+        .glass {{ background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }}
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen">
     
-    fig.update_yaxes(title_text="Category", row=1, col=1)
-    fig.update_yaxes(title_text="Channel", row=1, col=2)
-    fig.update_yaxes(title_text="Frequency", row=2, col=1)
-    fig.update_yaxes(title_text="Views", row=2, col=2)
-    
-    html_content = fig.to_html(full_html=True, include_plotlyjs='cdn')
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 glass border-b border-slate-800 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="p-2 bg-cyan-500/20 rounded-lg text-cyan-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h1 class="text-xl font-bold tracking-tight text-white">YTCBERT <span class="text-slate-400 font-light">Diversity Dashboard</span></h1>
+        </div>
+        <div class="text-sm text-slate-400 bg-slate-800/50 px-3 py-1 rounded-full border border-slate-700">
+            Internal Dataset Audit • {datetime.now().strftime("%Y-%m-%d")}
+        </div>
+    </nav>
+
+    <main class="p-6 lg:p-10 space-y-10">
+        
+        <!-- Header / Metrics -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">Total Videos</p>
+                <h2 class="text-3xl font-bold text-white">{total_vids:,}</h2>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">Niches Coverage</p>
+                <h2 class="text-3xl font-bold text-cyan-400">{unique_cats}</h2>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">Unique Channels</p>
+                <h2 class="text-3xl font-bold text-magenta-400">{unique_channels}</h2>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">Avg Engagement</p>
+                <h2 class="text-3xl font-bold text-green-400">{avg_views:,} <span class="text-sm font-normal text-slate-500">views</span></h2>
+            </div>
+             <div class="glass p-6 rounded-2xl">
+                <p class="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-1">Total Duration</p>
+                <h2 class="text-3xl font-bold text-amber-400">{total_duration_fmt}</h2>
+            </div>
+        </div>
+
+        <!-- Major Visuals -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- Category Distribution: Needs massive vertical height, so place it in its own full-width block or a large column -->
+            <div class="lg:col-span-12 glass p-4 rounded-3xl overflow-hidden">
+                <div class="w-full overflow-y-auto" style="max-height: 800px;">
+                    {cat_html}
+                </div>
+            </div>
+
+            <!-- Side Panels -->
+            <div class="lg:col-span-6 glass p-4 rounded-3xl">
+                {chan_html}
+            </div>
+
+            <!-- Engagement Bar -->
+            <div class="lg:col-span-6 glass p-4 rounded-3xl">
+                {tier_html}
+            </div>
+            
+            <!-- Scatter Plot -->
+            <div class="lg:col-span-12 glass p-4 rounded-3xl">
+                {scatter_html}
+            </div>
+        </div>
+
+    </main>
+    <footer class="p-10 text-center text-slate-500 text-sm">
+        Generated by YTCBERT Engine Pipeline v1.0
+    </footer>
+</body>
+</html>"""
     
     if save_path:
         with open(save_path, "w", encoding="utf-8") as f:
-            f.write(html_content)
-        console.print(f"[bold green]Report explicitly saved to:[/bold green] {save_path}")
+            f.write(html_template)
+        console.print(f"[bold green]Premium dashboard explicitly saved to:[/bold green] {save_path}")
     else:
-        fd, temp_path = tempfile.mkstemp(suffix=".html", prefix="ytcbert_report_")
+        fd, temp_path = tempfile.mkstemp(suffix=".html", prefix="ytcbert_dashboard_")
         with os.fdopen(fd, "w", encoding="utf-8") as f:
-            f.write(html_content)
-        console.print(f"[bold green]Opening transient report in browser...[/bold green] [dim]({temp_path})[/dim]")
+            f.write(html_template)
+        console.print(f"[bold green]Opening transient premium dashboard in browser...[/bold green] [dim]({temp_path})[/dim]")
         webbrowser.open(f"file://{temp_path}")
 
 def main():
     parser = argparse.ArgumentParser(description="Visualize diversity and distributions of video.txt.")
     parser.add_argument("--file", default=BASE_DIR / "video.txt", help="Path to video list")
     parser.add_argument("--workers", type=int, default=15, help="Parallel workers for metadata fetching")
-    parser.add_argument("--show-report", action="store_true", help="Open an interactive Plotly HTML report in browser (temporary)")
-    parser.add_argument("--export-report", action="store_true", help="Save the interactive Plotly HTML report to project directory")
+    parser.add_argument("--show-report", action="store_true", help="Open a premium interactive JS dashboard in browser (temporary)")
+    parser.add_argument("--export-report", action="store_true", help="Save the premium interactive JS dashboard to project directory")
     args = parser.parse_args()
 
     api_key = os.getenv("YOUTUBE_API_KEY")
@@ -340,7 +431,7 @@ def main():
         else:
             save_path = None
             
-        generate_plotly_report(df, save_path)
+        generate_premium_dashboard(df, save_path)
 
 if __name__ == "__main__":
     try:

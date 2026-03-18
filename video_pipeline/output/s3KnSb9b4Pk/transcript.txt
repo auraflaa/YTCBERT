@@ -1,0 +1,677 @@
+========================================================================
+  TRANSCRIPT
+========================================================================
+  Video ID   : s3KnSb9b4Pk
+  URL        : https://www.youtube.com/watch?v=s3KnSb9b4Pk
+  Extracted  : 2026-03-18 16:30:09 UTC
+  Words      : 4,520
+  Lines      : 667
+========================================================================
+
+Hello all, my name is Krishna Nayak and
+welcome to my YouTube channel. So guys,
+today in this particular video, we are
+going to go ahead and see the entire
+road map to learn AI in 2025
+and here I'm going to provide you all
+the free resources, videos and
+materials. So please make sure that you
+watch this video till the end. And why I
+am actually making this specific video?
+The reason is very simple because right
+now generative AI, agentic AI that is
+the talk of the town. Everybody should
+at least have the idea about generative
+AI application, generative agentic AI
+applications, how you should go ahead
+and build. Whether you are coming from a
+developer background, whether you are
+program managers, whether you are in the
+leadership position, everybody should
+know this. The reason is very simple
+because here you'll be able to derive
+some amazing projects. Many companies
+more than 80 percentage of companies
+more than 70 percentage of companies are
+working on different different kind of
+generative AI applications they're
+building rag applications they're using
+different kind of LLM models but still
+the question rises kish I'm a fresher
+please tell me a specific path kish I'm
+an experienced professional I'm working
+in this particular technology I really
+want to make a transition into AI so for
+that what should be the kind of road map
+there was also question like kish I am
+10 plus years of experience I'm not that
+interested in coding but definitely I
+want to get into AI right so you tell me
+a specific pro road map how we should go
+ahead and learn so in this particular
+video I am going to cover all these
+questions in a much more efficient
+manner this video will be little bit
+longer because here I've created a very
+efficient road map within 8 months of
+time frame you should be able to
+complete this if you are starting from
+scratch right other than this just
+follow this particular road map I have
+provided free videos resources just go
+ahead and watch it you will definitely
+be able to do amazing things over here
+so quickly I will go ahead and share my
+screen so here you can see that I have
+written this amazing road map to learn
+AI in 2025
+and here I have you know drawn three
+different routes one is the traditional
+route
+The second one is the modern route and
+the third one is something called as an
+advanced route. Now why do we actually
+require this routes? I will discuss
+about this in a much more detailed
+manner. So let's say uh as I said this
+road map actually incorporates for
+everyone whether you are a fresher
+whether you are an experienced
+professional
+whether you are a leader you are in a
+leadership position and whether you are
+a person who is also coming from a
+complete non-technical background. Okay,
+nontechnical background basically means
+let's say that you may be working in HR,
+you may be working in finance and you
+also specifically want to learn how to
+get into AI, right? So I will also be
+talking about them. So in this actual
+route here you can see this is my first
+path traditional route, second part is
+modern route and the third part is
+advanced route. So let me go ahead and
+fill like if someone was coming to me
+around 2 years back and they were asking
+Kish what should be the road map to
+learn data science I would basically say
+okay go ahead and first learn data
+science first. Okay so here I will go
+ahead and write here you have to learn
+data science first. Now what you really
+need to learn in data science. Okay here
+you need to master some amazing things
+like what do you need to master? you
+need to master
+DS that is data science, ML,
+CV,
+NLP. Okay. So here you need to master
+data science, machine learning, computer
+vision, NLP, right? And in all the
+specific topics you should be able to
+understand that stats and linear algebra
+is included a part of it. So in short,
+you're mastering all these technologies
+like data science, machine learning, CV
+and LP. And whenever I'm talking about
+mastering, I'm talking with respect to
+development of a end to-end project.
+Okay. So first of all, you need to learn
+data science first. If you are asking me
+2 years back and today also if any
+fresher who is in the college who wants
+to really sc start from scratch must
+definitely follow this road map itself.
+Okay. Then after mastering this the next
+stage is you go ahead and master Genai.
+So here we are going to go ahead and add
+Gen AI. Now when I say add Genai that
+basically means you go ahead and explore
+different different frameworks. Think
+about like how different different LLM
+models work. How does LLM training
+happen? You know how to go ahead and
+develop a generative AI applications.
+How to work with multimodel
+applications. Each and everything comes
+in generative AI. So all this detailed
+uh road map I will discuss okay as we go
+ahead. But right now let's cover this
+specific diagram this flowchart. Then
+after you've complete generative AI then
+we go to the next step wherein you can
+start learning agentic AI right agentic
+AI and MCP
+right now here when we are talking about
+agentic AI and MCP I'm actually talking
+about developing agentic AI applications
+agents you can go ahead and develop rag
+applications each and everything right
+so this should be the road map if
+someone was asking me 2 years back and
+if you are a fresher and experienced
+professionals also let's say that an
+experienced professional wants to start
+from uh like let's say this person is 0
+to 3 years of experience or 0 to 5 years
+of experience I would basically suggest
+this traditional route 2 years back okay
+but now the scenario has changed but
+even a fresher if if you're calling from
+college if you're coming from college if
+you're still in college you have just
+passed out you want to go get into AI
+still I would suggest follow this
+traditional route. This is the best
+traditional route wherein you're
+mastering everything like data science,
+machine learning, CV and LP. This will
+definitely be your base and on top of
+that you are adding generative AI and
+agentic AI skills. Okay. Now when I'm
+also talking about generative AI and
+agent AI skills, I'm also talking about
+developing end to-end projects, doing
+the deployment in cloud using some
+amazing LLM ops tools, each and
+everything. Okay. Now coming to the
+second part which is the modern route
+right nowadays if many of the people ask
+me kish
+which path should I probably go ahead
+and take in order to learn AI nowadays I
+usually prefer them modern route. Now
+what is modern route? Here I will say
+them hey go ahead and learn
+generative AI first.
+Okay. So here you go ahead and learn
+about generative AI first. In this
+generative AI you specifically
+understand about LLMs because at the end
+of the day it's all about content
+generation right specifically if you're
+working with NLP and all right and when
+I say generative AI first here obviously
+some of the knowledge of NLP is
+definitely required okay NLP machine
+learning it is required okay deep
+learning some of the uh topics with
+respect to that is required okay now
+after you you start with generative AI
+first of all you master generative AI
+Master
+generative AI.
+Okay. So this is the first step. So once
+you're starting generative a master it
+try to understand how to build
+generative AI application rag
+applications how to use different
+different frameworks like lang chain
+lang graph crew AI all the things and
+also do the deployment. Okay. On top of
+this once you complete this go ahead and
+start adding on top of it agentic AI
+also agentic AI and MCP let's say okay
+so on top of this you will go ahead and
+add aentic AI and then finally once you
+are covered this right and till you
+master this right you will definitely be
+able to get any kind of jobs in the
+market because if you know the entire
+life cycle if you have developed some
+amazing end to- end projects and here if
+you have also included LLM ops then
+you're good to go and work in any kind
+of industries. Now once you have
+completed this you're already working it
+now on top of that you can start
+learning your DS fundamentals.
+Okay start learning your DS
+fundamentals.
+So this is the road map I usually tell
+to the people who right now ask me and
+who are specifically these two type of
+peoples right freshers and experience
+and even nontechnical people I've seen
+many many nontechnical people also
+following this specific road map because
+they're saying that hey krish I really
+want to get into AI I also want to start
+coding right so all these things will
+basically be following this modern route
+so it is up to you whether you're in
+experience whether you are 0 to 5 years
+of experience I would still say hey go
+ahead and follow this particular pattern
+right because understand to learn DSML
+CV NLP it will definitely take time if I
+say about this it will actually take
+around 4 months if I talk about geni it
+will take around 2 months only if you
+are devoting around 2 hours daily right
+2 hours daily so you will definitely be
+able to cover this right here also for
+agentic you may again take 2 months now
+rag and all will come either in genative
+aentic okay Now I hope you are able to
+understand in the modern route because
+we cannot you know right now companies
+are looking for professionals who can
+work in generative building generative
+AI application and genetic AI
+application. So in this specific route
+I'm saying start learning generative AI
+first you need to have some basic
+knowledge about NLP right and then
+you're good to go and start with
+mastering generative AI. So once you are
+able to develop because here you're
+working with LLM models you're focusing
+on different different frameworks
+wherein you're focusing on understanding
+how to build those kind of applications.
+Yes, the basic knowledge of NLP, machine
+learning, deep learning can be asked in
+interviews. But nowadays still in this
+modern route, right? If you go for the
+interviews, they're focusing on building
+generative and agentic application, how
+to make rag, how to perform fine-tuning
+each and everything, right? So they're
+focusing more of this specific
+questions. Okay. Now coming to the third
+route. Okay. Which is the advanced route
+who are really really efficient people.
+You know they can start all three
+parallel. All three parallel
+all three parallel. Now these are those
+people who are already in the technical
+domain and they can quickly learn things
+they can start this three right but
+again the focus must be given in this
+modern route more right whenever you go
+ahead get time go ahead and learn the
+basics of DS machine learning CV and LP
+and continue this specific thing right
+and this is nothing but this is
+basically a comprehensive AI expert so
+here you actually become a AI expert
+right so this is what it is basically
+happening see for leadership ship and
+nontechnical people what I say usually
+you can follow this three parallel uh
+I'll not say for tech nontechnical
+nontechnical can actually follow this if
+you really want to get into the coding
+industry right coding industry then
+definitely follow this pattern that is
+traditional route then go to modern
+route then go to advanced route now you
+you make the decision you know what is
+basically required see wherever you
+learn something let's say if you are
+going to this modern route some amount
+of knowledge is will be required from
+the traditional route also some basic
+knowledge like NLP, machine learning,
+deep learning, you know, that will
+actually set up your base. But it is not
+like you will be stopping over here. If
+you start with this modern route, you'll
+get blocked somewhere. No, here focus
+more on building applications. Now I
+hope you are able to understand from
+this particular road map how you should
+basically go ahead and do this. If I
+will say if you are a leader, if you are
+a very experienced person just go ahead
+and follow this modern route or either
+you can also follow this advanced route
+where you can start things parallelly
+right but for freshers for the person
+who have just started want to get into
+the AI industry I would still suggest
+follow this traditional route it will
+take time but understand as you keep on
+learning things you'll understand the
+base of each and everything I have spent
+around 6 to 7 years making videos and
+I've covered almost everything in my
+YouTube channel. Just imagine 2K plus
+videos, right? 2Ks plus video. How many
+people have actually got benefited out
+of it? Okay, now this is fine, right?
+So, as I said, this is my main three
+stage. This is my first stage, second
+stage and third stage. Now for every
+stage I have created a specific road map
+along with free videos and materials
+which I will show you as we go ahead.
+Okay. Now let me go ahead and open my
+road map. So here you can clearly see
+that this is how my road map looks like.
+Okay. So very clear detailed road map.
+Over here you'll be able to see this.
+This is the AI mastery road map. The
+three core paths to excellence. Okay.
+And here you can see minimum Python
+3.11. You can also use 3.9 3. So here
+you have three sections. One is the data
+science and classical AI. Second is
+generative AI. Third is agentic AI. If
+you see path wise data science, NLP,
+computer vision four months I'm taking.
+If you spend two to three hours here,
+you'll be able to definitely become data
+scientist, ML engineer, data analyst.
+Part two is generative LMS. two months
+generative AI engineer, AI product
+developer, agent AI and autonomous
+system, two months a architect, agent
+developer and main thing. This is the
+same route that I have actually
+explained you right now. Okay. Now with
+respect to this, this is my section one.
+I have created a perfect road map to
+learn everything with the free video
+materials and everything itself. Right?
+So here you'll be able to see this
+comprehensive road map covers Python
+programming language stats, machine
+learning, this all you have to do is
+that just go ahead and click this. Okay?
+And if you remember this I have already
+created but I have updated a lot. So
+here you can see work of a data
+scientist data analyst. So first of all
+you need to start with Python
+programming language. All the Python
+programming languages basically over
+here. Then you go ahead with statistics.
+If you start taking the traditional
+route in statistics, I have created very
+detailed videos u in ML 43 videos are
+just there in statistics very detailed
+in my YouTube channel at any point of
+time and today also the highest number
+of views that I get from is from this
+specific videos then you have EDA then
+you have feature engineering then you
+have uh databases you can go ahead and
+learn about databases like MongoDB my
+SQL and all now see I'm breaking that
+everything right on the high,000 ft
+overview I have told about you have to
+learn this but in order to master all
+those things you require all this
+important techniques right then you have
+this machine learning then deep learning
+then NLP playlist then important
+framework of production deployment MLOps
+is the must over here in order to
+complete data science you if you really
+want to master you definitely need to
+know about machine learning operations
+that is design model deployment and
+operation so here you have all the free
+links along with the YouTube video so
+here if you just go ahead and click it
+You should be able to see videos. Yes,
+some amount of ads will be visible but
+it's okay. Okay. Uh it is a YouTube
+video so dedicated three three hour four
+hours videos are available over here
+completely in depth. Okay. Then you have
+circle CI then you have deployment of
+things evidently AI graphana airflow
+bento ML AWS sagemaker DVC dockers
+everything is basically there how to
+develop an end to-end projects with
+MLOps and deployment with open source
+tools. Here also we have created both in
+Hindi and both in English. Right? If you
+want to follow that also you can do
+machine learning, deep learning and LP
+projects. I have actually listed down
+around 10 to 15 different kind of
+projects which you can just go ahead and
+explore it. Always remember one very
+important thing is that you need to
+start using chat GPT cloud or Google
+Germany Grock efficiently. U the reason
+is that you don't need to create problem
+statement for you. You can use this
+platforms to develop modules quickly get
+the code become much more efficient
+become increase the AI productivity
+because once you're specifically coding
+you don't need to keep on searching for
+multiple resources just be at one point
+think of a specific use case ask it how
+to probably do it get the description
+and start building it always take help
+of AI don't do the development
+completely from scratch that would be my
+suggestion okay then here I've actually
+mentioned each and everything with
+respect to this okay now this is the
+first path to master data science in
+2025. Then we go ahead with generative
+AI. Okay. Now in generative AI, I've
+created another road map which is my
+second section and this is for the
+modern route. Okay. So here you'll be
+learning about large language model,
+prompt, diffusion model, fine-tuning
+techniques, multi model, AI system
+production deployment. If you go ahead
+and click this here you should be able
+to see the entire road map. Okay. So
+here to get into generative way how you
+should start what should be the basic
+things that you should know you need to
+know Python programming language you
+need to know basic machine learning and
+NLP. So here I've developed some amazing
+five live sessions. These are like big
+big sessions which you can actually just
+go ahead and cover it and automatically
+you should be able to quickly cover all
+the specific topics. Then basic learning
+deep learning concepts from day one to
+day five. Here also I've created amazing
+videos on this. These all are on my live
+sessions which you can quickly learn and
+to get the basic knowledge right.
+If you want to learn AI, you know, I can
+also take four years and teach you same
+concepts, right? But how much is
+actually required to get into industry
+all those specific videos is it's more
+than sufficient. If you tell me to
+create teach uh neural networks, I can
+take 2 days session also and still that
+topic will not get completed. And
+sometimes I may only like if you if I
+just tell you that I can also teach you
+in a way in just 2 hours so that you
+understand each and everything that is
+required in order to build a specific
+product. So that is the thing that you
+really need to understand. Do you really
+want to do a PhD or do you really want
+to learn concepts and start building
+products that is the most important
+thing okay now
+here is the next thing is that you have
+advanced NLP concepts day six to last
+video. Okay. So here you'll be able to
+see that here also detailed live
+sessions is there already. You can just
+go ahead and check it out. Okay. Then
+starting the journey towards generative
+AI, GPT4, mistral, llama, hugging face
+all these things. So you have the
+generative AI tutorials. I have also
+included with cloud like AWS, Azure,
+generative AI with Google Germany
+playlist and fine-tuning. So I have
+included what are the four main
+important things that we specifically do
+in generative AI. We develop generative
+AI applications. We develop uh we work
+with generative AI projects in AWS Azure
+uh for Google ge also I've actually
+created a separate playlist then here
+also you have all the finetuning. So
+with respect to finetuning also you can
+clearly go ahead and just go ahead and
+see the YouTube videos where I have
+actually made each and everything
+available for you. Okay then you have
+this vector databases which is also
+included over here. So in generative AI
+you should also know about vector store
+and vector databases and deployment of
+projects you can do it in AWS Azure use
+langu and hugging spaces. Okay. So these
+all things have been completed and I
+hope you should be able to explore
+things with the free content to learn
+the modern route wherein you are trying
+to learn about generative AI. Now once
+you complete generative AI the third
+thing is about section three which is
+nothing but agentic AI. Never stop at
+generative AI because now people are
+focusing on developing agentic
+application agents right. So for this
+there is a separate road map. So in this
+road map you'll be able to see again how
+to start with the agentic AI. First of
+all again you need to know Python
+programming language some basic
+knowledge of machine learning natural
+language processing deep learning for
+NLP. Then you go over here with end to
+end project. See I've created generative
+AI tutorials with project agentic AI
+tutorials agentic AI playlist with
+different frameworks multimodel rags
+each and everything is basically covered
+over here. And then finally you also go
+ahead and check out this model context
+protocol. I have also created a detailed
+playlist on MCP which will actually help
+you to understand each and everything.
+Just imagine guys so much of free
+content. Uh the best part is that I've
+contributed so much right that I'm
+really happy about it. You know people
+can just go ahead and start exploring
+things and can get into any industries.
+If you are just following this then here
+you can understand best aenti frameworks
+to learn like lang chain lang graph agno
+crewi autogen. So for all these things
+and there is also a live session which
+we are running in krishnak academy you
+can go ahead and explore this if you
+have any question call our counseling
+team right. So these are the three main
+section right. So here we have covered
+section one. This is my section one,
+section two and section 3. All
+separately I have created playlist from
+MLOps to LLM ops to data science,
+machine learning, CV, NLP. Each and
+everything is basically there. Okay, you
+can just go ahead and explore it. Once
+you complete this then here is the
+additional learning resources.
+See um I'll tell you what is the
+differences between the free content
+with respect to the content that is
+available in the Udemy and live courses
+also. Okay, as you all know I also sell
+courses in Udemy in the very affordable
+cost at 38 3.99. So if you think right
+you require more help more structured
+learning then you can just go ahead and
+follow my Udemy courses. So here I have
+created another GitHub over here to
+follow the road map of my Udemy courses.
+So again based on that track this is
+much more divided courses like if you
+want to go ahead and learn mathematics
+for data science Python with DSA data
+analyst track data science track
+generative and engine tracks MLOps and
+deployment track big data engineering
+track Figma course track anything that
+you want you can go ahead and do this
+and here I in a month I give three
+coupons on every 5th 15th and 25th. So
+based on the timeline you can go ahead
+and use that particular coupon to get
+the courses in 3.99. Okay. Now final
+thing is that these are my additional
+courses. Let's say you want more
+handling more support then just go ahead
+and join our live courses and
+mentorship. Right. So here you can go
+into this particular website
+krishnak.in/live
+classes. These are all my live classes
+that is currently going on. Okay. You
+can join for them. And this is my
+upcoming AI for leaders and
+professional. This is specifically for
+nontechnical people. Okay. And the
+reason of making this particular course
+is very simple because I want to cover
+everyone right whether you are coming
+from a coding background, non-coding
+background, anyone. I'm trying to cover
+each and every people out there with
+respect to the learning right. So you
+can go ahead and explore even this
+specific course. So this was the entire
+road map that we are following. How to
+use your road map? Choose your own path.
+Start with the section that aligns with
+your goal. Follow this repository. Each
+LinkedIn Each linked repository contains
+detailed week-by-eek plans. Complete
+projects are included in each road map.
+Track progress. Use the provided
+checklist to monitor your learning
+journey. Learning recommendations. Start
+with section one for strong foundation.
+Can jump to section two and then you can
+also explore section three that is agent
+AI. Now I hope you like this particular
+video. My main aim is to cater everyone
+wherein cost should never be a factor.
+So I've provided free content. I have
+even provided paid content. It's all
+your support. Based on your support
+only, I'll be able to do more things.
+But trust me, from the past six to seven
+years, we we and our entire team has
+done a really amazing work in making
+amazing career transition in the field
+of data science. Wherever we go in any
+company, they know about they know about
+me, they know about my team. That is the
+best thing
+feeling that uh I I basically give on my
+work that I do right and that is the
+best motivation factor for me. So I hope
+you like this particular video. This was
+it for my side. I'll see you in the next
+video. All the information will be given
+in the description of this particular
+video. I'll see you in the next video.
+Bye-bye. Take care.

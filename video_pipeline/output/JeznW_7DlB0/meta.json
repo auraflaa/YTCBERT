@@ -1,0 +1,36 @@
+{
+  "video_id": "JeznW_7DlB0",
+  "url": "https://www.youtube.com/watch?v=JeznW_7DlB0",
+  "extracted_at": "2026-03-18T16:30:47.906347+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 11486,
+    "unique_word_count": 821,
+    "vocabulary_richness": 0.071,
+    "line_count": 1511,
+    "char_count": 57536,
+    "avg_words_per_line": 7.6,
+    "estimated_duration_mins": 88.4,
+    "top_keywords": [
+      "class",
+      "here",
+      "gonna",
+      "let",
+      "method",
+      "name",
+      "dog",
+      "actually",
+      "right",
+      "object"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

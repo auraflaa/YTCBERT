@@ -1,0 +1,36 @@
+{
+  "video_id": "67_aMPDk2zw",
+  "url": "https://www.youtube.com/watch?v=67_aMPDk2zw",
+  "extracted_at": "2026-03-18T16:30:32.008878+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 641,
+    "unique_word_count": 264,
+    "vocabulary_richness": 0.412,
+    "line_count": 105,
+    "char_count": 3626,
+    "avg_words_per_line": 6.1,
+    "estimated_duration_mins": 4.9,
+    "top_keywords": [
+      "buddy",
+      "language",
+      "peter",
+      "conversations",
+      "words",
+      "set",
+      "model",
+      "parrot",
+      "called",
+      "next"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

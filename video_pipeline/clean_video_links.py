@@ -119,7 +119,7 @@ def clean_video_links(file_path, filter_private=False, apply_report=False, dry_r
             # 2. Check cached report (Fast)
             if apply_report and video_id in report_data:
                 status = report_data[video_id]
-                if status in ("PRIVATE", "NOT_FOUND", "DELETED"):
+                if status in ("PRIVATE", "NOT_FOUND", "DELETED", "RESTRICTED", "ERROR", "INVALID"):
                     private_count += 1
                     continue
 

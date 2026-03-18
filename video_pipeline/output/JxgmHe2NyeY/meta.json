@@ -1,0 +1,36 @@
+{
+  "video_id": "JxgmHe2NyeY",
+  "url": "https://www.youtube.com/watch?v=JxgmHe2NyeY",
+  "extracted_at": "2026-03-18T16:30:15.999851+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 69818,
+    "unique_word_count": 1890,
+    "vocabulary_richness": 0.027,
+    "line_count": 9542,
+    "char_count": 353972,
+    "avg_words_per_line": 7.3,
+    "estimated_duration_mins": 537.1,
+    "top_keywords": [
+      "here",
+      "basically",
+      "let",
+      "data",
+      "value",
+      "okay",
+      "theta",
+      "point",
+      "right",
+      "model"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

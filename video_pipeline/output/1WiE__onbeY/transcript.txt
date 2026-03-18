@@ -1,0 +1,1762 @@
+========================================================================
+  TRANSCRIPT
+========================================================================
+  Video ID   : 1WiE__onbeY
+  URL        : https://www.youtube.com/watch?v=1WiE__onbeY
+  Extracted  : 2026-03-18 16:30:41 UTC
+  Words      : 10,889
+  Lines      : 1,752
+========================================================================
+
+hello and welcome everyone to the
+labview exercises today's video is all
+about getting started to the labview
+programming so we will discuss about the
+very basics of the labview programming
+environment so that anyone can just jump
+start to laughing programming
+environment easily
+these are our today's topic
+topics that we will include in our
+basics of the labview
+so here are the list
+so now we will just jump on to the
+overlapping programming environment
+so at the very first time you will open
+your labview programming environment
+this is the window that will pop up in
+front of you
+so
+i will just maximize this window size so
+here is the first window that you have
+open in front of you
+now
+these are the there are some different
+files that you will encounter when you
+will just get used to of it but mostly
+we will just play with the vi's vi stand
+for virtual instrument so we here we
+will just open dot vi file
+but when you will get used of it or in
+another videos we will also see what are
+the other extensions of labview files
+and
+where and why they are being utilized
+and used
+so i will open a new vi to open a new vi
+i will just go on to file and then press
+new vi
+or shorter
+shortcut key is control plus n
+so press a new vi and there you will
+find out we have two
+uh windows that are popped up in front
+of us
+so what are those windows the first one
+that i am moving right now is just known
+as front panel front panel has a gray
+background and the white with the white
+background we have a block diagram
+everything that the user interacts with
+is placed on the front panel meanwhile
+our algorithm is being built or the
+functions that we think that we are
+being used should be implemented on our
+block diagram so let's
+uh let's just open it side by side i'll
+press ctrl t to open it side by side
+although mostly when we are doing
+programming
+we just jump on to either one of the
+front panel or on our block diagram
+so if you open just a front panel
+how to switch between the front panel
+and the block diagram you will just go
+on to the window and show block diagram
+similarly you will again
+on the block diagram you if you have
+just opened the block diagram you will
+go on to the window and just press con
+show front panel or you can switch by
+pressing ctrl e that is an easy way
+so
+you will most probably be switching
+between these two windows all of the
+time so that is why i've just
+tell you at the very first place
+so
+let's just again open those side by side
+so that it will be more easy
+for you to see how things works
+so here we have our front panel and in
+any space of the gray space if i just
+right click here is another menu that is
+just popped up in front of me so again i
+will repeat anything the user will
+interact will be here available so let's
+just suppose that the user will interact
+with the numerics
+again if i click the user will can be
+interacted with the thermometer
+and similarly the user can go and choose
+boolean
+and
+you can may need some waveform graphs
+and other things
+as you have noticed whenever i place
+anything on my front panel an image is
+being generated on the block diagram
+what does that means that means that
+everything you you place on the front
+panel has an image on the block diagram
+upon which you just implement some
+functions so how to implement those
+functions so to implement those
+functions you just right click on your
+white
+screen of the block diagram and you will
+find out that there is another menu
+functions
+list of functions that are available on
+our block diagram so how to implement
+those functions
+so
+you can implement those functions by
+just again going to their respective
+panels or you can build your own
+thinking that where it should be
+implemented
+so
+let's just start it with the very simple
+ones
+if i just delete out everything i will
+drag
+uh and select each and everything and i
+will just press delete and you'll find
+out that
+all the things have been just removed
+from our blog diagram as well so i will
+right click again to our front panel and
+then just go to numeric and place
+numeric control let's just say this is
+our a right now what i'm trying to do is
+i'll just do a plus b is equals to c
+so again i'll choose a numeric control
+as for b as a variable
+and then i will just select the name b
+so here we have a and b
+and now what i want is i want to show
+the results their addition
+on some another factor which i should be
+used as an indicator so again i'll right
+click go to numeric and i'll place
+indicator so this indicator will be my c
+so as you can see i have two variables
+and as a and b
+now i want to show the output as their
+addition on c
+so how will i implement this function
+i'll just right click on my block
+diagram and then just go to numeric and
+add
+addition function
+so in addition function or any other
+function what we need is i want to build
+some
+connect the wires between them so how do
+i connect wires so i will just connect
+it out on the one edge
+and
+connect the other edge
+notice that if you have
+uh
+if you have the face on the right side
+then it means it is a control and if you
+have a face or the node terminal on the
+left side then it means that it is an
+indicator right now
+so every time i just bring back my
+cursor near to the terminals they
+automatically changes
+i will just also tell that how it change
+so we have if i just go to tools or
+sorry i will just go to view we have a
+tools palette in here these are all the
+tools that are automatically being
+selected which means that we have a
+cursor right now and i can switch and
+toggle between them like connect wires
+which is automatically being connected
+now if i just bring back
+to near to the any terminal it is not
+changing because we have just disabled
+the tools these are the tools that are
+automatically selected so we do not want
+to mess with them so i'll just turn on
+its led so that we do not
+take any
+uh
+bad decisions or
+make mess with the program at the very
+beginning of our journey so i'll just
+close this out and now
+if i just increase my control like this
+way or this way and run my program this
+shows me the result as six
+so now i will also use some of the
+functions that are available as in here
+so do we get a used to of our front
+panel and block diagram so what are
+these functions that are available on
+our front panel so this is the function
+that runs the program and this is the
+function that continuously runs the
+program if we are not using loops that
+we will see what are the loops in
+when we progress in our this video so
+this is this the bot execution which
+means that if we are running the vi then
+we must also need to stop the vi so for
+that purpose i will just
+press
+apart execution and our vi will stop
+which means that our program is done
+just stopped so also what is this
+function so let's just say that i want
+to increase its size of three so what i
+will do i'll press this function and
+this will again
+pop up another menu and i can increase
+the size of the numbers
+and what i can other to know the thing
+is i can justify it
+uh what else i can do i can change its
+color as well let's just say green so as
+you can see the color is changed
+and similarly i can
+increase its size style
+let's just say it is bold so i can do
+whatever i want with the this function
+and what other things i can do in here
+on the front panel is align the object
+let's just suppose that we have two
+objects in here
+those are placed uh
+at the different positions
+so if i just click left edges those are
+aligned similarly i can just
+make their vertical gaps equal
+i can just
+make their size minimum and maximum
+these are the things that we use when we
+are
+doing some sophisticated programming or
+we want our front panel to look more
+appropriate and good so why i'm telling
+you this is just to get used to of this
+front panel and the block diagram
+so here we have again on our block
+diagram
+if i just increase this number
+and
+i just turn on this pull up which is
+highlight execution mode let's just
+turn on this pull up and i run my
+program on our block diagram it shows
+how the basically program works it means
+that it shows the program runs from the
+left to right
+so there are also many other functions
+that shows
+some other meanings true
+but here it is enough for us
+to
+for the very basic things
+uh to get
+just um indulge with different panel and
+block diagrams one more thing i would
+like to add in here is
+one thing that we can also do is we can
+search our controls or indicators from
+our front panel let's just say
+control
+so we have a tab control or other things
+that will pop up in front of us and we
+can just drag and drop them and place
+them as well but
+and similarly we can find out some
+functions in here such as i want the
+subtraction function
+subtraction subtract function
+so here is our subtract function i can
+either drop it or find it if i just
+press on find
+this will just directly bring me to that
+palette basically so i can just now drag
+and drop and place it on anywhere on my
+blog diagram
+but note that
+we will
+if i just
+press on
+windows show help context i can
+bring my cursor to any node this also
+gives me the detailed explanation of
+what this function is
+so this will just tell me that this is
+the subtract function that computes the
+difference between the two inputs
+so
+i hope this is just enough for
+uh getting started and with the
+front panel and block diagram interface
+now we will just move on to the next
+thing
+so i'll just delete this out from our
+block diagram uh select all and then
+just press delete so it will delete out
+from everything and even from the front
+panel so
+our next topic is data types so what are
+the data types in labview there are
+numeric data types which is
+in usually in the form of orange color
+boundary and then there is a boolean
+data type boolean data types means we
+are just playing with the true false
+condition
+up or down high or low which
+i can just change like this way and as
+you can see
+we have a boundary of a green color so
+can we just indulge directly with the
+numeric and the boolean no we cannot so
+let's just try doing it
+so if i just directly connect with the
+numeric with the boolean i here find out
+that the
+run button the run button or the run
+arrow is just in the form of a broken
+wire
+so why is it it is also in the form of a
+broken wire if i just bring back to the
+cursor to the broken wire it shows me
+that the error is you have connected two
+terminals of different data types
+so it also indicates as well as well as
+the beauty of labview is
+as soon as we make mistake in our front
+panel or the block diagram uh there is a
+error generates that tells us that we
+are making mistake we must have to
+remove it or solve it
+right now not at the end of the program
+now
+so either we can just go or press on the
+run button and we will find out there is
+a program uh there is an error and if i
+just double click on it it will also
+show me that here is the problem
+basically so i'll just delete this out
+and now i can just
+left click
+on the wire and just delete this out so
+why i cannot just connect between these
+two data types either we can just go
+with the same data types control and
+indicators let's just say this is my
+control as you can see in here as i have
+already repeated that if the face is
+just on the right side then it means it
+is a control if the face is on the left
+side then it means an indicator now i
+can just connect these two directly and
+there will be no error so if i just turn
+on the boolean and run the my program
+the boolean is turned on either like
+this way or we can just manipulate the
+data by using functionality
+what does it means to use the
+functionality
+this means that let's just suppose that
+i just to leave this out the boolean now
+i want to interact this numeric with
+this boolean so i can how can i do this
+i'll just go to
+my boolean palette and
+or sorry i'll just go to the comparison
+palette and i'll use a greater function
+why does it mean why does it i use and
+let's just say that if something just
+goes
+beyond
+80 then this led should turn on so
+to just go to greater than 80 we need
+the second step which means that at y
+point we need something that shows that
+it should either it is greater than 80
+or not so i'll just right click and i'll
+go to numeric and there i will find out
+the numeric constants although we have
+other functions but here just we need is
+the numeric constant
+so
+i can just place that in here double
+click on it and i can just select 80
+connect their terminals and connect the
+output
+so now if i run my program the boolean
+is off why is it off because it shows
+that the numeric control that in here is
+not greater than 80 so
+let's just make it
+bigger than 80 or greater than 18. now
+if i run my program as you can see in
+here
+my boolean is just turned on which shows
+that this numeric that at the number is
+greater than 80. so similar like in the
+similar way we can just manipulate with
+the other data types so what are the
+other data types that are available to
+us in here so we have string palettes
+let's just say we have this string
+as well as string indicator
+so either again we can just directly
+connect that with our string indicator
+or we must have to think some condition
+that may satisfy its position
+it means that the strings are just
+basically the text it means that we are
+just going with the text so i can just
+whatever i just write in the string
+control if i run my program it will be
+just reflected back onto the indicator
+so again if i just delete this string
+and remove the broken wire
+left click and then just delete so
+how can i manipulate the data in this in
+this way
+so right now i can manipulate the data
+by using a comparison comparison
+function and there i will just go select
+so again
+this if the numeric value is greater
+than 80 then i want to show some
+output in the form of string what does
+that mean i will just show you how
+just go to the string palette and there
+we'll find out the string constants
+so i'll just
+press use
+yes and then
+again go to the string palette or we can
+just make the copy of the constant by
+just pressing ctrl
+and then left click and then just drag
+so that is how you make copies of
+already placed functions in labview so
+here i'll just double click and press
+no
+so now i can just connect their
+terminals
+so what is this program is basically
+doing is
+if the numeric value is just greater
+than 80 it will also simulate the
+boolean
+and tells to turn on and also it will
+convey the message that if the the
+condition is true then it will just let
+it pass yes if the condition is false
+then it will let it pass no so let's
+just run our program
+here now if i run my program the value
+is already greater than 81 so it means
+that our boolean is on and string
+showing me yes
+if i just
+decrease its value and run my program it
+shows no and the boolean is turned off
+so these are some very basic data types
+in labview what are the other data types
+in labview
+we will also see in when we advance make
+some advancement in our
+video but here i will just show you
+the very
+few basics of the data types in here
+so these are
+some data types that are shown
+on my screen right now
+all right so
+we will see these application of these
+data types in our
+video
+when we just make some advancement right
+now i'll just delete
+or
+before deleting this out now our next
+function or the next topic are the
+loops so right now till now i was just
+pressing ctrl i was just pressing my run
+button every time i needed to run my
+program what if i need the program to
+run in a continuous manner without
+pressing
+this run button again and again so for
+that purpose i'll just right click on my
+block diagram and then just go to
+structures
+here the
+structures or any other palette one
+thing i want to add in here i can also
+pin out the palette which means that
+this palette will not lose
+when i am using any of its function in
+here so
+if you just want to disappear or remove
+this from the screen then yeah then you
+can just press close so that is how it
+will be removed from our screen but
+otherwise uh if you just
+go to structures
+and then we have two types of
+loops actually there are
+more like time sequences as well
+acts as a structure but mostly we
+encounter with for loops and while loops
+so
+what is the for loop so if i just place
+for loop like
+drag and drop and then just again drag
+it to the required position
+it will include including all the items
+within the loop
+area then it means that it is enclosed
+so now still as you can see it is giving
+me an error
+why does that means
+if i just click on that and then again
+double click on in here it shows that
+there is some problem with the for loop
+so what could be the problem in here
+let's just think about it
+yes you have imagined correctly
+how many time this for loop should
+execute
+basically the basic the basic difference
+between the for loop and the while loop
+is
+for loop just runs
+as many times as you decide so where we
+have decided that how many times this
+loop should work so here at the end
+position loop count you will just go and
+right click and create a constant
+so here
+it is now at at least said that this
+loop should
+run
+uh zero times but we do not want it to
+run 0 times we want it to run at least
+10 times
+so again
+if i just run my program
+i see that there nothing happened but
+why the loop iteration just happened
+very fast so
+what do we can do to slow down the loop
+iterations we just right click and go to
+the timing palette there we have
+different timing functions
+right now i will just use the weight
+function
+the weight function act as the delay
+between the iterations of the loops so
+i'll create a constant and here i can
+add 1000 here 1000 means one second
+uh
+for um
+because one digit expressed as a
+millisecond so
+1000 will be stand for as
+one second so make sure that you always
+put all the things within the loop so
+now if i run my program
+still we cannot see either it is running
+or not so how you can check that this is
+this program is running and
+with the each loop iteration how you can
+make sure so to make sure i will just go
+and
+when my cursor just changes to
+the
+terminal connection um
+icon i will just right click and just
+create an indicator so this indicator
+will show me how many times the loop has
+just iterated when i just run my program
+so now if i just run my program this is
+showing me 0 1 2 3 with the time
+difference of 1 second this will
+complete its iteration from 0 to 9
+because there are 10 iterations that
+start from 0 to 9 so that is how the for
+loop works now we will replace that with
+the while loop
+basic meanwhile you just have to take
+care of one thing if you just click on
+the for loop and delete all of the
+things that are available within that
+for loop will also be deleted even your
+functions that you have just called or
+all the things so how to get back all of
+this it's easy control plus z and you
+have got all the things back
+so how you can just
+replace the for loop with the while loop
+either you can
+you can just click on the structures and
+place a while loop
+or you can go again ctrl z
+or you can just
+right click on any of the boundary of
+the for loop and replace that with the
+while loop so now the loop is just
+changed while loop now you can just even
+delete this constant but still there is
+an error generated
+with our while loop now the condition
+changes the while loop acts like
+whenever the condition is made then the
+while loop should stop this is the
+functionality of the while loop that it
+iterates
+exclusively and it iterates infinitely
+unless you just decide when it should
+stop so to stop the while loop we must
+have to define some condition
+so either you can just
+make from your algorithm you can set
+that whenever the value is greater than
+80 then the loop should stop
+let's just say this is just connected
+and now we can just run our program so
+now we can just
+decrease it until we just go and
+eventually press 81
+now it is greater than 80 and as you can
+see our program has just stopped or we
+can set it the condition otherwise let's
+just remove the broken wires one other
+way to remove the broken wire is control
+plus p so that is the this way all of
+the broken wires will be removed
+automatically so now we can create an
+other condition in here the other
+condition could be just right click and
+create a control for it a button will be
+created on our front panel to stop the
+vi at
+when we want it so again
+just run the program
+now if even it is the value is greater
+than 82 or 81 the
+loop will not stop because it is not
+connected with that condition now the
+stop condition depends upon this stop
+button so now if i just press stop
+button
+the loop will stop within the time
+defined which means that after one
+second the loop will stop
+so that is how the loop works one more
+thing that i would like to add within
+this
+um
+within
+this
+portion of our
+video that
+within while loops we can do many things
+else let's just
+remove all of the things in here
+and now what else i can do is i would
+like to introduce shift registers in the
+lab view
+so what are the shift registers here
+so let's just say that
+here we have a boolean led
+and
+i want that to blink
+every time like the blink function so
+what i will do is
+i will connect
+the
+input of our indicator with the wall of
+our
+uh
+with our while loop right now it is just
+showing me an error which is not very
+good thing
+for our running the program so how to
+deal with this error basically i'll
+create a replace with the shift register
+now the shift register is created but
+still
+the function or the boolean is not
+satisfied with the condition that it
+should run so what i will do is i'll
+connect the broken wire with the shift
+register and now
+still there is
+some error
+so
+how to deal with it
+let's just remove the broken wire
+and then again connect and still it is
+not satisfied
+so
+i think we are making a mistake right in
+here
+so
+what is the mistake
+let's just say
+i'll go to boolean and i'll use not git
+so now if i just connect that in here
+and connect the output
+it
+comes the life
+it is now all green which means that we
+have successfully made the algorithm
+which means that now it allows to pass
+the data between the while loop so how
+the data will pass so if i just turn on
+the highlight execution mode and run my
+program it shows that the condition was
+true
+and the not gate we know the function of
+the not gate is to if the condition is
+true it will turn on the false if the
+condition of the false and then it will
+turn on the true so right now what it is
+doing is the condition passes through
+the not gate and goes to our shift
+register the shift register throws it
+back to
+on this terminal and then the terminal
+will pass the previous condition in here
+so that is how shift register is work
+shift registers are also very important
+to build some areas to do some other
+things like getting average and
+making pid control and many many many
+other things
+so let's just stop the highlight
+execution and now you can see
+our led is blinking with the time
+difference of
+one second
+so that is how we use loops in labview
+so now i will just delete out all the
+things from our front panel
+all right so now we will just move on to
+our next step of basics of level
+programming environment and the next
+step is our case structures and anims so
+what are the case structures usually in
+other programming environments we use if
+else conditions like if this happens
+then this should turn on or off
+else this should occur else this should
+occur so here we have case structures so
+let's just see where are the case
+structures so of course from the name it
+defines that it should be within
+structures so here we we go on to the
+structure here we have a case structure
+so
+here are our case structures so how does
+it work so basically it works when
+something comes true or false
+so let's just say
+i can use uh again thermometer in here
+and i can just say that if the
+thermometer values goes greater than
+uh something let's just say
+i'll choose greater than
+30
+for that purpose i'll create a constant
+and let's just say 30 uh then
+the condition will be true or false will
+be connected in here and the output
+result will give me
+a string indicator or something else
+so
+what
+what what we what is the output that we
+want so as an output let's just say i
+want
+the
+string indicator
+again in here like this way
+so
+i will just keep the string indicator
+outside of the
+case structure because in case structure
+we just implement the condition
+that we want
+so
+now the basic point is thermometer is
+just showing us as an indicator so can
+we use that as an indicator no we cannot
+if i just try using that let's just try
+connect that in here it is the broken
+wire because we cannot connect the
+indicator with the greater than function
+because it will not occur as an variable
+so what we need we will press ctrl z and
+then right click on our indicator in
+here and here we have another list and
+we can just change it to control
+so
+now it act will it will act as a control
+so now i can just connect that like this
+way
+so now we have a condition that will
+show that either it is a true or false
+in case of true let's just say that i
+will create a constant and put that
+inside of the
+case structure so now again it is
+showing me that there is some error
+because you just have to fill out the
+condition of true and false in every
+scenario scenario means
+it is true
+our condition has defined at this
+constant which is shows that the
+temperature
+[Music]
+is greater than
+30
+all right
+so
+again in the false condition what you
+can do is you can again create a
+constant
+which will show me
+um
+the temperature is
+less
+than
+30
+so that's how it will work so again what
+we need is we will place a while loop
+around it that we have seen a few
+moments earlier create a control and
+also
+place a weight uh
+timing delay so that the loop will not
+iterate too much fast so that this will
+not create a bogus or
+do not use excessive memory of our
+computer so now if i just run my program
+this is working right now the
+temperature is less than 30 and if i
+goes greater than 30 this shows that
+their furniture is greater than 30 so
+this is right now just using if and else
+so what if i want
+my case structure to act like
+the sub uh diagrams like 1 two three and
+four
+so
+we can just use that as well so to use
+that in that way
+we need
+another function
+so how we can just use that
+for one two three so we can use a select
+function so let's just say that as
+select function
+i just give the output of my greater
+than function to our select function in
+here
+and now we have again uh two conditions
+a true or false in the case of true
+let's just decide that
+if this value is greater than 30
+then the constant rate of constant as
+one otherwise in the case of false uh i
+will say that
+in the case of false it is zero
+uh now uh
+our next thing is
+if the value goes greater than
+if this value goes greater than 60 then
+what will happen
+now again we will use a case selector i
+will make more smash clear
+by just we can just make the more
+space clear by pressing
+this clean up diagram so now the space
+is more clean automatically like it is
+automatically cleaned
+and
+replaced at the appropriate places so
+now in this condition if this is false
+then
+then it is connected that in here if it
+is greater than this this will be the
+true function
+so in the case of true we have create a
+constant two
+so all right now we can just
+connect
+our output with that in here
+i can just place that in here and as an
+output i will just connect that in here
+so now it just shows me that we have
+zero
+uh
+now it is showing me that it is there is
+zero and one
+case structure but we have we should
+have three case structures right now
+again i will just press the cleanup
+diagram so that it will be more clearly
+visible to us
+so
+now it is showing me that we have zero
+and one k structure although we have
+just decided that there should be three
+case structures zero one and two
+because if it is um greater than 60 uh
+which and then the case structure will
+be two
+so we will just go into zero
+then one and
+right click on the space
+and then i can add
+a case after or before
+or i can duplicate the case or i can
+delete this case so in this case i will
+just add the case so that it will create
+the case number two
+so
+now again the con the problem is here
+that we have not created
+the every scenario fulfilling the not
+scenario this case structure is just
+empty and this string demands that uh
+there should be some output or
+the control or anything in within this
+case structure so again i'll just create
+a constant which will say that the
+temperature
+is greater
+than
+60
+so now if i just go on to my block deck
+our front panel and run my program it is
+showing that the temperature is greater
+than 30
+and if it goes greater than 60 now it is
+showing that the temperature is greater
+than 60
+greater than 30 and the temperature is
+less than 30. similarly we can just
+control our leds within by using this
+case structure single case structure as
+well
+all right so now we can
+use the case structure in an other way
+so how we can use the key structures in
+another way let's just say
+again i will just place this
+time delay function on to a side
+and delete
+all of the other things let's just say
+that i'll just leave this out
+as well as the string indicator
+and the string constant within that
+function as well or i can just keep that
+actually just to show you uh that
+everything that will be placed within
+this case structure can be manipulated
+so i will just clean up the wire
+which will just automatically adjust the
+wire to its best position
+so
+now these are the case uh structures in
+here available so now i'm gonna use
+um
+anom function and you me uh enumerated
+function is basically used
+when we are dealing with usually
+uh with the
+case structure uh multiple case
+structures or nested case structure
+which is just
+also named as uh state machines in
+labview
+so
+here we can just add the functions like
+if i just go on to its properties
+there i will find out
+edit items the first one i can add let's
+just say we'll add the multiple function
+in here as an add
+subtract
+and
+and let's just say the third one is
+multiply
+and the fourth one is in here as
+and at the fourth one we have
+we are
+[Music]
+we just have to delete out some function
+so our 0 is
+it
+and the fourth one is should also be
+deleted and the third one is
+divide
+so we have here zero one two three and
+if i just press ok we have an anom
+created and now i can just attach that
+in here
+so now if i just attach that our case
+structure automatically changes its
+names within the headings as subtract
+function add function multiply subtract
+at
+still we are seeing that there is one
+thing missing uh what is that so if we
+just see it closely we find out that
+there is multiply subtract and add
+function but still we are missing one
+function
+which is the division function so
+anywhere
+even after the subtract if i just add a
+case after it will automatically find
+out there is a divide function
+so here we have again there is a
+there is a problem that we
+just have
+that we need to fulfill each and every
+case of our case structure
+so
+in one case structure is just missing
+the link then it will show an error to
+us and we cannot run our program so
+again if i just create a constant or use
+default if unwired then it will just
+let me
+run the program so here
+i will just also write
+the name
+of
+the case structures that are available
+in here so if i just
+write down exactly
+i'll just multiply
+as well as if i just move on in here i
+can use subtract
+and lastly now we want to
+ah
+now we want to just add
+functions in here
+which means that we can add more
+functionality by uh
+um
+by implementing some functions with on
+two controls and getting the results on
+an indicator so how we will do that so
+here we have a numeric two control and
+numeric control and
+in the respective case structure i will
+add the respective function go to
+numeric and i can add subtract function
+in here
+and then in divide i can
+just bring the
+respective function that as i said
+earlier
+and then in the end we have a multiply
+function
+so here we have and now i can just
+connect them one by one
+so
+i can just connect it from the either
+way but just we need is the connections
+so
+again we are just saying one thing that
+the subtract functions containing the
+bad terminal as well as
+our case structure contains the empty
+cases
+empty cases means
+we have
+an empty output that we need to fulfill
+so here is what we have divide function
+as well as here and then it is just
+divided and now in the end we have the
+last one is our addition
+and now it will just
+allow me to run the program so now if i
+run my program in here
+it is just saying me that
+now the two numbers numeric one and y
+two are g being multiplied so three
+cross two is equals to six so now i can
+in the real time i can change their
+functionality up to subtract so now it
+is showing
+me that 2
+minus 3 is equals to minus 1 and if i
+just increase the number that acts
+accordingly so now i can just add so 5
+plus 3 is equals to eight and similarly
+i can just go on to divide and it is
+showing me that five divided by three is
+equal to one point six six six six seven
+so that's how case structures basically
+works in labview
+so what are the other structures are
+also available like for example the flat
+sequence that allows you to work your
+program or code in the sequence the
+formula node that
+that works on the basis of
+the conventional
+wording typing if you are just you get
+very fond of or very used to of the
+conventional programming and you must
+have to use labview then you use formula
+nodes and the event structures all of
+these things we will see when in my
+youtube channel where i have implemented
+many programs so you can just see the
+use of them or you can just explore it
+myself
+but these are for the basics so here are
+your the working of case structures so
+that was enough for the case structure
+now we'll just move on to our
+next topic which is all about the arrays
+so what are the arrays so i'll just
+delete this out all the things from here
+also the
+string indicator but i'll just keep the
+stop function otherwise that will give
+me an error
+so here we have again come back to our
+front panel and now what are the arrays
+basically arrays are nonetheless just
+act as
+uh the mattresses that we usually uh
+used to of uh
+things that we
+get interact with in the matlab so
+how do the array are being generated so
+let's just go to data containers place
+an array and it is an empty error we can
+just uh make an array of controls like
+numerics so it means that all the
+elements in here are numeric we can just
+select them one two three or whatsoever
+and this is just a numeric array or we
+can again go to data container or we can
+just go to boolean
+and place an led and then drag and drop
+and there we will have only our um
+the boolean array so this will be our
+boolean array like this way and
+similarly we can again go to and create
+string array as well if we need it so
+what are the arrays arrays are basically
+the elements the combination of elements
+of the same data types you cannot just
+mix up two data types within the same
+array this is the property of the
+cluster that we will see
+uh afterwards that how the cluster works
+so here we have an array so one easy way
+to create an array is if i just delete
+this out in here
+uh if we run our
+for loop
+let's just say i want to create an array
+of first
+10 numbers or 100 numbers now i will
+just open up my labview only and i will
+just shift from labview from the block
+diagram to front panel by using control
+plus e
+i can just create
+the array uh of first
+let's just say 100 numbers so in order
+to create that i will use a for loop so
+here i have a for loop and i want to
+create the an array of 100 numbers so i
+will create a constant press 100 and one
+because we it will just start from the
+zero or otherwise you can just press 100
+and use
+uh incremental function so that the
+iteration will start from zero
+and it will
+start from by adding plus one that will
+start from one so if i just attach the
+output of the wire with the wall of my
+for loop it and create an indicator
+indicator means
+now this will create an array so
+what it is doing basically it is there
+is a function within the library
+programming environment that it
+automatically creates an auto index
+tunnel auto index tunnel means from 0 to
+100 it will collect all of the data
+points and then just mix up and then
+show it within that array so i'll just
+jump onto my front panel and if i just
+elongate it all the way down in here and
+run the program i found that it starts
+from one two three four five six seven
+eight nine ten and then just so on up to
+hundred so we are just we can just get
+it up to where we just fetch
+where we can elongate it or place it
+somewhere so if we want to see the all
+the number then we will just go at the
+boundary of our array and right click on
+it and you can go to visible item and
+there we will find out vertical scroll
+bar and now you can just see all of the
+elements in here and it is up to 100 so
+what you can else do with the
+with the arrays basically
+so in within the arrays you can just
+also use array functions that are
+a variety of the functions available in
+here so you can just find out the
+address size error size means
+if i just connect it in here and create
+an indicator i will instantly find out
+what is the size of this array so if i
+run my program it shows that the size of
+this array is 100 since we have just
+collected the data points of 100 as we
+have run the loop for loop of 100
+similarly we can just go back to an
+array and array functions and there i
+will find out the index array so the
+proposal of the index array is
+i can just get the data point which i
+want so let's just see at the number 10
+what is the data point at the number
+10th so i can create an indicator and
+there i will find out if i run my
+program in here at the number 10 we have
+the number 11
+and
+similarly we can just change its index
+index and then we have we can we'll get
+the element as well
+so instead of creating the number from 0
+to 100 if i just delete this out and go
+to numeric there is the separate
+function called the random number
+generator in labview so you can just
+directly use this number to create uh
+from numbers from 0 to whatsoever even
+you can select the boundaries if you
+just create a constraint in here you can
+either select 1000 so you can just
+connect the output with this wire and
+now it will create automatically the
+random numbers from 0 to 1000
+so since we have set our glue titration
+as 100 so it means that the size is
+still
+100 but at the position 11
+we have 775 answer is 75 so similarly
+there are many many many more functions
+in here to
+use and implement on the
+arrays
+we can sort that is we can build the
+arrays we can add a have set at a subset
+we can find out the maximum and minimum
+let's just implement this functionality
+of maximum and minimum on this array
+so i can just connect that in here and i
+can instantly find out that what is the
+maximum value within that so if i create
+an indicator and run my program here is
+the maximum value between the random
+number uh array is insert is 92
+which is the maximum value which is
+found at the index
+12
+so
+this is how the arrays works basically
+similarly if what if i want to create an
+array of 2d array victoria means
+mattress then what i have to do
+first of all i'll just delete this out
+everything and now i will just place
+another for loop around of this while
+loop so it means that if i just choose
+this 10 and choose the outer loop count
+as 5
+then again
+i'll just connect the output with the
+outer loop and then create an indicator
+now this will give me a 2d array so if i
+just double click on the indicator that
+has been generated
+i can just
+go to its corner any corner and then
+just drag
+the
+array so to create the entries so now if
+i run my program
+we have in here five rows with the ten
+columns so how is that happened so the
+outer loop is 5 and the inner loop is 10
+so what it is doing is at the zero
+iteration the inner loop has just
+iterated
+the inner loop has just iterated for the
+10 times so it just created the 10
+elements within the first row when there
+was a second iteration of the outer loop
+then again the inner loop just ran for
+the 10 times and created this
+information at the second row so that is
+how
+we
+generate 2d arrays and similarly we can
+again manipulate those arrays according
+to our requirement by using these array
+functions in here that are available to
+me and you can clearly see those all the
+functions in here
+so that is how we use arrays in labview
+there are many many more function
+of arrays that we can implement but you
+can find out the arrays application or
+more exercise on my channel every
+exercises that i will show the picture
+of that in here
+so now we will talk about some clusters
+in labview so why cluster are being
+utilized or used in labview so
+let's just suppose that we have a
+cluster in here
+in which we can just combine the
+classes different classes let's just say
+we have a thermometer in here
+we have a boolean in here which are
+completely two different data types but
+we are placing them within that
+one
+cluster and similarly the string control
+in here so we have three different data
+types that we have just placed in within
+our cluster so if i just double click on
+my cluster there i find out that we have
+only one indicator available on our
+block diagram why this is being utilized
+sometimes when we are doing some
+specification work or the vi we just
+built and we know that there is there is
+a bundle of functions that will be
+utilized at the different positions
+again and again then we just create a
+cluster and now what we can do is we can
+change it to control and now i can fetch
+any of the result let's just say i just
+only want the boolean out of it
+so what i will do is i will go to
+cluster function and there i will find
+out unbundle by name either we can use
+unbundle bundle or bundle by name so
+that gives us the reliability so here we
+have the unbundle function
+now i can just elongate it and i will
+get all the
+data types that are sent within this
+cluster so here we have a boolean and
+now i can create an indicator in here
+meanwhile do not using the other
+functions for it
+for while using this
+um
+cluster so now if i just turn on the
+boolean and run my program the only
+boolean will be affected meanwhile
+others are not changed or affected
+during a run my program
+so why the clusters are being utilized
+the clusters again are utilized at the
+position if there are different event
+structures and we want to fetch the data
+of only one parameter so we are using
+this again clusters or if we have
+different functionalities or different
+parameters at one place and we have just
+designed and we know that it will be
+utilized at the different positions so
+we will just make out one cluster only
+and utilize accordingly
+all right so now we will make some more
+advancement and move further in our
+basics of labview
+so that was all
+right now till now we have just saw how
+to use my controls indicators and then
+we saw loops and then structures if else
+condition
+and then arrays and
+now we have saw how to use clusters how
+to build clusters how we can fetch data
+from them if i just create an indicator
+right here i will just get a thermometer
+value right in here
+like in the similar way we can get all
+the things in from by using cluster
+now so
+now we will just move on to our next
+step which is uh basically the graphs
+and charts
+so now if i just shift onto our block
+diagram by pressing ctrl plus e i can
+again delete all the things from here
+now i want to express some
+um
+some data some output on charts and
+graphs so let's again open it side by
+side so that again it will be more
+visible and to you clear
+clearly you can understand all the
+things in here so right click again and
+there you just have to find out the
+graph palette so here it is so there are
+different types of graphs available in
+here so we have waveform chart graph xy
+graph and the other things
+so we will just
+see the basics so we want to plot some
+data in the real time so we will use the
+form chart from here so if i place a
+waveform chart as you can see i can
+change its size uh
+where i want to place it and then
+what i want is i basically want to
+set the data uh in the real time on this
+waveform chart
+so i will use a while loop in here uh
+let's just
+enclose the waveform chart within the
+while loop create a control to give it a
+condition when the while loop should
+stop so that
+we can run our program
+all right so here we have a stop
+condition so to stop the while loop
+anytime now we want to express the data
+on our waveform chart let's just suppose
+that i am using right now again uh
+random number generators so i'll place
+the random number generator within the
+random number generator you can use the
+different data types within the numeric
+data types we have
+unsigned 64-bit data integer 64 and dbl
+those are the things that can change the
+number
+uh like either it could be
+in the form of
+decimal positions or either it could be
+just an integer like one two three four
+so these are the types that you will
+just come to know when you explore more
+in labview and well you haven't when you
+will get used to of labview programming
+when you demand something or need
+something
+so here we have again the upper limit is
+just 100 and if we do not create the
+lower limit then it is of course it is
+obvious that the lower limit is zero
+even if we do not carry the upper limit
+it is obvious that it is hundred so now
+i will just uh
+attach the output with my waveform chart
+right now
+and also i will place a weight
+millisecond function i will create a
+constant and here again i will give it a
+one thousand so that it will means that
+the loop will iterate every one second
+so now if i run my program here as you
+can see that
+the values are being randomly been
+generated
+it is going up down and
+like this way
+so that is how the waveform charts
+basically works
+now we can also play with its properties
+if i just go into the black space of the
+chart i can right click and go on to its
+properties
+we can just
+change the
+the
+width of the line so
+if i just press as i increase
+its width you can see the results on the
+back end of the window so
+let's just suppose i select this and i
+can also select the
+data point at
+basically it changes so if i just press
+this
+i can select the point style
+i can even change the color of the line
+let's just post this one
+and also i can change the color of the
+points so that it will be more clearly
+visible to us
+and like in the similar way i can change
+the background of our waveform chart
+let's just suppose that instead of
+this
+instead of the black background what i
+want is i want to change it to white
+background so i will use a tools palette
+in here and i will
+i will just automatically
+turn off the automatic tool selection
+and there i will select
+let's just say this white background and
+click on it so it means that the white
+background is selected with a red
+boundary so if you observe closely and
+the boundary of this
+waveform chart is red
+and while the background of the waveform
+chart is white right now so that is how
+you can even play with the waveform
+charge property even if you can make it
+transparent if you go on to the
+transparent you click it and you just
+press it so now the it is not
+transparent right now the upper skin of
+the waveform chart turned red so for
+that purpose we just have to go again to
+the transparent palette and now if i
+just click
+the boundary of the waveform chart just
+goes transparent so that's how you can
+manipulate different things so now i
+will turn on the automatic tool
+selection and i'll close my
+the tool palette
+so again if i just run my program it
+will keep on updating the points
+this way and
+we can also observe its
+the previous values let's just decrease
+the
+uh
+delay function so that it will create
+some more points in less time window so
+that is how it is creating data right
+now since the live loop iteration is 10
+milliseconds so now i can stop my
+program and what if i want to see the
+previous data i can just right click on
+my
+waveform chart go to visible items and
+there i will find out the x scroll bar
+so what will the x scroll bar give me it
+will give me all the history of the
+waveform chart that has been displayed
+so like in the similar way we have
+another functions like scale legend
+cross palette and all the things that we
+can use in some other videos or
+that will you will use when you will
+doing some sophisticated programming so
+now i will just move on to move this v
+form chart a little bit aside make its
+size a little bit shorter
+and now i will just go on to the
+waveform graph so what is the
+basic difference between the graphs
+so i will show the difference of the
+graphs by just going in here and let's
+just try to connect the output with the
+waveform graph
+now it is giving me an error so what
+does that means
+so the basic difference between the
+graph is you do not
+set
+the single
+single element to the graph which means
+that you just have to set the set of
+data to the graph you cannot it will not
+accept a single element a single
+numerical value it will accept uh the
+array basically the set of data so you
+will just remove the broken wire by
+pressing ctrl plus b
+let's just place this waveform graph
+outside of the while loop
+so
+now if i just
+connect it outside of the loop now what
+it is doing it it is still giving me an
+error what if i just um
+give it
+what if i just turn this
+last value to tunnel mode to indexing so
+that it now it will create the array
+basically so this that error will be
+shown on the waveform graph so now if i
+run my program
+there is vf form chart is still updating
+the values but still i'm not getting any
+value on the waveform graph so how do i
+will get the waveform graph value if if
+you notice if i just stop the value
+all the data all that from the beginning
+to the end all the data is just
+created on the waveform graph so it
+means that it accepts the value with the
+form of the waveform graph so
+what are the other graphs as well that
+are available to us in here if i just
+delete the broken wire in here we can
+also
+have an xy graph or express xy graph the
+express xy graph gives us the
+feasibility or reliability or you can
+say that easiness that we can select our
+x-axis values as well as the y-axis
+values let's just suppose that my x-axis
+values goes with the loop iteration
+meanwhile the y-axis goal value goes
+with the random number so
+now if i run my program here
+as you can observe it is not showing me
+but it is updating something so there is
+a
+little bit
+uh
+toggling that is need to set in here so
+if we create a constant it is saying
+that it is resetting the waveform graph
+so it means that it is not showing us
+anything because of the reset so if i
+turn it false and now if i run my
+program now it is just giving me all of
+the data within the waveform graph
+so now it is updating like it is
+collecting all of the uh
+data points and then showing it on the
+xy graph we can also do that by using uh
+the simple
+xy graph but the express xy graphs gives
+us more easiness and ready to use so
+there are other functions as well like
+3d graphs that you can find out a video
+on my channel to see how the
+3d cross works and the other graph works
+as well so that was a brief introduction
+to how we can plot the data on xy graph
+and i also gave you a brief introduction
+of how to play with its properties so
+that was enough i think for the xy
+crafts and the waveform graphs and
+charts
+so now we will move on to our next step
+which is our
+what else we can do in labview
+programming environment let's just
+delete this out so here in labview we
+have different
+modules and toolkits that we can use
+according to our requirement let's just
+say that if i right click on our
+block diagram if i go just go on to
+let's just go on to the other functions
+that are available in here the file io
+allows us to
+write or read different types of files
+like dot csv file or excel other format
+files or the text files or the binary
+files and these and do all the things
+you will also find out the similar
+videos for the files in my channel and
+this timing function have different
+timing
+functions that are available to us to
+get the date and time and other things
+so similarly we have if we want to
+acquire some sensors data and all the
+things these there are the measurement i
+o that is dac mx we will just use all of
+these functions and make a program to
+acquire some census data and if we have
+third-party hardware devices let's just
+say the device that use serial
+communication then we will use some of
+these protocols like visa gpib
+and other serial communication protocols
+and if we have image processing like
+this way so we will use these functions
+and we will just have to find out
+what are our requirements so that we can
+manipulate or we can implement the
+functions and
+we will just fulfill our requirements
+within the lab view by using this
+graphical programming approach so that
+is how there are different many many
+different uh
+uh tool kits that are used for the
+specific purposes and are designed so
+that you will
+use
+some less time and you will get the
+maximum output without
+any difficulty so that is how
+you will just find out when you will
+explore more and also you can just go on
+to my channel and watch my videos there
+are many different scenarios that i have
+explained many different exercises that
+i have put it so that you can just watch
+out and learn as well as you can just
+make some advancement in those exercises
+and see how they works so i hope you
+this video will give you a brief
+introduction and will give you
+confidence to let's just get started
+with the labview programming environment
+and build your own uh program algorithms
+in labview very easily
+so that was enough thank you so much for
+your watching this video and
+please don't forget to subscribe thank
+you so much

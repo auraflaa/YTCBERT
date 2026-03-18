@@ -177,7 +177,7 @@ def count_existing_categories():
                     counts[current_cat] = counts.get(current_cat, 0) + 1
     return counts
 
-def discover_pro_videos(target_count=50, max_per_channel=20):
+def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, min_length_mins=1.0):
     """
     Main discovery logic. Goal-aware and balance-aware.
     It prioritizes categories that are currently under-represented in video.txt.
@@ -313,8 +313,18 @@ def discover_pro_videos(target_count=50, max_per_channel=20):
                             title = entry.get('title', '')
                             if not is_english(title): continue
                             
-                            duration = entry.get('duration', 0)
-                            view_count = entry.get('view_count', 0)
+                            duration = entry.get('duration', 0) or 0
+                            view_count = entry.get('view_count', 0) or 0
+                            comment_count = entry.get('comment_count')
+                            
+                            if duration < (min_length_mins * 60):
+                                continue
+                            
+                            # Filter on comments
+                            if comment_count is None:
+                                if min_comments > 0: continue # Skip if hidden/disabled but we demand them
+                            elif comment_count < min_comments:
+                                continue
                             
                             video_obj = {
                                 'id': v_id,
@@ -351,11 +361,13 @@ def main():
     )
     parser.add_argument("--count", type=parse_count, default=10, help="Total target count (e.g. 10, 2K, 1M)")
     parser.add_argument("--max-per-channel", type=int, default=20, help="Max videos from a single channel (default: 20)")
+    parser.add_argument("--min-comments", type=int, default=10, help="Minimum comments required per video (default: 10)")
+    parser.add_argument("--min-length", type=float, default=1.0, help="Minimum video length in minutes (default: 1.0)")
     args = parser.parse_args()
 
     try:
         # Discover and Save in real-time
-        found = discover_pro_videos(args.count, args.max_per_channel)
+        found = discover_pro_videos(args.count, args.max_per_channel, args.min_comments, args.min_length)
         
         if not found:
             console.print("[yellow]No new videos found in this session.[/yellow]")

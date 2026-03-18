@@ -1,0 +1,36 @@
+{
+  "video_id": "s3KnSb9b4Pk",
+  "url": "https://www.youtube.com/watch?v=s3KnSb9b4Pk",
+  "extracted_at": "2026-03-18T16:30:15.774365+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 4520,
+    "unique_word_count": 620,
+    "vocabulary_richness": 0.137,
+    "line_count": 667,
+    "char_count": 25020,
+    "avg_words_per_line": 6.8,
+    "estimated_duration_mins": 34.8,
+    "top_keywords": [
+      "here",
+      "right",
+      "ahead",
+      "okay",
+      "generative",
+      "route",
+      "learning",
+      "road",
+      "map",
+      "learn"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "video_id": "d2kxUVwWWwU",
+  "url": "https://www.youtube.com/watch?v=d2kxUVwWWwU",
+  "extracted_at": "2026-03-18T16:30:16.203673+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 55969,
+    "unique_word_count": 1846,
+    "vocabulary_richness": 0.033,
+    "line_count": 9324,
+    "char_count": 293207,
+    "avg_words_per_line": 6.0,
+    "estimated_duration_mins": 430.5,
+    "top_keywords": [
+      "okay",
+      "right",
+      "here",
+      "let",
+      "basically",
+      "function",
+      "layer",
+      "able",
+      "loss",
+      "activation"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

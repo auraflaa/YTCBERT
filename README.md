@@ -67,10 +67,16 @@ YTCBERT/
 > [!IMPORTANT]
 > All scripts should be run from the **project root** directory.
 
-### 1. Broad Discovery (Goal-Aware)
-Find new English content. This treats `--count` as the total number of videos you want in your list (e.g., set to 1000 to reach your goal):
+### 1. Broad Discovery (Goal-Aware & Quality-Filtered)
+Find new English content. The script intelligently balances niches and strictly filters out "junk" videos (Shorts or those with no comments) before they ever reach your dataset.
+
+Options:
+- `--count N`: The total target number of videos for your list.
+- `--min-comments N`: Drop videos with fewer than `N` comments (default: 10).
+- `--min-length M`: Drop videos shorter than `M` minutes (default: 1.0).
+
 ```bash
-python video_pipeline/discover_videos.py --count 1000
+python video_pipeline/discover_videos.py --count 1000 --min-comments 20 --min-length 1.5
 ```
 > [!TIP]
 > **Customizing Categories**: You can easily edit or add your own niches by modifying the `CATEGORIES` dictionary at the top of `video_pipeline/discover_videos.py`.
@@ -105,6 +111,6 @@ python video_pipeline/export_dataset.py --out my_t5_dataset.jsonl
 
 ## 🔧 Maintenance Utilities
 
-*   **Clean**: `python video_pipeline/clean_video_links.py` (Removes duplicates. Use `--filter-private` to also purge restricted videos).
-*   **Verify**: `python video_pipeline/verify_videos.py` (Fast status validation using OEmbed).
-*   **Audit**: `python video_pipeline/prune_vids.py` (Scans `output/` and removes entries missing transcripts).
+*   **Verify**: `python video_pipeline/verify_videos.py` (High-concurrency API Batch Engine. Automatically flags PRIVATE, DELETED, RESTRICTED, Shorts (<30s), and Zero-Comment videos!).
+*   **Clean**: `python video_pipeline/clean_video_links.py --apply-report` (Instantly reads the verify report to natively purge all invalid/broken/short URLs).
+*   **Audit**: `python video_pipeline/prune_vids.py` (Scans `output/` folders post-extraction securely backs up and removes empty/dud data entries).

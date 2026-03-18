@@ -1,0 +1,2221 @@
+========================================================================
+  TRANSCRIPT
+========================================================================
+  Video ID   : gRlR4cxA2XA
+  URL        : https://www.youtube.com/watch?v=gRlR4cxA2XA
+  Extracted  : 2026-03-18 16:30:18 UTC
+  Words      : 16,416
+  Lines      : 2,211
+========================================================================
+
+idea.
+[Music]
+[Music]
+I don't know.
+[Music]
+Okay. Hello everybody. I hope I am
+audible. I think Mike my voice is
+audible right?
+>> Yes, it's completely fine. Voice is
+audible.
+>> Like so it's after many days we have
+come live. Yeah. A lot of work, lot of
+classes, lot of Udemy courses. So we are
+working really hard to provide best
+things to you all but just give a hi so
+that we can see you all and again uh
+this session will be an amazing session
+where we are going to you know teach you
+about AI so that you can automate most
+of your task which is definitely
+required by everyone of out here right
+so just make sure to hit like and uh
+let's show your excitement over here
+right so we'll be able to take this
+sessions regularly as we go ahead So M
+anything that you want to say before we
+start?
+>> Yeah, just so uh one minute. Yeah. So hi
+everyone. I know it's been a lot of time
+since we have been active but uh we will
+be doing that a lot more. Uh that is
+something which we are planning as well
+and yeah we are now back with very very
+exciting series freef fall of all of you
+which we will talk a little bit more. We
+also have a very good Q&A plan for all
+of you tomorrow which I will of course
+be telling a little bit more and yes uh
+the final and the main aim is to make
+sure that we are able to make everyone
+skilled in AI no matter the background
+no matter where the person is technical
+nontechnical and you will see that how
+we are working very hard towards that so
+with respect to that and of course as I
+said we are working on the live classes
+Udei some awesome platform as well so
+hopefully all of us will be able to have
+a very good uh future career And we are
+here to help you in the same. So yeah,
+it's then continue
+>> and the main aim is that see uh
+everybody should learn. There are free
+content, there are paid content from
+wherever you want to go ahead and run,
+please go ahead and run it. Okay. But at
+the end of the day, I think I feel that
+yeah AI should be one of the thing that
+you should definitely incorporate in
+your life. Whatever things you're
+actually doing, please go ahead and
+start learning AI, start doing it
+because now you're able to do some
+amazing work with it.
+Okay. Uh so perfect. Uh so what will be
+the agenda of today's uh session will be
+that now
+I hope everybody has heard about AI
+right but how you can use AI for your
+day-to-day task your day-to-day work
+over here we are not teaching you how to
+code and all we are just giving you an
+idea like how you're going to
+specifically use AI to do some of your
+work and today's use case is all about
+social media I know many of you use
+social media from LinkedIn to Instagram
+to Facebook many more things. So today
+uh we'll be doing that and again uh uh
+prerequisite I think m you don't require
+coding knowledge also right? uh nothing
+as such uh no prerequisite as such we
+will be keeping it very accessible
+easily understandable to all of you
+specifically we are focused like even if
+you have no if you don't know what
+coding is at all like you don't
+generally know what coding is you will
+be able to do the same that is what we
+are now planning to make our uh like
+lessons which we will be going live for
+all of you so no coding no problem
+>> perfect so this entire session all the
+materials will be given in the
+description uh link there is a free dash
+dashboard course access for you all.
+Please go ahead and explore it. And what
+we are doing is that every week we'll be
+having at least two two sessions I guess
+this kind of sessions where we'll be
+discussing about some of the use cases.
+We'll be completing it. Okay. Uh our
+main aim is basically to show you like
+how you can use AI efficiently in order
+to automate many of the things right. Uh
+that will be our plan as we go ahead.
+Okay. Uh so here you can see just a
+quick question in the era of generative
+AI. How do you see the impact of data
+engineering to maintain clean and
+reliable data? M you can answer this.
+>> Yeah. So uh Y data engineering I
+personally feel that is going to be one
+of the fields which is going to be least
+effective because I have worked a lot in
+data engineering taken a course as well
+and across all the platforms. The way
+you will be going to work on data like
+you handle the data that is what the
+core of data engineering is. So it will
+be becoming very accessible but that is
+I guess still some place where jobs will
+increase like I was reading a report
+where in data engineering jobs will
+increase and yes it's going to be very
+helpful uh if you actually understand
+how to manage data because AI is in any
+ways going to be get powered by data to
+data engineering specifically is going
+to be very helpful at all uh like at all
+stages.
+So uh I think m we can start the
+session. Uh so guys without wasting any
+time please do make sure to hit like
+share with all your friends with this
+specific video but the kind of use case
+that we are going to develop will be
+quite amazing and you'll be seeing that.
+So m I think we can start we start with
+the agenda what we are going to actually
+do and then uh we can go ahead with the
+use case.
+>> Sure. Sure. Yeah. So let me start with
+the same everyone just give me a minute.
+Let me just set things up and let me
+also know once you're able to see my
+screen I will start by sharing my
+screen.
+It's been heard that market is down. AI
+is taking all the jobs. What's your
+opinion
+guys? Come on. Not seeing right kind of
+I guess.
+>> Okay.
+>> But yeah, it's nothing like that. You
+need to get upskilled. That's it.
+>> Yeah. Continue please.
+>> Cool. So great everyone. So this is the
+series which we are starting AI for
+everyone where we will be mastering AI
+agents and automation something which
+have been in very much demand. So we
+will be having multiple session using
+multiple tools where we will make sure
+that we can make you pro in using AI
+right so that you understand AI without
+any jargon without any issues as such
+now let's talk about today's use case
+specifically today's use case is going
+to be on social media automation
+now coming to social media automation
+pretty sure that all of you are using
+social media like LinkedIn Twitter right
+so let me get the icons as as that make
+it a little bit better. So yeah, let's
+say I can have Twitter here then we have
+the LinkedIn. Yes, we have the LinkedIn
+as well. Any other we can find here
+which might be present. H no. So no
+worries. Uh we can have uh other things
+as well for sure. So now everyone what
+the plan for today's session is that how
+can we use our AI to automate content
+generation across different different
+platforms. Right. So I can surely add
+another uh maybe some other button or
+some other overall uh like social media
+as well right. So you can have YouTube
+as well. We have YouTube post. Similarly
+we can have any other which you guys are
+interested. So maybe I can talk about
+that. We can have substax related blogs
+which can be created. So all those
+things are what we will be seeing that
+how can we automate using our AI and
+using the workflow and automating
+things. So that is what that is where
+the idea is going to come everyone and
+this is we are going to do now over the
+next few weeks we will be taking
+multiple classes where I will be walking
+all of you through uh these use case
+that how you can automate these advanced
+use cases yeah medium logs everything
+works Instagram as well these advanced
+use cases you can use all of them and
+you can genuinely have AI integrated
+into your everyday workflow so we can
+have let's a
+uh automated email replying right these
+are the kind of use cases the real world
+use cases which we are going to automate
+with all of you right we will be using
+no code tools uh initially and if the
+need arises I will also be making you go
+towards the code the idea is that at
+least you should understand what is it
+then implementing or overall executing
+them is not of a big problem right so
+for the timing today we are going to use
+this awesome tool NAN right which I'm
+pretty sure many of you must have heard
+by It's pretty good. Um kind of a very
+plug-and-play kind of a thing. Easy to
+use when you understand the things
+pretty nicely, right? So that is the
+whole idea behind taking and doing this
+thing on Nitin. But of course I will be
+teaching you in such a way that even if
+you have to do the same via code and you
+will get the idea that okay where
+exactly the design of the or how exactly
+the design of the systems are coming in.
+So that is going to be the whole idea
+right. So yeah that is what we are going
+to learn and through this overall series
+which we have planned for you which uh
+we will be taking and going live at
+least two uh two days a week right so
+every week we will be going live at
+least twice where we will be taking a
+multiple usage use cases and then we
+will be having them right so this is the
+idea with which we will be connecting
+every uh I think every week right two
+times a day at least and for the next
+one or two months and this is going to
+be completely
+As Krishna sir has mentioned you can go
+and download the resources everything
+which we will be doing uh we will be
+having there okay so that's the whole
+idea and we will be making sure that we
+tell everyone everything what might be
+required what might be not so there we
+will of course be uh handling everything
+okay so with that let's now move forward
+everyone now the very first thing which
+I want all of you to do is to head out
+to nat.io io. So this is the website
+which I'm pinging as well right
+now for anyone who doesn't have an idea
+like anything any idea about NA10 right
+I know that many people might be there I
+recently created an awesome resource for
+the same as well so I will highly highly
+suggest that you go through the same
+everything today is going to be free so
+you don't have to take any issues right
+if I go on YouTube and on my channel uh
+then this is the which okay where's the
+video one minute I have an upcoming
+video and yeah this is the video I was
+talking about everyone so we'll highly
+suggest that all of you go and check the
+same out right let me skip the ad and we
+can see the same right so we have these
+thing where I have explained everything
+though uh today's video as well it will
+not be any requisite I will making sure
+that you understand each and everything
+without any idea as well right great so
+let's now start everyone let's continue
+and first let's head on to nit.io.
+I'm sharing the link with all of you
+once again. So you can go through the
+same right. So let me share this link
+again.
+And this uh these sessions are going to
+be very much uh direct like we will be
+making sure that we study for 1 and a
+half, 2 hours, 3 hours whatever time is
+required. And the way we are going to go
+about this let me tell you that as well
+so that all of you do understand. I will
+be starting a timer of let's say 20
+minutes 20 minutes timer
+and then it will be kind of followed by
+a 5 minutes break uh 5 minutes not break
+5 minutes outs okay because we want that
+people properly understand people who
+are being with us they properly
+understand and they get the best
+experience you can already see that all
+the things which we are doing the voice
+quality the audio video screen
+everything we are at the best post uh
+best level so I will be starting a timer
+via so one minute yeah focus was bad
+>> focus session let's say for teaching for
+20 minutes and then we will be having
+like the 5 minutes for the doubts and
+everything so that whoever is properly
+focused he will surely love that and yes
+we will be having a good uh run in this
+way okay so I can just have it on the
+separate screen but this is what we'll
+run
+cool everyone so I hope all of you are
+ready I would want that you do write in
+the chat so that we I I know that people
+are watching they're understanding
+though I will be taking the doubts in
+the once the timer gets over. Okay. So
+this is going to be a philosophy for the
+full course. That is the idea. Okay. I
+hope each and everyone is clear with
+this. Anyone has any doubt?
+Did you teach a yes? We do teach
+agentic. So these are the kinds of doubt
+which I will avoid once I start teaching
+in depth. Right. Uh yeah I do teach
+agentic AI with respect to agentic AI
+autogenui lang chain lang graph adk
+agno
+all of these frameworks like we have
+classes we are going for them right so
+yeah for agent is something which I
+guess we know as well
+let me make the screen bigger as well if
+it's possible okay one minute let me
+check
+uh just a second everyone
+Okay. So, yeah, I'm just trying to test
+out something.
+I hope we can add that. Yeah.
+Okay,
+cool. I think uh it's added, right?
+screen to
+circle
+ah okay so I should have added great so
+everyone I hope you're able to see the
+screen properly uh on like me and Chris
+are on either of the side right so that
+shall be helpful
+great so yeah let's uh now start
+and today what we are going to do as we
+have discussed already we will be
+automating the social media game now
+this is just two of the icons which we
+have created. Now of course you can ask
+it to like write Facebook post as well.
+Okay. So though we use Facebook a lot
+less but surely you can use the same for
+Facebook as well. Then we can talk about
+Twitter, we can talk about medium. So
+the idea there is that we need to
+understand the whole process so that we
+are able to design a system in a way
+that we are using it right in a way that
+we are using it and we can then generate
+this particular thing by any way we
+want. So if you want we can have a
+medium blog as well right so totally
+totally fine not a problem once you
+understand the whole approach that is
+going to be something very very helpful.
+So I can have the medium uh icon as well
+here and I can put it here.
+Great. Now as I said the overall
+platform which we are going to use here
+is going to be nent right that is
+something which I have already given you
+an idea we know about how to use the
+same and since it's a no code easy to
+use platform the whole idea is to that
+how can we make best use of nitin as our
+platform for the AI related stuff so let
+me just make it easier to follow great
+and in the process we will also be
+making sure that we are able to also
+have other applications like Google
+sheets or let's say any other as well
+right whatever we want so I've just keep
+kept it very open so that we are able to
+make our logic flow right we can
+understand that okay how the logic is
+flowing and then we can make that call
+that okay how exactly or what exactly is
+happening that is the whole idea because
+I want that you understand in depth how
+we automate these things. So that is
+something which we are going to have
+here everyone. Okay. So now with this
+thing clear let's move forward and go to
+any here we will be going to get started
+and we can create our account everyone
+right all of you can use and create your
+free account. So any 10 is totally
+totally free that should not be a
+problem right it is having a caveat
+where it is 14-day free trial. Okay but
+I think you can create multiple
+accounts. So that does keep it in a way
+that till the time you are learning it
+is going to be free. Okay. Now let's
+start and what I will be doing I will be
+creating a new account. So let me do uh
+may here then I can have one second. So
+just a second everyone let me quickly
+log into my account.
+Meanwhile all of us can do the same as
+well right? I can just quickly log into
+the account and start with the same.
+Just setting up something
+Great. So let me add the screen back.
+Great everyone. So actually I have
+logged into my account now. Empala12 is
+the name of the workspace which I'm
+using. Right here I can now just open my
+instance. You can easily just go and
+create your own account as well. So if I
+just open an incognito window here,
+let's say if this is an incognito window
+everyone, then if I just go on nitn.io,
+right? This is where you can get
+started.
+Just enter your name, any email id, then
+the password and the account name as
+well. So account name is just like how
+you can have your uh ID or some uh
+overall identifier. You can just add
+let's say if my name is my I can add may
+123 or something right it should be
+unique okay so with respect to that now
+let's move forward and let me close this
+I am pretty sure that all of you can
+easily create an account here that
+should not be a problem it is going to
+be 14-day free trial right the whole
+pricing strategy is written here which
+pretty sure all of you have an idea
+already but I believe for the project
+for the learning time 14 day is more
+than enough you can easily create your
+new account and you can download your
+workflows as JSON. So that should be
+helpful as well. Right? So now if I go
+back everyone now let me open the
+instance and this will open my
+workspace. Here you can see that how I
+have already created some of the overall
+workflows. Now I am also using a trial
+account uh trial account so that I face
+the same issues as all of you will face
+right? so that I am also not using
+something which is paid where you don't
+have access to that. So I'm in the same
+boat as all of you. That's the whole
+idea. Now let's move forward and let me
+create a workflow. So I can just create
+a empty workflow and this is going to be
+our canvas where we are going to rock
+and where we are going to do our AI
+related stuff. Right? So let's jump
+back. Uh let me uh close this. So just a
+second let me close something as well.
+So many things are open because I was
+working before this.
+Okay.
+But I guess we should be good to
+continue. That should not be a problem.
+Yeah. So let me add the screen back.
+Great. So this is going to be our canvas
+everyone where we are going to make all
+the things work for us. Right. This is
+the by default any workflow. Okay. This
+is where we will be doing all the things
+related to any overall integration which
+we want to make. The best thing is that
+it supports AI as well from scratch. So
+if I go here once I add a trigger then
+after that I can just have this AI where
+we can have all these different
+different agents as well as LLM
+providers anthropic, Gemini, OpenAI
+which I'm pretty sure all of you also
+have an idea about. Right now let's do
+one thing. Let me just quickly go and
+tell you that how we are going to flow
+or how we are going to make go about our
+social media automation. Okay. So for
+that let me first create social uh one
+minute. So this is something you have to
+for correct social
+media
+automation right this is what we are
+planning. The idea is if I'm able to
+make it for one of the use case then
+surely you can expand the same for some
+different use case as well. For example,
+if let's say I am able to automate
+writing LinkedIn related post then you
+can go forward and make sure that you
+can just tweak your prompt right and
+understand and give it some reference so
+that it can write Twitter related post
+as well. So that is going to be the
+whole idea just like how I have LinkedIn
+here right. So how just I I will be
+doing it for LinkedIn today. You will be
+able to then do it for Twitter then for
+Facebook. You can also make it write the
+blogs everything as well. That is the
+whole idea. Right now let's discuss the
+system design or diagram of how we are
+going to uh make sure that we just go
+about the same. Right. The very first
+thing which works in this particular
+init is something known as trigger. So
+we can have a it triggered manually via
+some we can have it triggered let's say
+let me avoid the same and write it like
+this. So we can have it triggered
+either say manually right
+manually
+then if we are interested we can have it
+trigger based on some schedule
+or if we want we can also schedule we
+can also trigger the same based on some
+external trigger. So external trigger
+right now this external trigger can be
+say WhatsApp message even a telegram
+message you it can be a slack related
+thing it can be a new entry into our
+Google sheets right so we can specify
+those external triggers now this I will
+be discussing with all of you in depth
+uh in the future projects as well so for
+the timing we will be doing a simple
+schedule or a simple trigger uh which is
+manual right so that is going to be the
+whole idea. Now once this thing is clear
+right once that you understand that okay
+how we will be triggering for example as
+of now I have created a manual trigger
+here. So all of you what you can do once
+you have the empty canvas if you click
+on first add first step you can easily
+get the very first one which is trigger
+manually right now the good thing you
+will see is that as I'm using any as I'm
+using any the way I will be explaining
+you things here based on my mind the
+similar kind of a thing you will be able
+to do here just by dragging and dropping
+right so that is the whole idea that it
+kind of is very good in prototyping
+something as of Now I will still say
+that though it is very helpful in other
+approach as well but with respect to
+prototyping it is pretty good that it is
+able to quickly bring your ideas to
+life. So that is the whole idea that is
+why we are using this no code tool.
+Okay.
+Now next comes something known as where
+we will be able to search something. For
+the same I will like to have
+search
+Google maybe right search Google or some
+other location
+for topics. So the very first thing
+which I as a user let me get myself as a
+user here. So okay which kind of user am
+I? Okay I think I'm this happy one. So I
+can get this one right. This is better.
+Now let's say if this person this is me
+as mayank the way I right now go about
+my content is that first I try to
+research right first I try to get all
+the topics first I do try to get the
+research work done then based on that
+research I try to move forward and I
+generate the ideas right so this is the
+flow in which we normally work ideas
+then once the ideas are in place once
+the ideas are in place then I go forward
+forward and make sure that I can create
+some two or three content right
+and then last is something which we can
+post as of now to avoid any overall
+issue we just post via post directly
+right so it is not based on our
+like it we will not be posting it
+directly from the editor we will be
+posting it manually so I will just say
+posting manually so as to avoid any
+issues here right so this is the whole
+workflow everyone in which I do it as of
+now. So pretty short should be clear
+because the way you do it in real life
+normally that is very helpful. Okay. So
+I don't want want that. I just want this
+to be green
+right works. Yeah. Cool. So this one is
+fine as green. Right. And I can just
+have my so that this is in a straight
+line. Yeah. Cool. So if this is my this
+is how I right now go and do all the
+things. Now the whole idea or the use
+case becomes that how can if see this is
+one thing which I always say that if you
+want to automate something and there are
+many many tutorials which you will see
+they will always promise you that hey
+you can do this you can do that unless
+you understand the use case in real life
+the way you will be able to do the same
+if you have to do it manually you cannot
+automate that it's not that you can
+automate something out of thin air you
+have to understand the use case very
+much in depth so with respect to that
+everyone what we will be doing now right
+what we will be doing now is that we
+will be moving forward and we will make
+sure that we just copy this use case and
+see where exactly I might be needing AI
+if I will be needing AI at all or not so
+that is the whole idea with which we
+will be moving forward right so now
+let's move forward and I think once I
+have the topics either I can do it
+manually or I can have an AI for that as
+well so for the same let me get another
+very important thing. So just we will
+have two icons, right? We will plug it
+in wherever it is required, right? So we
+will see that okay where exactly we
+might need our brain or where we might
+need uh AI as well. Okay. So you will
+understand the same once I do the do it
+in front of you that will be helpful. So
+let me get this AI chip once. So this is
+an AI chip.
+So anytime I will add an icon this
+application will not work nicely.
+Something which I have to fix in this.
+And similarly what I can have I can have
+this another one which is one of my
+favorite icon. So this is an agent.
+Okay.
+Okay. One minute. Where is the agent? I
+think we can make our agent a little bit
+smaller.
+So this is our agent and we have the AI
+as well for with us which can do stuff.
+Right
+now coming back to how we have this flow
+and what I would want something I would
+like to help you visually understand. I
+will have this here.
+This is how you do automation. Right? So
+this is the manual flow. I will write it
+down as well. This is my manual flow.
+Manual
+flow.
+And this is going to be my
+automated flow. Okay, automated flow.
+Now up till now we have seen that how
+can we have a manual trigger. I guess it
+is very important that we first set or
+how we are going to automate. Once we
+have done the same then is where we
+should move to edit and then is all the
+ref over work or how we should create
+our edit. Okay. Now again I think very
+important to understand if you do this
+properly then Len is just a piece of
+cake like that is not where the major
+problem will happen right. So with that
+if I have done this thing then I think
+next part which becomes is something
+where how I am going to generate or how
+I am going to generate some ideas right
+so I will say that content
+content ideas or let's say
+topics right now what they can do they
+can just give me a structured output so
+it can just give me a structured output
+and I believe here I can use AI. So I
+can use AI here, right? AI can be very
+nicely used here. For the timing, I will
+be doing the manual research, right? So
+we can have them out as well. For the
+timing, let's not confuse our use case.
+We will just add one by one. Okay. So
+I'm just going to use a overall AI here
+so that we can get right now once I have
+the content ideas everything then I
+think is somewhere we should be moving
+towards and again just one thing I have
+as of now considering how this is the
+very first project which we are doing
+kept it very very easy with respect to
+the understanding surely there can be
+multiple things there can be like tens
+of these boxes we can have human in the
+loop we can have different different
+ideas but the whole idea Idea is that
+the whole understanding is that if you
+are able to understand the easy use case
+then you will be able to make the
+difficult one. So don't make the mistake
+of saying that hey I will automate my
+whole life will sit and will enjoy. No
+that is not going to happen. If you are
+able to automate the easy thing first
+then you will be able to do the manual
+one as well. Right now moving forward
+next I think is somewhere where we can
+have another box and now I can have some
+agent. Right? This time I can have some
+agent which can generate things for me.
+Right? So if I have this agent now
+everyone this particular agent which can
+generate my post generate posts right
+now as a very good practice to make sure
+that I'm able to handle all of them very
+nicely. Right? I will be wanting that I
+have some database kind of a thing. Now
+since this is again a very very uh
+initial use case what I will be doing I
+will be just using Google sheets as the
+one for a database right so Google
+sheets will be used as a database let me
+add it here and we can just say Google
+sheets okay so cool I think this is what
+we will be using as DB for the time
+being now you can use a SQL DB you can
+use a NoSQL DB you could generally use a
+complex
+uh big data table as well. Not a problem
+at all. If you understand what you're
+doing, that's not going to be a problem
+at all. Okay. So, yeah, with that we are
+actually done with our first 20 minutes.
+Now, let me just go to and ask your
+doubts. I think some people were asking
+for my uh social. So, let me just share
+that so you can connect with me. Okay.
+Yeah, we can use notion as well again.
+Uh so, Namine that as I said that's
+totally on you what you want to use. Not
+a problem at all. So, everyone uh these
+are my socials. If you want to connect
+with me, okay, I do make content uh at
+many places, okay? So, just see the same
+and do follow me here. More and more
+content is coming. Now, let me see uh
+bro Hindi now. Anyway, your audience
+also knows Hindi again. Bab, I think
+that I speak a very easy to
+understandable English. Okay, so should
+not be a problem, right?
+Hindi is also fine. Hindi maybe. Okay,
+let me see please. Where do you get the
+icon? Google search. Simple Google
+search. Okay, just go to Google, search
+for icons. See it uh session is
+completed. So let me have a another one
+for doubts and it can be for 5 minutes.
+5 minutes.
+Cool. So yeah, do send your message
+quickly everyone. This doubt session is
+running for the time being. Let me see.
+Uh hey, where do you get the icon? Okay.
+Hey, I'm watching your tutorial. It's
+amazing. I've been searching for
+tutorial and found yours. Yeah, JNK. So
+everyone if you're not aware which
+tutorial is being taugh talked about
+here just go to my YouTube okay so what
+I can go I can go to YouTube and go to
+my kagaral
+and okay not this one okay so I just
+also have a video for day after tomorrow
+but just see this video 7our videos I
+know pretty long took me a lot of time
+as well just see this video and you
+shall be able to okay I think I sent the
+Instagram one by mistake copy this avoid
+And this video you can talk about. Okay.
+Hello manga. What to automate my
+workflow for my fast food. Kazzy again
+don't know what exactly fast food is.
+You might have to give a little bit more
+idea. With automation you will not get
+reach as you get manually because social
+media platform know if you're posting
+manually or using API. So insect wars
+again we can man post manually by copy
+pasting. Right? So that should not be a
+problem. If you're using docker make
+sure that you have volume in your
+container. So Naven I already have
+created a video where I have talked
+about how you can uh have these things
+right. So one minute if we go forward.
+Yeah. So how you can host N10 in under 3
+minutes. It can be on docker. It can be
+via this trial as well or on some server
+as well. So everything you will find
+there. Yeah. So your workflow will not
+get deleted after 14-day trial. I mean I
+think they give you an extension of some
+uh okay some seven or 14 days more. So
+yes you should be able to like avoid
+getting your workflow deleted. But what
+you can do you can just save and
+download it from here right you can just
+easily save. Okay so you can just easily
+save and download it from here. Download
+simply you can just save that. Okay
+thank you such a great m thank you. Okay
+my question would be if you can make
+calls video on iOS app using the edit
+inflow. Sure um I can dis uh discuss
+that. This is my email. If you would
+like to have some use case which might
+be very helpful for all of you just mail
+me up and I will see the same. Okay.
+Does any focuses mainly on social media?
+No. It's totally on you how you do that.
+Okay. Use docker. Uh again naven and
+everyone I think using docker for the
+very first time when you're using nitin
+not the best way of doing it. There are
+some issues as well. So we will avoid
+that. Okay.
+Okay. Let me see. Yeah I think these are
+all the doubts. uh just you can ask the
+same if anything else is there. Now let
+me see uh what are the doubts after we
+started this chat session. Let me see
+can we use any on local server mean 5 6
+7 minute. Yes exactly what's so this is
+where if you have no idea just go and
+see this video how to host edit in under
+3 minutes. I have told you that how you
+can do on docker right very very easy
+steps you will not face any problem.
+Okay
+great. Uh what skill we will be learning
+here? AI. The skill which is in most
+demand. Sir, how do mathematics mean in
+data sciences field? Uh kush you will be
+knowing you will be requiring to know a
+little bit in depth about mathematics if
+you are entering the data science or AI
+fields right especially when you are
+learning in depth. So yeah
+here what is represented by AI? Is it
+LLM? Yeah, majorly when I when I have
+drawn AI here it means LLM for the time
+being. Okay.
+without no code tool like n using lang
+chain lm python can we achieve the same?
+Yes of course kashina. So in the back
+end some code is only getting written
+right. See code is the ultimate way.
+Code is like the truth. Okay. So I can
+do one thing. I can make myself bigger
+and one minute. Let me change this.
+Yeah. Cool. So code is the ultimate
+truth. Right. After that you can use
+some like in the end some someone has
+just made it easier for you that is all.
+Okay. Okay. I rejected to see into
+campus placement. Okay. How is unfair
+with my face paral? Okay. Because if it
+is written that you need attendance then
+you need attendance. So yeah CJ pays 8.5
+doesn't matter 60% attendance rules
+sometime happens. Okay. Uh my great to
+love watch. Thank you. Okay. Kush I
+think your doubt is solved. Just working
+on UI for the app to automate SM and
+then this great timing. Thank you. How
+blockchain can be integrated into AI? If
+you understand blockchain in depth then
+I think it should not be difficult at
+all. Blockchain normally is a easy
+concept to understand not very much
+difficult to implement. Okay.
+Using BRF for view for admin panel for
+maker checker for posting it. Again sort
+of we can make it as complex as we want.
+For the timing I'm keeping it easy.
+Okay.
+Can we do mobile and web mobile web and
+mobile app apps in uh are you asking
+about creating them explorer AJ or are
+you asking about integrating them? If
+integration then yes you can do that.
+Creating I don't guess you can create
+that. It is for creating these workflows
+not for apps.
+What is the prerequisite to learn your
+latest rack course in UDI? I think
+you're talking about the latest rack
+course which we have made live on Udemy.
+Uh basic uh if you know about LLM etc it
+should be pretty good. Okay. So I see
+that our doubt has ended. Let me quickly
+go through the same.
+Uh I'm making I am working on making my
+N server my own what I require. I didn't
+get it. You will have to explain a
+little bit like what exactly the server
+are you trying to host it locally? I try
+to fork n because it's open source and
+do something extra. Yeah
+sir is this a course or a single video.
+So summit this is going to be a course
+like every week uh we will be meeting
+and we will be doing some use cases.
+Okay
+is using lang chain as a back end sir
+right? Uh I don't guess how that's the
+case. I don't know I will have to go
+through that but I don't guess it's
+using lang chain like it's not just
+using lang chain it will be using other
+things as well. Okay. Yeah, lang flow
+also you can do. You can do in make as
+well. That should not be a problem.
+Moido,
+what is it that you're drawing manually
+while teaching Excaliraw?
+Uh, latest rack course not showing in
+Udemy business chitra punjan because
+Udemy business it takes time. The best
+of the courses get listed in UDMI. Uh,
+so yeah
+road map to learn AI as a fresher or
+beginner. I will be creating a video on
+that. Okay. So do go to my channel and
+yeah that should be pretty fine. Okay,
+just sharing the channel again and go to
+my channel. I will be shortly making a
+video on that.
+Okay,
+is this video recorded? You will be
+uploading YouTube. It is a live session
+uh zinc. So, please go through the same
+and yes we can see the same afterwards I
+guess but you will be able to download
+all the resources on some other platform
+plus I guess videos will also be
+uploaded there only. So, we will discuss
+we will just share that. Okay,
+cool. Seems like we are back. Now let me
+move forward and let's continue. Few
+more things for your information
+everyone. So
+I would just quickly share the same
+right.
+First thing we will be going live. So
+let me just try to write it down. Okay.
+Yeah. So I can write it here. We will be
+going live on 15th
+August. that is tomorrow at 8:00 p.m.
+for FAQs or Q&A right so basically you
+can ask anything uh we I will be
+scheduling that in some time so yeah do
+render the same it will be on the same
+questioners and meet my channel and then
+we can surely ask and enter your doubts
+right along with that uh this is a
+series of videos for a free course AI
+for everyone which you can check out
+like I we will add the same in the link
+in the description. I think you will
+already be able to see the same in the
+description. We will add that link right
+and one very important thing so let me
+just avoid that and let me just paste
+it. We are also bringing another course
+everyone ji for professionals and
+leaders boot camp. Now again this is
+also where we will be doing each and
+everything from scratch. So if you will
+go through the slavers this detailed
+course slavers
+the whole idea of this is for
+professionals majorly right even if you
+are in college this is going to be fine
+the idea is this one okay so see this is
+the whole idea of this course if you
+ever wanted to learn AI without diving
+into complex code and instead
+confidently apply to transform work
+career or business no matter if you are
+in college if you are in job if you at a
+higher level as well we will be teaching
+you these things so if you have no idea
+about okay what is AI what are agents
+what is rag what are tokens okay what
+are these different different LLM
+providers all these things we will be
+explaining you in this course so I'm
+sharing the link of this as well okay
+and yeah do enroll in the same everyone
+if you like so that is going to be very
+helpful okay it's going to be a live
+course we will be going live every
+Saturday Sunday at 8:00 p.m. This is the
+timings right. So just go through the
+slay bus as well. I'm sharing the slay
+bus as well and surely you can go
+through the same and it will be helpful.
+Okay. So what is the difference between
+live and Udemy? Uh Udemy I think live is
+a way better in terms of how we teach.
+Uh you have the live interaction
+everything. Udemy we try to make it
+available for people who are not able to
+let's say enroll in life on majorly we
+try to provide it but uh yeah live we
+teach a lot more extra things making
+sure that you understand the doubt with
+proper support interview experiences
+idea everything yeah
+great so let me close this and let's now
+continue everyone
+so what I will be doing I will be
+starting the timer again timer focus
+no not doubt this time each for 20
+minutes.
+Let me have it here. Okay,
+great. So now let's move forward and we
+have seen already that how can we do
+these things where we can generate the
+idea generate post. Here we will be
+using an agent. So now let's move
+forward and this time let's now go and
+do this thing in real world. Okay. So
+now let's go to any and do these things
+one by one. So for the very first thing
+everyone what I will be doing pay
+attention
+I can have plus this icon. So pay on
+this I can just click this plus once I
+click this plus and here there are so
+many applications. If you see we have
+all these applications which pretty sure
+you must have seen on the homepage as
+well. We have an idea about this as
+well. Then here in this application I
+will be selecting about doc Google docs
+right and I can just do a get a
+document. Okay so pay attention now we
+have just linked a document here. Okay
+the idea is that I will be saving all
+these uh search Google or location like
+any other location I will be saving this
+I could have used any API here as well
+but don't want to make it very much
+complex. I just want to make sure that I
+can save all my research here and then I
+can move forward with the same. Okay. So
+that my post can be created. Okay. Now
+once I have done the same everyone pay a
+lot of attention. I can have content
+ideas or topics. So for this I will be
+using I will be using your AI now
+because if you see we have this small AI
+button this cute small AI button which I
+will be referring to. Now for this I
+will be clicking this plus sign and I
+will be going on AI. For the AI I will
+be using the favorite one. So my
+favorite has been open AI due to some or
+the other reason. So I will be using
+this open AI and I will just message a
+model. Okay. I will just message a
+model. Now you will be getting free
+credits from NAN only. If you will go
+here you will see a small popup here
+because of which you can get free
+credits. So no need to go and like have
+your own key as a timing as well and it
+is being pretty nicely with like pretty
+nicely integrated and it provides you
+this open AI fee credits and I am using
+the same so that none of us face the
+problem where we should have the key etc
+at least for the prototyping or for the
+learning phase okay
+so resource is going to be text we can
+see the same then we can have this
+content or document ID we will see how
+we will connect that don't worry
+We we can select the model. Let's see
+what all models are present. I can
+select for mini should be fine.
+Then I can just have some prompt as a
+user. And I think yeah that is more or
+less what we get when we have a model
+here. So we can easily just create a
+model which is going to give us all of
+our overall
+ideas. So I can just press press the
+space and I could just say generate
+topic or ideas right now let me first
+now go and create do one thing let me
+create a new docs docs dot new okay so
+it has created a new doc let's say here
+I am just saying that okay content idea
+or content research right so if I go
+back to my diagram First I will be doing
+the content research. It can be again on
+Google or any other platform. Content
+research is a better word. Content
+research. Let me make it in red. Uh the
+word on red also works. We can have this
+in red. Now say I go to Google and let
+me search about any new topic which is
+very famous. So let's go on tech news
+maybe and let's go on news. Let's see.
+Okay. Why is tech always phones? Phone
+tech is way more than phones. Okay. So,
+Apple plans to release AI powered smart
+home devices. Seems like Apple is kind
+of doing a lots of things in this,
+right? I will just go on chatgpd.com.
+Paste this. do research on this and
+provide me with the
+summary from different sources. Right?
+Let me paste this
+and hopefully again it will search the
+web. This is also some AI. It is showing
+you that okay how it has done all these
+things. I think it is using J. Now it is
+using JP5. So seems like a little bit
+better. Now what I can do I can just
+copy paste all of these things for the
+time being.
+So till here and I can add it to my
+document. Okay great. So I have added
+the same onto my document everyone as
+you can see right. So simple approach
+nothing else done the research. I can
+just quickly say that hey I have done my
+research I am all ready. So let me just
+mark it as
+right
+and we have used some wild card entry
+here. We have not talked about the same
+but seems like we have used Google doc
+here for the time being. Now again
+totally on you if you want to use notion
+any other application I don't guess that
+makes a lot of difference as long as
+you're able to provide the same frankly
+if you want you can just have a letter
+written anyways in your blood via some
+ink AI doesn't care as long as it is
+getting the information okay so let me
+zoom in yeah and we have this via the
+Google uh doc now I have created this
+documentation this is from my email id
+mail to
+So you can reach out to me here as well.
+I have many email ids but AI with my ink
+is better. Okay, if you have any doubts
+whatsoever. Now let me go to our NAN and
+let me connect my document. So I want to
+make sure that this particular document
+it is able to connect to the one which I
+have created. So for the same what I
+will be doing, let me go back right and
+now let me click on this button.
+Once I click on this button, it is
+asking me in a very easy to understand
+way that hey can you please give me the
+credential with which I can connect. So
+I can just do select a new create new
+credentials and we can do o
+authorization o2. This is again the
+easiest way right we can follow. Uh let
+me just check okay it will be requiring
+some things maybe then we will have to
+move some other way.
+Uh okay because I think this is not the
+case in uh okay so we will we will use
+some other one. No worries we will use
+some other one. Close back to canvas. So
+again it will be just requiring some uh
+this client ID and secret which you will
+have to get like this is all the details
+which is written here. Okay, I thought
+that it will be direct but I think for
+these one. Okay, for the following nodes
+you you can authenticate by signing with
+Google, right? But seems like here we
+need to have the Google cloud account.
+So something which I would like to avoid
+right here what I would like to do then
+I would just like to see some other uh
+application. Okay. So let me see what
+all other are supported. So we will not
+be using Google documentation. go sorry
+Google doc right because it requires a
+Google cloud account something which I
+would like to avoid. So if I show you
+just to show you if we would have used
+Google sheets it can directly just uh
+one minute yeah so what it can do we can
+just directly log into this we can just
+directly do sign in with Google and can
+get authenticated something which seems
+like uh this is not supporting right
+something which it is not supporting
+like I could easily tell you how to do
+the same but I think we it's better if
+you use some other one okay so let me do
+one thing let me delete this delete this
+and let's see which other application we
+can use. So see the action in the app.
+Let me just go here.
+Yeah. So I know one of them which we can
+use. I can use Google task. Okay. And I
+can say get a task, right? So let's go
+back. Let's connect this. For people who
+are not aware Google task, let me show
+you what it is. Pretty nice app. Let's
+go on Google. Google tasks. And the
+reason I'm again using Google related
+apps because they are very easy to
+understand being our very first project.
+the way we will be doing this I can get
+rid of them should be fine
+and let's say I just now create a new
+task right this is my AI news and in the
+details so in this only I can add the
+details in the details I will just paste
+everything from here copy sorry copy
+everything from here and I can just
+paste it right so these are all the
+details which are very nicely now
+supported I can just
+and double click yeah so I can see all
+the details here right I can see all
+these details I don't want to do
+anything else as well so let's go back
+to any and let me do one more thing okay
+let me do one more quick thing
+so that all of you don't get this messed
+up let me just quickly delete this and
+get the Google task one so this is the
+one which we are using now okay and I
+think it makes a lot of sense we can
+just create a new task and we can just
+have the full workflow work for the same
+so we can create a trigger on that as
+well. Okay. So, it should not be a
+problem. Now, uh since we have created
+the task, let me just delete this one.
+Should be fine. Let me delete all task.
+That's good. And let's now go back,
+right? Let's now go back. Now, once I am
+at my NA, I can just connect first. I
+will have to make sure that I connect my
+NAN. Okay? So, this connection is very
+important to be made. Pay attention.
+See the connection which I'm talking
+about. This is the connection. So let me
+make it smaller. Let me make it like
+this. This connection needs to be made
+here everyone that task and any they can
+connect with each other. Okay. So task
+and any they can connect. Now for that
+what I will be doing? I will be just
+doing a Google task account. Let me just
+uh create a new credentials. I can sign
+in with Google and I can just select
+mail to Kagarval the email ID which I'm
+using and I can continue. Okay.
+So now with this what we can do pay
+attention once we have connected this we
+can just easily do a get ID right and
+here I could just provide this
+particular task is there right let me
+see uh what are the different things 1
+minute
+let us go back
+and we can say get many right so we can
+just have get many now you can see that
+how we have the my task list here let me
+refresh refresh the same as well. First
+let me get my task and I can just
+execute this and see I'm able to get my
+task right this was the task which I
+created because this connection has been
+made with any tenant task right I could
+easily access and get this thing title
+is a news you can just maybe for the
+timing avoid all these things which are
+written here right uh but the notes are
+something which I can use as well right
+so yeah I think this is something which
+we can easily easily use everyone this
+can be a research we can see the same in
+JSON or tabular manner as well right so
+we can see the same in JSON where all of
+the details are coming right now once I
+have done this let me join this thing
+and now let me do one thing I have the
+AI now I have this content ideas or
+topics now where I will be now making
+sure that I can generate the ideas for
+this resource is going to be text
+operation ation is messenger model is
+GPT4 mini. So these things are very very
+important very much how like you select
+things here how I can have the model
+selected GPD 5 or any other word right I
+think I'm logged in but shall be great
+now let's write a prompt for this what I
+will be doing pay attention I will be
+writing hi can you please generate the
+LinkedIn
+post ideas so let me make it three
+LinkedIn post ideas
+based on the below research.
+Now when I do this below research, I can
+just grab this notes and copy this here.
+See everything came here. So all of the
+things which I wanted, they are here
+now. Right? So this is now dynamic in
+nature. Tomorrow when this changes in my
+task, I can just easily get the same.
+Right? Okay. So that's all. That's
+pretty good. Make sure that you also
+provide the reference
+reference of how or what exactly
+is needed. Okay. To write the post to
+write the post
+output
+three ideas like below. Okay. So it
+should be
+topic
+then it should be research
+and I can just say topic one research
+one
+topic
+two research
+two and I can say topic two research two
+research three sorry. So yes I think
+that is very helpful. We can see that
+okay how exactly this is coming out
+here. Now of course we can make it a lot
+better in terms of how we are giving it
+the input but I believe that is very
+easy to do. Now I can just stop it uh
+and I can just try to simplify output
+and output content as JSON. Let me just
+execute the steps and let's see what it
+is doing. Okay. So let it execute and we
+should be able to see the output in the
+way we have given it. So let's see.
+Great. Seems like it is giving us the
+output. So sure, here are the things.
+Now it is giving uh let me copy this and
+I can make it a little bit easier for
+you to read. So let me copy all of this
+and just paste it in chat GPD.
+Can you make above easy to read? And
+let's see what it has given.
+Okay. See
+future of smart homes. Apple vision.
+Apple is stepping up its game all these
+things and it is giving us these things.
+Now pay attention it is the same thing
+which is written here future of smart
+homes Apple AI vision Apple is taking
+significant leap into the this this then
+second I believe will be this key to
+Apple's home uh Siri 2.0 key to Apple's
+home ecosystem right I hope you're able
+to easily understand exactly how it is
+happening see Siri 2.0
+And then last is robot from your home
+Apple's next big idea. So seems like I
+am able to generate these ideas right
+now. I have three ideas for my LinkedIn
+post easily. I could make sure that I
+can write post on that. Now ideally in
+future classes and in future videos we
+will be seeing that how can we make it
+how can I make it a lot better? How can
+I connect it to let's say notion or how
+can I even have an API which does this
+for me. So I just have to maybe provide
+some AI news as an input and everything
+AI will be doing for me. But since this
+is the very first project which you are
+doing I believe it should be very easy
+to understand. So that is the whole idea
+everyone. Okay. So this is the approach
+which we will be following and of course
+we can have it connected to multiple
+different different other uh let's say
+tools as well. But again since this is
+the first project let's keep it a lot
+easy. And I believe this is where this
+flow the way we have seen the manual
+flow and tried to make it in AI and as
+of now though we have done it till here
+I think this is very much helpful right
+so we here we have done it we will see
+the generate post part but for the time
+being I think uh let me just get back
+and see that what are doubts which you
+are having so let's see this
+send the Google doc uh okay I can send
+the Google doc but uh I believe that was
+anyway See share okay I'm sharing the
+link let me know if you can see this
+directly or else I will make it
+accessible to all okay cool great so
+everyone are you able to follow till now
+I will ask the doubt but are you able to
+follow till now quickly tell me in the
+chat
+do show some thumbs up thumbs down love
+on the chat anything
+Okay.
+Then we will continue.
+Yes. And it is free only local. If you
+want to host cloud, it's paid. So yeah,
+that is always the case. No, there just
+many. So should be fine. Let me take the
+doubts. Meanwhile, let me know in the
+chat. Meanwhile, how are you liking the
+session? Now again, being the very first
+session, we have kept it very easy. As
+we keep on moving forward, it will be
+becoming a lot difficult and you will be
+able to make end to end agents by the
+end of this free course, free sessions.
+Okay. So that is the whole idea here.
+direct chat
+generate LinkedIn post for the topic but
+sumit again uh we can automate this
+thing uh in future I will be expanding
+this overall workflow
+uh you will not be going to go to chat
+GP again and again we can easily just
+have this thing handled so that is where
+the idea is okay so let me give the
+access to each and every one of you
+anyone with the link okay I I think
+anyone can see this now it's a simple
+copy paste nothing I've done okay so yes
+summit what I was saying is the idea
+here is to make sure automation for that
+again the very first workflow I cannot
+make it very difficult
+when I make it more complex and in
+future when I come up with the 2.0 O
+version of this it will be in multiple
+steps right it will be able to do it for
+all of the frames all of the social
+media as well so that is where it will
+be helpful okay
+uh wildlife again I really want to clear
+it like do it pretty quickly I think I'm
+doing it very slow when I'm doing it so
+if you're focusing and you are able to
+understand it just try to do it padily
+if I wait while I'm teaching then it
+will be a very long session and I'm not
+sure till how long I've been teaching
+Okay, it has been already an hour. So,
+yeah, I think pretty good hopefully.
+Okay.
+Uh, Zingzang, I've given the access.
+Please see the same. Okay. I've given
+the excess shall be helpful.
+Okay. So, let me ask that out.
+Most people do use LinkedIn for all
+creativity. club again the idea is that
+it can give you some ideas and you can
+work on that. So I'm not saying to
+automate maybe posting as well. I will
+not be posting it uh automatically. I
+will be posting we will be posting it
+manually only. Okay. So the idea comes
+here that we are not asking you to uh do
+any compromise on the credibility. Just
+use AI as a helper not as a doer maybe.
+So that is helpful as well. If you don't
+want to do that okay
+sir I want to start with geni I know
+HTML all the teaches. Yes, Zel tracks
+you can see my channel. We have content
+on AI. Okay.
+Please can this be implemented in
+Python? Yes, this can easily be
+integrated with Python. Though it is
+very easy here because in Python you
+will have to do this thing, right? Sir,
+coding needed to is to make an A agent.
+No AJ, that is the whole idea. Coding is
+not needed. Okay.
+Can we make an AI agent that will create
+Tik Tok video and post it on Tik Tok
+platform? Yes, you can easily do that.
+Should not be a problem. If you want I
+can also create a in the coming days
+what I will do is I will create a agent
+which creates creates video for you.
+Okay. Though it will be paid like you
+will be needing some key which will be
+paid. I will find the cheapest one and
+then we will see the same in action.
+Okay. I hope that is helpful.
+Sorry. Can we use Grock for this? I
+think uh Grock is not supported out of
+the Oh, let me check it. We can use open
+router which is a free one but again
+anyway it provides this thing. Grock
+chat model is also there so it should be
+fine. Not a problem. Okay, we can use
+Grock as well. I'm just not use grock. I
+like open auto mode. So different
+between zap ply and it make more or less
+they are all the same just for using it
+nothing else. Okay. So say something
+about web connection with nan again
+cannot make it the difficult one in the
+very starting I have to make sure that
+you understand these things. Okay let me
+see the previous one for videos you can
+use agent. Yes we can use agent that
+should not be a problem. Okay,
+similar products to NAN uh para there
+are projects like make lang flow zapier
+all of these are the one which you can
+use okay
+I came now only what's the context so
+you see this diagram we are able to
+trying to just create a very first agent
+this is the very first class of our AI
+for everyone uh series where we are
+planning to teach you how you can make
+these things right in a very easy to
+understand way without any coding. First
+you understand these things. So first
+I'm teaching about automation and how
+you can integrate AI into that. So
+that's the whole idea
+okay
+cool. So let's now move forward
+everyone. I think I've answered most of
+the doubts. If anything is there then
+let me know.
+Most of the courses are directed towards
+using common popular AI but none of
+these tools are used in enterprise
+level. Are you planning to include these
+tools? uh I think you have not checked
+out our courses like for example I have
+a course on autogen on Udemy where we
+have taught about things which are used
+directly in uh enterprise level right so
+yes that is going to be very helpful
+should not be a problem right we teach
+at all levels like if you want to
+understand let's say at a level of
+proper complexity
+or let's say at a level of easy to
+understand way so for non- tech
+companies or tech companies both of them
+should be helpful Okay.
+So I think uh most of the doubt related
+to what I'm teaching are done. Uh for
+career related doubt as I said we have a
+Q&A tomorrow and yes everyone. So as I
+shared before we also are coming up with
+the course. Let me just share it again
+with all of you. So we kind of this is
+also where we will be teaching not just
+Nin workflows or any no code tools. We
+will be teaching about many things in
+depth. So just check out the syllabus
+and you can reach out to our team if you
+want to enroll. Here we will be teaching
+you about geni fundamentals all these
+mastery then no code automation advanced
+techniques how you can use rag etc. But
+you understand rag etc as well. So that
+is something which you will be doing
+here right. So let me close this and I
+can just share this link all with all of
+you.
+The idea is here we want to make sure
+that if even if you are from any field
+right no matter tech non tech you
+understand AI in depth. So with that
+let's now continue. I think five minutes
+have been done. Now we can continue and
+let's move forward. So let me just have
+I'm pretty sure that all of you will be
+able to easily follow. I have been
+following a very easy to understand way.
+Right now let's move forward and do the
+part where we will be generating the
+post using an AI agent. So for the time
+being we have done the part where we
+have done the content research. As of
+now I have not used any API here. I will
+be using an API here in future. Right.
+So just a minute everyone. Just give me
+a second.
+Just one minute. Okay.
+So let me now tell. Okay. Great. So I
+think it should be up. Great. So as of
+now we have again not uh used any API
+here. In future projects we will be
+using API. We have just made sure that
+we have generated the content ideas. Now
+this is a very very easy automation
+which I believe everyone doesn't matter
+if the person is even in school. If a
+person is let's say even in a non- tech
+company he doesn't even know what a code
+is he will be able to understand and
+that is the whole idea in the very first
+class. Now let's move forward and let's
+see that since we have generated the
+ideas how can we make them how can we
+make them right added or updated in our
+row. So for the same what I will be
+doing pay attention okay I will be going
+to Google and do a sheets dot blue. So
+I'm creating a new sheet here everyone.
+I am saying here let's say content
+ideas.
+Now I have let's say here um
+let's say I can write here what is the
+topic okay reference and I can just
+let's say have the post here. I can just
+have the post here. Now pay a lot of
+attention what I will be doing. I will
+be going back and now I want to connect.
+Now I want to connect this sheet which I
+have created. So now we are using this
+Google sheet which I will be creating
+which I will be connecting right with my
+this content ideas. So I can update my
+ideas here. That is the whole idea that
+I can update my ideas here. Right? So
+let me just connect this here. Now
+credentials I can create a new
+credential. Simple oath login will work
+just how you do it on any website. So
+let me do and sign in with Google. I can
+just select my email id. The main one
+where I have created this thing. Select
+all. Now I will highly highly suggest to
+use your email ID. Throw away email ID.
+Not your primary one. That will be very
+helpful. Let me close this. Not this.
+Let me close it. It has been done. Now I
+have to just select the document. So if
+I just search here, you will find many
+of them. But I think content ideas is
+the one which we want. Now we can also
+verify the same using this thing using
+this ID. Okay. So I think it is 15 FY
+VC. If I go back go to the expression 15
+FY VC is written. Okay. So that I think
+is pretty fine. Should not be a problem.
+I can just close it again. Go to fixed
+and do it by from list
+content ideas. Okay. So I am just now
+connected to my sheet. In this if I see
+the very first one which is my sheet one
+is the one which I want to connect to.
+So I can just select
+sheet one here and you can see that how
+again all of this is happening right but
+now the problem arises either I need to
+get so pay a lot of attention here what
+exactly is the problem okay
+either I need to get this content in a
+easy to understand manner right either I
+need to make sure that okay this
+particular thing I'm able to drag and
+drop something to make it here or I can
+ask AI to do this for me Okay, I will
+repeat it again. What is the problem? If
+you want to map out this
+topic, right, map out this topic, then
+it's a problem, right? Then it's a
+problem because you cannot just easily
+get out this topic, then get the
+reference. All of these things I will
+not be able to do easily. So for the
+same what I will or I can do is
+something where
+I can connect it to an AI. So people are
+asking now that sir we can do it
+manually as well. Well you can do it
+manually but let's say tomorrow what if
+you want hundreds of these ideas you
+will not be doing it manually where you
+copy paste these things and this is
+where I guess automation and AI are
+useful. Now let's go back and quickly
+just go uh get out of this and pay
+attention. Okay. So I'm going to now add
+an agent. Let me delete this. I am going
+to add an agent here.
+So I have just added an agent here.
+Everyone pay attention. Now for people
+who are not aware what an agent is.
+Where is the icon? Yeah. So agent is for
+me something which I like to say a lot.
+If anyone has previously learned from
+me, he will know that for me agent is
+just a digital human. Everyone. So agent
+is just a digital human. Right? Now what
+do we mean by this digital human? Well,
+the whole idea becomes that whatever a
+human which is let's say me as a person
+can work then this digital human can
+also do the same thing right if I have
+the brain I can provide it with a brain
+so it can have a brain which is normally
+an LLM
+we can give it some instruction just
+like I can get some instructions
+right I think the spelling is wrong let
+me make it right instruction and I can
+also give it some tools so just like I
+can use a calculator I can use any of
+these things. This can also use a some
+tools, right? So as an example for me,
+this Google sheet is a tool, right? This
+is what a tool is for me. Google sheets.
+So now what I will be doing, I will be
+using this sheet as a tool. So pay
+attention. See, this is what I'm giving
+you as a tool and I can connect it. One
+minute. Let me delete this. Let me add a
+tool like this. So again, this was a
+simple node. Tool node is different. So
+let me go to this to a sheet and I can
+do Google sheets. Okay.
+Now I can say tool description can be
+set automatically resources all
+operation. I want to do update or append
+a row. I can let's say append a row in a
+sheet. Right? This is what I can do.
+Append a new row or uh update an
+existing one which is upsert insert plus
+update. I want to just do an append row.
+Okay. I can select my content ideas one.
+I can select my sheet one. And
+now I see all the topics. Right? Now I
+see all the topics. Now I can have this
+topic. I can Okay. So I will just tell
+you what this button is. Everyone pay
+attention.
+Now still there is an issue. Still there
+is an issue where I cannot easily drag
+and drop things. Right. So I will be
+using AI here where I will ask my AI
+that hey you automatically select like
+see let model define this parameter
+because my agent I am saying that okay
+this agent is smart it is having a
+brain. If I am having a brain my brain
+tells me that I can copy this is the
+topic I can copy this and I can paste it
+here and I can paste it here. Similarly,
+in a very very similar sense, I am just
+saying that okay, as an AI, as an AI,
+you use your brain and tell me what the
+topic should be. So, I can just make it
+set done by this particular AI. Okay. I
+can also ask that hey, you can have this
+post as well. Okay. So, you can have
+this post as well which can be updated
+here directly. Now, once I have created
+C this AI agent, it is having a tool as
+well.
+Now if you want you can have memory
+provided to our agent as well though we
+will not be needing this here. Now let
+me provide a chat model. So chat model
+can be simple again open AI1. Let's see
+that one.
+So let us have where is the open router?
+Okay chat model free credits one I am
+using 4.1 mini that should not be a
+problem. Okay. Now you will see some
+other models as well because agent is a
+little better right? It can have the
+listening capabilities because it's a
+digital human. It can have the text to
+speech TTS whisper deli for images and
+vision that is the idea and I can just
+now just like I can give an instruction
+to a human being I can give an
+instruction to an agent as well. So I've
+given the brain I given the tool now
+let's talk about instructions okay for
+the instruction I will add and just have
+1 minute so frequency pattern
+response format okay let's see this 4.0
+O model 40 mini maybe
+maximum number of token response format
+is something which I can add settings
+notes that should not be a problem
+any free credits okay
+for mini okay let me just check what are
+the other one response format
+and okay that is fine yeah so I've given
+it the brain okay uh sorry my I just got
+a little confused chat model I've given
+it the brain in the agent I can provide
+it with the instructions So see I can
+just provide it with the system message
+which are going to be my instruction.
+Okay. So pay attention. This is where I
+can just have my instructions everyone.
+Now let's see what are the instruction
+which I'm going to do. I will first
+click on this expression expression and
+I will make it bigger. So now you are a
+helpful assistant who helps to generate
+the LinkedIn posts for the user.
+You will be given
+the content
+which will have three post ideas
+and reference
+and reference as below. So again I can
+just drag and drop this. See all the
+content is here.
+Now I can say here make sure that you
+update
+the same on Google sheet tool provided
+to you
+which has three
+columns. What are the columns? Let's see
+the same everyone. What are the
+different different columns? Now coming
+to columns I have the topic, reference
+and post. So I can copy this and just
+paste it here. Topic reference and post.
+Okay. Post should be concise
+with a good hook
+and hashtags in the bottom. So yes, I'm
+just giving it a very simple
+instructions. The whole benefit is that
+though chat GP could have done this, I
+would have to do this things manually.
+Right now when I close this, everyone
+pay attention. uh prompt or user message
+we can give here as well. So what I can
+do for the prompt, let me pay just copy
+this here. Content add here or I could
+actually just change it to define below
+and
+I could have just pasted all of this
+here. Okay, so this is the user message
+and let me delete this system message.
+I'm deleting this is the user message
+which is having the reference to this
+task. Okay,
+now we don't need a fallback model. If
+you need you can have another brain,
+right? So that if one model fails, it
+goes to another model. And yes, I think
+this is more than what we need. It is
+going to have a tool. It is going to
+have this open a chat model. And now
+when I do this, pay attention. Let me
+run this. Let's see the same once I run
+it. Okay. So it is executing. See it is
+working the brain. Hopefully it will try
+to get to this tool as well. It will try
+to use this tool as well if the AI model
+is capable. Right? So see it is using
+this tool everyone right it is just
+generating like an how an agent will
+work now it is going back I see trying
+right three here hopefully hopefully it
+will be doing something for me let's see
+what it does in the end
+and again it's a simple approach because
+this is the first time I'm doing it now
+pay attention
+it has created the very first one post
+so if I have to see this pay attention I
+can just select all of this row
+I can just wrap the text. Now you have
+to run this in a loop which I will tell
+you how to do that. Should not be a
+problem. This is the reference which it
+must have gotten. And if I copy this, if
+I copy this, go to chat GPT, paste it.
+Can you show above in easy to you read
+manner?
+Okay. So pay attention. Of course,
+here's your LinkedIn post. So it is
+understood LinkedIn post. Meet your new
+companion. Apple is working on a
+tabletop robot expected in 2027. It not
+just a smart it not it's not just smart
+it's a fun tool feature include video
+conferencing interactive animation is
+designed that alive and engaging this
+could transform how we use technology at
+home making it more personal etc and
+then it's giving me these hashtags
+again for the very first topic it has
+done the same these are the one appi
+vision and I think it has took up this
+tool one so the thing is that why it has
+done this because if you will go on edit
+it you will see that how
+it just
+uh append a row it's append row not
+append rows okay so we could do the same
+we have a simple simple thing here we
+can have a loop one which you can try
+out uh so if I show you this loop we can
+have loop over items so it can work on
+multiple things or we can ask our ideas
+to be generated in a JSON we can get
+output as a JSON and they will be
+generated as a JSON so that is the whole
+idea Yeah right now again a simple
+workflow which we have done which is
+going to generate our thing. Now what I
+want for all of you as homework is that
+you see that okay how can we do this
+thing in a multi like we can have these
+three things updated right I will give
+you a very basic idea how you can do
+that if you are able to generate a JSON
+right which is having three three things
+here let's say first first then second
+and then third it will be able to work
+on the same and give you the output so
+that is all what we have to do everyone
+and that is going to be very very
+helpful for each and every one of you.
+Right? So with that uh the very first
+class and again I know that many of you
+will be thinking that this is easy. Well
+yes because it was the very first class
+for our uh AI for everyone right. We
+will be making it more complex but I
+want to take everyone with me. I want to
+make sure that everyone understand these
+things and for the same we have
+specifically made sure that this first
+project it is very easy so all of you
+can quickly get up to the length. Now
+tomorrow we will be having a Q&A and
+post that we will also be having a
+overall multiple classes where I will be
+building upon these things. Okay. So
+they are very very important. I could
+have made this workflow very very
+difficult to follow but I have
+specifically made sure that it is very
+easy for the time being. By the end of
+this free course only you will see that
+how we can create uh like post or
+content which is having videos. we can
+create and post them directly as well.
+So just as to show you we can have a
+LinkedIn here as well. So we have
+LinkedIn as well. Okay. And we can
+create a post right. So we can connect
+to LinkedIn here. Standard we can
+connect to the account right. Then we
+can post it as well. Something which I
+normally try to avoid because as someone
+said that we have to first go through
+the uh what is written. we will see the
+human in the loop concept as well that
+it wastes waits for your overall
+approval and this is where we are going
+to build on this. Okay. So cool. Yeah,
+with that everyone I hope you have
+understood this in proper depth. Make
+sure that you save your workflow and you
+will be able to see what we uh give like
+as I told in the starting you will be
+able to download all the things from the
+official link which we will be giving in
+the description of the video. Okay. So
+with that uh you can ask your doubts and
+if all is good just tell me how you like
+the session and we will be building upon
+the session. So do make sure that you
+continuously attend the session every
+week. Okay
+great. So let me uh you can ask it out
+everyone uh that should be helpful.
+Okay.
+AI tutorials uh Creo AI uh is this video
+available on your YouTube channel? Not
+as of now. Shabbaz, can you please bring
+a QA to do it? Okay, we'll work on that.
+Should be fine. What is the difference
+between system prompt and user prompt?
+Bhaves, I will discuss the same in the
+next video. Okay. So, when we will do
+that, I will first then maybe explain a
+little bit about edit in depth and have
+the AI related things here. Okay. Can
+you create with specific length for the
+content topics? Yes, Parasi. So, you can
+connect that easily. What you can do?
+Pay attention. I will be showing you
+something. So what I can do just let me
+make myself smaller here.
+Okay. And I will be showing you how you
+can use this awesome tool air table.
+Okay. So we will use air table where you
+will be able to better handle your
+content like it is a little bit better
+than Google sheets in terms of how you
+manage content and yeah we there we will
+see that how you can use and make sure
+that for different different content. So
+it fills up like this. Okay. So I will
+be integrating that into our edited
+workflow. Okay. So, let's go back.
+Let me see. Let me stop the share as
+well. Okay. Not leave. Share the screen.
+Stop. And now, let me take the notes.
+Okay.
+One minute.
+Great.
+Uh, okay. Please bring back five plus
+hours video transformers. Okay. Uh, sir,
+I faced lots of problem to sign up for
+Google tools. Uh, M. I hope. Uh sir oath
+is not working on local or self hosted
+nitin. Yes pav. So you will have to fix
+that up. I highly suggest to use the
+nitin cloud the one which en normally
+gives you. Okay.
+Yes. If you do the same thing via python
+salt tax then it will be little bit
+difficult. And everyone please make sure
+that you also again like and share the
+video with everyone. Okay. And do
+subscribe to the channels as well. And
+of course uh we will be bringing more
+and more content like this. So it is
+helpful to all of you. I think you have
+mine anchor sir social. So please make
+sure that you reach out there. Sir can
+you how to use APIs for GPTOs 20B? Uh
+san I will share the same maybe in one
+of the project where we will see how we
+can access local uh API local uh let's
+say LLM as well. Okay. So go GPTOSS
+shall also be helpful there. 20 billion
+I might not be able to download on my
+laptop but yes we will see that. Okay.
+So we are getting account when we are
+using it by docker. So can you tell me
+the automation be continue when docker
+is not running? Uh no mandra that will
+not be the case. Now if your container
+goes down then it will be a problem.
+Cool. I think these were the doubts
+everyone. Uh I'm just quickly sharing
+the links which I did earlier. So please
+make sure that you reach out all of us
+here. I'm sharing the course link as
+well. So for people who are looking
+forward to quickly start their journey
+into AI, we will be doing the same.
+Okay. I think you have socials as well.
+you are seeing the same on his YouTube
+channel. I'm just sharing that uh course
+link because I think someone asked for
+the same. Let me do that. So you can
+check out the same. Okay. Why should one
+need to prefer N10 over lang flow?
+Because NA10 is a lot better when it
+comes to uh integrations etc. Lang flow
+is a little bit more towards
+specifically with AI but unnecessarily
+many time we don't need AI. So that is
+where it will be helpful. Okay.
+Is it possible to receive certain posts
+on social media from specific profile?
+Adita, if you're asking about scraping
+LinkedIn, that is not very
+straightforward. Uh we have some limits
+there and I will highly suggest to not
+do that because it can uh lead to just
+having your account blocked. Okay,
+cool everyone. So I think these were all
+the things. We will be having a Q&A
+tomorrow at 8:00 Q&A where you can ask
+your doubts. So I see many of the doubts
+related to career as well which we will
+be very happy to answer. Okay,
+very good concept that you have taken.
+Yeah. So again, wildlife lover, we will
+be doing the same things in depth in the
+coming weeks. So that will be helpful.
+Okay,
+cool. I think these are all the doubts
+which I see and we should be all good,
+right?
+If anything else is there, just quickly
+ask me and I will clear out the same.
+Okay, I think mine kit is done. Huh?
+Session.
+>> Yeah. Yes, the session is done. We have
+created an easy way through which you
+can create LinkedIn thing and I told
+that how we will be making it more
+complex in the future classes.
+>> Okay. So guys all the description links
+that you are able to see the dashboard
+link all the materials will be uploaded
+there and again you can also go ahead
+and check out our new course that we are
+bringing for generative AI for leaders
+and professional everything is in the
+description you can go ahead and contact
+even our support team they'll help you
+out counseling team whatever
+requirements that you have but this
+specific course is for AI uh leaders
+professionals anyone who is not much
+into doing coding work but you really
+want to use AI stuff in your day-to-day
+uh activities that you do in your office
+work and all right so you can go ahead
+and explore that um yeah other than that
+tomorrow we'll be having the live
+session at that point of time we'll meet
+you all and um yeah tomorrow since it is
+15th August there'll be a lot of things
+that will be coming up tomorrow for you
+all uh we'll be happy to um do that
+okay so I think uh this is it uh thank
+you m for taking this amazing session Uh
+uh thank you everyone. Please do make
+sure to hit like, share your learnings
+in LinkedIn and all the platforms and
+definitely we'll see you all in in the
+next session. Thank you. Have a great
+day. Bye-bye. Take care. Mike, any last
+thing that you want to say?
+>> No, no. So thanks a lot everyone and I
+do hope that all of you will be very
+happy with what all we are bringing in
+the world of AI. Now we have extensively
+worked for the last couple of months to
+bring this content to you and via this
+AI for everyone series which we will be
+doing uh in every week for free live. I
+hope that all of you are very
+comfortable in AI. Please do reach out
+to me or Chris if you have any doubts
+and we will be happy to get you started
+in AI. Doesn't matter if you know coding
+if you are a coder. The good thing that
+we know each and everything for now for
+the non-coders as well and for the
+coders and that is the mindset which we
+are learning that we are making AI
+accessible to everyone. So that is what
+we will be doing it. Okay. So yeah,
+thanks a lot. We'll see you tomorrow as
+well at 8:00.
+>> Thank you guys. Have a great day.
+Bye-bye. Take care. Thank you. We're
+ending the session.

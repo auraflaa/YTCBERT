@@ -1,0 +1,1766 @@
+========================================================================
+  TRANSCRIPT
+========================================================================
+  Video ID   : Tm_odKapVrw
+  URL        : https://www.youtube.com/watch?v=Tm_odKapVrw
+  Extracted  : 2026-03-18 16:30:18 UTC
+  Words      : 11,605
+  Lines      : 1,756
+========================================================================
+
+[Music]
+[Music]
+hello
+everyone I hope everybody was quickly
+waiting for the
+session so I hope uh you're able to hear
+me quickly give me a thumbs up hit like
+for the particular video the last video
+was quite amazing got lot of support
+many people wanted this session so I'm
+going to keep these kind of sessions
+more and more uh but this kind of Crash
+Course will be coming up with lot you
+know as we go ahead um with different
+different topics like vector databases
+SQL it can be mongodb you know all these
+kind of things okay so I hope you all
+are super excited yeah yesterday I could
+not take it because Sunday yesterday I
+took six hours class and I was
+completely famed you know so because of
+that no no energy
+okay so good evening uh there says hi hi
+everyone perfect perfect perfect great
+great great so first of all how are you
+all I hope you are doing absolutely fine
+uh first of all as usual I will go ahead
+with the agenda of the specific video
+and then uh we will go ahead step by
+step my main plan is to show you how a
+skeleton of a project should be and what
+kind of code we specifically write uh
+again there are a lot of reference video
+in my YouTube channel for that but today
+I just want to show you that if you are
+specifically working in a company how
+you should probably come up with a
+structure with a skeleton of a specific
+projects and how you should basically
+build it okay so this is the overall
+plan so uh I'm just going to start in
+another couple of minutes till then
+before that we go ahead share this video
+with many of your friends whoever is
+specifically attending this and uh all
+the materials will be given in the free
+course that is provided in the
+description of this particular video
+along with the dashboard all the
+announcements will also be made whenever
+we am taking this kind of live sessions
+so welcome to the day two and let's
+start I will quickly share my
+screen just a second give me a second
+give me a
+second oh there's so many things in my
+computer running right now so because of
+that you know I just need to check which
+what all browsers have not just opened
+like that right okay
+perfect let me share my
+screen what is the cost of complete
+generative Ai and agentic Ki sir you can
+find out you can call our counseling
+team it is given in the description of
+this particular video as usual I have
+not come here to uh promote courses so I
+will be focusing on this okay so just
+let me know if you are able to see my
+screen everyone
+yeah
+yes just let me know quickly confirm it
+and then I will probably go ahead with
+the agenda
+okay perfect so
+uh let's go ahead and let's talk about
+the agenda
+right
+agenda now the agenda over here is to
+design like how you should write a code
+with respect to an end to-end projects
+right uh there before yesterday when I
+was taking a session one person came and
+said me sir I'm very good at python okay
+I'm very very good at python but till
+now I'm not used py files I've just done
+the coding in Jupiter notebook right so
+Jupiter notebook is one of the favorite
+ID of all the people right I hope it's
+your favorite also Jupiter
+notebook okay Jupiter notebook everybody
+I think you may have used Google
+collab okay you may have used your usual
+Studio code there also jupyter notebook
+will learn and in Anaconda also you'll
+be getting a Jupiter notebook Jupiter
+labs and all right but no one like
+maximum number of people don't know what
+py file is right and if I talk about
+production grade
+applications production grade
+applications this Jupiter notebook file
+will definitely not work Jupiter
+notebook file is just for testing things
+okay this is not going to work over
+there okay
+notebooks are important yeah to analyze
+to to probably try some kind of code to
+do this I'm not saying that it is bad
+but when we think in terms like because
+at the end of the day you're going to
+work in a company right and in that
+specific company you're going to build
+an endtoend project it is it is
+just in that specific way okay so it is
+our duty that we should probably move
+towards modular coding okay modular
+coding now the question Rises fine Krish
+if you're saying about modular coding
+the second thing is that how should the
+structure of our project look
+like let's say that fine I will say okay
+fine let's go ahead that complete
+depends on what kind of project you are
+developing and what is the life cycle so
+let's say that I'm I'm developing an ml
+project I can develop a gen project
+right I may develop a simple web
+application
+project okay web application
+project I may develop any of these
+things right do you agree yes you may
+develop any of this specific project
+right so how do we decide what should be
+the best skeleton structure of the
+project
+if someone ask me if a fresher ask me
+right I've been writing code from past
+12 years 13 years right so how do we
+come up with this structure the
+structure is basically defined from the
+life cycle life cycle of the project
+that you're looking
+for okay life cycle of a project now let
+me give you an example let's
+say I want to go ahead and Implement a
+ml project with mlop
+with
+mlops and here I'm going to use
+something like cicd pipeline cicd
+pipeline is definitely required because
+it will help us to do the deployment
+okay so this is my main aim okay and
+whenever you probably start right with
+respect to machine learning projects and
+all and all anything as such what we
+usually do is
+that and it is really important to
+understand over here we need to focus on
+the life cycle of the project let's say
+in this particular project my main aim
+is to create a model is to train a model
+and this specific model should be able
+to give the answer based on some input
+okay almost all the model will
+specifically do this work only it can be
+an llm model it can be any kind of
+models that you're using but here I want
+to train this model completely from
+scratch okay completely from scratch now
+tell me
+what will be the first step in my life
+cycle what will be the first step in my
+life cycle tell me quickly quickly
+everyone what should be the steps in my
+life cycle the first thing is that if I
+want to train this particular model I
+need to have data so I need to probably
+have new data okay now that data may be
+coming from different
+sources okay that data may be coming
+from different sources right so here I
+have to do the data Gathering but I'll
+not say data Gathering data Gathering is
+a good word but let's say that in my
+pipeline I will focus on data injection
+okay now this data may be coming from
+different different sources so here I
+will go ahead and write okay fine this
+is coming from different
+sources now different sources We Gather
+it we collect it and we store it in a
+database with the help of ETL pipeline
+right for all those people who are an
+experienced person we also go ahead and
+develop this ETL pipeline anyhow in my
+in my playlist everything you'll be able
+to find you'll be able to find ETL
+pipeline you'll be able to find
+different kind of projects but here
+let's focus on this because this is what
+the data scientist specifically does
+when I probably consider about ETL
+pipeline a big data engineer can also go
+ahead and develop this okay but at the
+end of the day after this ETL pipeline
+this data is stored in some kind of
+database let's consider that
+uh I have stored this data just a
+second everyone just a second I think my
+system is
+hanging just a second everybody
+just a
+[Music]
+second as developer
+just a second
+everybody a system is hanged
+completely okay even though I have a
+very good system it is
+hang okay my Chrome is hanging okay just
+give me a
+[Music]
+second so nice hairstyle take your time
+okay something something happened with
+my Chrome so I will just cross
+my
+e for
+okay are you able to see everyone just
+give me a quick
+confirmation
+yes yeah sorry for this just quick
+confirmation okay
+perfect okay now I was discussing about
+the data injection part okay over here
+now with respect to data injection when
+we specifically go over here now data
+injection basically means what I am
+reading some data from some kind of
+database okay now the main problem over
+here is that this part because every
+time new data will get created right and
+we need to retrain our model
+continuously so this data injection
+should be connected to our entire
+pipeline okay so after data injection
+what is the next step many people know
+this so let's say data
+transformation data
+transformation Okay then if we probably
+go ahead in the next step after this
+after data transformation there may be
+that we also have to probably do data
+validation or data validation will come
+first and then data transformation will
+be there then here you basically train
+the model right train the model so we
+basically go ahead and do model
+training now this
+process right data transformation Eda I
+can combine it over here itself okay now
+this process needs to continuously
+happen in a pipeline this is the major
+challenge tell me can we do this entire
+execution with the help of Jupiter
+notebook because see we have two types
+of pipeline one is prediction
+pipeline prediction Pipeline and one is
+the training
+pipeline one is the training pipeline
+yeah so prediction pipeline what it does
+is that whatever model is basically
+trained let's say if this is my model
+which is trained we give the input we
+get the output this is what basically
+happens in the prediction pipeline in
+the training pipeline what will happen
+in the training pipeline this entire
+process will run with the new data
+agree with the new data
+yes now the major challenge over here is
+not to create the prediction pipeline
+prediction pipeline basically means okay
+fine whatever trained model I have I
+will take this input and get the output
+okay but major challenge happens over
+here in the training pipeline so we need
+to write our code in such a modular
+fashion such a modular fashion that this
+pipeline runs much more
+efficiently and we should be able to
+independently integrate with this with
+our entire process or entire life cycle
+now this is just one
+example okay now in this session I will
+be showing you
+how which is the best way probably to
+come up with a solution or come up with
+this modular fashion of writing the code
+okay and we'll try to automate as much
+as possible everybody clear
+yes yes can I get a quick confirmation
+yeah
+yes so do training to be done
+continuously yes training usually
+happens continuously right you you can
+probably take two weeks of data and once
+trigger this entire training pipeline
+okay now quickly let me do one thing let
+me share my
+screen so if you remember guys this was
+my last code
+yeah we saw with the help of
+requirement. txe setup.py file project.
+uh uh project. 2ml right everything we
+created our V andv this is how our
+package projects look like you know my
+some projects two times I have created
+and we created something called as
+Source folder over here yes I hope
+everybody
+agrees now let's go ahead and
+think what should be our main aim of
+deciding the skeleton for an ml project
+I will be focusing on ML project later
+on if I get time I will also go towards
+the Gen project
+okay
+now whenever we talk about ml project
+okay and again guys there may be some
+changes with respect to the thing but
+you know this is what I feel many people
+follow this strategy you know of
+creating your entire uh structure in
+this particular way it is up to you you
+can do the minor changes but I'm going
+to just going to follow the best
+practices that I can okay and this best
+practices will be important okay now
+overall if I probably see over here
+let's say if you probably see over here
+what do you
+think if you just see this diagram can I
+create the structure based on this
+diagram each and every component so here
+whatever thing I have written I will
+consider this as
+components okay I will say this as
+components and I have to make this
+specific components and it should be
+interconnected with each other clear
+everybody clear so let's say my first
+component is data injection okay okay so
+what I will do inside my source folder I
+will create a folder called as
+components okay components clear now
+inside this component what was my first
+first component Al together quickly tell
+me everybody what was my first component
+based on the diagram that we had yeah
+what was the first component again try
+to relate it with the end to end machine
+learning project this is very important
+try to relate it your end to endend
+machine learning project starts with
+data inje okay so here what I will do
+inside this component okay first of all
+I will create one file which is called
+asore uncore
+init.py
+yes why I am creating this particular
+file underscore uncore
+init.py quickly because this specific
+file is nothing but this will convert
+this entire components into a package
+because I will be able to import this
+particular package wherever I would
+require yes so here what I will do I
+will just go ahead and create this now
+you know my first component over here is
+data injection so I will write data
+injection
+dopy and I will just press enter now
+what does this basically mean that here
+all my code related to data inje will
+come okay any code code that is related
+to data inje I will go ahead and Define
+it over here so after data inje what
+will be there so let's go ahead and
+create the next file that is nothing but
+data
+validation data validation.
+py done so this is my second step I know
+that so after data validation what will
+be my next step again I will go ahead
+and write data transformation data
+transformation. py so I'm just following
+my life cycle of a machine learning
+project
+I am just following a life cycle of a
+machine learning project yes yes or no
+everybody very simple right so data
+transformation is over here let me
+rename this properly data
+transformation. py right so here you can
+see my data transformation is created my
+data validation is created uh all these
+things are basically created right good
+enough right now after data
+transformation what I have at the end of
+the day I have mod training so what I
+will do I will just go ahead and create
+my model uncore training. py file done
+very simple so I've just followed a
+specific structure based on my life
+cycle of a data size project clear now
+the next step this basically becomes my
+component now after creating a component
+you may require some kind of constants
+you may require some kind of constants
+to define or it may be that you may
+require some kind of uh exception
+handling logging so where do you define
+that so inside this for Source folder
+only what I will do I will create some
+kind of folders so let's say this is my
+folder inside source folder inside
+source folder I will create one more
+folder this is basically my loging
+inside loging what I should have again I
+should have my underscore uncore init
+underscore un. py right then uh this is
+not get created or what just a
+second oh it's it is comma so I will
+write py right now this also becomes a
+package now inside my loging I will go
+ahead and create my login. py loging py
+right so loging py is done similarly I
+will go ahead and create another folder
+inside my source folder my source folder
+will be again exception these are the
+basic things exception needs to be
+created so inside this I will again go
+ahead and write underscore uncore
+internet. py right and similarly I will
+go ahead and write exception. py so this
+py file is based on the functionalities
+that I'm specifically using are you able
+to understand everyone okay now what
+exactly is logging logging is basically
+to log all the information right so I
+will just keep on closing this otherwise
+it will keep on getting created now see
+how this entire design is basically
+there right so initially inside my
+source I have my components I have my
+exception I have my login right now the
+next next thing is that I may also want
+to Define some of the constants that I'm
+going to use constant variables right so
+what I will do I will create another
+folder this will basically be my
+constants right and here again I will go
+ahead and create my underscore
+underscore init underscore uncore dopi
+and then I may also go ahead and create
+different types of constants whatever
+constants I want to create I can just go
+ahead and create one file which is like
+constants dopy now here any hardcoded
+values can be probably used over here
+okay now tell me what is exception for
+exception is basically to handle the
+custom exception yeah yes logging is
+basically to log all the information
+agree yes agree
+everybody are is it making sense
+everyone come on let me know are you
+liking this session no sir everything is
+flying on top of my head H is it so is
+it so is it flying on top of your head
+or are you able to retain it what is
+basically happening in in this session
+right now we are moving toward somewhat
+Advanced I'm not going to see teach you
+how to use numai how to use classes and
+all I'm trying to talk about how to come
+up with this ideation of creating a
+project yeah how to create the ideation
+so this is basically my project yeah and
+this is what is really important always
+a project needs to be designed based on
+the life cycle that you are implementing
+okay let's say if my project has one
+additional activity which is basically
+called as uh you know loading up loading
+the data in S3 bucket so what I will do
+I will create another component inside
+this component folder let's say this
+component becomes my cloud component
+right Cloud dopi so that basically means
+I know sorry should delete this file so
+here inside this component I'll create
+one file which is called as cloud. py
+now this cloud. py will be important
+because this functionality will be
+related to my AWS bucket all the AWS
+constant information I'll put inside
+this constant and then I will try to use
+it over here I'll will show you one
+example writing the code over here
+itself for you okay okay this is
+important okay so now I have my
+constants I have my exception I have my
+logging I have my components each and
+everything is over here I will create
+one more folder which is again a good
+practice which is called as utils folder
+utils folder utils folder basically
+means all the generic
+functionality that is required in this
+entire project we will try to use it we
+basically say it as utility
+functionality like in your house you'll
+be having some utility tools screwdriver
+uh that pictures that you'll be using
+for the screwdriver right uh Dyson um
+I'll not say Dyson vacuum cleaner this
+is used to clean the entire house right
+so all those kind of compon common
+functionalities you can put inside this
+utils folder then again when you're
+creating utils folder you have to make
+sure that you have to write underscore
+uncore init uncore uncore dopy file okay
+and then whatever file you basically go
+ahead and create over here utils.py you
+can go ahead and write your definition
+yeah constants that are used frequently
+yes
+I hope everybody's able to understand
+the entire structure now my question is
+Kish you have written you have created
+every folder
+manually yes did I not created every
+folder manually is there a process
+wherein I just write or automate this
+entire process of creating the
+code shall we do
+that yes or no
+how do we automate the entire process of
+creating this specific
+folder yeah that also can be done yes or
+no why should I probably go ahead with
+this so let me do one thing let me
+create one file and I will just say that
+this will be your uh project
+structure. Pi file okay now inside this
+project structure. fi file now see how I
+will automate this entire folder
+structure okay this is really important
+okay so I will quickly go ahead and use
+some of the librar so let me go ahead
+and write the code now see from here
+your coding will basically start how to
+do the coding I cannot help you with
+that you can see my videos for this but
+now let me go ahead and import some
+tools so I will go ahead and import OS
+okay then I will go ahead and write from
+pathlib path lib
+import path okay import path I will give
+you all this kind of codes okay don't
+worry so first of all I will go ahead
+and write my project name so my project
+name is nothing but let's go ahead and
+write this will be right Kish project
+okay I'm just giving my name so that
+you'll be able to understand now I will
+go ahead and write my list of files
+whatever list of files I want to create
+okay now inside this list of files now
+you know what all files needs to be
+created let's say that I will go ahead
+and write F FR FF okay now you know my
+my project structure should start from
+this project name so here I will just go
+ahead and give my project name project
+name project name slash first file is
+nothing but
+init.py
+yeah what is my second file second file
+will be project name now you know how I
+created my project name after components
+right so I will go ahead and create my
+compon components folder now inside the
+components I will be creating one more
+file that is called asore unit.
+py right then my next
+folder what is it projector name then
+here I will be using components slash
+data injection right data
+injection. py right now this you have in
+your mind right you have in your mind
+that how you have to probably go ahead
+and create a project so here again I
+will go ahead and right after data
+injection it will be data
+validation data transformation model
+trainer right so this basically becomes
+your data
+validation okay then this basically
+becomes your data
+transformation then this actually
+becomes your data uh so after you have
+this data transformation this basically
+becomes your model trainer. pyi model
+trainer. pyi this is just one example
+like this you can create your entire
+structure okay entire structure right
+now instead of that Source folder this
+will be my name chish project whatever
+things you want okay and inside that all
+this particular folder will basically
+get created I hope it makes sense
+everyone can I get a quick yes if you
+are able to understand hit some like
+show some excitement okay and uh show
+maximum number of things that you can
+probably do okay now the next step will
+be that I'm just showing in a basic
+example like this you can add any number
+of files that you have okay now what I
+will do I will write for path
+in uh for path in list of files so I
+will just go ahead and write list for
+path in list of files now for every path
+what I will do I will convert this path
+into a sorry file path by using this
+particular class which is called as file
+path over
+here okay now once this is Con converted
+I will be having two information one is
+the file directory and one is the file
+name okay and here uh how did I get this
+particular code it is completely copied
+from uh chat GPT I'm now using that free
+deep seek chat GPT you know just to get
+the answer um and I'm getting all these
+things so I will just go ahead and split
+the path over here okay so I'll be
+getting my file directory name and all
+and with respect to this I will be able
+to do it now what I will do after this I
+will go ahead and write my other code
+and here I don't need to even use loging
+so I will remove this remove this you
+can also use loging over here so here
+I've written two condition if file
+direct is not equal to uh null then you
+go ahead and create that directory
+otherwise you go ahead and do this
+that's it then automatically once you
+run this file your entire project
+structure will get created
+okay so now have you understood how to
+automate this entire process now let's
+execute this everyone now I will just go
+over here activate my environment and
+I'll write python project
+structure. py oops python python python
+project structure. py so name file path
+is not defined let's see where it is
+name file path file path so this should
+be part okay I'll save it so this kind
+of Errors will definitely come okay now
+see Kish project is created everyone
+see yes or
+no yes or no
+everybody easy right so I've automated
+this entire
+process yeah I've automated this entire
+process now see chrish project is
+basically created like how we created
+this Source
+folder yeah and this is how you have to
+work tomorrow if you keep on manually
+adding in companies the companies people
+will think that you don't know project
+you don't know python in short right do
+you want to get treated like
+this okay it should be automated right
+like tomorrow a new developer will come
+if a new developer will come he'll join
+your team then what you should basically
+do you should make his setup very much
+easy right now STI still we need to
+understand is there some kind of
+libraries which will be able to do this
+which will be able to create a generic
+file structure and all
+yeah the is there a library
+everyone so there is some multiple
+libraries which we can use there is one
+something called as cookie
+cutter so if you go ahead and search for
+cookie cutter this cookie cutter is a
+library which will actually help you to
+create this kind of structure
+right so you have different different
+templates one is Cookie Cutter P package
+like let's say I want P package I can
+probably go ahead and use this right
+it's very in Easy we just install this
+we just write like
+this do you want to try this
+also yeah let's install this okay I will
+show you this
+also so I will open my
+terminal okay now see the magic okay I
+will write pip in
+install cookie cutter
+okay P install cookie
+cutter okay I will create one folder so
+that my entire cookie cutter project
+should be created over here cookie
+cutter okay so I will say hey let's go
+to CD cookie
+cutter okay and then what is the next
+command that I have to write over here
+cookie cutter with this particular
+location
+done
+yes full name now see It'll ask for some
+kind of information full name okay I
+will write ml project okay uh email
+let's say I will write chrisn
+6@gmail.com
+okay then GitHub username krishn 06
+project name let's say ml
+projects uh project
+slug ml1 I will just write some
+name python description okay uh test
+project to show people how to build
+project how to build
+project okay pii username krishn 06 I
+will just press enter because that is
+the default version this no no yes uh 1
+2 3 argument uh no command line
+interface okay fine create author file
+yes choose one from them which license
+you want let's say I want MIT license
+yeah and all these things are done right
+now what will happen over here do you
+see this everyone project 2 ml
+requirement depth. txt travis. EML test
+Source folder
+do GitHub do GitHub is basically for the
+cicd
+pipeline easy right see I have taught
+you everything from scratch and now we
+have automated this entire
+process right so if you see this it'll
+give you all the python information all
+this information over here ml1 py file
+right main module uh then here you have
+your project. 2ml all the information
+that I've have given over here every
+information is basically given right
+this is how you do project okay you
+don't do everything from scratch once
+you go into the industry you have to be
+efficient yeah you tell your manager hey
+I'm doing I'm building a project yeah
+please don't disturb me yeah but take
+cookie cutter and directly go ahead and
+see
+this how well you're liking the project
+guys come on let me know
+happy happy or not happy because now I
+will show you one more examp example of
+writing the code because we are going to
+go ahead and uh write a oops code so
+that you'll be able to understand
+H love it so far perfect loved it
+yeah do you want me to take this kind of
+sessions again and again
+yeah okay so now what I will do I will
+go ahead and delete this cookie cutter
+because I don't want to automate that
+much so let's go ahead and delete this
+oh my God so this has got
+fine now let's delete this it will not
+get deleted because some reference will
+definitely be there fine but it's okay
+let's write our code over here okay so I
+will do CD dot dot and come back over
+here
+again okay
+now here you can see I have created
+logging and exception handling okay now
+let's work towards how we can work
+towards importing libraries and all
+right whatever custom libraries you have
+actually defined how do we import that
+now guys uh I'm just going to copy and
+paste some of the code okay with respect
+to logging because this is a basic
+loging even if you know how to do it in
+jupyter Notebook so this is the logging
+that we are doing here I've created uh
+this is my code for logging okay so
+import loging import Os from date time
+this is my log file in this particular
+name I'm creating I'm writing hey os.
+make directories lock file lock path
+then this is my basic lock configuration
+okay the reason why I'm writing this is
+that because I want to go ahead and
+import this kind of loging in other
+libraries okay so one one is that I will
+create a login and one is basically for
+exception handling I will go ahead and
+create some code okay I will copy and
+paste this code so here uh what I will
+do quickly in exceptional handling I
+will just go ahead and import the loging
+part so let me go ahead and import two
+things import CIS then
+from from SRC dot now see this is really
+important for you all to understand okay
+now you can see here that I've used some
+logging functionality how do I call this
+login. py file in my exception. py file
+any any any things yeah just let me know
+how do we probably go ahead and use this
+login. py functionality alog together in
+my exception. Pui file
+no gen gen project structure will be
+different again I told you right based
+on the entire life cycle we basically go
+ahead and do it right so in order to
+reference this loging file you need to
+first of all understand where this
+loging file is there from the parent
+folder because we are going to do the
+execution from the parent folder itself
+so I will write from Source do loging
+okay so loging I'm going to go ahead and
+import what so inside my login. py there
+is some something called as logging over
+here so I'm just going to go ahead and
+import this
+loging yeah this is really important see
+how I am importing a different package
+I'm going from that entire path inside
+my login. py file I have this login.
+basic configuration right and now if I
+just go ahead and execute what is print
+or I I print any statement right let's
+say I will go ahead and write print
+login.
+info let me just go ahead and see what
+all functions may be there
+okay sorry loger for source. loging
+loging is the folder inside class
+loging do loging doino okay now see this
+source. loging is nothing but this is my
+folder loging okay this is referring to
+the folder then this loging is basically
+referring to this particular file name
+okay if you want I can just rename this
+file so that it'll be much more easier
+for you all to understand here I will
+write logger
+okay okay logger now here what I will
+from source. loging import logger logger
+basically means this logger file and
+inside this logger file there is another
+important basic configuration which is
+referenced by loging so if I want to
+call this I'll just go ahead and R from
+source. loging import logger print
+logger.log
+doino right so if I just try to print
+this or let me do one thing let me
+create a main.py file over here so that
+you'll be able to understand in a much
+more better way so let's say this is my
+main.py file and here I want to go ahead
+and print anything with respect to
+loging so here I will write from SRC do
+loging import loging import logger okay
+and then here I will write print logger
+dot loging do info okay info and here I
+will say hello test
+log okay I'm just writing it over here
+in my main.py file now this main.py file
+is in my workspace right now in order to
+execute it what I will do I will go to
+my command prompt and I will say hey go
+ahead and write python
+main.py okay see nothing is getting
+printed because we are not returning
+anything but do you see some kind of
+folder that has got
+created yes
+yes or no
+see
+yes everyone are you able to understand
+this how to import any
+packages yeah so here now my logs is
+basically getting created do you think
+we will only be creating a folder in the
+real world scenario we will put this
+logs in some kind of cloud it can be an
+AWS Cloud it can be it can be any cloud
+services it can be any databases that we
+are specifically using right so here
+what I'm actually doing I'm showing you
+how you can create your own custom
+package how you can import it and how
+you can use it even in your main.py file
+right now my example I will go ahead and
+continue right so here inside my source
+I will go ahead and write exception
+exception in the exception handling I
+have imported this to okay I've imported
+this to now the best thing about
+exception handling is that this will
+help us to probably create or handle the
+exception so here what I will do I will
+go ahead and create my custom exception
+let's say I will write this is my
+project
+project this is my project exception I
+have to Define my own custom exception
+handling this project exception should
+be importing or inheriting from the
+exception class okay now what I will do
+with respect to this I will Define two
+functions again guys this is simple
+exception handling class
+uh so here these are our uh information
+that we are trying to find out where in
+which code in which file name the
+exception is basically happening okay
+and that exception will be displayed in
+this form of this particular print
+message that is the reason I'm writing
+like this okay again this code you can
+probably go ahead and check it in my
+YouTube channel to understand what is
+exceptional handing okay but here my
+main a is basically to show you how to
+run this project in a sync way okay so
+here you can see this is my project uh
+entirely with respect to the exception
+now I'll go to my main.py I have already
+called my logger okay so let me do one
+thing let me just go ahead and call my
+exception so for calling exception what
+I'll write from Source do exception
+import
+project
+project let's see oh from source.
+exception. exception
+import project exception now what import
+that I'm actually doing
+this is basically my class right inside
+this see this class and this class main
+work is that we have defined two
+functions as soon as we initialize
+project exception one is we get all the
+information where the error is coming
+and the second function is basically to
+print okay now see this magic okay
+everybody see this magic now once I
+write like this project exception and
+all now let me do let me just go ahead
+and use this exception handling anywhere
+as I like okay how do I call this
+exception first of all do you think I
+need to initialize this exception or not
+tell me do I need to initialize this or
+not so I will go ahead and create my tri
+block let's say my tri block is over
+here and let me go ahead and write like
+this
+print 1 divided by 1 divid by 0 and here
+I will go ahead and write accept and
+inside this except I will call my
+exception as e but I have to raise my
+custom exception in which file name that
+thing is basically coming at all right
+so here what I will do I will go ahead
+and raise my project not project lookup
+error I will go ahead and raise my
+project exception and here I will give
+my two parameters import and sis CIS
+basically means system information where
+I will be able to get now see this now
+once I go ahead and execute what do you
+think I will be getting an
+error what do you think I will be
+getting an error quickly tell me so so
+if I go ahead and write python mean. py
+okay one more thing
+here I can also go ahead and print
+loging right so here I will go ahead and
+write print loging I'll not say print
+but I'll just say logger do loging and
+I'll say some exception has
+occurred exception has occurred now if
+you want to know the details of the
+exception you can also go ahead and
+print your e okay like this now let let
+me just go ahead and execute this do you
+see some kind of error is over here and
+this is the error that I'm actually
+getting division by error right division
+by zero and do you see my project
+exception is throwing this
+error yeah do you see
+this do you see this my project
+exception is throwing an error okay now
+if I go ahead and see my logs folder now
+there are two logs that is created
+and do you see over
+here where did it go okay
+[Music]
+sorry okay this is the recent log hello
+test log is basically printed but I have
+not printed this log uh logging raise
+project exception let's see whether that
+exception has got displayed or
+not uh logger.log
+linguo I think as soon as the exception
+came it went into this exception page
+and then from
+here just a
+second uh let's see my
+page of
+logs nothing has got printed why why
+nothing has got printed because
+this is the logging
+file just a second guys just a
+second on print
+[Music]
+accept I think in the exception you are
+not able to raise anything over here
+okay fine so here what is basically
+happening is that once we go to the
+exception it is not being handled but
+here this is how you can basically write
+your own custom exception and raise it
+okay so I hope till here you have
+understood this everybody yeah because
+the next step I'm actually going to show
+you with respect to the
+components okay so this is my exception
+this is my components each and
+everything we are trying to see over
+here
+okay clear
+yes yes we need another trike except
+block so I will not use that right now
+because in the exception we already
+exception handling uh we can later do
+the loggings for
+that
+okay okay now one more thing
+everybody what do you think whenever we
+are writing data
+inje okay now this is fine see this is
+the generic thing that we have written
+we have finished logging we have
+finished exception now we know how to
+integrate both of them now shall we
+discuss about how we can integrate
+components inside components how to
+integrate data inje with data
+transformation with data validation
+shall we go ahead and do that yes yes
+everyone
+okay now tell me one thing
+guys whenever we talk about data
+inje okay one specific
+thing whenever we talk about data
+inje what do you think we specifically
+do in data
+inje very simple go ahead and tell
+me quickly tell me
+guys what do we do in data injection we
+read some kind of data yeah it can be
+from databases it can be from M multiple
+things it can be it can be anything as
+such
+right yes or
+no it can be anything right it can be
+something it can be uh in the data
+injection itself whenever we talk about
+components it can be something or the
+other thing okay now let's say if I am
+reading some file so my data injection
+basically means that okay I will read
+the
+data I will read the data okay now for
+reading the data obviously it is a very
+simple thing you'll say Kish go ahead
+and make sure to import pandas and write
+pd. read CSV if it is from a database go
+ahead and create a connection for the
+data and read the data
+right these are the two different
+options that you'll be able to see with
+respect to data injection right but in
+Industries if I really want to write a
+code how do I write okay and this is
+what is really important which many
+people think that hey we not doing some
+kind of amazing coding okay now once we
+do the data inje after the data inje
+what do we accept as the output what do
+we expect as
+output after reading the data fine we
+are reading the data so after this what
+do we expect as
+output after we read the data what do we
+expect what is the first thing as soon
+as we read the data and do tell me guys
+in a life cycle of a data science
+project after reading a data what do we
+specifically
+do fine internally we converted this
+into a data frame after
+that do we go ahead and split this data
+into train and test
+do we split this particular data into
+train test and
+validation
+yes
+yes cleaning and all we'll do later on
+guys so first of all we have to take
+this data and we have to convert or get
+this data in this three important format
+train test and validation yeah
+now while we are taking the input do we
+require some data path over
+here or do we require some database
+configuration over
+here it can be anything
+right database configuration yes do we
+require so can I say over
+here I will be having two important
+things one is is the data inje
+configuration yeah one is the data
+injection configuration the data
+injection configuration will have the
+information of all these
+things yes yes or no
+everyone yeah yes or
+no I hope everybody is able to
+understand this yeah so we will be
+having this data injection configuration
+somewhere we need to make it to have it
+and the output will be what can I say
+that this will be my data injection
+artifact artifact basically means some
+output now artifacts basically means
+some output in configuration basically
+means
+input later on with respect to every
+module don't you think I need to provide
+configuration and artifact because see
+after data injection what is there can I
+say data
+validation can I say data
+validation can I say data validation now
+tell me in data validation what you
+require as an input data validation
+basically means we will validate the
+data we will validate the data so here
+don't you think I require the schema of
+the
+data so this schema of the data can be
+put up in the data validation
+configuration data validation
+configuration right and what will be the
+output of this data
+validation let's say my output over here
+is my train and test
+file right after
+validating okay so this basically
+becomes my data validation what artifact
+artifact
+yes now see this connection from data
+injection to data Val uh data validation
+okay now in data injection I read the
+data I got this three information don't
+you think this three information needs
+to be sent over here for performing the
+data validation configuration along with
+the
+schema
+yes understand over here guys along with
+schema don't you think I have to send
+all this three information
+also so are am I able to find a
+connecting medium from data injection to
+data
+validation right then after getting the
+data validation don't you think I can
+pass this information to the next step
+which is my data
+transformation and then again I will be
+getting artifact as an output then I
+will connect this to my model
+trainer so
+every every component consist of this
+two configuration what is the input
+going and what is the output
+coming yeah this in the data injection
+the configuration is going as an input
+the artifact is coming as output then
+again this artifact along with the input
+in the data validation config we are
+sending it so that this two gets
+connected right
+and then this will get connected to the
+next then this will get connected to the
+next I hope it is making sense everyone
+how is the
+explanation
+yeah but you need to be good at python
+okay this way I can go slowly now let me
+show you one example data validation
+okay now in data validation what are the
+first important thing that I will go
+ahead with okay see in data validation
+first of all I have to don't you think I
+have to probably come up with data uh
+see in data ingestion specifically don't
+you think I have to probably come up
+with two different classes okay so first
+of all let's say I will be importing all
+these
+libraries okay
+uh logging
+import log right everybody clear I will
+talk about this data class now okay I
+will talk about this data class but I'm
+importing some of the libraries away
+okay now after importing some of the
+libraries The Next Step will be that you
+know what is the input to my data inje
+so I will create a class over here the
+class is nothing but data inje
+config because you know what is the
+input to my data injection so it'll be a
+data injection config right
+and here I will Define my paths right
+and before this I will just go ahead and
+write my data class data class is
+specifically written to specify only
+variables no functions inside it right
+for a specific class so I will say hey
+this is my train or let's say this is my
+raw data path raw data path and this raw
+data path will be of string type which
+will be equal to OS do path. join
+okay. path. jooin and let's say this
+particular path is there inside my raw
+file raw file and the file name is
+nothing but data. CSV I'm I'm just
+showing you that I'm reading it from my
+local okay so this basically becomes my
+data injection okay data injection
+config okay now that basically means
+what happens inside this data injection
+I really require only this data path
+okay so I have created this now with
+respect to data ingestion artifact how
+do I create it I'll create another data
+class this will be my data injection
+artifact now do you tell do tell me what
+will be the variable names that I will
+create over
+here because after reading it don't you
+think I will be getting this to
+important
+information tell me one is the raw data
+path one is the train data path and one
+is the test data path and let's say the
+folder name is artifact inside that I'm
+creating my train and test yes or
+no yes I hope everybody's
+understanding okay forget about I did
+not write validation you can add one
+more validation over here let's say
+validation data path also you can go
+ahead and add like I will copy this and
+I will paste it over here okay so this
+basically becomes my valid data path and
+this path will basically have my valid.
+CSV yeah so my data injection and data
+artifact is completed yeah now what is
+the next
+step what is the next step I will go
+ahead and create my I will go ahead and
+create my class data
+inje right now this data
+inje obviously when I'm creating a class
+it is necessary that we create a init
+function a Constructor right
+so I will go ahead and write definition
+uncore init uncore uncore and here I
+will go ahead and write my self
+keyword yeah then here I will write
+self. injection
+injection underscore config let's say
+this is the variable that I want to go
+ahead with okay this will be initialized
+for my data injection config okay then
+similarly I will write self Dot
+artifact undor config this will be
+defined from what data injection
+artifact so am I getting all this
+information right in my init file as
+soon as we probably go ahead and
+initialize
+yes I've got this file path right do you
+agree I've got this file path that
+basically means my data injection knows
+where these paths are yeah where this
+paths are now what is the next step I
+will go ahead and create a function I
+will write hey definition now let's go
+ahead and initiate the data injection my
+data injection work is basically to read
+the data from the path and divide that
+into train test split okay train test
+split okay now what I will do inside my
+data injection I will take my S keyword
+and then I will say hey let's go ahead
+and log it so logging dot m logger it is
+a logger do loging
+doino I will log it and I will say hey
+let's start my data
+injection I will go ahead and write like
+this let's data injection
+started okay data injection started
+perfect now I will go ahead and create
+my tri catch Block in my TR catch first
+of all I will import pandas pd. read CSV
+and let's say I will go ahead and read
+my CSV file now I don't have have a CSV
+file over here so let's go ahead and
+create a CSV file I will go ahead and
+create a folder which is correct
+notebook notebook okay inside this
+notebook what I will do uh where is the
+notebooks inside this folder I will
+create another folder or I will say uh
+data data. CSV empty empty thing okay
+it's just an empty I I I'm not writing
+any data so here I will go ahead and
+write my notebooks
+SL data. CSP so I'm reading the data now
+after reading the data what I have to do
+what I have to do after reading the data
+tell
+me what I have to do after reading the
+data can I say I have to split it split
+this into train
+test
+yeah I just have to split it
+right split it right after splitting
+what I have to
+do so see see the thought process
+process if you try to learn in this way
+know guys I'm telling you everybody will
+become a good developer okay
+everybody everybody will become a good
+developer I'm telling you trust me on
+that okay now see this what I will do
+inside this I will go ahead and first of
+all I'm reading the data okay so my data
+will basically be DF okay data frame now
+what I will do over here is that I'll
+say hey login.
+info oh sorry
+logger
+logger.log
+doino and inside this particular info
+I'm saying hey data set red okay now
+after reading the data set what I have
+to do I will write OS do make dirs make
+directory and I'll say hey go ahead and
+create the directory of the path os.
+paath do directory name and this
+directory name should come from where
+can anybody tell me where should my raw
+directory path comes from it should come
+from data injection config right clear
+so here in order to get this I will
+write self. inje
+config
+dot dot dot dot what is the
+name raw data
+path so this will be my file name which
+will get created first of all this is my
+total file okay and here I will write
+one condition saying that if it exists
+okay is equal to true that basically
+means even though it exists I'm just
+going to make it as true okay and then I
+will go ahead and save this file inside
+this particular path DF do2 CSV inside
+this path that is nothing but self. inje
+config do raw data path and here I will
+be using index is equal to false let's
+see okay so now I have saved the whole
+path inside that particular folder now I
+will go ahead and perform my train test
+split now with respect to the train test
+split what I will do I will just go
+ahead and say hey this is my train test
+train test validation whatever you want
+to do and I hope everybody knows how to
+do that in the skill learn okay and then
+we will go ahead and save this Trainor
+set.2
+CSV 2core CSV and here this time I'll
+write self dot where is where should my
+train file get saved it should be saved
+inside this particular folder right data
+inje artifact so I have this artifact
+config so I'll write self. artifact
+config dot dot uh inside the artifact
+config I have
+train train data path right so here is
+there and I'm saving it over here
+similarly test path test file I need to
+save it over here
+okay and this will basically be
+my uh test data PA
+okay and what should I return I should
+return this two information right after
+this inside this data injection I will
+return two
+information two information in the form
+of Tuple one is
+the self dot artifact sorry self.
+artifact config do train data
+paath another one is self. artifact
+config do test dat done does this make
+sense
+yeah does this make sense I know people
+may be flying here and there but this is
+how we do coding in the real world
+scenario okay and now I will go ahead
+and close this trike C
+block okay and then okay I did not
+create artifact
+folder okay
+I have to create the artifact folder
+perfect okay I did not create it very
+nice someone said me so instead of this
+raw inje config I will be
+using artific uh artifact
+config raw data path instead of raw data
+I'll go ahe and create my train data
+path okay perfect
+now I will go ahead and write my
+exception exception oh sorry except
+block exception as e if there is any
+error we'll get this exception and here
+I will raise
+my project exception I did not import
+the exception Also let's
+see this is my project uh Source do
+exception
+uh project exception where is my
+exception let's see quickly quickly
+quickly
+quickly and this is how everybody will
+code if you are in this level trust me
+you will love it okay so inside my
+exception exception. exception okay
+fine hey why did I write all this code
+in data validation here I should have
+written in data inje data injection is
+empty so no worries I will write it over
+there okay
+um ception do
+exception import project exception okay
+so now I'm going to raise
+this raise project exception okay and
+here I'm going to
+write e
+commes for all those people he's saying
+some some gu
+saying okay
+okay okay now in order to execute this
+code I will write if underscore name or
+let's execute this from the main file
+okay so here I have my
+main.py now I want to call this code so
+how do I call it from SRC
+do uh SRC do
+components. data injection import data
+inje then from SRC do
+components do data data inje import data
+injection artifact and similarly we have
+to go ahead and import data injection
+config okay
+config done okay now in order to execute
+it all the functionalities I will write
+if underscore uncore name uncore uncore
+is equal to toore uncore
+maincore then we will go ahead and
+initialize data underscore ingestion is
+equal to data inje okay I will
+initialize this but before that I have
+to initialize my data inje
+artifact oh
+sorry data injection is done then from
+this data injection which function I
+have to call tell me so I will just go
+ahead and write object
+data inje do initiate data inje right so
+this will basically initiate it and now
+I can just go ahead and print whatever
+things I want okay now see what will
+happen right now no folder may be
+created right now I will just go ahead
+and execute
+this okay I will write python main.
+P1 no module name pandas okay fine I
+will install pandas P install pandas
+okay then there should be one more
+Library called as pip install Escalon I
+will install that and I'll just try to
+execute and show it to
+you so this this type of course I have
+uh already completely for free it is in
+my YouTube channel you can go ahead and
+refer
+it so how was the
+overall coding
+session people are expecting from Basics
+I will not open Jupiter notebook I
+already already told you in the first
+session okay and this is how you
+basically go ahead and write pip install
+SK learn let's go ahead and also make
+sure to okay pip
+install sky kit
+Lear some guys are asking is it on
+python sir yes it is on python only no
+Madu is asking okay so how much would
+you like to
+rate this session because tomorrow we
+are going to have the entire data
+structure session how to use data
+structure in real world scenario I think
+M will be taking that particular session
+okay and then we'll run this code it
+will
+work okay so now let me clear the screen
+python main.py executing executing
+executing I think it should be executed
+now great
+I know data is
+empty so it shows no such file or
+directory notebooks okay it should be
+notebooks I have written now okay no
+worries uh let's go ahead and see in the
+data inje whether I've written notebook
+or
+notebooks I will run and show it to you
+even okay it's notebook now it should
+work all the exception is also basically
+getting
+handled data injection. initiate data
+inje um
+no column to pass from the file see it
+is saying no column because the data is
+not there
+okay we are trying to read the data no
+data is there so that is the reason it
+is giving me exception but if you have a
+data it will start reading it
+clear everybody
+clear let's download some data then
+because I'll not be that happy if I
+don't have any
+[Music]
+data just a second I will put some data
+over
+here okay
+[Music]
+python main.py now it should
+work can you explain if the data was
+from xql server then you have to have
+this see guys
+completed now is the magic that I will
+show
+you do you see raw
+file do you see artifacts
+yeah do you see artifacts do you see raw
+file
+folder initially this went as a data
+injection then this is your test. CSV
+train. CSV as the
+output
+H
+clear now once you get this right once
+you get this from your main.py file then
+the next step is your data
+transformation or data validation so go
+to that specific file and start writing
+your
+code start writing your code inside your
+data transformation or data
+validation okay validation you need to
+create one schema file you need to
+compare all the fields and all but here
+my main a is to show you how you can
+connect all these things and what is the
+best pattern of writing the code
+okay can anyone share the ml yeah in my
+ml course everything is mentioned
+everything is explained in that specific
+way
+okay good enough how was the
+session see if you want to learn from me
+I will be giving you like you can check
+out my website you can check out because
+we usually teach in this way okay um
+again it is up to you how you want to
+probably go ahead and learn so
+everything you'll be able to see in the
+description of this particular video you
+can go ahead and check it out or you can
+also check out my any live classes you
+want to join because we teach in this
+way okay uh and next month we are coming
+up with this data science generative AI
+batch completely from scratch where
+we'll be starting from basic coding and
+then we will go till this level okay
+how's your agent course currently going
+on it's going on amazingly well you know
+uh how come you remember such complex
+codes it's really tough for many
+beginners if you keep on on coding
+everybody will remember these all things
+okay
+perfect anyhow uh I will just try to
+bring all this code I will give in the
+dashboard you can go ahead and refer it
+and uh coding will be in depth right yes
+coding is completely uh in depth you
+know now you can probably see all my
+students usually write in this specific
+way all the codes okay yeah initially
+you'll find it difficult but once you
+probably get this around right it is
+always good okay so instead of watching
+some comedy videos wasting your time you
+can do this kind of coding practice and
+this is what is basically required to
+grow you in the IT industry the more
+better code you are so you basically
+automated the entire system yes I have
+automated the entire system
+yes I've basically automated the entire
+system yeah so thank you everyone uh
+please do make sure that you hit like
+and tomorrow we are going to have the
+next session wherein we discuss about
+how data structures can be used and how
+we can use it in a rail scenario
+tomorrow again 8:30 p.m. the session
+will be there tomorrow mayank Agarwal
+will be joining I will join initially
+but M agar will take the entire data
+structures part here in this video I
+showed you the ml skeleton along with
+that I show you how you can use oops in
+this how you can probably connect from
+one in uh one one one configur one one
+component to the other component each
+and everything okay prerequisites for
+data structure learn basic data
+structures but we'll try to work in a
+way of objectoriented programming
+language okay so uh yeah all these live
+sessions is recorded you'll be able to
+find out in the description of this
+particular video where you need to
+enroll it is completely for free you'll
+get all the codes over there this was it
+and again if you want to probably learn
+in this manner from our side you can
+visit my website I've already given the
+website link it is nothing but krishn
+okay let me just go ahead and share my
+screen so that you will be able to find
+out each and everything okay so this
+will be hardly taking some
+time I do not do anything other than
+that okay so is everybody able to see my
+screen just let me
+know yes so this is the courses that we
+are specifically coming up with okay uh
+you can go ahead and check it out so you
+can go to krishna. live classes these
+are all the courses uh we are running
+agentic AI courses live Big Data Book
+boot camp Advan and LP generative VI I
+and my team okay then these are all the
+completed live classes that is probably
+going on you can join any of them one
+more course that we are coming up with
+is I will just give the link in the
+comment section okay which you can refer
+it
+okay for all those people who have
+already taken you can see the reviews
+and all it is really much good okay
+so I've given the link uh you can go
+ahead and refer it you can also call the
+counseling Team all the information is
+basically given in the description of
+this particular video you can go ahead
+enroll it you can get good discounts and
+all just talk to the counseling team
+because we also need to understand each
+sir please take data science and AI
+course little slow H slow that is an
+eight months course this is a five days
+crash course what do you expect from me
+right so yeah this was it uh I hope you
+like this particular video take care and
+uh other than this uh you know learn
+well and I hope uh everything makes
+sense once you get into this industry
+thank you have a great day hit like
+share with all your friends share your
+learnings and Linkedin and all tag me
+I'll be there to see you cheer you up
+this is it from my side bye-bye have a
+great day shabar ratri good night guys
+thank you

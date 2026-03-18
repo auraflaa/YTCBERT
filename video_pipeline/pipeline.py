@@ -27,6 +27,8 @@ from rich.progress import (
     TextColumn,
     TimeRemainingColumn,
 )
+from rich.console import Console
+console = Console()
 from youtube_comment_downloader import YoutubeCommentDownloader, SORT_BY_POPULAR
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api._errors import NoTranscriptFound, TranscriptsDisabled, VideoUnavailable
@@ -241,9 +243,9 @@ def process_video(url: str, idx: int, total: int, force: bool,
         print(f"      [SKIP] Comments are disabled. Skipping.")
         return "skip"
 
-    # --- Early Filter: Shorts (Duration < 60s) ---
-    if yt and 0 < yt.get("duration", 0) < 60:
-        print(f"      [SKIP] Video length is {yt['duration']}s (likely a Short). Skipping.")
+    # --- Early Filter: Shorts (Duration < 30s) ---
+    if yt and 0 < yt.get("duration", 0) < 30:
+        print(f"      [SKIP] Video length is {yt['duration']}s. Skipping (under 30s).")
         return "skip"
 
     n_total = 0

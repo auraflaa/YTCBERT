@@ -158,6 +158,7 @@ def get_video_stats_batch(video_ids: list[str], api_key: str) -> dict[str, dict]
                 "duration":      parse_duration(content.get("duration", "")),
                 "comments_disabled": "commentCount" not in stats
             }
+        return results
     except urllib.error.HTTPError as e:
         if e.code == 403:
             try:

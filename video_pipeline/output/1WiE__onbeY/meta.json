@@ -1,0 +1,36 @@
+{
+  "video_id": "1WiE__onbeY",
+  "url": "https://www.youtube.com/watch?v=1WiE__onbeY",
+  "extracted_at": "2026-03-18T16:30:47.662119+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 10889,
+    "unique_word_count": 829,
+    "vocabulary_richness": 0.076,
+    "line_count": 1752,
+    "char_count": 53967,
+    "avg_words_per_line": 6.2,
+    "estimated_duration_mins": 83.8,
+    "top_keywords": [
+      "here",
+      "let",
+      "loop",
+      "function",
+      "again",
+      "right",
+      "program",
+      "data",
+      "run",
+      "case"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

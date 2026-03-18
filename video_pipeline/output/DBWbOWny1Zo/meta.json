@@ -1,0 +1,36 @@
+{
+  "video_id": "DBWbOWny1Zo",
+  "url": "https://www.youtube.com/watch?v=DBWbOWny1Zo",
+  "extracted_at": "2026-03-18T16:30:32.240040+00:00",
+  "pipeline_version": "1.0",
+  "status": {
+    "transcript": "ok",
+    "comments": "error: Comments failed after 3 attempts: name 'console' is not defined"
+  },
+  "transcript": {
+    "available": true,
+    "word_count": 8766,
+    "unique_word_count": 1162,
+    "vocabulary_richness": 0.133,
+    "line_count": 1568,
+    "char_count": 46091,
+    "avg_words_per_line": 5.6,
+    "estimated_duration_mins": 67.4,
+    "top_keywords": [
+      "yeah",
+      "learning",
+      "okay",
+      "right",
+      "different",
+      "computer",
+      "start",
+      "here",
+      "vision",
+      "image"
+    ]
+  },
+  "comments": {
+    "available": false,
+    "count": 0
+  }
+}

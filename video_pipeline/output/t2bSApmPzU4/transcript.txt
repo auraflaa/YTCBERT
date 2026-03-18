@@ -1,0 +1,490 @@
+========================================================================
+  TRANSCRIPT
+========================================================================
+  Video ID   : t2bSApmPzU4
+  URL        : https://www.youtube.com/watch?v=t2bSApmPzU4
+  Extracted  : 2026-03-18 16:30:26 UTC
+  Words      : 3,529
+  Lines      : 480
+========================================================================
+
+hello all my name is krishnaik and
+welcome to my YouTube channel so guys in
+this video we are going to probably
+discuss about prompt engineering using
+Lang chain now property engineering can
+be super important if you're probably
+working with llm models because it will
+actually help you to design the input to
+the model that you are having a
+conversation with so obviously uh in my
+previous video we have discussed about
+Lang Chen and I also showed you that how
+we can actually create a simple Search
+application just like a chatbot using
+Lang chin now let's go ahead and let's
+discuss about prompt engineering so
+um in prompts engineering we
+specifically designed the prompts itself
+right so if I talk about Lang chin there
+is a topic which is called as prompts uh
+over here you can see the new way of
+programming model is through prompts a
+prompt refer to the input to the model
+this input is often constructed from
+multiple components so here in launching
+you will be able to create your own
+prompts using this prompt template right
+so it is responsible for construction of
+the inputs Langston provides several
+classes and functions to make
+constructing and working with prompt
+easy so obviously whenever we use
+different tools I can use land chain
+there are also other tools like chain
+lit over there also the prompt template
+can be used from the land chain itself
+right so let's go ahead and let's
+quickly start the coding over here and
+here I'm going to give you a lot of
+examples with respect to this so um as
+usual so over here the first thing that
+you really need to do over here is that
+go ahead and use the open AI key the
+serp API key I will talk about it later
+on because let's say if you're probably
+creating a chat bot and you want to also
+use Google search in that we can
+actually use the Google search API so
+for that purpose I'd actually use that
+but initially we just require this open
+API key I have already loaded it away
+and executed it but whatever API key you
+specifically have you start with this
+okay as discussed earlier we are going
+to specifically use prompt prompt
+template from the Langston itself so now
+let's go ahead and import from Lang
+chain okay and many people are asking
+what are the prerequisite prerequisite
+is nothing it's just python if you know
+python everything will be working in
+this specific way you just have to keep
+on looking on the Langston documentation
+with respect to the syntax and the
+parameters that we are going to use okay
+so from Langston we are basically going
+to import
+The Prompt template okay and here
+from this prompt template I'm just going
+to use template first of all we need to
+design some kind of template so one
+example that I am probably going to
+probably take over here will be
+something like this so see over here I
+will be designing my own
+from template OAC so I'm just saying
+that I want you to act as a financial
+advisor for the people in an easy way
+explain the basics of whatever topic I
+really want to give right from the
+search engine itself let's say uh I want
+to understand with respect to a
+financial concept what is income tax so
+that income tax word will get replaced
+over here so this is a generic template
+that I specifically need to use it you
+can change it anyhow like whatever way
+you specifically want like question
+answers different different ways you can
+basically do it I'll show you more
+examples as we go ahead right now once
+this is done once the template is
+basically decided the next thing that
+you specifically need to do is that use
+this prompt template and create your
+entire you take this specific template
+and insert it over here now in the
+prompt template the first thing is that
+you have to Define your input variables
+now what all input variables you are
+specifically providing over here that is
+nothing but Financial concept right so I
+will be writing the financial concept
+over here and make sure that you are
+always write this in courts so whatever
+parameters you're giving from your end
+that parameters only you have to put it
+away you can if you are providing one
+parameter just provide one parameter as
+your input or two parameters provide two
+parameters as input then in the next
+statement that we specifically need to
+write over here after the input
+variables right is nothing but your
+template right now what template I am
+basically using for Designing my input
+is the same template right so here I can
+basically say demo template will be the
+name correct over here so I will search
+right demo template and I will copy this
+over here and paste it over here okay so
+oops just a second template is equal to
+demo template now this is done now this
+is how your prompt template is designed
+okay and I will save this in a variable
+called as prompt okay and now what I'm
+going to basically do is that whenever I
+give an input let's say my print prom
+dot format I will be using and if I give
+my input over here as Finance chill just
+see this okay Financial concept is equal
+to now let's say my input is income tax
+okay
+now how do llm model is going to take
+the entire text so if I probably just go
+ahead and execute it it will take
+something like this I want you to act as
+an acting financial advisor for people
+in an easy way explain the basics of
+income tax okay so this is how the
+message is basically going to the llm
+model let's say if I'm using open AI uh
+or any llm chains right so in in that
+specific way it is going to go now let's
+go and see that how this prompt template
+that we have probably created we can
+pass this input to our llm models right
+so for llm models obviously in my
+previous session also if you don't know
+I will put that particular Link in the
+pinned comment of this particular video
+uh what we'll do from Lang chain we will
+try to from launching Dot llms and there
+are a lot of llms model I've just
+started with open AI there is hugging
+phase there are different different kind
+of models even for chat there is
+different different models we'll discuss
+about that as we go ahead but uh prompt
+engineering is the first basic things
+that you definitely need to know so I'm
+going to import opening AI okay so open
+AI over here and then I will say from
+line chain
+dot chains whenever we use prompt
+template it is super important that we
+have to use chain for executing that
+particular prompt template okay so I'm
+going to import llm chain now you may be
+thinking Krish from where do you get all
+these things just watch this
+documentation right if you probably
+start with prompt templates over here
+getting started here is some examples
+that has been given and if you really
+want to run this example you have to
+probably use this llm chain any prompt
+template that you specifically want to
+Define okay so here it is so here is my
+luncheon.chins I'm going to import llm
+chin now the next thing is that I will
+initialize open Ai and let's say the
+temperature variable that I'm actually
+going to Define is 0.6 or 0.7 Whatever
+by default is 0.7 over here and then I'm
+going to basically say llm chain I'll
+initialize this also the first parameter
+is nothing but the llm model that I want
+to give and this is the llm model the
+second parameter is basically my prompt
+that I specifically want to give so that
+it can give me the output and that
+prompt will be nothing but the same
+prompt right so this is done I'll create
+this variable like this and let me just
+say that this is my chain one okay and
+like this I can create multiple chains
+which I had already shown you in my
+first tutorial right so once this is
+executed uh over here I'll be having
+chain one dot run right when I say run
+all I have to give is my input over here
+right and that input will basically
+replace this particular input over here
+itself right something like this so here
+I will say okay fine my input is that I
+want to know about income tax now let's
+go ahead and execute this now what it is
+going to do as soon as we write chain
+dot run on income tax it is going to
+take this prompt template inside this
+prompt internet wherever is my variable
+it is going to replace that particular
+word over here it will take some time
+based on the API key that we
+specifically have and again API key
+speed like how much cost you're paying
+for that you can also make a free API
+key but it will just give you five
+dollars so this is what is the output
+that I'm getting income tax is a tax
+that is paid that is paid to the
+government based on your income your
+income job investment all this
+information is basically available over
+here see so this is what it is basically
+giving based on this kind of input right
+so this is how my prompt format is it is
+taking this entire input and it is
+saying that okay with respect to the
+income tax I'm going to get it okay uh
+let's say I want to probably understand
+about what is GDP right so it will try
+to give me the answer okay about GDP
+over here again it will take around 8 to
+say 10 seconds and again it depends on
+the type of API that you have so GDP
+stands for gross domestic product total
+this this is there so you are able to
+get your own different kind of outputs
+right so uh this was it right and I can
+probably name this entire chatbot
+application as a financial advisor like
+whatever topics you specifically want
+you can put that okay now let me show
+you one more example okay and I'll give
+you entire materials over here now let's
+say I want to probably build a language
+translation now for this also my prompt
+template will be little bit different
+okay now see this and here I will show
+you an example of giving two different
+inputs right so language translation
+over here you have so here also I'm
+using a prompt template the template
+will be that in an easy way translate
+the following sentence into Target
+language so here I have to give two
+parameters first is my input sentence
+and in what target language that I
+really want to give ah since I am giving
+two parameters here also I'll use llm
+chain but the way of providing these two
+parameters will change okay just see
+this now this becomes my language prompt
+my prompt template my input variables
+will be again in a list sentence and
+target language and template will be
+this specific template okay now once I
+execute this and probably if I just
+slide my
+language underscore prompt right dot
+format always whenever you want to see
+that how the input is basically going to
+go you can basically write over here so
+sentence is my first key let's say I'm
+going to write how are you and I want to
+convert this into a
+target language okay this will be my
+target language I hope uh the spelling
+is correct okay so second parameter how
+are you and target language is equal to
+let's say I want to basically give as
+Hindi so I want to convert this sentence
+how are you into Hindi by using this l m
+chain so let me just go and see now this
+is how the input is going to go whenever
+I provide my sentence right so in an
+easy way translate the following
+sentence how are you into Hindi
+something like this okay
+now this is what we are going to use
+over here and again for this we will use
+this same chain uh we can probably
+create a new chain so let's say my chain
+two is llm uh with this particular
+prompt okay now since I am providing two
+parameters over here one is sentence and
+one is uh language you cannot directly
+call like chain one dot run or chain two
+dot run okay so here what I will do I
+will write chain two and whenever you
+have more than one parameters uh you
+have to probably give it in the form of
+keys right so this will be my first Keys
+like this sentence will be my key and in
+the sign set inside the sentence I can
+write my text something like this right
+so it will be like hello
+hello how are you okay and this is what
+is my sentence or let me just remove
+this question mark and the second
+parameter is nothing but it is basically
+my target language okay and the target
+language will be nothing but Hindi and
+you can change it you can change it to
+French or whatever things you
+specifically want okay so this is uh how
+you basically run it okay now if I
+execute it you will be able to see the
+output okay I'm getting one error saying
+that Financial concept okay Financial
+concept was my okay this chain two okay
+prompt I have to change it over here see
+uh this is a smaller mistake that I did
+because it is still referring to the
+previous prompt so here is my language
+prompt
+and here you have see sentence hello how
+are you target language is Hindi and the
+output text is Namaste when you get in
+this form of Json right now you can
+probably pick up whatever text you
+specifically want and you can give the
+output over there right at least it is
+in the form of key value bits so Namaste
+right and probably you can also convert
+this into French so French uh will come
+something like bonjour comment Alice was
+I hope it is right uh if you don't want
+this let's say I want to give it in
+kannada I don't know whether kannada is
+there or not uh I'm not sure let's see I
+hope so it should be there right hello
+how are you target language kannada
+kannada is from India itself uh hello
+something like that okay so all those
+languages can be basically be used over
+here okay so this is one example now
+similarly see I did with two parameters
+you do with three parameters four
+hundred parameters however you want to
+make a sentence format try to make it
+okay so guys now let us see one more
+example of a prom template and this will
+be quite amazing so let's consider this
+okay and I'm going to copy and paste one
+example in front of you
+and here you'll be able to see that I'm
+using one more class which is called as
+few short prompt template and I'll tell
+you why I am specifically using this but
+let's see this example in this example I
+have given a format uh this is the
+template format and in this template
+format what I'm doing is that uh I'll
+not say this is a template format but
+I'm giving some examples in this
+examples I have some key value pads like
+word is equal to happy then the opposite
+of this word will be nothing but antonym
+right so suppose let's say I'm trying to
+find out the opposite of this word I'm
+giving this format some examples like an
+antonym you'll be finding the word as
+sad so happy word opposite is sad
+similarly here also you have a word tall
+and opposite of this word tall is
+nothing but short so this few examples I
+want to give a hint to the llm model
+okay and considering this I am going to
+create my own prompt template so here I
+will be giving the word like this and my
+antonym will be looking something like
+this so this is my entire prompt
+template and before for giving this
+problem I also want to provide some
+examples over here okay to the llm model
+itself it can be an open AI llm model
+now this same template I'll be using
+inside this prompt template and you know
+that I'm giving two parameters one is
+word and antonym so word and antonym is
+here and the template is basically this
+example formatted template now this is
+perfectly fine now in order to give this
+examples first to my l m model we will
+specifically use this few short template
+okay and I'm just going to give you the
+format over here
+and where did I get this format it is
+from the documentation itself right so
+here I'm initializing for you short
+template and I'm giving first of all
+some of the examples right so these are
+the examples we want to insert into the
+prompt the examples is nothing but word
+happy antonyms sad something like this
+okay and what is the prompt template
+that we are using this is how the prompt
+template we are using over here the
+prompt template is available then the
+prefix I am giving give the antonym of
+every input that basically I'm saying
+the llm model to give the opposite of
+every input okay and the suffix will be
+in this format and the input variables
+will be input for this okay and the
+example separator there are some
+parameters you can find out all the
+information over here but let me show
+you after running this okay which is
+which is super important okay now let's
+say if I go ahead and Pro print
+few
+short prompt so few short prompt is
+nothing but the same thing okay and here
+I want to probably write dot format and
+the input parameter that I'm giving to
+this is nothing but this input right so
+let's say if I give this input is equal
+to and let's say I'm going in the word
+big so this is how the entire
+uh uh the input will be given to the llm
+models so given the antonym of every
+input what is equal to happy with some
+examples this is my word now I'll be
+waiting for this specific answer okay
+now the llm models will be able to
+understand in a better way okay now
+directly to run this all I have to do
+create a chain okay create a chain over
+here and I am going to give this few
+short term prompt over here so the same
+few short prompt over here and the chain
+will just run with input is equal to Big
+okay I can either run like this or I can
+also say chain dot run see this if I
+write chain dot run and I'll give my
+input as big right so I will be getting
+the output over here you'll be see big
+as small so if I remove dot run and
+probably keep the previous format I will
+be able to give the entire things like
+what is my input is equal to Big text is
+equal to small so in short I'm first of
+all this Pro a few short prompt is
+basically giving the entire examples to
+my in a model and then finally I am able
+to get the output so these are some of
+the examples with respect to this uh
+here I've also explained a few short
+templates a short prompt templates so
+that you can also give an example so
+quick summary about the prompt
+engineering guys again a very good thing
+probably you want to create own chatbot
+models on a models at that time you want
+to give your own input format you can
+definitely do it with the prompt
+template itself and I've heard like many
+places now prompt engineering job is
+also on fire so that basically means a
+lot of openings where people get highly
+paid but at the end of the day my work
+is to basically teach you regarding that
+and I have done that okay so yes this
+was it for my side I will see you all in
+the next video have a great day thank
+you take care bye
