@@ -30,51 +30,66 @@ from rich.text import Text
 from datetime import timedelta
 
 class DiscoveryETAColumn(ProgressColumn):
-    """Custom ETA column that uses a sliding window for throughput (stable ETA)."""
-    def __init__(self, window_size=30):
-        self.window_size = window_size
-        self.history = deque(maxlen=window_size) # Stores (time, completed_count)
+    """Deeply smoothed ETA column using a 60-second time-based window."""
+    def __init__(self, time_window=60):
+        self.time_window = time_window
+        self.history = deque() # Stores (timestamp, completed_count)
         super().__init__()
 
     def update_history(self, completed_count):
-        self.history.append((time.time(), completed_count))
+        now = time.time()
+        self.history.append((now, completed_count))
+        # Keep only the last 'time_window' seconds of data
+        while self.history and self.history[0][0] < (now - self.time_window):
+            self.history.popleft()
 
     def render(self, task):
         if not task.total or len(self.history) < 2:
             return Text("-:--:--", style="dim")
         
-        # Calculate throughput: (Items Found) / (Time Taken) over window
+        # Thruput = (Recent Δ Items) / (Recent Δ Time)
         first_time, first_count = self.history[0]
         last_time, last_count = self.history[-1]
         
-        duration = last_time - first_time
-        items_found = last_count - first_count
+        # Calculate throughput over the time window
+        delta_time = last_time - first_time
+        delta_items = last_count - first_count
         
-        if duration <= 0 or items_found <= 0:
-            # Fallback to total session average if window is too stale/fast
+        # If we just started or no items in window, fallback to long-term session average
+        if delta_time < 5 or delta_items <= 0:
             if task.elapsed > 0 and task.completed > 0:
                 items_per_sec = task.completed / task.elapsed
             else:
                 return Text("-:--:--", style="dim")
         else:
-            items_per_sec = items_found / duration
+            items_per_sec = delta_items / delta_time
 
         remaining_count = task.total - task.completed
-        remaining_seconds = remaining_count / items_per_sec if items_per_sec > 0 else 0
+        remaining_seconds = (remaining_count / items_per_sec) if items_per_sec > 0 else 0
         
         # Calculated projected completion
         total_estimated_seconds = task.elapsed + remaining_seconds
-        total_str = str(timedelta(seconds=int(total_estimated_seconds)))
+
+        
+        # Formatting: Use distinct labels and formats
+        # Duration: e.g. "45m 20s" or "1h 12m"
+        total_m, total_s = divmod(int(total_estimated_seconds), 60)
+        total_h, total_m = divmod(total_m, 60)
+        
+        if total_h > 0:
+            total_str = f"{total_h}h {total_m}m"
+        else:
+            total_str = f"{total_m}m {total_s}s"
         
         # Absolute Finish Time (Clock)
         from datetime import datetime
         finish_time = (datetime.now() + timedelta(seconds=int(remaining_seconds))).strftime("%H:%M")
         
         res = Text()
-        res.append("Total:", style="dim")
+        res.append("Tot:", style="dim")
         res.append(total_str, style="yellow")
         res.append(" | ", style="dim")
-        res.append("Finish:", style="dim")
+        res.append("ETA:", style="dim")
         res.append(finish_time, style="bold green")
         return res
 
@@ -279,7 +294,7 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
 
     # 2. Setup Discovery UI
     from rich.progress import MofNCompleteColumn, TaskProgressColumn
-    eta_col = DiscoveryETAColumn(window_size=15)
+    eta_col = DiscoveryETAColumn(time_window=60)
 
     with Progress(
         SpinnerColumn(),

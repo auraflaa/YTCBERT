@@ -1603,7 +1603,6 @@ https://www.youtube.com/watch?v=JUtes-k-VX4
 https://www.youtube.com/watch?v=1h0fFwAVnek
 https://www.youtube.com/watch?v=OCyDKoutk5Q
 # Category: Parenting
-https://www.youtube.com/watch?v=t1n4bird6O4
 https://www.youtube.com/watch?v=VGxjv23rA0U
 https://www.youtube.com/watch?v=wCi44kvaenM
 https://www.youtube.com/watch?v=XIehpXVKr7w
@@ -4125,12 +4124,10 @@ https://www.youtube.com/watch?v=o8CkYoFqeE8
 https://www.youtube.com/watch?v=jZrTvNsE1v8
 # Category: General Engineering
 https://www.youtube.com/watch?v=d5PpnElKWUU
-
 # Category: Sociology
 https://www.youtube.com/watch?v=DjB0v6SSUv4
 https://www.youtube.com/watch?v=D8FIQJtA5bQ
 https://www.youtube.com/watch?v=S2IJ82NeH0Q
-
 # Category: AI & Deep Learning
 https://www.youtube.com/watch?v=IN2XmBhILt4
 https://www.youtube.com/watch?v=7smLlJ8oj4o
@@ -4138,7 +4135,6 @@ https://www.youtube.com/watch?v=ZXiUtj8dvZc
 https://www.youtube.com/watch?v=WLTzbEKTxhk
 https://www.youtube.com/watch?v=iyn2zdALii8
 https://www.youtube.com/watch?v=IHZwWFHWa-w
-
 # Category: Law
 https://www.youtube.com/watch?v=rVp2MZVRPyg
 https://www.youtube.com/watch?v=5Nr65lc1ys8
@@ -4151,34 +4147,27 @@ https://www.youtube.com/watch?v=7sualy8OiKk
 https://www.youtube.com/watch?v=NV70oTfd8ck
 https://www.youtube.com/watch?v=UsrwywdFxDk
 https://www.youtube.com/watch?v=_f-AqXVjOGU
-
 # Category: Sociology
 https://www.youtube.com/watch?v=_kZVbE_coSA
 https://www.youtube.com/watch?v=1d5yfUNYuj4
-
 # Category: Language Learning
 https://www.youtube.com/watch?v=mS5Y69v0X7s
 https://www.youtube.com/watch?v=RFJql-TIYvQ
 https://www.youtube.com/watch?v=AtrSYuCT3nY
 https://www.youtube.com/watch?v=6xsObJpkJJ0
-
 # Category: Sustainability
 https://www.youtube.com/watch?v=ugGK8FGq7s8
-
 # Category: Global News
 https://www.youtube.com/watch?v=9RLEQXyOTb0
 https://www.youtube.com/watch?v=7jdkrlBZxfE
 https://www.youtube.com/watch?v=JGYx8hkhbkw
-
 # Category: Visual Arts
 https://www.youtube.com/watch?v=B23W1gRT9eY
 https://www.youtube.com/watch?v=h5qWn0SfTXA
 https://www.youtube.com/watch?v=39o0uYPo4jU
-
 # Category: Sociology
 https://www.youtube.com/watch?v=NefOesTl1iQ
 https://www.youtube.com/watch?v=E8v2iHgyDRM
-
 # Category: Education/Pedagogy
 https://www.youtube.com/watch?v=bgs2jwDc2bE
 https://www.youtube.com/watch?v=kpwsZ0bl76U
@@ -4188,12 +4177,10 @@ https://www.youtube.com/watch?v=lgTZCThKaAU
 https://www.youtube.com/watch?v=IKgBLTeQQL8
 https://www.youtube.com/watch?v=pFXC6gFQXYk
 https://www.youtube.com/watch?v=qZ9n4V9lZkE
-
 # Category: Sustainability
 https://www.youtube.com/watch?v=DHvsCJm10x0
 https://www.youtube.com/watch?v=HRFXZAlelMw
 https://www.youtube.com/watch?v=ka5zLXj7-4Q
-
 # Category: Fashion & Style
 https://www.youtube.com/watch?v=HPAqL7mSopo
 https://www.youtube.com/watch?v=YRKrxLKOGEc
@@ -4201,7 +4188,6 @@ https://www.youtube.com/watch?v=v-WB2U0oNDM
 https://www.youtube.com/watch?v=gnazewLFRQw
 https://www.youtube.com/watch?v=MgTvjviA1vU
 https://www.youtube.com/watch?v=v2fIYlFxJrM
-
 # Category: ASMR
 https://www.youtube.com/watch?v=YRJ6xoiRcpQ
 https://www.youtube.com/watch?v=vPvIxwh9N2w
@@ -4217,7 +4203,6 @@ https://www.youtube.com/watch?v=79kpoGF8KWU
 https://www.youtube.com/watch?v=SzpjbJmlzbk
 https://www.youtube.com/watch?v=KXnPsVp-trM
 https://www.youtube.com/watch?v=WPni755-Krg
-
 # Category: Astronomy
 https://www.youtube.com/watch?v=eQ3IP60Fj9c
 https://www.youtube.com/watch?v=t1Ip2ta8NuU
@@ -4231,7 +4216,6 @@ https://www.youtube.com/watch?v=hz0fcW7rcpg
 https://www.youtube.com/watch?v=N4qCFFBrrgk
 https://www.youtube.com/watch?v=5eHtBPsUe_0
 https://www.youtube.com/watch?v=6TIOSPMZkL0
-
 # Category: Self-Improvement
 https://www.youtube.com/watch?v=FcZwlze6qNc
 https://www.youtube.com/watch?v=BduulXlgGaY
@@ -4244,11 +4228,9 @@ https://www.youtube.com/watch?v=FSBT-lDGj2c
 https://www.youtube.com/watch?v=GNB3OuOY6HM
 https://www.youtube.com/watch?v=QLqTYtka2Vg
 https://www.youtube.com/watch?v=s10dzfbozd4
-
 # Category: Global News
 https://www.youtube.com/watch?v=NRZnx9tzt0A
 https://www.youtube.com/watch?v=d9j8UWl-cyU
-
 # Category: Visual Arts
 https://www.youtube.com/watch?v=l0hI-iZhFCg
 https://www.youtube.com/watch?v=zz2f8xBWxD0
@@ -4257,38 +4239,29 @@ https://www.youtube.com/watch?v=-07e6L93pF4
 https://www.youtube.com/watch?v=6ISOK-XtvYs
 https://www.youtube.com/watch?v=3jhHX_tpy70
 https://www.youtube.com/watch?v=NrjLuV8f0sw
-
 # Category: AI & Deep Learning
 https://www.youtube.com/watch?v=tLajKy8exfc
 https://www.youtube.com/watch?v=GRRMi7UfZHg
 https://www.youtube.com/watch?v=iGxUD6dJj-U
-
 # Category: Language Learning
 https://www.youtube.com/watch?v=yEeU4l_pV6U
 https://www.youtube.com/watch?v=XIbSqVqA6HQ
 https://www.youtube.com/watch?v=u7lA39jshwQ
 https://www.youtube.com/watch?v=dh0pJdgY6Lc
-
 # Category: Cloud Computing
 https://www.youtube.com/watch?v=idCKCoFlKnA
 https://www.youtube.com/watch?v=ECnqartfjIM
 https://www.youtube.com/watch?v=_rnR0LaLkIU
-
 # Category: General Engineering
 https://www.youtube.com/watch?v=KlbH8f3T0Jw
 https://www.youtube.com/watch?v=bgQoVbEX8-A
 https://www.youtube.com/watch?v=iF-fd_jDjEw
-
 # Category: Sociology
-https://www.youtube.com/watch?v=3YAJnnUGd1o
-https://www.youtube.com/watch?v=-lrNc3pt-fo
-https://www.youtube.com/watch?v=W1DcXrwJkdw
 https://www.youtube.com/watch?v=fvngjiZgZxY
 https://www.youtube.com/watch?v=NUso9Q53TzU
 https://www.youtube.com/watch?v=z9Kfy3lhkAg
 https://www.youtube.com/watch?v=U2uQQKKdNEQ
 https://www.youtube.com/watch?v=6HRSMQBf0ds
-
 # Category: Software Engineering
 https://www.youtube.com/watch?v=vE74gnv4VlY
 https://www.youtube.com/watch?v=DsAclZbP_Us
@@ -4301,42 +4274,35 @@ https://www.youtube.com/watch?v=IqHaGd9J42s
 https://www.youtube.com/watch?v=t8VTLxMsufU
 https://www.youtube.com/watch?v=3LKsMGWPaqU
 https://www.youtube.com/watch?v=fxlHqnl3sRE
-
 # Category: Sustainability
 https://www.youtube.com/watch?v=t2Q5eIZNW48
 https://www.youtube.com/watch?v=YKaK-LbU7-c
 https://www.youtube.com/watch?v=z7i0kldDa-0
 https://www.youtube.com/watch?v=GO3UhRq-ngg
 https://www.youtube.com/watch?v=O5rPuj2r-dc
-
 # Category: Physics & Space
 https://www.youtube.com/watch?v=LXvv6CbGg8A
 https://www.youtube.com/watch?v=yPD1v5WR9eQ
 https://www.youtube.com/watch?v=ssxqHorFMGk
 https://www.youtube.com/watch?v=zzW5Y22YQsQ
-
 # Category: Global News
 https://www.youtube.com/watch?v=GmTMJ_yMZrk
 https://www.youtube.com/watch?v=anwPsESzrF0
-
 # Category: Gardening
 https://www.youtube.com/watch?v=U1Y5KSGHQrw
 https://www.youtube.com/watch?v=SCJ7nzKwnYo
 https://www.youtube.com/watch?v=hG9gUxOMrHQ
 https://www.youtube.com/watch?v=ybQwM-UgQjo
-
 # Category: Startups & VC
 https://www.youtube.com/watch?v=qOW5e4BgEa4
 https://www.youtube.com/watch?v=8WOzCRdhGp4
 https://www.youtube.com/watch?v=r3ZnLr9kHb0
 https://www.youtube.com/watch?v=xOsmCxEExnA
 https://www.youtube.com/watch?v=1EFHI3WIst4
-
 # Category: General Engineering
 https://www.youtube.com/watch?v=Ol18JoeXlVI
 https://www.youtube.com/watch?v=3LopI4YeC4I
 https://www.youtube.com/watch?v=TILjzuBGkRc
-
 # Category: AI & Deep Learning
 https://www.youtube.com/watch?v=n1E9IZfvGMA
 https://www.youtube.com/watch?v=LBQz1KmFOUc
@@ -4344,7 +4310,6 @@ https://www.youtube.com/watch?v=AmdLVWMdjOk
 https://www.youtube.com/watch?v=osKyvYJ3PRM
 https://www.youtube.com/watch?v=y8NtMZ7VGmU
 https://www.youtube.com/watch?v=l-9ALe3U-Fg
-
 # Category: Cloud Computing
 https://www.youtube.com/watch?v=1O4f2jOmbPg
 https://www.youtube.com/watch?v=u_lJ9dKu5Y0
@@ -4353,14 +4318,11 @@ https://www.youtube.com/watch?v=AXQ7n7rDfFE
 https://www.youtube.com/watch?v=Hf7ZTa_PlGU
 https://www.youtube.com/watch?v=NQkyzJGzIaA
 https://www.youtube.com/watch?v=yOKjbqbyF4A
-
 # Category: Local News
 https://www.youtube.com/watch?v=x44bda1dz84
-
 # Category: Personal Finance
 https://www.youtube.com/watch?v=GV3V4ufR_Rw
 https://www.youtube.com/watch?v=8Gg07ozhbKE
-
 # Category: Language Learning
 https://www.youtube.com/watch?v=Rea5HUhHpyQ
 https://www.youtube.com/watch?v=dY9UE0di_xA
@@ -4369,10 +4331,8 @@ https://www.youtube.com/watch?v=1NLmZ1DwF9E
 https://www.youtube.com/watch?v=7qhDasDSzSE
 https://www.youtube.com/watch?v=ZJcYnJ5k8vw
 https://www.youtube.com/watch?v=5ulpI_BP8Sg
-
 # Category: Biology & Medicine
 https://www.youtube.com/watch?v=-yBYviQJKPY
-
 # Category: Fashion & Style
 https://www.youtube.com/watch?v=Y5tyCcEVsyY
 https://www.youtube.com/watch?v=caYXVWIFTHk
@@ -4384,7 +4344,6 @@ https://www.youtube.com/watch?v=q6TSqmhXYjw
 https://www.youtube.com/watch?v=A8xjYuTH4KY
 https://www.youtube.com/watch?v=QR_GgeR6DwI
 https://www.youtube.com/watch?v=LXbm34JMUEc
-
 # Category: Global News
 https://www.youtube.com/watch?v=sTZ487PrNV0
 https://www.youtube.com/watch?v=xKeCmpZ0-U4
@@ -4393,7 +4352,6 @@ https://www.youtube.com/watch?v=JeU_EYFH1Jk
 https://www.youtube.com/watch?v=g8XiqCxUL44
 https://www.youtube.com/watch?v=MRJwoPKKjA8
 https://www.youtube.com/watch?v=xG8MqPsyi0k
-
 # Category: Aviation
 https://www.youtube.com/watch?v=rlz-9WsJ9N4
 https://www.youtube.com/watch?v=6SZm58Z5QiQ
@@ -4401,17 +4359,14 @@ https://www.youtube.com/watch?v=rlz-ek4hwFs
 https://www.youtube.com/watch?v=5_IFz7FEZ9E
 https://www.youtube.com/watch?v=ZvTkrZj-P_c
 https://www.youtube.com/watch?v=xSOUjuYdM70
-
 # Category: Macroeconomics
 https://www.youtube.com/watch?v=JCswAmg0qCY
-
 # Category: Politics
 https://www.youtube.com/watch?v=YvCKNExQC9M
 https://www.youtube.com/watch?v=Zgx8lcf_qqg
 https://www.youtube.com/watch?v=0kWKsurbMb0
 https://www.youtube.com/watch?v=JNxJCTExiLw
 https://www.youtube.com/watch?v=Bc_XyrO4vuo
-
 # Category: Architecture
 https://www.youtube.com/watch?v=77hLX8jO6e4
 https://www.youtube.com/watch?v=huJv3jUP-io
@@ -4421,7 +4376,6 @@ https://www.youtube.com/watch?v=TPVvXvf4xRc
 https://www.youtube.com/watch?v=J_-aX282Ps4
 https://www.youtube.com/watch?v=ZyfE3IvDWR8
 https://www.youtube.com/watch?v=qSfFq02pK4s
-
 # Category: Law
 https://www.youtube.com/watch?v=OtsGM3zoz0I
 https://www.youtube.com/watch?v=R3A9tal1OCA
@@ -4431,21 +4385,17 @@ https://www.youtube.com/watch?v=fLaU3FKJZWA
 https://www.youtube.com/watch?v=Sko6o_enSZ0
 https://www.youtube.com/watch?v=mof25PzBg9o
 https://www.youtube.com/watch?v=pz7quyJIK-4
-
 # Category: Local News
 https://www.youtube.com/watch?v=qCd80zR4KcM
 https://www.youtube.com/watch?v=EInEmGaMRLc
 https://www.youtube.com/watch?v=wehXwa-mMEM
 https://www.youtube.com/watch?v=n1QOGec7f84
-
 # Category: Biology & Medicine
 https://www.youtube.com/watch?v=GhWB7T5QxMI
-
 # Category: Macroeconomics
 https://www.youtube.com/watch?v=OS8BqRjO-ZA
 https://www.youtube.com/watch?v=_v439vNdsC4
 https://www.youtube.com/watch?v=WADrihZtckk
-
 # Category: Gardening
 https://www.youtube.com/watch?v=wtTdmcrUDQo
 https://www.youtube.com/watch?v=Fzn6TzTNOpQ
@@ -4455,7 +4405,6 @@ https://www.youtube.com/watch?v=KX-u1wN4GZ0
 https://www.youtube.com/watch?v=nKLViNfWaoo
 https://www.youtube.com/watch?v=UcK3j_lpKiU
 https://www.youtube.com/watch?v=6jsQMzWGFEM
-
 # Category: Physics & Space
 https://www.youtube.com/watch?v=TyZSBqQ813c
 https://www.youtube.com/watch?v=Ncm7c4qaQUA
@@ -4464,14 +4413,12 @@ https://www.youtube.com/watch?v=zoNViivs3U8
 https://www.youtube.com/watch?v=sx4MyFqBFig
 https://www.youtube.com/watch?v=8nAz-vVYeNA
 https://www.youtube.com/watch?v=tjo0dWtPa2c
-
 # Category: Comedy
 https://www.youtube.com/watch?v=37H2OkU2XVE
 https://www.youtube.com/watch?v=zjuetC8Eix8
 https://www.youtube.com/watch?v=v9vhIBIsceE
 https://www.youtube.com/watch?v=i9uLcqNqsQk
 https://www.youtube.com/watch?v=KEC4EGf354I
-
 # Category: General Engineering
 https://www.youtube.com/watch?v=ehi_hkLlutw
 https://www.youtube.com/watch?v=AwaVPJJEjAQ
@@ -4480,25 +4427,20 @@ https://www.youtube.com/watch?v=BHZALtqAjeM
 https://www.youtube.com/watch?v=TNbSXdXtfzg
 https://www.youtube.com/watch?v=KX1_NqNTIqw
 https://www.youtube.com/watch?v=9DCkW-J08NQ
-
 # Category: Spirituality
 https://www.youtube.com/watch?v=k4a8CWVLAKI
-
 # Category: Personal Finance
 https://www.youtube.com/watch?v=dPhkeltpzq0
 https://www.youtube.com/watch?v=36EaDw3pafU
 https://www.youtube.com/watch?v=G_Smlhf7ba0
 https://www.youtube.com/watch?v=MHCC0B3sIvk
 https://www.youtube.com/watch?v=PeYRZ81L-i4
-
 # Category: Biology & Medicine
 https://www.youtube.com/watch?v=zOmhHE2xctw
-
 # Category: Automotive
 https://www.youtube.com/watch?v=AlNU4pwJqRA
 https://www.youtube.com/watch?v=JB1P6LUNirk
 https://www.youtube.com/watch?v=UrMi3vyeD1w
-
 # Category: Sustainability
 https://www.youtube.com/watch?v=Ra7aQlenTb8
 https://www.youtube.com/watch?v=DW4rItB20h4
@@ -4507,42 +4449,34 @@ https://www.youtube.com/watch?v=NjoMoH51UZc
 https://www.youtube.com/watch?v=XoefjJdFq6k
 https://www.youtube.com/watch?v=U7-LpEmc0Us
 https://www.youtube.com/watch?v=zWdnf3Uh1RE
-
 # Category: Education/Pedagogy
 https://www.youtube.com/watch?v=ps4QlKnTMsk
 https://www.youtube.com/watch?v=b4aaX5W0opA
 https://www.youtube.com/watch?v=vCkpCylPc4A
-
 # Category: Spirituality
 https://www.youtube.com/watch?v=gwQ7uPPWKx4
 https://www.youtube.com/watch?v=lJOSqogqmic
 https://www.youtube.com/watch?v=tbHvN1YR2Zk
 https://www.youtube.com/watch?v=PQ3rXcatvz8
 https://www.youtube.com/watch?v=k1POC11WjmU
-
 # Category: Investigative
 https://www.youtube.com/watch?v=uQ1zfwtgXXE
-https://www.youtube.com/watch?v=td-tnITnu-s
 https://www.youtube.com/watch?v=Ff8R9o0I9kE
 https://www.youtube.com/watch?v=Oj18cya_gvw
 https://www.youtube.com/watch?v=ACz2bwF1gEs
 https://www.youtube.com/watch?v=-Iqyqj-cJGI
 https://www.youtube.com/watch?v=_FJ1TB0nwHs
 https://www.youtube.com/watch?v=we-F0Gi0Lqs
-
 # Category: Biology & Medicine
 https://www.youtube.com/watch?v=3OsWLNqoWLA
 https://www.youtube.com/watch?v=4OGAz1j5yF8
-
 # Category: Visual Arts
 https://www.youtube.com/watch?v=oKBWAgJNNfs
 https://www.youtube.com/watch?v=GqGZ47o0ik8
 https://www.youtube.com/watch?v=Zx-TypL-XWg
-
 # Category: Cryptocurrency/Web3
 https://www.youtube.com/watch?v=8BSabg3aaAk
 https://www.youtube.com/watch?v=iTV89Tqfmgk
-
 # Category: Real Estate
 https://www.youtube.com/watch?v=wgnpfMK8vDk
 https://www.youtube.com/watch?v=htoDW1qRh-4
@@ -4550,7 +4484,6 @@ https://www.youtube.com/watch?v=Tq8oCFjP6kQ
 https://www.youtube.com/watch?v=oN5kQqBAklc
 https://www.youtube.com/watch?v=0kl47rZZ4SQ
 https://www.youtube.com/watch?v=MkzwLRsw6bo
-
 # Category: Startups & VC
 https://www.youtube.com/watch?v=CY1Y367KEko
 https://www.youtube.com/watch?v=nCbDy7nrk3o
@@ -4560,7 +4493,6 @@ https://www.youtube.com/watch?v=MbwFt8wWilU
 https://www.youtube.com/watch?v=xxw5DYTVZSc
 https://www.youtube.com/watch?v=FvjuF9swbdw
 https://www.youtube.com/watch?v=Qz2DJ9QYYA0
-
 # Category: Philosophy
 https://www.youtube.com/watch?v=d8Y6A6Dg2Fk
 https://www.youtube.com/watch?v=1Gd41KK9Ckk
@@ -4568,13 +4500,11 @@ https://www.youtube.com/watch?v=sGg1QNyl6h4
 https://www.youtube.com/watch?v=_cblY5cwwIA
 https://www.youtube.com/watch?v=5jMeMsGQi0M
 https://www.youtube.com/watch?v=sQTrPIwtWaw
-
 # Category: Tech Ethics & News
 https://www.youtube.com/watch?v=LgMW96b6Ieg
 https://www.youtube.com/watch?v=OB4_bDFa7CA
 https://www.youtube.com/watch?v=hQXyCbY_lyY
 https://www.youtube.com/watch?v=EFrQjxd8Ggk
-
 # Category: Sociology
 https://www.youtube.com/watch?v=-gf4hakk_WY
 https://www.youtube.com/watch?v=6P2bsPWCRvM
@@ -4582,14 +4512,12 @@ https://www.youtube.com/watch?v=QsBT5EQt348
 https://www.youtube.com/watch?v=cre5wwEKiDQ
 https://www.youtube.com/watch?v=orbSiS-9ZWU
 https://www.youtube.com/watch?v=LBudghsdByQ
-
 # Category: True Crime
 https://www.youtube.com/watch?v=y3nXCmTOVfM
 https://www.youtube.com/watch?v=YPuzJS5U4xA
 https://www.youtube.com/watch?v=zTWjBau53FQ
 https://www.youtube.com/watch?v=0_y2Rfhut4k
 https://www.youtube.com/watch?v=Yj-Aq6XEbH0
-
 # Category: Psychology
 https://www.youtube.com/watch?v=wOGqlVqyvCM
 https://www.youtube.com/watch?v=ij7RyWMVF-k
@@ -4600,12 +4528,10 @@ https://www.youtube.com/watch?v=yzm4gpAKrBk
 https://www.youtube.com/watch?v=uZX14W4rVCU
 https://www.youtube.com/watch?v=YdMCL9_UTE4
 https://www.youtube.com/watch?v=AOHT-YiOeQA
-
 # Category: History
 https://www.youtube.com/watch?v=C7D9y13EF8E
 https://www.youtube.com/watch?v=j9hSL3ProEY
 https://www.youtube.com/watch?v=1GQie-UzKRE
-
 # Category: AI & Deep Learning
 https://www.youtube.com/watch?v=ZhAz268Hdpw
 https://www.youtube.com/watch?v=ZXiruGOCn9s
@@ -4631,7 +4557,6 @@ https://www.youtube.com/watch?v=SMZQrJ_L1vo
 https://www.youtube.com/watch?v=KJtZARuO3JY
 https://www.youtube.com/watch?v=BjRVS2wTtcA
 https://www.youtube.com/watch?v=xI0HHN5XKDo
-https://www.youtube.com/watch?v=Ub3GoFaUcds
 https://www.youtube.com/watch?v=tDSooiD9YWg
 https://www.youtube.com/watch?v=qrsNX1Rwle0
 https://www.youtube.com/watch?v=rURRYI66E54
@@ -4651,7 +4576,6 @@ https://www.youtube.com/watch?v=GDN649X_acE
 https://www.youtube.com/watch?v=fjJOgb-E41w
 https://www.youtube.com/watch?v=-QH8fRhqFHM
 https://www.youtube.com/watch?v=ISNdQcPhsts
-https://www.youtube.com/watch?v=XfpMkf4rD6E
 https://www.youtube.com/watch?v=GvezxUdLrEk
 https://www.youtube.com/watch?v=wgfSDrqYMJ4
 https://www.youtube.com/watch?v=BJHwFmNWduM
@@ -4662,7 +4586,6 @@ https://www.youtube.com/watch?v=i2tlbIGyzKk
 https://www.youtube.com/watch?v=kWLed8o5M2Y
 https://www.youtube.com/watch?v=NUf5q4cWhdQ
 https://www.youtube.com/watch?v=kCc8FmEb1nY
-https://www.youtube.com/watch?v=yT84Y5zCnaA
 https://www.youtube.com/watch?v=yTAMrHVG1ew
 https://www.youtube.com/watch?v=wuj8Hao1TT4
 https://www.youtube.com/watch?v=SndHALawoag
@@ -4685,10 +4608,8 @@ https://www.youtube.com/watch?v=7kLi8u2dJz0
 https://www.youtube.com/watch?v=UchitHGF4n8
 https://www.youtube.com/watch?v=7RtBUEZbKmI
 https://www.youtube.com/watch?v=vsqKGZT8Qn8
-
 # Category: Biology & Medicine
 https://www.youtube.com/watch?v=31wjVhCcI5Y
-
 # Category: Cryptocurrency/Web3
 https://www.youtube.com/watch?v=JPkgJwJHYSc
 https://www.youtube.com/watch?v=ZE2HxTmxfrI
@@ -4708,12 +4629,8 @@ https://www.youtube.com/watch?v=ozqOlUVKL1s
 https://www.youtube.com/watch?v=w9WLo33KfCY
 https://www.youtube.com/watch?v=Pl8OlkkwRpc
 https://www.youtube.com/watch?v=2jisWLxf38E
-https://www.youtube.com/watch?v=LLiJK_VeAvQ
-
 # Category: Automotive
 https://www.youtube.com/watch?v=jpPjwWmmdV8
-https://www.youtube.com/watch?v=0-0xMYEI5dM
-https://www.youtube.com/watch?v=Ga6lZkqOKUs
 https://www.youtube.com/watch?v=ZqQuiV9IMrM
 https://www.youtube.com/watch?v=6vUSsjY858Q
 https://www.youtube.com/watch?v=DM3TVVl_PR4
@@ -4743,8 +4660,6 @@ https://www.youtube.com/watch?v=AFSeNH4wdnk
 https://www.youtube.com/watch?v=Lm1REGBt12w
 https://www.youtube.com/watch?v=ex62xrIzXnQ
 https://www.youtube.com/watch?v=e7CbYSXuRUE
-https://www.youtube.com/watch?v=vNuJoHGtO_s
-
 # Category: Macroeconomics
 https://www.youtube.com/watch?v=z8pA2TDXtew
 https://www.youtube.com/watch?v=3XzF63HUEok
@@ -4760,7 +4675,6 @@ https://www.youtube.com/watch?v=_GYx3y34ELY
 https://www.youtube.com/watch?v=it1cU2mayeU
 https://www.youtube.com/watch?v=3v3E4-jogN0
 https://www.youtube.com/watch?v=HsxxB3PQDNE
-
 # Category: Education/Pedagogy
 https://www.youtube.com/watch?v=fzgLvMFGzyY
 https://www.youtube.com/watch?v=e1eadufA9l8
@@ -4776,7 +4690,6 @@ https://www.youtube.com/watch?v=QlwkerwaV2E
 https://www.youtube.com/watch?v=NnzhnoCe2bA
 https://www.youtube.com/watch?v=XHBargAra_c
 https://www.youtube.com/watch?v=xh8M_x57pa4
-
 # Category: Outdoor Sports
 https://www.youtube.com/watch?v=KCLWvAcPcPk
 https://www.youtube.com/watch?v=wMmtNewLjUM
@@ -4808,7 +4721,6 @@ https://www.youtube.com/watch?v=OuzRMrMPWus
 https://www.youtube.com/watch?v=5nCcE-jABSo
 https://www.youtube.com/watch?v=bwFBojLeUt8
 https://www.youtube.com/watch?v=Td-Lf3sWd4M
-
 # Category: Local News
 https://www.youtube.com/watch?v=bB8yK-jDefA
 https://www.youtube.com/watch?v=EVJMe3KoznA
@@ -4824,7 +4736,6 @@ https://www.youtube.com/watch?v=81GecyuNapg
 https://www.youtube.com/watch?v=n76933HdtXA
 https://www.youtube.com/watch?v=FDjmWxETjn8
 https://www.youtube.com/watch?v=yL1Lpixgb1Q
-
 # Category: Cooking & Food
 https://www.youtube.com/watch?v=eojqVIcjKr0
 https://www.youtube.com/watch?v=QG8fQqYM_4I
@@ -4834,7 +4745,6 @@ https://www.youtube.com/watch?v=HW2SoMJToIo
 https://www.youtube.com/watch?v=8Pmz1TZ6OLc
 https://www.youtube.com/watch?v=WFWZm0Bhip8
 https://www.youtube.com/watch?v=_qy6HNqxhKU
-https://www.youtube.com/watch?v=C6XlKPzVpvw
 https://www.youtube.com/watch?v=mhDJNfV7hjk
 https://www.youtube.com/watch?v=HZctds20DfA
 https://www.youtube.com/watch?v=4-ne2LMpvD8
@@ -4846,7 +4756,6 @@ https://www.youtube.com/watch?v=NKtR3KpS83w
 https://www.youtube.com/watch?v=-OXXbzdd1Gs
 https://www.youtube.com/watch?v=8ak3lUxy_yU
 https://www.youtube.com/watch?v=PipLR-sWJGg
-
 # Category: Mythology
 https://www.youtube.com/watch?v=Doc31ADuHJo
 https://www.youtube.com/watch?v=Hp554z2LseU
@@ -4878,7 +4787,6 @@ https://www.youtube.com/watch?v=JGKqTuPVIS4
 https://www.youtube.com/watch?v=uPefJO23ZwA
 https://www.youtube.com/watch?v=FhYMdVvwkCE
 https://www.youtube.com/watch?v=5JSUTf_7AvU
-
 # Category: Visual Arts
 https://www.youtube.com/watch?v=_EZUC-jGnlo
 https://www.youtube.com/watch?v=0CDd22s3jec
@@ -4907,7 +4815,6 @@ https://www.youtube.com/watch?v=gJ2HOj22gDo
 https://www.youtube.com/watch?v=wtPBOwE0Qn0
 https://www.youtube.com/watch?v=Ib8UBwu3yGA
 https://www.youtube.com/watch?v=oo8_NODWjbw
-
 # Category: Politics
 https://www.youtube.com/watch?v=iBRxl3Klhj0
 https://www.youtube.com/watch?v=wXYSsA5yVSY
@@ -4916,7 +4823,6 @@ https://www.youtube.com/watch?v=FnOBKUNsZVI
 https://www.youtube.com/watch?v=7IFecGF-JzA
 https://www.youtube.com/watch?v=5AXyvVMLPrM
 https://www.youtube.com/watch?v=Z4MgilWENbY
-
 # Category: Fitness & Health
 https://www.youtube.com/watch?v=R589NB9Ao0Y
 https://www.youtube.com/watch?v=9DmabN3qCH4
@@ -4928,12 +4834,10 @@ https://www.youtube.com/watch?v=Z1Nd6YnVR94
 https://www.youtube.com/watch?v=JG98cJL-Y_4
 https://www.youtube.com/watch?v=VEVn8-_p2pI
 https://www.youtube.com/watch?v=bBVSzoWxCy0
-https://www.youtube.com/watch?v=MWDsK9J-2FI
 https://www.youtube.com/watch?v=VgG3is86TME
 https://www.youtube.com/watch?v=BFi0tOKv_I4
 https://www.youtube.com/watch?v=Yc7W6BznpFQ
 https://www.youtube.com/watch?v=3rVczKu92LE
-https://www.youtube.com/watch?v=vKkQyLpva4U
 https://www.youtube.com/watch?v=P1tz2CWJOy0
 https://www.youtube.com/watch?v=1RpkWlyYvCs
 https://www.youtube.com/watch?v=Joy4no3HShk
@@ -4942,7 +4846,6 @@ https://www.youtube.com/watch?v=Qp2RkbUOYIc
 https://www.youtube.com/watch?v=G8QLNUtwsUg
 https://www.youtube.com/watch?v=4ASqwG2bUPg
 https://www.youtube.com/watch?v=lIxNWFXSIEk
-https://www.youtube.com/watch?v=ellSVa_djSY
 https://www.youtube.com/watch?v=hirXg_Rax5E
 https://www.youtube.com/watch?v=KGN0Gd_uGR8
 https://www.youtube.com/watch?v=ZDzu6WQ3GSY
@@ -4950,10 +4853,8 @@ https://www.youtube.com/watch?v=YIldbIsI0yE
 https://www.youtube.com/watch?v=BB-IMDLzLBk
 https://www.youtube.com/watch?v=7cTnG2CpPQY
 https://www.youtube.com/watch?v=vCKmK7vOEqs
-
 # Category: Cloud Computing
 https://www.youtube.com/watch?v=H_ShSkRTNnM
-https://www.youtube.com/watch?v=cAXPA5lqkV4
 https://www.youtube.com/watch?v=bJCmZn9fASM
 https://www.youtube.com/watch?v=jLd2mf_FeQk
 https://www.youtube.com/watch?v=wqbuqdGJsT8
@@ -4963,7 +4864,6 @@ https://www.youtube.com/watch?v=fg5L1_EFYbU
 https://www.youtube.com/watch?v=M988_fsOSWo
 https://www.youtube.com/watch?v=Nzv-tzU-UAw
 https://www.youtube.com/watch?v=Fy97IxeUY7g
-
 # Category: Self-Improvement
 https://www.youtube.com/watch?v=D6_J7FfgWVc
 https://www.youtube.com/watch?v=cr8sLxde1m8
@@ -4999,7 +4899,6 @@ https://www.youtube.com/watch?v=SXW3XH08G3M
 https://www.youtube.com/watch?v=yNQf5YFL2Ns
 https://www.youtube.com/watch?v=-Gpn_06NT9w
 https://www.youtube.com/watch?v=yRJmuSjJuMU
-
 # Category: Biology & Medicine
 https://www.youtube.com/watch?v=ONs9FCY74p0
 https://www.youtube.com/watch?v=_dRXA1_e30o
@@ -5027,7 +4926,6 @@ https://www.youtube.com/watch?v=6tw_JVz_IEc
 https://www.youtube.com/watch?v=kd-uDwZzi90
 https://www.youtube.com/watch?v=8wAwLwJAGHs
 https://www.youtube.com/watch?v=CHJsaq2lNjU
-
 # Category: Data Science / Python
 https://www.youtube.com/watch?v=MiiANxRHSv4
 https://www.youtube.com/watch?v=csXmVBw8cdo
@@ -5052,7 +4950,6 @@ https://www.youtube.com/watch?v=K3pXnbniUcM
 https://www.youtube.com/watch?v=pCJ15nGFgVg
 https://www.youtube.com/watch?v=QkqotQEwvxc
 https://www.youtube.com/watch?v=GbszEsOY3wo
-
 # Category: Aviation
 https://www.youtube.com/watch?v=ql0Op1VcELw
 https://www.youtube.com/watch?v=duRvQ290nTw
@@ -5066,7 +4963,6 @@ https://www.youtube.com/watch?v=6y-fCyOCP5c
 https://www.youtube.com/watch?v=xk8QcL1badw
 https://www.youtube.com/watch?v=sqWCnsTieTU
 https://www.youtube.com/watch?v=00AT5h_sOQM
-
 # Category: Language Learning
 https://www.youtube.com/watch?v=0nBzlNFwgs4
 https://www.youtube.com/watch?v=CDC19kEeKMA
@@ -5096,6 +4992,574 @@ https://www.youtube.com/watch?v=1TNrJTX2qyg
 https://www.youtube.com/watch?v=KQUm1LtNfVY
 https://www.youtube.com/watch?v=kIeK6YZo54g
 https://www.youtube.com/watch?v=xLgnWeVDbO8
-
 # Category: Personal Finance
 https://www.youtube.com/watch?v=HewBrC1BMmg
+# Category: Comedy
+https://www.youtube.com/watch?v=_c99X_MlfFg
+https://www.youtube.com/watch?v=mbOO0Z6ryO0
+https://www.youtube.com/watch?v=4Z-KLkjICoY
+https://www.youtube.com/watch?v=XbiObxjyAkE
+https://www.youtube.com/watch?v=R7p9cE9VP2o
+https://www.youtube.com/watch?v=JJBg8Sa2bwU
+https://www.youtube.com/watch?v=bziorU0jozE
+https://www.youtube.com/watch?v=BfNHCavFtzQ
+https://www.youtube.com/watch?v=pwBCt-wL7hI
+https://www.youtube.com/watch?v=dpziY7AVMmI
+https://www.youtube.com/watch?v=Rh8kUdyUO08
+https://www.youtube.com/watch?v=GqqwbcgOHek
+https://www.youtube.com/watch?v=NJtMkvGa_IY
+https://www.youtube.com/watch?v=OtPxvrPFwj4
+https://www.youtube.com/watch?v=va0p4BW21xg
+https://www.youtube.com/watch?v=xj3uSsZWmog
+https://www.youtube.com/watch?v=L7ExBB0XdaU
+https://www.youtube.com/watch?v=ZpUKVFP0oiI
+https://www.youtube.com/watch?v=SOibB-0UI_E
+https://www.youtube.com/watch?v=umekI0D6el8
+https://www.youtube.com/watch?v=z6jd2JbZnvM
+https://www.youtube.com/watch?v=fOf6N279dqY
+https://www.youtube.com/watch?v=1Jj4T_HKSQE
+https://www.youtube.com/watch?v=qs_OK4MpzEo
+https://www.youtube.com/watch?v=sY4dyj-EhOI
+https://www.youtube.com/watch?v=l5CirMZTS7E
+https://www.youtube.com/watch?v=6hgf5le4F7I
+https://www.youtube.com/watch?v=BYA5r9B7R6o
+https://www.youtube.com/watch?v=UZzQpP5JHuc
+https://www.youtube.com/watch?v=Y6KaFMVo794
+https://www.youtube.com/watch?v=4UQTaw6yXa4
+https://www.youtube.com/watch?v=T-sCwHro20o
+https://www.youtube.com/watch?v=aBX5C7wAd_c
+https://www.youtube.com/watch?v=T3SRVEDqKKc
+https://www.youtube.com/watch?v=qtOmu7rXq4w
+# Category: Astronomy
+https://www.youtube.com/watch?v=_AWqspCNuoc
+https://www.youtube.com/watch?v=ga0lgrSPxh0
+https://www.youtube.com/watch?v=4HrcCMRf4JQ
+https://www.youtube.com/watch?v=ykSrTvzLDCE
+https://www.youtube.com/watch?v=6hAjs5iKs3Q
+https://www.youtube.com/watch?v=2rX1Fs12smY
+https://www.youtube.com/watch?v=aV_ThO52l7Y
+https://www.youtube.com/watch?v=2VhBkrHeRVA
+https://www.youtube.com/watch?v=zFKSJpQovls
+https://www.youtube.com/watch?v=R2Q_bKgiH0E
+https://www.youtube.com/watch?v=EYqZaPZIgjk
+https://www.youtube.com/watch?v=-3XeWccswfU
+https://www.youtube.com/watch?v=VxhxUz2W3mY
+https://www.youtube.com/watch?v=eGt13FlndFI
+https://www.youtube.com/watch?v=fKzBqPG4ot8
+https://www.youtube.com/watch?v=oqCQ4L2Ostc
+https://www.youtube.com/watch?v=_OQJMsrL0fg
+https://www.youtube.com/watch?v=i0l_yD8LZGU
+https://www.youtube.com/watch?v=I_pmtt3NhTo
+https://www.youtube.com/watch?v=5cedpFQh9-4
+https://www.youtube.com/watch?v=WDll-Xt8890
+https://www.youtube.com/watch?v=drtJVX2PSMU
+# Category: Global News
+https://www.youtube.com/watch?v=MbDyOgVsuPc
+https://www.youtube.com/watch?v=I4CIfzV-TQw
+https://www.youtube.com/watch?v=QQL4HOExtIw
+# Category: Documentary
+https://www.youtube.com/watch?v=wB248A3htvw
+https://www.youtube.com/watch?v=eS6a6btDK8M
+https://www.youtube.com/watch?v=j38Fqcnfz6M
+https://www.youtube.com/watch?v=VC2aJEE7R6c
+https://www.youtube.com/watch?v=Dpu3XoY3wQw
+https://www.youtube.com/watch?v=mUomknvigwM
+https://www.youtube.com/watch?v=Ly1RNQTNfUg
+# Category: Personal Finance
+https://www.youtube.com/watch?v=npH236HEC_w
+https://www.youtube.com/watch?v=DPsUntwGIAg
+https://www.youtube.com/watch?v=cwUQ9qo-2kg
+https://www.youtube.com/watch?v=qIw-yFC-HNU
+https://www.youtube.com/watch?v=Cp1kJLCP9dg
+https://www.youtube.com/watch?v=thOejbtcBjo
+https://www.youtube.com/watch?v=Yt4SLOLpYBA
+https://www.youtube.com/watch?v=L0gbnlBx1m0
+https://www.youtube.com/watch?v=GEyok0IzYUE
+https://www.youtube.com/watch?v=-P14iVR-5Rg
+https://www.youtube.com/watch?v=ItmmwvCBJqg
+https://www.youtube.com/watch?v=JMV4XuuodPE
+https://www.youtube.com/watch?v=PbldLCsspgE
+https://www.youtube.com/watch?v=8A3s9WP_7l4
+https://www.youtube.com/watch?v=dPM3Kkks1HQ
+https://www.youtube.com/watch?v=gJy06IaqEjs
+https://www.youtube.com/watch?v=bByJ4u_KqEA
+https://www.youtube.com/watch?v=KCZJ6Ttsp-A
+https://www.youtube.com/watch?v=yCx3sWOWfZ0
+https://www.youtube.com/watch?v=8Ij7A1VCB7I
+https://www.youtube.com/watch?v=PVgpKaXj0fk
+https://www.youtube.com/watch?v=_KBlJpxHKjA
+https://www.youtube.com/watch?v=O42i8p7Q2O8
+# Category: Tech Ethics & News
+https://www.youtube.com/watch?v=ZTC_RxWN_xo
+https://www.youtube.com/watch?v=Be8_5zJT-dQ
+https://www.youtube.com/watch?v=Hfk5kSCjhWw
+https://www.youtube.com/watch?v=4VDZRR07Eqw
+# Category: Career Advice
+https://www.youtube.com/watch?v=zIm_k9j0C50
+https://www.youtube.com/watch?v=1t1_a1BZ04o
+https://www.youtube.com/watch?v=F2FmTdLtb_4
+https://www.youtube.com/watch?v=l5g38haVsJk
+https://www.youtube.com/watch?v=DI6h4k-e23Q
+https://www.youtube.com/watch?v=4Ib9amXl4gI
+https://www.youtube.com/watch?v=gDN7cJ3Rt80
+https://www.youtube.com/watch?v=BeqlRl5dV_8
+https://www.youtube.com/watch?v=sD468LfeVdc
+https://www.youtube.com/watch?v=_71ENYohRiE
+https://www.youtube.com/watch?v=WwYwQyTOiOk
+https://www.youtube.com/watch?v=uE925hp9KDk
+https://www.youtube.com/watch?v=IMEzmmP3WAs
+https://www.youtube.com/watch?v=vo-E__zJ-vY
+https://www.youtube.com/watch?v=Rs3gDbSg-hU
+https://www.youtube.com/watch?v=WH_ieAsb4AI
+https://www.youtube.com/watch?v=FFfJeb8Ec6Y
+https://www.youtube.com/watch?v=vp1m6YGKo9A
+https://www.youtube.com/watch?v=0K_eZGS5NsU
+https://www.youtube.com/watch?v=YxNMzdYoXR0
+https://www.youtube.com/watch?v=sSKhdZ32YpY
+https://www.youtube.com/watch?v=LVhZs_hTI5U
+https://www.youtube.com/watch?v=-JNjsOX0N0c
+https://www.youtube.com/watch?v=L9TfZdODuFQ
+https://www.youtube.com/watch?v=-jeoyDJDsSM
+https://www.youtube.com/watch?v=ILaXhmTraQ4
+https://www.youtube.com/watch?v=b8pAPWsWIE4
+https://www.youtube.com/watch?v=6a2Mpn5L4tc
+# Category: Parenting
+https://www.youtube.com/watch?v=TuQSmeG551U
+https://www.youtube.com/watch?v=HSwaTpzsFmE
+https://www.youtube.com/watch?v=ohFW2Rj6MSE
+https://www.youtube.com/watch?v=mp0UwJ4v5Ho
+https://www.youtube.com/watch?v=KdsWzPMCv7w
+https://www.youtube.com/watch?v=B_1UGWjryDw
+https://www.youtube.com/watch?v=7vDYVr9bmQg
+https://www.youtube.com/watch?v=gWjglSuxkiM
+https://www.youtube.com/watch?v=4zXys7i8Zrc
+https://www.youtube.com/watch?v=OQ_U8B4ndqE
+https://www.youtube.com/watch?v=hPicv7YT5sM
+https://www.youtube.com/watch?v=2rAqwz0SZVA
+https://www.youtube.com/watch?v=g9LE9qSf4YM
+https://www.youtube.com/watch?v=Qe4y-w8F5QI
+https://www.youtube.com/watch?v=bvz_zK5ZxpM
+https://www.youtube.com/watch?v=rPkIdPSHbb0
+https://www.youtube.com/watch?v=zU3p8LNjOaE
+https://www.youtube.com/watch?v=X42Rj-KPeYY
+https://www.youtube.com/watch?v=ePlSHl4mTsY
+https://www.youtube.com/watch?v=CJlCZIUarmM
+https://www.youtube.com/watch?v=-AxdJjwWR40
+https://www.youtube.com/watch?v=_bBqCkgFKQo
+https://www.youtube.com/watch?v=aU9y_aDym_I
+https://www.youtube.com/watch?v=Iko5ma2zEPc
+# Category: Software Engineering
+https://www.youtube.com/watch?v=wSDyiEjhp8k
+https://www.youtube.com/watch?v=kfyo-N-xAwE
+https://www.youtube.com/watch?v=gmsOHLYOiB0
+https://www.youtube.com/watch?v=UsNl8kcU4UA
+https://www.youtube.com/watch?v=jlnhHxzC9-w
+https://www.youtube.com/watch?v=xNgXAQjICpQ
+https://www.youtube.com/watch?v=pTB30aXS77U
+https://www.youtube.com/watch?v=TT_RLWmIsbY
+https://www.youtube.com/watch?v=TQdLgzVk2T8
+https://www.youtube.com/watch?v=mG5P1WSgIGo
+https://www.youtube.com/watch?v=tAuRQs_d9F8
+# Category: Sociology
+https://www.youtube.com/watch?v=v-RT9mYVHXE
+https://www.youtube.com/watch?v=jdF2pSbhZvg
+https://www.youtube.com/watch?v=JpAiBg0hrfQ
+https://www.youtube.com/watch?v=x4r0S5qoIXc
+https://www.youtube.com/watch?v=o_mOHelAH44
+https://www.youtube.com/watch?v=JwpLsKSkVbU
+https://www.youtube.com/watch?v=IOa0V4iAprs
+https://www.youtube.com/watch?v=lsqDO9lJVXw
+https://www.youtube.com/watch?v=Ur77lDetI9Q
+https://www.youtube.com/watch?v=FmFJbQlwj-A
+https://www.youtube.com/watch?v=bsc32wRGjaI
+https://www.youtube.com/watch?v=RLmKfXwWQtE
+https://www.youtube.com/watch?v=iTbzUyhcAKg
+https://www.youtube.com/watch?v=fF5naUeTIYg
+https://www.youtube.com/watch?v=gmehUgOy5ok
+https://www.youtube.com/watch?v=Pui3XjlC2II
+https://www.youtube.com/watch?v=PImDVT8fb-I
+https://www.youtube.com/watch?v=BZORu7EkpyM
+https://www.youtube.com/watch?v=mu4Mk3rB3vY
+https://www.youtube.com/watch?v=OTaYKEumwc8
+https://www.youtube.com/watch?v=_CDOZWeDq4U
+# Category: Spirituality
+https://www.youtube.com/watch?v=xN0CliV5A18
+https://www.youtube.com/watch?v=-xSVAeK2aWk
+https://www.youtube.com/watch?v=OyXww0ORPcA
+https://www.youtube.com/watch?v=LDVyOnf0t9M
+https://www.youtube.com/watch?v=g94-bGzB2sI
+https://www.youtube.com/watch?v=PZC5TeS2ay4
+https://www.youtube.com/watch?v=4h9A7-rPlSQ
+https://www.youtube.com/watch?v=2-inNDXoeVE
+https://www.youtube.com/watch?v=yOhuAEty2Mg
+https://www.youtube.com/watch?v=SUsxlR2RSeQ
+https://www.youtube.com/watch?v=WDd7A0wgLqY
+https://www.youtube.com/watch?v=FRTpI2Gu1KA
+https://www.youtube.com/watch?v=2jxKy5LaiXU
+https://www.youtube.com/watch?v=swWst6lttiI
+https://www.youtube.com/watch?v=5LXOHVRZ8I0
+https://www.youtube.com/watch?v=7R1EERG_YK4
+https://www.youtube.com/watch?v=3gJkZpu6mgw
+https://www.youtube.com/watch?v=cijb_jHZyWw
+https://www.youtube.com/watch?v=VdQEq9VkD8w
+https://www.youtube.com/watch?v=AzwSesFrVMU
+https://www.youtube.com/watch?v=KgOceMA1zjM
+https://www.youtube.com/watch?v=LmFmNjIsXHE
+# Category: Literature & Books
+https://www.youtube.com/watch?v=fmZPw78FV4M
+https://www.youtube.com/watch?v=qf6RCtDeK4g
+https://www.youtube.com/watch?v=L5lsYI0Q8zw
+https://www.youtube.com/watch?v=wkvsgit5v8U
+https://www.youtube.com/watch?v=LpRpB9bF5VE
+https://www.youtube.com/watch?v=YkaXP-sHy6U
+https://www.youtube.com/watch?v=PDgu25Dsv34
+https://www.youtube.com/watch?v=IXPDIskRO0c
+https://www.youtube.com/watch?v=EwWg2MDvHDI
+https://www.youtube.com/watch?v=5D86_ptqd8I
+https://www.youtube.com/watch?v=eIrnRa8tH1Q
+https://www.youtube.com/watch?v=RSoRzTtwgP4
+https://www.youtube.com/watch?v=Gf7-UQDYbpU
+https://www.youtube.com/watch?v=_NpeuoOhmgA
+https://www.youtube.com/watch?v=DV0OF7rXT48
+https://www.youtube.com/watch?v=mMeNnX1FGgg
+https://www.youtube.com/watch?v=ffNWoefuwPM
+https://www.youtube.com/watch?v=giSZoFviGBM
+https://www.youtube.com/watch?v=DLCUn6h7qRo
+https://www.youtube.com/watch?v=Solb9uA-tgQ
+https://www.youtube.com/watch?v=nllDcnfoH5A
+https://www.youtube.com/watch?v=-5RCmu-HuTg
+# Category: History
+https://www.youtube.com/watch?v=wX6J0Gd2EC8
+https://www.youtube.com/watch?v=TOVAcenKFAA
+https://www.youtube.com/watch?v=OpcVIomGM50
+https://www.youtube.com/watch?v=R7tlozYjgFc
+https://www.youtube.com/watch?v=Q-mAWItV2q0
+https://www.youtube.com/watch?v=u51jeeCoyVw
+https://www.youtube.com/watch?v=xVf5kZA0HtQ
+https://www.youtube.com/watch?v=sohXPx_XZ6Y
+https://www.youtube.com/watch?v=trVAQ0hmy0Q
+https://www.youtube.com/watch?v=ygbPGogGdz8
+https://www.youtube.com/watch?v=FnXS0VOhX1I
+https://www.youtube.com/watch?v=g-bQx0ZtHUw
+https://www.youtube.com/watch?v=dKrFjTvQ6l4
+https://www.youtube.com/watch?v=CskfvgEItPA
+https://www.youtube.com/watch?v=daQ177Q1Pz4
+https://www.youtube.com/watch?v=uC0PgqB-XuE
+https://www.youtube.com/watch?v=iHpFGhZs-Fc
+https://www.youtube.com/watch?v=Mz77xD6KG4c
+https://www.youtube.com/watch?v=xs6Qu-y20Aw
+https://www.youtube.com/watch?v=n7ndRwqJYDM
+https://www.youtube.com/watch?v=Lr7GMr1NzV0
+https://www.youtube.com/watch?v=-gBj4qAowCE
+https://www.youtube.com/watch?v=EC38TZNXxAY
+https://www.youtube.com/watch?v=z3uvnwBMTdY
+https://www.youtube.com/watch?v=8IVuRxVQu-8
+https://www.youtube.com/watch?v=szFjxmY7jQA
+https://www.youtube.com/watch?v=p8qElr8nWzQ
+https://www.youtube.com/watch?v=ubMqfGaSQic
+# Category: Law
+https://www.youtube.com/watch?v=X1wpbTgwEI8
+https://www.youtube.com/watch?v=XdfcDWPcESU
+https://www.youtube.com/watch?v=ZWS_7BqKb7A
+https://www.youtube.com/watch?v=th9OBsL0M60
+https://www.youtube.com/watch?v=Sgs6idCKTkE
+https://www.youtube.com/watch?v=iwVYShLXclc
+https://www.youtube.com/watch?v=6pi2BYUsnaM
+https://www.youtube.com/watch?v=9u8dfYzIYS8
+https://www.youtube.com/watch?v=klhBheJqgTE
+https://www.youtube.com/watch?v=rab4NLfRH7Q
+https://www.youtube.com/watch?v=R0sFjIXzPuM
+https://www.youtube.com/watch?v=IqZ0drZCZY4
+https://www.youtube.com/watch?v=gcAj93SGGfY
+https://www.youtube.com/watch?v=1SA9UtWdR3k
+https://www.youtube.com/watch?v=68-8AaWpVXc
+https://www.youtube.com/watch?v=AinOs-M1MEc
+https://www.youtube.com/watch?v=YB0aPYsotfc
+https://www.youtube.com/watch?v=1viSIpPu2KA
+https://www.youtube.com/watch?v=92Arj_-WB1E
+https://www.youtube.com/watch?v=DZlviqZ4iN0
+# Category: Military Tech
+https://www.youtube.com/watch?v=GqX2utKCc2w
+https://www.youtube.com/watch?v=E4ORhZ-mVaQ
+https://www.youtube.com/watch?v=a2CVjxJi5XY
+https://www.youtube.com/watch?v=Mm3qWkpRnF8
+https://www.youtube.com/watch?v=QpalqwH0RVQ
+https://www.youtube.com/watch?v=gZcNuAYPy34
+https://www.youtube.com/watch?v=8b_gTZ7ApBo
+https://www.youtube.com/watch?v=Oxd_4pIC63E
+https://www.youtube.com/watch?v=ItnLyISPNF4
+https://www.youtube.com/watch?v=roDOHVBoRH0
+https://www.youtube.com/watch?v=QHL2nTFPdpg
+https://www.youtube.com/watch?v=5DlRJ6Kh84Y
+https://www.youtube.com/watch?v=-CoIhl3puuI
+https://www.youtube.com/watch?v=zrHWpfvNGBI
+https://www.youtube.com/watch?v=I1VIGEdJuFk
+https://www.youtube.com/watch?v=Ihzd54k_P8U
+https://www.youtube.com/watch?v=c7LvjqMiogI
+https://www.youtube.com/watch?v=fTv72dJLZBE
+https://www.youtube.com/watch?v=hadjrQygL_I
+https://www.youtube.com/watch?v=uHeb0FZne6M
+https://www.youtube.com/watch?v=QzyV83P76zo
+https://www.youtube.com/watch?v=Ev2G5VfXLWI
+https://www.youtube.com/watch?v=vSFiDacGXT4
+https://www.youtube.com/watch?v=ca1E_rKdor8
+https://www.youtube.com/watch?v=UdK8VcZyJUU
+https://www.youtube.com/watch?v=gDCRop6CRwY
+https://www.youtube.com/watch?v=TPYkAqny-RI
+https://www.youtube.com/watch?v=POxQYvYoLuE
+https://www.youtube.com/watch?v=TE5nv7sIZIM
+https://www.youtube.com/watch?v=idYGMLtC5-E
+https://www.youtube.com/watch?v=ue68R1Sk5lo
+https://www.youtube.com/watch?v=dxE4WZDUW6c
+https://www.youtube.com/watch?v=q5ZUc25MAwY
+# Category: Physics & Space
+https://www.youtube.com/watch?v=pwChk4S99i4
+https://www.youtube.com/watch?v=HRir6-9tsJs
+https://www.youtube.com/watch?v=L2suMPiuog4
+# Category: Cybersecurity
+https://www.youtube.com/watch?v=NuyzuNBFWxQ
+https://www.youtube.com/watch?v=QSlWzKNbKrU
+https://www.youtube.com/watch?v=2aHkqB2-46k
+https://www.youtube.com/watch?v=trHox1bN5es
+https://www.youtube.com/watch?v=9TNI2wHmaeI
+https://www.youtube.com/watch?v=6_Cxj5WKpIw
+https://www.youtube.com/watch?v=AELVJL0axRs
+https://www.youtube.com/watch?v=j53iXhTSi_s
+https://www.youtube.com/watch?v=6AmmQiOWoXM
+https://www.youtube.com/watch?v=KqqOXndnvic
+https://www.youtube.com/watch?v=xw19eT5thIE
+https://www.youtube.com/watch?v=uNzaMrcuTM0
+https://www.youtube.com/watch?v=4zahvcJ9glg
+https://www.youtube.com/watch?v=jhXCTbFnK8o
+https://www.youtube.com/watch?v=VJelZrYc49c
+https://www.youtube.com/watch?v=j9QmMEWmcfo
+https://www.youtube.com/watch?v=9sO2qdTci-s
+https://www.youtube.com/watch?v=3MPkc-PFSRI
+https://www.youtube.com/watch?v=8B1rN1rnTiU
+https://www.youtube.com/watch?v=o-MZgVJP-rI
+https://www.youtube.com/watch?v=QDdOoYdb748
+https://www.youtube.com/watch?v=xv5lwFxxUw0
+https://www.youtube.com/watch?v=DXv1boalsDI
+https://www.youtube.com/watch?v=qph77bTKJTM
+https://www.youtube.com/watch?v=h85G7dBqBKU
+https://www.youtube.com/watch?v=sMOZf4GN3oc
+# Category: ASMR
+https://www.youtube.com/watch?v=qw6ayOPCck4
+https://www.youtube.com/watch?v=0HDuzhQOhuM
+https://www.youtube.com/watch?v=DtYrxTp_1fA
+https://www.youtube.com/watch?v=0w80F8FffQ4
+https://www.youtube.com/watch?v=wZVpusDUXbk
+https://www.youtube.com/watch?v=RwKOWLSzFqE
+https://www.youtube.com/watch?v=HptHiJJJwBM
+https://www.youtube.com/watch?v=mJW57E7GpSo
+https://www.youtube.com/watch?v=FS93cEWcwQA
+https://www.youtube.com/watch?v=EIGsQQjyOB4
+https://www.youtube.com/watch?v=CFGLoQIhmow
+https://www.youtube.com/watch?v=pIPC1eKRDks
+https://www.youtube.com/watch?v=pjX9O7AhogM
+https://www.youtube.com/watch?v=CoQfichK5Iw
+https://www.youtube.com/watch?v=xvv44XEqcHI
+https://www.youtube.com/watch?v=-sZqtdT-GVw
+https://www.youtube.com/watch?v=2vh67tc2ymE
+https://www.youtube.com/watch?v=YTcHBGV0mVY
+https://www.youtube.com/watch?v=RG2IK8oRZNA
+https://www.youtube.com/watch?v=44Uh1FA_01k
+https://www.youtube.com/watch?v=MftogR8lt_g
+https://www.youtube.com/watch?v=yNAFtADhzss
+https://www.youtube.com/watch?v=8WVXk0Gz66E
+https://www.youtube.com/watch?v=HOqQXM7pOUc
+https://www.youtube.com/watch?v=6kc4eBugSiM
+https://www.youtube.com/watch?v=un62_Y5v1UA
+https://www.youtube.com/watch?v=Yu7zZvH60ag
+https://www.youtube.com/watch?v=zf1lD0TAHGk
+https://www.youtube.com/watch?v=GrgK9Mv9vIU
+https://www.youtube.com/watch?v=_Q8Ih2SW-TE
+https://www.youtube.com/watch?v=BklGhQYKl30
+https://www.youtube.com/watch?v=sm4oFBWCSp0
+https://www.youtube.com/watch?v=a4fv-BtzNmY
+https://www.youtube.com/watch?v=Ef0tk0q-ITo
+https://www.youtube.com/watch?v=BRRg3eReaqA
+# Category: True Crime
+https://www.youtube.com/watch?v=FDrgwaolChA
+https://www.youtube.com/watch?v=DUza_jDpP7o
+https://www.youtube.com/watch?v=WwXms27wbfc
+https://www.youtube.com/watch?v=l4lvgPlqbMQ
+https://www.youtube.com/watch?v=cmK12TQUMcw
+https://www.youtube.com/watch?v=JTCep-9PZQo
+https://www.youtube.com/watch?v=aUpy2V-aQTY
+https://www.youtube.com/watch?v=QiSb9xzC2HQ
+https://www.youtube.com/watch?v=wG83zTHJL9U
+https://www.youtube.com/watch?v=vqKXEF4s2Hk
+https://www.youtube.com/watch?v=NHmP38jC2xI
+https://www.youtube.com/watch?v=V6lRmLh9n2A
+https://www.youtube.com/watch?v=X6UqTmRAApw
+https://www.youtube.com/watch?v=a6hfbaDd_Hc
+https://www.youtube.com/watch?v=F7k5Ucjdfhw
+https://www.youtube.com/watch?v=bc43csJUHYA
+https://www.youtube.com/watch?v=kxeX-y2EygU
+# Category: Sustainability
+https://www.youtube.com/watch?v=nF_f-bfnbAo
+https://www.youtube.com/watch?v=vsHP79-8Doo
+https://www.youtube.com/watch?v=UVf2Yw7uFoE
+https://www.youtube.com/watch?v=Z8JFCJP70rg
+https://www.youtube.com/watch?v=ZiE6GdSeJeU
+https://www.youtube.com/watch?v=cWUNAL-7MSM
+https://www.youtube.com/watch?v=ppz8Z1l5gd8
+https://www.youtube.com/watch?v=U1FPbDhJV0A
+https://www.youtube.com/watch?v=X8ZD7nTQ5iI
+https://www.youtube.com/watch?v=Sq-y-wiZduE
+https://www.youtube.com/watch?v=c9tELubzTgk
+https://www.youtube.com/watch?v=sTGYE4d9UxI
+https://www.youtube.com/watch?v=YgvgLqbZgO4
+https://www.youtube.com/watch?v=DxFZ3ojl9yo
+https://www.youtube.com/watch?v=3GIzZwQw4nc
+https://www.youtube.com/watch?v=FffKMMnisu4
+https://www.youtube.com/watch?v=V1Qq8tQVkqM
+https://www.youtube.com/watch?v=hlPl0rQWFuk
+# Category: General Engineering
+https://www.youtube.com/watch?v=NF8fpuczU5I
+https://www.youtube.com/watch?v=mzWMdZZaHwI
+https://www.youtube.com/watch?v=iNVmoSDoufk
+https://www.youtube.com/watch?v=060419AMIAg
+https://www.youtube.com/watch?v=kZKmsJJDyn8
+https://www.youtube.com/watch?v=8bml2pK6Ra0
+https://www.youtube.com/watch?v=Fp5-jjmaksM
+https://www.youtube.com/watch?v=aU4CVZo3wgk
+https://www.youtube.com/watch?v=g3Vj7uO86ps
+https://www.youtube.com/watch?v=Fm5aChFkXJQ
+https://www.youtube.com/watch?v=BB9LrWHYPIQ
+https://www.youtube.com/watch?v=hrdgd5zmSB4
+https://www.youtube.com/watch?v=q20HwaMxjBQ
+https://www.youtube.com/watch?v=KDppI_g7loU
+https://www.youtube.com/watch?v=1YTKedLQOa0
+https://www.youtube.com/watch?v=D7sI8AZ4eJY
+https://www.youtube.com/watch?v=xz89fkrVzcc
+https://www.youtube.com/watch?v=vqjzfw8pUSc
+https://www.youtube.com/watch?v=Px1wnARs12Q
+https://www.youtube.com/watch?v=v1VGoe7-VfA
+# Category: Architecture
+https://www.youtube.com/watch?v=WRg13Ze_UpY
+https://www.youtube.com/watch?v=oEU60X6fpPY
+https://www.youtube.com/watch?v=N_UHTgGFTX8
+https://www.youtube.com/watch?v=Ga7P1szmuVw
+# Category: Investigative
+https://www.youtube.com/watch?v=Tb6QX9Yy1GM
+https://www.youtube.com/watch?v=X4mF-7P7GCg
+https://www.youtube.com/watch?v=QFB_K4vstRY
+https://www.youtube.com/watch?v=gGTK21vLHKE
+https://www.youtube.com/watch?v=_8l2egORXGA
+https://www.youtube.com/watch?v=4mAeecaUCOY
+https://www.youtube.com/watch?v=LIacQRZi3Qs
+https://www.youtube.com/watch?v=GHKyDYtKGEg
+https://www.youtube.com/watch?v=Yfhx35YaXFc
+https://www.youtube.com/watch?v=pyENq2f60pc
+https://www.youtube.com/watch?v=q3ynFRnev48
+https://www.youtube.com/watch?v=Vt9nyLRb-_0
+https://www.youtube.com/watch?v=PcdCaDK_v1c
+https://www.youtube.com/watch?v=w-75nDH-bbc
+https://www.youtube.com/watch?v=ClfBxWPkBKU
+https://www.youtube.com/watch?v=VoQdwFVVrYE
+https://www.youtube.com/watch?v=jFlnRBO8mcg
+https://www.youtube.com/watch?v=aKwkMZbeeGo
+https://www.youtube.com/watch?v=BuLqH9aZgK0
+https://www.youtube.com/watch?v=8GQCN4TgdiI
+https://www.youtube.com/watch?v=ORdWE_ffirg
+https://www.youtube.com/watch?v=InbfRHM6tIY
+https://www.youtube.com/watch?v=ahFLWhp2g58
+https://www.youtube.com/watch?v=jt6UDAYrf9I
+https://www.youtube.com/watch?v=_CJbHuxw728
+https://www.youtube.com/watch?v=4EGBpoRii4M
+https://www.youtube.com/watch?v=OPJ5bR727k0
+https://www.youtube.com/watch?v=94nznsSBTcU
+https://www.youtube.com/watch?v=3BYHITiAGVU
+https://www.youtube.com/watch?v=5zlnI3Bzslo
+https://www.youtube.com/watch?v=tbJLNlgmC74
+https://www.youtube.com/watch?v=7Sb931McQ_4
+https://www.youtube.com/watch?v=7YuoLtkwuV0
+# Category: Gardening
+https://www.youtube.com/watch?v=0mwRAf3z9ag
+https://www.youtube.com/watch?v=acjpwIxZzlA
+https://www.youtube.com/watch?v=5i_-KoQlAlw
+https://www.youtube.com/watch?v=qTucK0bxT98
+https://www.youtube.com/watch?v=hCJfSYZqZ0Y
+https://www.youtube.com/watch?v=GwdjtwsRtRE
+https://www.youtube.com/watch?v=Q7rQD_lfgnE
+https://www.youtube.com/watch?v=qUp_MdNF7sg
+https://www.youtube.com/watch?v=XrHXsTI484g
+https://www.youtube.com/watch?v=te4Vbff7WHk
+https://www.youtube.com/watch?v=AadLCOqalFk
+https://www.youtube.com/watch?v=jWqoJWrnsc4
+https://www.youtube.com/watch?v=cq3P1-TJ9gc
+https://www.youtube.com/watch?v=3a0qcchNILs
+https://www.youtube.com/watch?v=8B_KXRygEwc
+# Category: Music Theory
+https://www.youtube.com/watch?v=3uP6Tk4Fros
+https://www.youtube.com/watch?v=Ate-6DO_lVA
+https://www.youtube.com/watch?v=4PyGyjpIweU
+https://www.youtube.com/watch?v=-G-GMaGR5rQ
+https://www.youtube.com/watch?v=WzLBA5kCP1w
+https://www.youtube.com/watch?v=StM6blsh-Xg
+https://www.youtube.com/watch?v=Bx47CscHp1E
+https://www.youtube.com/watch?v=SqXeNkwOY0A
+https://www.youtube.com/watch?v=YfG1P0nm2v8
+https://www.youtube.com/watch?v=T2eSZB4GsWA
+https://www.youtube.com/watch?v=0WhXtkMyPHU
+https://www.youtube.com/watch?v=yl-HPczcaQI
+https://www.youtube.com/watch?v=jqFXVO4Gswg
+https://www.youtube.com/watch?v=uhTtc2YoaFw
+https://www.youtube.com/watch?v=Z-KzfB7vfFA
+https://www.youtube.com/watch?v=hG--y7My6Hc
+https://www.youtube.com/watch?v=WFS3uV08bcg
+https://www.youtube.com/watch?v=FOkgrfemsuU
+https://www.youtube.com/watch?v=KMubFOAcVoo
+https://www.youtube.com/watch?v=pb7MRT25fbQ
+https://www.youtube.com/watch?v=rV0VCPL4s2s
+https://www.youtube.com/watch?v=3iAhuTCnEM8
+https://www.youtube.com/watch?v=yl9DHcASqMc
+https://www.youtube.com/watch?v=Qbxvt1dXdYY
+https://www.youtube.com/watch?v=WZxYMVef6Kc
+https://www.youtube.com/watch?v=KiEoJjWlGMY
+https://www.youtube.com/watch?v=jVTRXGg0Sdg
+https://www.youtube.com/watch?v=zCN_Gk2qTJo
+https://www.youtube.com/watch?v=qSSYO1XIP48
+# Category: Pets & Animals
+https://www.youtube.com/watch?v=tSvfVs4LKyg
+https://www.youtube.com/watch?v=XQRgci18tvY
+https://www.youtube.com/watch?v=--PXr3edQDo
+https://www.youtube.com/watch?v=cXN8Obr1yss
+https://www.youtube.com/watch?v=jFMA5ggFsXU
+https://www.youtube.com/watch?v=PI5W2Stv0Ik
+https://www.youtube.com/watch?v=5DNmniJ2Xsk
+https://www.youtube.com/watch?v=gYjnAPtID1w
+https://www.youtube.com/watch?v=aTGNCPOqHhU
+https://www.youtube.com/watch?v=9gMif3ECaSs
+https://www.youtube.com/watch?v=JRVCbd4pQOI
+https://www.youtube.com/watch?v=70q00hAtXpE
+https://www.youtube.com/watch?v=0AGrjGUHllc
+https://www.youtube.com/watch?v=qsh0HqUiRu8
+https://www.youtube.com/watch?v=BA03fJxB2aU
+https://www.youtube.com/watch?v=mqWqN6lcHLo
+https://www.youtube.com/watch?v=jdWysYtU7HY
+https://www.youtube.com/watch?v=5KEXCNaH6E4
+https://www.youtube.com/watch?v=c9zbP90BMfc
+https://www.youtube.com/watch?v=Axdl67O89fU
+https://www.youtube.com/watch?v=FBXwaAG_JaQ
+https://www.youtube.com/watch?v=ljZVm63I6SI
+https://www.youtube.com/watch?v=KXHT5fARAu4
+https://www.youtube.com/watch?v=UaUnUq72YDE
+https://www.youtube.com/watch?v=grHN_MIexVo
+https://www.youtube.com/watch?v=6hMEcnCmfBs
+https://www.youtube.com/watch?v=BTEKQkAPB9M
+# Category: Real Estate
+https://www.youtube.com/watch?v=kWdwvUAvkfk
+https://www.youtube.com/watch?v=1vzrPzrcQPs
+https://www.youtube.com/watch?v=ranPXvucp2k
+
+# Category: Fashion & Style
+https://www.youtube.com/watch?v=syGN9FqDwUM
+https://www.youtube.com/watch?v=KQ7mrJuLykg
+https://www.youtube.com/watch?v=RBhy8TvWq3k
+https://www.youtube.com/watch?v=s_6WYW-fgZ0
+https://www.youtube.com/watch?v=6omnYuBbumU
+https://www.youtube.com/watch?v=mgHCYmGmhHA
+https://www.youtube.com/watch?v=rzbXht7MJVM
