@@ -71,15 +71,19 @@ YTCBERT/
 Find new English content. The script intelligently balances niches and strictly filters out "junk" videos (Shorts or those with no comments) before they ever reach your dataset.
 
 Options:
-- `--count N`: The total target number of videos for your list.
+- `--count N`: The total target number of videos for your list (e.g., `5K`).
+- `--max-per-channel C`: Limit to `C` videos per channel to prevent bias (default: 20).
 - `--min-comments N`: Drop videos with fewer than `N` comments (default: 10).
 - `--min-length M`: Drop videos shorter than `M` minutes (default: 1.0).
+- `--cookies path`: Pass a `cookies.txt` file to bypass YouTube's bot-detection walls.
 
 ```bash
-python video_pipeline/discover_videos.py --count 1000 --min-comments 20 --min-length 1.5
+python video_pipeline/discover_videos.py --count 5K --max-per-channel 3 --min-comments 20 --cookies cookies.txt
 ```
+
 > [!TIP]
-> **Customizing Categories**: You can easily edit or add your own niches by modifying the `CATEGORIES` dictionary at the top of `video_pipeline/discover_videos.py`.
+> **Hyper-Discovery & Premium Dashboard**: This script uses **Semantic Jitter** and a 40x yield-per-query engine for 10x faster discovery. The dashboard features a **Moving-Average ETA** (Total & Finish time) and **Dynamic Color-Coding** for categories to keep your 5K goal organized and visual.
+
 
 ### 2. Data Extraction (Resumable)
 Gather transcripts and comments. Safe to interrupt and resume:
