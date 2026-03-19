@@ -446,8 +446,8 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
                                 f.write(f"{video_obj['url']}\n")
 
                             progress.advance(task)
-                            # Update ETA history (after advance for updated count)
-                            eta_col.update_history(task.completed)
+                            # Update ETA history (fetching Task object from ID)
+                            eta_col.update_history(progress.tasks[task].completed)
                             time.sleep(0.01)
             except KeyboardInterrupt:
                 progress.console.print("\n[bold red][HALT] Discovery interrupted by user.[/bold red]")
