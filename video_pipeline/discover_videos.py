@@ -30,33 +30,40 @@ from rich.text import Text
 from datetime import timedelta
 
 class DiscoveryETAColumn(ProgressColumn):
-    """Custom ETA column that uses a sliding window (last 15) for much higher accuracy."""
-    def __init__(self, window_size=15):
+    """Custom ETA column that uses a sliding window for throughput (stable ETA)."""
+    def __init__(self, window_size=30):
         self.window_size = window_size
-        self.history = deque(maxlen=window_size)
-        self.last_update = time.time() # Initialize with start time
+        self.history = deque(maxlen=window_size) # Stores (time, completed_count)
         super().__init__()
 
-    def update_history(self):
-        now = time.time()
-        if self.last_update:
-            self.history.append(now - self.last_update)
-        self.last_update = now
+    def update_history(self, completed_count):
+        self.history.append((time.time(), completed_count))
 
     def render(self, task):
-        if not task.total or len(self.history) < 5:
+        if not task.total or len(self.history) < 2:
             return Text("-:--:--", style="dim")
         
-        # Calculate moving average speed
-        avg_time = sum(self.history) / len(self.history)
+        # Calculate throughput: (Items Found) / (Time Taken) over window
+        first_time, first_count = self.history[0]
+        last_time, last_count = self.history[-1]
+        
+        duration = last_time - first_time
+        items_found = last_count - first_count
+        
+        if duration <= 0 or items_found <= 0:
+            # Fallback to total session average if window is too stale/fast
+            if task.elapsed > 0 and task.completed > 0:
+                items_per_sec = task.completed / task.elapsed
+            else:
+                return Text("-:--:--", style="dim")
+        else:
+            items_per_sec = items_found / duration
+
         remaining_count = task.total - task.completed
-        remaining_seconds = avg_time * remaining_count
+        remaining_seconds = remaining_count / items_per_sec if items_per_sec > 0 else 0
         
         # Calculated projected completion
-        elapsed_seconds = task.elapsed
-        total_estimated_seconds = elapsed_seconds + remaining_seconds
-        
-        # Formatting
+        total_estimated_seconds = task.elapsed + remaining_seconds
         total_str = str(timedelta(seconds=int(total_estimated_seconds)))
         
         # Absolute Finish Time (Clock)
@@ -64,10 +71,10 @@ class DiscoveryETAColumn(ProgressColumn):
         finish_time = (datetime.now() + timedelta(seconds=int(remaining_seconds))).strftime("%H:%M")
         
         res = Text()
-        res.append("Total: ", style="dim")
+        res.append("Total:", style="dim")
         res.append(total_str, style="yellow")
         res.append(" | ", style="dim")
-        res.append("Finish: ", style="dim")
+        res.append("Finish:", style="dim")
         res.append(finish_time, style="bold green")
         return res
 
@@ -432,16 +439,15 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
                             seen_ids.add(v_id)
                             channel_counts[uploader] = channel_counts.get(uploader, 0) + 1
                             
-                            # Update ETA history
-                            eta_col.update_history()
-
                             with open(VIDEO_FILE, "a", encoding="utf-8") as f:
                                 if target_cat != last_saved_category:
                                     f.write(f"\n# Category: {target_cat}\n")
                                     last_saved_category = target_cat
                                 f.write(f"{video_obj['url']}\n")
-                            
+
                             progress.advance(task)
+                            # Update ETA history (after advance for updated count)
+                            eta_col.update_history(task.completed)
                             time.sleep(0.01)
             except KeyboardInterrupt:
                 progress.console.print("\n[bold red][HALT] Discovery interrupted by user.[/bold red]")
