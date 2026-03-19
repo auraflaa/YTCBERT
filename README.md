@@ -84,6 +84,9 @@ python video_pipeline/discover_videos.py --count 5K --max-per-channel 3 --min-co
 > [!TIP]
 > **Hyper-Discovery & Premium Dashboard**: This script uses **Semantic Jitter** and a 40x yield-per-query engine for 10x faster discovery. The dashboard features a **Moving-Average ETA** (Total & Finish time) and **Dynamic Color-Coding** for categories to keep your 5K goal organized and visual.
 
+> [!NOTE]
+> **Reproducibility**: Even with semantic seeds, exact link sequence reproducibility across different systems is low. This is because the random state effectively "restarts" upon every interruption/resumption of the script, making the final dataset dependent on session continuity.
+
 
 ### 2. Data Extraction (Resumable)
 Gather transcripts and comments. Safe to interrupt and resume:

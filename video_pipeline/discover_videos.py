@@ -10,6 +10,10 @@ Features:
 - Real-time Checkpointing: Saves links as they are found.
 - Resilient Halts: Graceful Ctrl+C handling with session summaries.
 - Multi-Tier Rate Limiting: Handles both transient and hard blocks.
+
+Note: Reproducibility of exact link sequences across different systems is low. 
+The randomization state effectively "restarts" upon every interruption/resumption 
+of the script, making the final link collection dependent on session continuity.
 """
 
 import argparse
