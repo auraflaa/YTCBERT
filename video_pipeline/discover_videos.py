@@ -18,22 +18,71 @@ import sys
 import time
 from pathlib import Path
 
-import yt_dlp
-from langdetect import detect, DetectorFactory
 from rich.console import Console
 from rich.table import Table
 from rich.panel import Panel
-from rich.progress import Progress, BarColumn, TextColumn, TimeRemainingColumn, SpinnerColumn
+from rich.progress import Progress, BarColumn, TextColumn, TimeRemainingColumn, SpinnerColumn, ProgressColumn
+from collections import deque
 
 from utils.helpers import extract_video_id, parse_count
 
-# Ensures consistent results for language detection across runs
-DetectorFactory.seed = 0
+from rich.text import Text
+from datetime import timedelta
+
+class DiscoveryETAColumn(ProgressColumn):
+    """Custom ETA column that uses a sliding window (last 15) for much higher accuracy."""
+    def __init__(self, window_size=15):
+        self.window_size = window_size
+        self.history = deque(maxlen=window_size)
+        self.last_update = time.time() # Initialize with start time
+        super().__init__()
+
+    def update_history(self):
+        now = time.time()
+        if self.last_update:
+            self.history.append(now - self.last_update)
+        self.last_update = now
+
+    def render(self, task):
+        if not task.total or len(self.history) < 5:
+            return Text("-:--:--", style="dim")
+        
+        # Calculate moving average speed
+        avg_time = sum(self.history) / len(self.history)
+        remaining_count = task.total - task.completed
+        remaining_seconds = avg_time * remaining_count
+        
+        # Calculated projected completion
+        elapsed_seconds = task.elapsed
+        total_estimated_seconds = elapsed_seconds + remaining_seconds
+        
+        # Formatting
+        total_str = str(timedelta(seconds=int(total_estimated_seconds)))
+        
+        # Absolute Finish Time (Clock)
+        from datetime import datetime
+        finish_time = (datetime.now() + timedelta(seconds=int(remaining_seconds))).strftime("%H:%M")
+        
+        res = Text()
+        res.append("Total: ", style="dim")
+        res.append(total_str, style="yellow")
+        res.append(" | ", style="dim")
+        res.append("Finish: ", style="dim")
+        res.append(finish_time, style="bold green")
+        return res
+
 
 # Configuration
 BASE_DIR = Path(__file__).parent
 VIDEO_FILE = BASE_DIR / "video.txt"
 console = Console()
+
+# Dynamic Color Map for Categories (Avoiding yellow/green/cyan/magenta used elsewhere)
+CAT_COLORS = ["blue", "red", "bright_blue", "orange3", "purple", "deep_pink", "hot_pink", "chartreuse4"]
+def get_cat_style(category):
+    """Deterministically maps a category string to a color from CAT_COLORS."""
+    idx = sum(ord(c) for c in category) % len(CAT_COLORS)
+    return CAT_COLORS[idx]
 
 # Category definition for balanced vertical variety
 CATEGORIES = {
@@ -125,12 +174,17 @@ def is_english(title, description=""):
     Performs a heuristic check for English content using langdetect.
     Checks the combined title and description for higher accuracy.
     """
-    text = f"{title} {description}".strip()
-    if not text or len(text) < 10:
-        return False
     try:
+        from langdetect import detect, DetectorFactory
+        DetectorFactory.seed = 0
+        text = f"{title} {description}".strip()
+        if not text or len(text) < 10:
+            return False
         return detect(text) == 'en'
-    except:
+    except ImportError:
+        # Fallback to true if we can't check, rather than crashing
+        return True
+    except Exception:
         return False
 
 class YDLSilentLogger:
@@ -143,9 +197,9 @@ class YDLSilentLogger:
         # We handle critical errors (like rate limits) ourselves via the exception message
         pass
 
-def get_ydl_opts(verify_subtitles=True):
+def get_ydl_opts(verify_subtitles=True, cookies_path=None):
     """Returns standardized configuration for yt-dlp."""
-    return {
+    opts = {
         'logger': YDLSilentLogger(),
         'quiet': True,
         'extract_flat': False, # Extract full info to check views/duration
@@ -155,7 +209,12 @@ def get_ydl_opts(verify_subtitles=True):
         'writesubtitles': verify_subtitles,
         'writeautomaticsub': verify_subtitles,
         'skip_download': True, # We only want metadata
+        # Anti-Bot Headers
+        'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
     }
+    if cookies_path and Path(cookies_path).exists():
+        opts['cookiefile'] = str(cookies_path)
+    return opts
 
 def count_existing_categories():
     """Returns a dict of {category: count} based on current video.txt."""
@@ -177,7 +236,7 @@ def count_existing_categories():
                     counts[current_cat] = counts.get(current_cat, 0) + 1
     return counts
 
-def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, min_length_mins=1.0):
+def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, min_length_mins=1.0, cookies=None):
     """
     Main discovery logic. Goal-aware and balance-aware.
     It prioritizes categories that are currently under-represented in video.txt.
@@ -185,6 +244,10 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
     video_links = []
     seen_ids = set()
     channel_counts = {} # Track how many videos we've taken from each channel in THIS session
+    
+    # Rejection Stats for transparency
+    rejections = {"Shorts": 0, "Low Comments": 0, "Duplicate": 0, "Blocked/Private": 0, "Other": 0}
+
     
     # 1. Audit the existing file
     existing_stats = count_existing_categories()
@@ -207,16 +270,18 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
     from rich.progress import MofNCompleteColumn, TimeElapsedColumn, TaskProgressColumn
     last_saved_category = None
 
+    # 2. Setup Discovery UI
+    from rich.progress import MofNCompleteColumn, TaskProgressColumn
+    eta_col = DiscoveryETAColumn(window_size=15)
+
     with Progress(
         SpinnerColumn(),
-        TextColumn("[progress.description]{task.description}"),
+        TextColumn("{task.description}", markup=True),
         BarColumn(bar_width=None),
         MofNCompleteColumn(),
         TaskProgressColumn(),
         TextColumn("•"),
-        TimeElapsedColumn(),
-        TextColumn("•"),
-        TimeRemainingColumn(),
+        eta_col,
         console=console,
         refresh_per_second=4,
         expand=True
@@ -230,7 +295,14 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
                 query_pool.append({"cat": cat, "kw": kw})
         random.shuffle(query_pool)
 
-        with yt_dlp.YoutubeDL(get_ydl_opts(verify_subtitles=False)) as ydl:
+        try:
+            import yt_dlp
+        except ImportError:
+            progress.console.print("[bold red][ERR] Dependency 'yt-dlp' is not installed.[/bold red]")
+            progress.console.print("[yellow]Please run: pip install -r requirements.txt[/yellow]")
+            return []
+
+        with yt_dlp.YoutubeDL(get_ydl_opts(verify_subtitles=False, cookies_path=cookies)) as ydl:
             try:
                 while (total_existing + len(video_links)) < target_count:
                     # BALANCE LOGIC: Find which category is currently the "thinnest"
@@ -248,18 +320,29 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
                     query_obj = random.choice(cat_kws)
                     base_query = query_obj['kw']
                     
-                    seed = ''.join(random.choices('abcdefghijklmnopqrstuvwxyz', k=3))
+                    # SEMANTIC JITTER: Use high-value terms instead of random letters
+                    semantic_seeds = ["lecture", "explained", "2025", "tutorial", "full course", "session", "talk", "guide"]
+                    seed = random.choice(semantic_seeds)
                     query = f"{base_query} {seed}"
                     
-                    progress.update(task, description=f"Balancing [magenta]{target_cat}[/magenta]...")
+                    # COMPACT TELEMETRY: Shorten category and rejections to prevent terminal wrapping
+                    display_cat = (target_cat[:12] + '..') if len(target_cat) > 14 else target_cat
+                    cat_style = get_cat_style(target_cat)
+                    rej_summary = f"[dim]X:{sum(rejections.values())}(S:{rejections['Shorts']}|C:{rejections['Low Comments']})[/dim]"
+                    progress.update(task, description=f"[{cat_style}]{display_cat:14}[/{cat_style}] {rej_summary}")
+
+
 
                     # Multi-stage retry for Transient RPM limits
                     search_success = False
                     for attempt in range(3):
                         try:
-                            results = ydl.extract_info(f"ytsearch15:{query}", download=False)
+                            # HYPER-DISCOVERY: Reduced to 40 for stability (100 is too aggressive for scrapers)
+                            results = ydl.extract_info(f"ytsearch40:{query}", download=False)
                             search_success = True
                             break # Success!
+
+
                         except Exception as e:
                             err_str = str(e).lower()
                             # Tier 1: Transient RPM (Too Many Requests / 429)
@@ -271,10 +354,13 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
                             
                             # Tier 2: Transient Bot Block (Sign in to confirm / Try again later)
                             if "rate-limited" in err_str or "try again later" in err_str or "sign in" in err_str:
-                                wait_sec = 10 * (attempt + 1)
-                                progress.update(task, description=f"[yellow]Transient Block[/yellow] - Sleeping {wait_sec}s & Switching Queries...")
+                                wait_sec = 20 * (attempt + 1)
+                                progress.update(task, description=f"[yellow]Block Detected[/yellow] - Backing off {wait_sec}s...")
+                                if attempt == 2:
+                                    progress.console.print("[bold red][TIP] YouTube is blocking these searches. Try using --cookies <path_to_cookies.txt> to bypass.[/bold red]")
                                 time.sleep(wait_sec)
                                 break # Give up on this specific niche/seed and try a completely new query
+
                             
                             # Other errors (e.g. network) - Just skip silently
                             break # Give up on this specific niche/seed
@@ -290,38 +376,48 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
                             if (total_existing + len(video_links)) >= target_count: break
                             
                             v_id = entry.get('id')
-                            if not v_id or v_id in seen_ids: continue
+                            if not v_id or v_id in seen_ids:
+                                if v_id: rejections["Duplicate"] += 1
+                                continue
                             
                             # Filter out restricted or non-public videos without extra latency
                             availability = entry.get('availability')
-                            if availability and availability != 'public':
-                                continue
-                            if entry.get('is_private'):
+                            if (availability and availability != 'public') or entry.get('is_private'):
+                                rejections["Blocked/Private"] += 1
                                 continue
                                 
                             # Also skip live streams to ensure we get static content
                             if entry.get('live_status') in ['is_live', 'is_upcoming']:
+                                rejections["Blocked/Private"] += 1
                                 continue
 
                             uploader = entry.get('uploader_id') or entry.get('uploader') or "Unknown"
                             if channel_counts.get(uploader, 0) >= max_per_channel:
+                                rejections["Other"] += 1 # Over channel cap
                                 continue
                             
                             title = entry.get('title', '')
-                            if not is_english(title): continue
+                            if not is_english(title): 
+                                rejections["Other"] += 1 # Non-English
+                                continue
                             
                             duration = entry.get('duration', 0) or 0
                             view_count = entry.get('view_count', 0) or 0
                             comment_count = entry.get('comment_count')
                             
                             if duration < (min_length_mins * 60):
+                                rejections["Shorts"] += 1
                                 continue
                             
                             # Filter on comments
                             if comment_count is None:
-                                if min_comments > 0: continue # Skip if hidden/disabled but we demand them
+                                if min_comments > 0: 
+                                    rejections["Low Comments"] += 1
+                                    continue # Skip if hidden/disabled but we demand them
                             elif comment_count < min_comments:
+                                rejections["Low Comments"] += 1
                                 continue
+
                             
                             video_obj = {
                                 'id': v_id,
@@ -335,6 +431,9 @@ def discover_pro_videos(target_count=50, max_per_channel=20, min_comments=10, mi
                             video_links.append(video_obj)
                             seen_ids.add(v_id)
                             channel_counts[uploader] = channel_counts.get(uploader, 0) + 1
+                            
+                            # Update ETA history
+                            eta_col.update_history()
 
                             with open(VIDEO_FILE, "a", encoding="utf-8") as f:
                                 if target_cat != last_saved_category:
@@ -360,11 +459,12 @@ def main():
     parser.add_argument("--max-per-channel", type=int, default=20, help="Max videos from a single channel (default: 20)")
     parser.add_argument("--min-comments", type=int, default=10, help="Minimum comments required per video (default: 10)")
     parser.add_argument("--min-length", type=float, default=1.0, help="Minimum video length in minutes (default: 1.0)")
+    parser.add_argument("--cookies", type=str, default=None, help="Path to cookies.txt to bypass bot-checks")
     args = parser.parse_args()
 
     try:
         # Discover and Save in real-time
-        found = discover_pro_videos(args.count, args.max_per_channel, args.min_comments, args.min_length)
+        found = discover_pro_videos(args.count, args.max_per_channel, args.min_comments, args.min_length, args.cookies)
         
         if not found:
             console.print("[yellow]No new videos found in this session.[/yellow]")
