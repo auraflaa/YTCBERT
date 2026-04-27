@@ -1,123 +1,116 @@
 # YouTube Data Pipeline (YTCBERT)
 
-A high-performance system designed to extract YouTube transcripts and comments at scale, followed by hierarchical AI-powered summarization and dataset exportation for fine-tuning models like FLAP-T5.
+A high-performance system designed to extract YouTube transcripts and comments at scale, followed by AI-powered summarization and dataset exportation for fine-tuning `FLAN-T5` into **YTCBERT** — a specialized sequence-to-sequence model capable of summarizing audience sentiment. Optimized for local execution and accelerated by Intel Extension for PyTorch (IPEX).
 
-## 🚀 Optimized Workflow
+## 📊 Dashboard & Visualisations
+*A glimpse into the dataset distribution and model training metrics:*
 
-1.  **Discover**: Use `video_pipeline/discover_videos.py` to find diverse English content.
-2.  **Extract**: Use `video_pipeline/pipeline.py` to fetch raw transcripts and engagement-rich comments.
-3.  **Summarize**: Use `video_pipeline/summarize_data.py` to process long videos using hierarchical condensation.
-4.  **Visualize**: Use `video_pipeline/visualize_diversity.py` to analyze your dataset balance.
-5.  **Export**: Use `video_pipeline/export_dataset.py` to generate training-ready JSONL datasets.
+<p float="left">
+  <img src="Visualisations/data_distribution.png" width="400" />
+  <img src="Visualisations/training_val_loss.png" width="400" /> 
+</p>
+<p float="left">
+  <img src="Visualisations/performance_rouge.png" width="400" />
+  <img src="Visualisations/data_keywords.png" width="400" />
+</p>
 
----
+## 📂 Project Architecture
 
-## 📂 Project Structure
+The project is structured into four distinct phases:
 
 ```text
 YTCBERT/
-├── video_pipeline/       # Descriptive home for all processing code (The Engine)
-│   ├── discover_videos.py    # Step 0: Goal-aware English video discovery
-│   ├── pipeline.py           # Step 1: High-speed data extraction (Checkpointed)
-│   ├── summarize_data.py     # Step 2: Hierarchical Map-Reduce summarization
-│   ├── visualize_diversity.py# Step 3: Dataset diversity & distribution dashboard
-│   ├── export_dataset.py     # Step 4: Export curation to JSONL (FLAP-T5 format)
-│   ├── verify_videos.py      # Utility: Validate status & categories of URLs
-│   ├── clean_video_links.py  # Utility: Category-aware link cleaning & pruning
-│   ├── video.txt             # Input: Organized list of YouTube URLs (with # Category:)
-│   └── utils/                # Core logic (LLM, Helpers, Formatters)
-├── output/               # Data Store: Per-video structured folders
-├── backups/              # Automatic backups generated during maintenance
-├── .env                  # Environment variables (API Keys)
-└── requirements.txt      # Project dependencies
+├── Video_Pipeline/       # Phase 1: Data Extraction & Discovery
+│   ├── pipeline.py       # High-speed data extraction (Checkpointed)
+│   ├── tools/            # Utilities for discovery, maintenance, and auditing
+│   ├── utils/            # Core logic (LLM, Helpers, Formatters)
+│   └── data/             # Input and fetched raw data
+│
+├── Data_Preprocessing/   # Phase 2: Cleaning & Summarization
+│   ├── clean_pipeline.py # Text normalization and cleaning
+│   ├── summarizer.py     # Generates ground-truth summaries using an LLM
+│   └── processor.py      # Prepares the summaries for the dataset
+│
+├── Model_Training/       # Phase 3: Fine-Tuning (IPEX Optimized)
+│   ├── 01_acquire_model.py     # Downloads base `flan-t5-base`
+│   ├── 02_prepare_data.py      # Formats data for sequence-to-sequence training
+│   ├── 03_fine_tune.py         # The Trainer (Optimized for Intel XPU / GPUs)
+│   ├── 04_inference.py         # Batch inference testing
+│   ├── 06_evaluation.py        # Model evaluation metrics (ROUGE, etc.)
+│   └── 07_interactive_inference.py # Interactive CLI inference
+│
+└── Visualisations/       # Phase 4: Analysis & Reporting
+    ├── generate_vis.py   # Generates HTML and PNG charts of training loss & data
+    └── ...               # Exported graphs and markdown reports
 ```
 
----
+## ⚙️ Key Features
 
-## ⚙️ Features & Optimizations
+*   **End-to-End Pipeline**: From discovering YouTube videos to exporting a finalized `jsonl` model training dataset.
+*   **Intel GPU (XPU) Acceleration**: Incorporates `intel_extension_for_pytorch` to natively optimize and accelerate model training on Intel hardware.
+*   **Checkpointing & Resilience**: Safe to interrupt. The scrapers and extractors maintain state and resume gracefully.
+*   **Data Analysis Dashboard**: Comprehensive visual tracking of model training loss, learning rate, and dataset semantic distribution.
 
-*   **Goal-Aware Discovery**: Treats `--count` as a total target; automatically balances niches based on existing links.
-*   **Crash-Proof Resilience**: Graceful `Ctrl+C` handling across all scripts; flushes progress to disk before exiting.
-*   **Hierarchical Summarization**: Map-Reduce architecture for long videos, ensuring full context coverage.
-*   **Checkpointing & Resumption**: Smart resumption for both discovery and extraction; picks up exactly where it left off.
-*   **Category-Aware Maintenance**: Maintenance scripts preserve and organize your list by hobbyist-friendly niche headers.
+## 🛠️ Setup & Installation
 
----
-
-## 🛠️ Setup
-
-1.  **Environment**:
+1.  **Clone & Environment Setup**:
     ```bash
+    git clone https://github.com/your-username/YTCBERT.git
+    cd YTCBERT
     python -m venv venv
-    source venv/bin/activate  # Or .\venv\Scripts\Activate.ps1 on Windows
+    
+    # Activate virtual environment
+    # Windows:
+    .\venv\Scripts\Activate.ps1
+    # Linux/Mac:
+    source venv/bin/activate
+    
+    # Install dependencies
     pip install -r requirements.txt
     ```
 
 2.  **Configuration**:
-    Create a `.env` file in the project root with:
+    Create a `.env` file in the project root containing your API keys:
     ```env
     LLM_API_KEY=your_openai_or_gemini_key
-    YOUTUBE_API_KEY=your_youtube_data_api_key (Required for discovery/visuals)
+    YOUTUBE_API_KEY=your_youtube_data_api_key
     ```
 
----
+3.  **Hardware Check**:
+    Run the `run.py` utility to ensure PyTorch and IPEX (Intel Extension for PyTorch) are correctly detecting your GPU:
+    ```bash
+    python run.py
+    ```
 
 ## 📖 Usage Guide
 
 > [!IMPORTANT]
-> All scripts should be run from the **project root** directory.
+> All scripts should be run from the **project root** directory to ensure paths resolve correctly.
 
-### 1. Broad Discovery (Goal-Aware & Quality-Filtered)
-Find new English content. The script intelligently balances niches and strictly filters out "junk" videos (Shorts or those with no comments) before they ever reach your dataset.
-
-Options:
-- `--count N`: The total target number of videos for your list (e.g., `5K`).
-- `--max-per-channel C`: Limit to `C` videos per channel to prevent bias (default: 20).
-- `--min-comments N`: Drop videos with fewer than `N` comments (default: 10).
-- `--min-length M`: Drop videos shorter than `M` minutes (default: 1.0).
-- `--cookies path`: Pass a `cookies.txt` file to bypass YouTube's bot-detection walls.
-
+### 1. Data Collection (`Video_Pipeline`)
+Manage your video lists, discover content, and extract raw transcripts and comments.
 ```bash
-python video_pipeline/discover_videos.py --count 5K --max-per-channel 3 --min-comments 20 --cookies cookies.txt
+python Video_Pipeline/pipeline.py
 ```
 
-> [!TIP]
-> **Hyper-Discovery & Premium Dashboard**: This script uses **Semantic Jitter** and a 40x yield-per-query engine for 10x faster discovery. The dashboard features a **Moving-Average ETA** (Total & Finish time) and **Dynamic Color-Coding** for categories to keep your 5K goal organized and visual.
-
-> [!NOTE]
-> **Reproducibility**: Even with semantic seeds, exact link sequence reproducibility across different systems is low. This is because the random state effectively "restarts" upon every interruption/resumption of the script, making the final dataset dependent on session continuity.
-
-
-### 2. Data Extraction (Resumable)
-Gather transcripts and comments. Safe to interrupt and resume:
+### 2. Preprocessing (`Data_Preprocessing`)
+Clean the scraped YouTube data and use a larger LLM to generate the ground-truth summaries that will be used to fine-tune the model.
 ```bash
-python video_pipeline/pipeline.py --workers 4 --max-comments 5000
+python Data_Preprocessing/clean_pipeline.py
+python Data_Preprocessing/summarizer.py
 ```
 
-### 3. Hierarchical Summarization
-Generate high-density summaries for long-form content:
+### 3. Model Training (`Model_Training`)
+Acquire the base `flan-t5` model, prepare the dataset, and launch the IPEX-optimized training loop.
 ```bash
-python video_pipeline/summarize_data.py --workers 5 --workers-inner 3
+python Model_Training/01_acquire_model.py
+python Model_Training/02_prepare_data.py
+python Model_Training/03_fine_tune.py
 ```
 
-### 4. Diversity Visualization
-Analyze your dataset balance and engagement distribution:
+### 4. Evaluation & Visualisation (`Visualisations`)
+Track performance using the evaluation scripts and generate your dashboards.
 ```bash
-python video_pipeline/visualize_diversity.py
+python Model_Training/06_evaluation.py
+python Visualisations/generate_vis.py
 ```
-> [!TIP]
-> **Interactive Reports:** You can generate a beautiful, interactive Plotly dashboard. Use `--show-report` to view it instantly in your browser (temporary), or `--export-report` to save it to the `YTCBERT/reports/` folder!
-
-### 5. Dataset Export
-Build your training-ready JSONL file:
-```bash
-python video_pipeline/export_dataset.py --out my_t5_dataset.jsonl
-```
-
----
-
-## 🔧 Maintenance Utilities
-
-*   **Verify**: `python video_pipeline/verify_videos.py` (High-concurrency API Batch Engine. Automatically flags PRIVATE, DELETED, RESTRICTED, Shorts (<30s), and Zero-Comment videos!).
-*   **Clean**: `python video_pipeline/clean_video_links.py --apply-report` (Instantly reads the verify report to natively purge all invalid/broken/short URLs).
-*   **Audit**: `python video_pipeline/prune_vids.py` (Scans `output/` folders post-extraction securely backs up and removes empty/dud data entries).

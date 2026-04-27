@@ -1,10 +1,42 @@
-# Secrets — never commit
+# Environment & Secrets
 .env
-
-# Virtual environment
 venv/
+.vscode/
 
-# Python cache
+# Python Cache
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+
+# Video Pipeline (Source & Data)
+Video_Pipeline/data/
+Video_Pipeline/FAILED.txt
+Video_Pipeline/proxies.txt
+Video_Pipeline/youtube_cookies.txt
+Video_Pipeline/prompts.txt
+Video_Pipeline/utils/.verify_report.json
+
+# Data Preprocessing (Processed Results)
+Data_Preprocessing/cleaned_output/
+Data_Preprocessing/summaries/
+Data_Preprocessing/prompt.txt
+Data_Preprocessing/.env
+
+# Model Training (Massive Checkpoints & Datasets)
+Model_Training/results/
+Model_Training/flan-t5-base/
+Model_Training/YTCBERT/
+Model_Training/*.jsonl
+Model_Training/*.json
+
+# Visualisations (Logs and Results)
+Visualisations/*.html
+Visualisations/*.json
+Visualisations/training.txt
+
+# Backups & Temporary
+backups/
+scratch/
+tmp/
+*.log

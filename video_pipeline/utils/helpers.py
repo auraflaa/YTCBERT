@@ -25,7 +25,7 @@ def parse_count(count_str: str | int) -> int:
     if isinstance(count_str, int):
         return count_str
     val = str(count_str).upper().strip()
-    multipliers = {'K': 1000, 'M': 1000000, 'B': 1000000000}
+    multipliers = {'K': 1000, 'M': 1000000, 'B': 1000000000, 'T': 1000000000000}
     
     if val and val[-1] in multipliers:
         try:
@@ -52,9 +52,11 @@ def extract_video_id(url: str) -> str | None:
 # Cache freshness
 # ---------------------------------------------------------------------------
 
-def needs_refresh(video_dir: Path, refresh_days: int) -> bool:
+def needs_refresh(video_dir: Path, refresh_days: int, no_transcripts: bool = False) -> bool:
     """True when the folder is missing, incomplete, stale, or corrupt."""
-    required = ("transcript.txt", "comments.json", "meta.json")
+    required = ["comments.json", "meta.json"]
+    if not no_transcripts:
+        required.append("transcript.txt")
     if not video_dir.exists() or any(not (video_dir / f).exists() for f in required):
         return True
     try:
@@ -80,7 +82,12 @@ def clean_err(exc: Exception | str) -> str:
     inner = re.search(r"'message':\s*'([^']+)'", msg)
     if inner:
         msg = inner.group(1)
-    return msg[:117] + "..." if len(msg) > 120 else msg
+    
+    # Expose the actual cause from youtube-transcript-api instead of truncating it
+    if "This is most likely caused by:" in msg:
+        msg = msg.split("This is most likely caused by:")[-1].strip()
+        
+    return msg[:150] + "..." if len(msg) > 150 else msg
 
 
 # ---------------------------------------------------------------------------
@@ -138,7 +145,11 @@ def get_video_stats_batch(video_ids: list[str], api_key: str) -> dict[str, dict]
             f"https://www.googleapis.com/youtube/v3/videos"
             f"?part=statistics,snippet,contentDetails&id={ids_param}&key={api_key}"
         )
-        with urllib.request.urlopen(url, timeout=10) as resp:
+        # Use a more robust opener for the official API
+        req = urllib.request.Request(url, headers={
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        })
+        with urllib.request.urlopen(req, timeout=10) as resp:
             data = json.loads(resp.read())
             
         items = data.get("items", [])
@@ -188,24 +199,22 @@ def with_retry(fn, *args, attempts: int = 3, backoff: int = 2, label: str = "", 
     for attempt in range(1, attempts + 1):
         try:
             return fn(*args), None
-        except permanent_exceptions as e:
-            return None, clean_err(e)
         except Exception as e:
             err_str = str(e)
+            err_name = type(e).__name__
+            
+            # String-based matching completely bypasses python import path mismatches
+            p_names = [cls.__name__ if hasattr(cls, '__name__') else str(cls) for cls in permanent_exceptions]
+            if err_name in p_names or err_name in ["TranscriptsDisabled", "NoTranscriptFound", "VideoUnavailable", "NotTranslatable"]:
+                return None, clean_err(e)
             is_rate_limit = "429" in err_str or "RateLimit" in err_str or "quota" in err_str.lower()
             
             if attempt == attempts:
                 return None, f"{label} failed after {attempts} attempts: {clean_err(e)}"
-            
-            # Intelligent wait for rate limits vs transient errors
-            wait = (backoff ** attempt)
-            if is_rate_limit:
-                wait += 10 # Extra buffer for rate limits
-                print(f"  [RATE LIMIT] {label} hit quota limit. Waiting {wait}s before retry {attempt+1}/{attempts}...")
-            else:
-                print(f"  [RETRY] {label} attempt {attempt}/{attempts} failed. Retrying in {wait}s...")
-            
-            time.sleep(wait)
+                
+            wait_time = (backoff ** attempt)
+            print(f"  [RETRY] {label} attempt {attempt}/{attempts} failed ({err_name}):\n{clean_err(e)}\n-> Retrying in {wait_time}s...")
+            time.sleep(wait_time)
     return None, f"{label} failed: {last_error}"
 
 
@@ -221,10 +230,50 @@ def strip_banner(text: str) -> str:
     return text
 
 
+# ---------------------------------------------------------------------------
+# Path resolution helpers
+# ---------------------------------------------------------------------------
+
+def resolve_data_path(filename: str, base_dir: Path | str = None) -> Path:
+    """
+    Resolves a data file path by checking:
+    1. Local data/ folder (e.g. Video Pipeline/data/)
+    2. Local directory
+    3. Project Root (fallback)
+    """
+    if base_dir is None:
+        # Detect Project Root
+        curr = Path(__file__).resolve()
+        # Navigate up until we find the folder containing .git or .env
+        root = curr.parent.parent
+        for _ in range(3):
+            if (root / ".env").exists() or (root / ".gitignore").exists():
+                break
+            root = root.parent
+        
+        # Local context (assuming we are in a submodule or util)
+        # Most of our scripts are in 'Video Pipeline' or 'Data Pre Processing'
+        local_dir = curr.parent.parent # If in utils/, parent.parent is the module root
+    else:
+        root = Path(base_dir)
+        local_dir = root
+        
+    p_local_data = local_dir / "data" / filename
+    p_local      = local_dir / filename
+    p_root_data  = root / "Video Pipeline" / "data" / filename # Main config source
+    p_root       = root / filename
+    
+    # Priority order
+    if p_local_data.exists(): return p_local_data
+    if p_local.exists():      return p_local
+    if p_root_data.exists():  return p_root_data
+    return p_root
+
 def load_prompts(prompt_file: str = "prompt.txt"):
-    """Loads system and user prompts from a file."""
+    """Loads system and user prompts from a file, checking data/ first."""
     try:
-        raw = Path(prompt_file).read_text(encoding="utf-8")
+        path = resolve_data_path(prompt_file)
+        raw = path.read_text(encoding="utf-8")
         parts = raw.split("## USER", 1)
         system = parts[0].replace("## SYSTEM", "").strip()
         user = parts[1].strip() if len(parts) > 1 else None
@@ -292,3 +341,34 @@ def chunk_text(text: str, max_chars: int) -> list[str]:
 def chunk_list(items: list, size: int) -> list[list]:
     """Splits a list into sub-lists of a given size."""
     return [items[i:i + size] for i in range(0, len(items), size)]
+
+
+# ---------------------------------------------------------------------------
+# Backup Maintenance
+# ---------------------------------------------------------------------------
+
+def rotate_backups(backup_dir: Path, max_keep: int = 5):
+    """
+    Keep only the N most recent .bak files in the given directory.
+    Files are sorted by modification time to ensure the latest versions remain.
+    """
+    if not backup_dir.exists():
+        return
+    
+    # Collect all backup files
+    backups = sorted(
+        backup_dir.glob("*.bak"),
+        key=lambda x: x.stat().st_mtime,
+        reverse=True
+    )
+    
+    if len(backups) > max_keep:
+        removed = 0
+        for old_backup in backups[max_keep:]:
+            try:
+                old_backup.unlink()
+                removed += 1
+            except Exception:
+                pass
+        return removed
+    return 0
