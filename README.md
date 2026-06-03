@@ -1,4 +1,13 @@
+<div align="center">
+
 # YouTube Data Pipeline (YTCBERT)
+
+
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE) [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+
+</div>
+
+---
 
 A high-performance system designed to extract YouTube transcripts and comments at scale, followed by AI-powered summarization and dataset exportation for fine-tuning `FLAN-T5` into **YTCBERT** — a specialized sequence-to-sequence model capable of summarizing audience sentiment. Optimized for local execution and accelerated by Intel Extension for PyTorch (IPEX).
 
